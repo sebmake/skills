@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "meta": {
+    "titre": "Clarté",
+    "produit": "Clarté",
+    "message": "Une lampe de bureau qui règle sa lumière toute seule, au fil de la journée.",
+    "public": "Personnes qui travaillent à leur bureau toute la journée",
+    "langue": "fr",
+    "formats": ["16:9", "9:16", "1:1"],
+    "duree_cible_s": 65,
+    "fps": 30
+  },
+  "theme": {
+    "source": "HEX d'exemple (produit fictif)",
+    "couleurs": {
+      "fond_sombre": "#0E1013",
+      "fond_clair": "#F2F1EE",
+      "texte_sur_sombre": "#F4F4F2",
+      "texte_sur_clair": "#16171A",
+      "accent": "#E9A23B",
+      "accent_2": "#B8642A"
+    },
+    "polices": {
+      "titres": { "famille": "Inter", "repli": ["Arial", "sans-serif"], "fichier": null, "graisse": 700 },
+      "texte": { "famille": "Inter", "repli": ["Arial", "sans-serif"], "fichier": null, "graisse": 400 }
+    },
+    "logo": { "sur_sombre": "exemple-visuels/logo-clair.svg", "sur_clair": "exemple-visuels/logo-sombre.svg" }
+  },
+  "musique": null,
+  "plans": [
+    {
+      "id": "p01", "recette": "noir", "role": "accroche", "duree_s": 1.2,
+      "mouvement": { "point": true },
+      "notes": "Noir, un point de lumière s'allume puis s'éteint."
+    },
+    {
+      "id": "p02", "recette": "lisere", "role": "accroche", "duree_s": 4.3,
+      "visuels": { "objet": "exemple-visuels/lampe.png" },
+      "notes": "On devine la lampe par son seul contour éclairé. L'objet entier reste caché."
+    },
+    {
+      "id": "p03", "recette": "carton", "role": "accroche", "duree_s": 3.8, "fond": "sombre",
+      "texte": { "type": "phrase", "contenu": "Une lampe qui suit votre journée." },
+      "notes": "La phrase-thèse, en tête."
+    },
+    {
+      "id": "p04", "recette": "macro", "role": "contexte", "duree_s": 3.0,
+      "visuels": { "image": "exemple-visuels/matiere.jpg" },
+      "mouvement": { "echelle": 1.6, "sens": "gauche", "point": [50, 70] },
+      "notes": "Métal brossé et filet de lumière, la mise au point glisse."
+    },
+    {
+      "id": "p05", "recette": "macro", "role": "contexte", "duree_s": 2.5,
+      "visuels": { "image": "exemple-visuels/lampe.png" },
+      "mouvement": { "echelle": 2.6, "sens": "droite", "point": [57, 5] },
+      "notes": "L'articulation et la barre de lumière, de très près."
+    },
+    {
+      "id": "p06", "recette": "carton", "role": "preuve", "groupe": "preuve-heure", "priorite": 1, "duree_s": 4.0, "fond": "clair",
+      "texte": { "type": "phrase", "contenu": "Froide le matin. Chaude le soir.", "groupes": ["Froide le matin.", "Chaude le soir."], "affichage": "groupes" },
+      "notes": "Proposition, puis sa chute."
+    },
+    {
+      "id": "p07", "recette": "panneau", "role": "preuve", "groupe": "preuve-heure", "priorite": 1, "duree_s": 5.0, "fond": "clair",
+      "visuels": { "capture": "exemple-visuels/appli-planning.png" },
+      "texte": { "type": "libelle", "contenu": "Lumière du jour" },
+      "mouvement": { "detail": { "zone": [52, 18, 40, 46], "mode": "zoom" } },
+      "notes": "La courbe de la journée, puis on entre dans la fin d'après-midi."
+    },
+    {
+      "id": "p08", "recette": "orbite", "role": "preuve", "groupe": "preuve-geste", "priorite": 2, "duree_s": 4.0, "fond": "clair",
+      "visuels": { "objet": "exemple-visuels/piece-tete.png" },
+      "mouvement": { "angle": 12 },
+      "notes": "La tête de la lampe seule, qui tourne lentement."
+    },
+    {
+      "id": "p09", "recette": "mot-sur-image", "role": "preuve", "groupe": "preuve-geste", "priorite": 2, "duree_s": 3.2,
+      "visuels": { "image": "exemple-visuels/photo-bureau.jpg" },
+      "texte": { "type": "phrase", "contenu": "Un seul geste." },
+      "mouvement": { "zone": "gauche", "point": [70, 50] },
+      "notes": "Le bureau le soir ; la phrase dans le mur sombre."
+    },
+    {
+      "id": "p10", "recette": "carton", "role": "preuve", "groupe": "preuve-charge", "priorite": 3, "duree_s": 3.6, "fond": "sombre",
+      "texte": { "type": "chiffre", "chiffre": null, "libelle": "heures de lumière par charge", "source": null },
+      "notes": "Chiffre à fournir par l'utilisateur : rien n'est inventé."
+    },
+    {
+      "id": "p11", "recette": "noir", "role": "respiration", "duree_s": 0.8,
+      "notes": "Respiration avant le chapitre de l'application."
+    },
+    {
+      "id": "p12", "recette": "empilement", "role": "preuve", "groupe": "preuve-appli", "priorite": 2, "duree_s": 4.5, "fond": "clair",
+      "visuels": { "captures": ["exemple-visuels/fenetre-1.png", "exemple-visuels/fenetre-2.png", "exemple-visuels/fenetre-3.png"] },
+      "texte": { "type": "libelle", "contenu": "Vos scènes" },
+      "transition": "coupe",
+      "notes": "Les fenêtres de l'application arrivent de la profondeur."
+    },
+    {
+      "id": "p13", "recette": "mur", "role": "preuve", "groupe": "preuve-appli", "priorite": 2, "duree_s": 4.5, "fond": "sombre",
+      "visuels": { "elements": ["exemple-visuels/scene-1.png", "exemple-visuels/scene-2.png", "exemple-visuels/scene-3.png", "exemple-visuels/scene-4.png", "exemple-visuels/scene-5.png", "exemple-visuels/scene-6.png", "exemple-visuels/scene-7.png", "exemple-visuels/scene-8.png"] },
+      "mouvement": { "mode": "grille", "focus": 3 },
+      "notes": "Les scènes de lumière ; la scène « lecture » s'allume."
+    },
+    {
+      "id": "p14", "recette": "eclate", "role": "contexte", "duree_s": 5.2, "fond": "clair",
+      "visuels": { "pieces": ["exemple-visuels/piece-base.png", "exemple-visuels/piece-tige.png", "exemple-visuels/piece-tete.png"] },
+      "mouvement": { "axe": "vertical" },
+      "transition": "noir",
+      "notes": "Les trois pièces se rejoignent."
+    },
+    {
+      "id": "p15", "recette": "revelation", "role": "revelation", "duree_s": 7.6, "fond": "sombre",
+      "visuels": { "objet": "exemple-visuels/lampe.png" },
+      "mouvement": { "recul": true, "halo": true },
+      "transition": "noir",
+      "notes": "L'objet entier, enfin : halo, lumière qui balaie, recul lent."
+    },
+    {
+      "id": "p16", "recette": "carton", "role": "chute", "duree_s": 3.6, "fond": "sombre",
+      "texte": { "type": "phrase", "contenu": "Votre bureau, enfin bien éclairé." },
+      "notes": "La chute, juste avant le nom."
+    },
+    {
+      "id": "p17", "recette": "fin", "role": "fin", "duree_s": 4.5, "fond": "sombre",
+      "texte": { "type": "nom", "contenu": "Clarté", "ligne": "Bientôt disponible" },
+      "mouvement": { "taille": "heros" },
+      "notes": "Le nom seul, puis la ligne d'action et le logo."
+    }
+  ],
+  "declinaisons": [
+    {
+      "id": "vertical-30",
+      "format": "9:16",
+      "duree_cible_s": 30,
+      "plans": [
+        { "id": "p09", "duree_s": 2.6 },
+        "p03",
+        { "id": "p15", "duree_s": 5.0, "avec_nom": true },
+        "p06",
+        "p07",
+        "p13",
+        "p16",
+        { "id": "p17", "duree_s": 3.2 }
+      ]
+    },
+    { "id": "carre-15", "format": "1:1", "duree_cible_s": 15, "regle": "auto" }
+  ]
+}

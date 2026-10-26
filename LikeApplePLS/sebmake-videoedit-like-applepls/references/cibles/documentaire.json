@@ -1,0 +1,755 @@
+{
+ "famille": "documentaire_temoignage",
+ "statut": "N/M = observé dans N cas sur M ; 'convention' = choix de la skill, non mesuré. Temps en secondes.",
+ "corpus": {
+  "films": [
+   "v5-03",
+   "v5-05",
+   "v5-07",
+   "v2-04",
+   "v3-03",
+   "v2-09",
+   "v1-05",
+   "v6-06"
+  ],
+  "variantes_sans_entretien": [
+   "v2-02",
+   "v6-01"
+  ],
+  "groupes": {
+   "entretiens_croises": [
+    "v5-03",
+    "v5-05",
+    "v5-07"
+   ],
+   "voix_filmees_par_les_gens_ou_sur_le_vif": [
+    "v2-04",
+    "v3-03",
+    "v2-09"
+   ],
+   "une_seule_voix": [
+    "v1-05",
+    "v6-06"
+   ]
+  },
+  "plans_image": 596,
+  "transitions": 606,
+  "plans_etiquetes_a_l_oeil": 744,
+  "duree_film": {
+   "mediane": 142.4,
+   "min": 78.4,
+   "max": 323.8
+  },
+  "limites": [
+   "fondus = borne basse",
+   "type et valeur des plans jugés à l'œil sur une image par plan",
+   "le son ne sépare pas musique et voix",
+   "v6 (2019) diffuse tous ses films en bande ~4:1 : exclu des règles de format"
+  ]
+ },
+ "durees": {
+  "base": "596 plans d'image des 8 films (hors noirs et logos), tiers selon le milieu du plan",
+  "debut": 1.79,
+  "milieu": 1.67,
+  "fin": 1.53,
+  "mediane": 1.67,
+  "p10": 0.63,
+  "p90": 3.64,
+  "regimes": {
+   "pose": {
+    "films": [
+     "v5-03",
+     "v5-07",
+     "v3-03",
+     "v1-05",
+     "v6-06"
+    ],
+    "plans": 323,
+    "debut": 1.87,
+    "milieu": 1.9,
+    "fin": 2.47,
+    "fin_p90": 6.17,
+    "mediane": 2.0,
+    "p10": 1.0,
+    "p90": 4.46,
+    "mediane_par_film": [
+     1.84,
+     1.85,
+     1.97,
+     2.15,
+     2.19
+    ],
+    "coupes_par_minute": [
+     19.9,
+     20.7,
+     20.7,
+     23.0,
+     27.3
+    ],
+    "forme": "fin pas plus rapide (0/5 accélèrent > 15 %), plans les plus longs à la fin ; plan >= 5 s dans le dernier cinquième 5/5"
+   },
+   "choral": {
+    "films": [
+     "v5-05",
+     "v2-04",
+     "v2-09"
+    ],
+    "plans": 273,
+    "debut": 1.53,
+    "milieu": 1.2,
+    "fin": 1.13,
+    "fin_p10": 0.41,
+    "mediane": 1.2,
+    "p10": 0.47,
+    "p90": 2.6,
+    "mediane_par_film": [
+     1.03,
+     1.07,
+     1.53
+    ],
+    "coupes_par_minute": [
+     32.6,
+     43.5,
+     45.1
+    ],
+    "forme": "fin plus rapide que le début 3/3 ; rafale finale 3/3 ; plan >= 5 s dans le dernier cinquième 0/3"
+   }
+  },
+  "par_type": {
+   "entretien": {
+    "n": 162,
+    "mediane": 1.77,
+    "p10": 0.63,
+    "p90": 3.16,
+    "regle": "> 5 s seulement dans le dernier cinquième (4/4 cas)"
+   },
+   "personne_en_situation": {
+    "n": 77,
+    "mediane": 1.4,
+    "p10": 0.8,
+    "p90": 3.13
+   },
+   "illustration": {
+    "n": 325,
+    "mediane": 1.67,
+    "p10": 0.61,
+    "p90": 3.66
+   },
+   "carton": {
+    "n": 27,
+    "mediane": 1.67,
+    "p10": 0.43,
+    "p90": 3.96
+   },
+   "titre_de_chapitre": {
+    "n": 5,
+    "min": 2.94,
+    "max": 6.51,
+    "mediane": 4.17
+   },
+   "noir": {
+    "n": 12,
+    "mediane": 0.93
+   },
+   "logo_final": {
+    "n": 5,
+    "min": 2.2,
+    "max": 4.24,
+    "mediane": 3.77
+   }
+  },
+  "rafales": {
+   "definition": "au moins 3 plans de suite de moins de 0,8 s",
+   "finale": "4/8 (v5-03, v5-05, v2-04, v2-09), entre 90 et 97 % ; 3 à 5 plans de 0,29 à 0,42 s en moyenne ; oeuvres ou produit, jamais un visage 4/4",
+   "au_milieu": "4/8 (v2-04 x5, v3-03, v2-09, v1-05) ; visages possibles (3/4 films)"
+  },
+  "respirations": {
+   "definition": "au moins 3 s sans parole au milieu du film",
+   "films": "6/8",
+   "n": 16,
+   "min": 3.0,
+   "max": 9.33,
+   "par_minute_mediane": 0.6
+  }
+ },
+ "transitions": {
+  "total": 606,
+  "coupe": 594,
+  "part_coupe": 0.98,
+  "fondu": 1,
+  "fondu_note": "1 fondu enchaîné, entre deux images techniques ; 0 entre deux plans de parole",
+  "noir": 8,
+  "noir_detail": {
+   "depuis_noir": 5,
+   "vers_noir": 3,
+   "role": "ouverture 2, graphisme sur noir 2, changement de chapitre 3 (2 vers + 1 depuis), fin avant logo 1"
+  },
+  "blanc": 2,
+  "volet": 1,
+  "noir_interne": {
+   "regle": "un passage par le noir ou le blanc = un changement de chapitre (3/3), au plus 1 par film",
+   "durees": [
+    0.4,
+    1.0,
+    2.47
+   ],
+   "position": [
+    0.46,
+    0.21,
+    0.67
+   ]
+  },
+  "borne_basse": true
+ },
+ "cartons": {
+  "aucun_carton": "3/8 (v5-07, v1-05, v6-06)",
+  "question_ou_these_ouverture": {
+   "films": "2/8",
+   "durees": [
+    3.17,
+    4.74
+   ],
+   "mots_these": 12,
+   "note": "la question se construit mot par mot (v2-04)"
+  },
+  "conclusion_alternee_avec_image": {
+   "films": "1/8",
+   "n": 3,
+   "mots": [
+    3,
+    7,
+    4
+   ],
+   "durees": [
+    1.67,
+    2.87,
+    3.07
+   ],
+   "images_entre": {
+    "min": 1.07,
+    "max": 8.44
+   }
+  },
+  "mots_echos": {
+   "films": "1/8 (régime choral)",
+   "plans": 11,
+   "durees": {
+    "min": 0.2,
+    "max": 1.94,
+    "mediane": 0.67
+   },
+   "regle": "reprend un mot qu'on vient d'entendre 10/10"
+  },
+  "lettre_tapee": {
+   "films": "1/8",
+   "n": 11,
+   "durees": {
+    "min": 0.77,
+    "max": 17.05
+   },
+   "regle": "seulement si le film parle d'un écrit (convention)"
+  },
+  "taille": {
+   "hauteur_ligne_pct": [
+    5.2,
+    5.7
+   ],
+   "mesures": "5/6 ; une question à 11 %",
+   "centre": "6/6",
+   "largeur_pct": [
+    23,
+    63
+   ],
+   "fond": "noir 4/6, image sombre 1/6, gris clair 1/6",
+   "lignes": [
+    1,
+    2
+   ],
+   "boite": 0
+  },
+  "max_mots": {
+   "valeur": 12,
+   "statut": "observé 106/109 dans sebmake-videopresentation ; 12 mots max ici aussi"
+  }
+ },
+ "noms": {
+  "facon": {
+   "bandeau": "4/8",
+   "titre_de_chapitre": "1/8",
+   "aucun": "3/8"
+  },
+  "bandeau": {
+   "duree": {
+    "mediane": 2.07,
+    "p10": 0.9,
+    "p90": 3.47,
+    "n": 27
+   },
+   "hauteur_nom_pct": [
+    2.5,
+    3.3
+   ],
+   "hauteur_statut": "estimé à l'oeil sur 5 images",
+   "contenu": "nom + fonction (4/4 films)",
+   "place": "en bas, à gauche 3/6 ou à droite 3/6, hors du visage ; côté opposé au visage 3/6",
+   "boite": "0 (8 personnes vues)",
+   "moment": "premier visage de la personne (4/5 dans v5-03)",
+   "entree": "après la coupe, en fondu (2/2 vus)",
+   "plans_consecutifs": "peut rester sur 2 à 3 plans de la même personne (4 personnes dans v2-09)"
+  },
+  "titre_de_chapitre": {
+   "duree": {
+    "min": 2.94,
+    "max": 6.51
+   },
+   "place": "début de chaque chapitre 5/5",
+   "forme": "nom en grand sur une image large, projet en petit dessous"
+  }
+ },
+ "parole": {
+  "couverture": {
+   "mediane": 0.767,
+   "min": 0.506,
+   "max": 0.883,
+   "par_film": {
+    "v5-03": 0.506,
+    "v5-05": 0.824,
+    "v5-07": 0.749,
+    "v2-04": 0.883,
+    "v3-03": 0.818,
+    "v2-09": 0.659,
+    "v1-05": 0.785,
+    "v6-06": 0.593
+   }
+  },
+  "prise": {
+   "definition": "paroles séparées par moins de 0,6 s",
+   "n": 107,
+   "mediane": 5.91,
+   "p10": 1.91,
+   "p90": 19.78
+  },
+  "tour_locuteur": {
+   "n": 60,
+   "films": 3,
+   "mediane": 5.14,
+   "p10": 1.93,
+   "p90": 16.37
+  },
+  "silence_entre_prises": {
+   "mediane_des_medianes": 1.58,
+   "min": 0.99,
+   "max": 3.14
+  },
+  "voix_par_replique_choral": 1.88,
+  "parole_sur_visage": {
+   "mediane": 0.33,
+   "min": 0.18,
+   "max": 0.82,
+   "sous_55pct": "6/8",
+   "par_film": {
+    "v1-05": 0.18,
+    "v6-06": 0.23,
+    "v3-03": 0.29,
+    "v5-03": 0.32,
+    "v5-05": 0.34,
+    "v5-07": 0.52,
+    "v2-04": 0.57,
+    "v2-09": 0.82
+   }
+  },
+  "personne_a_l_ecran_part_du_temps": {
+   "mediane": 0.285,
+   "min": 0.17,
+   "max": 0.68
+  },
+  "voix_avant_visage": {
+   "cas": "13/20 premières prises de parole",
+   "delai": {
+    "mediane": 3.0,
+    "min": 1.53,
+    "max": 4.7,
+    "n": 12
+   }
+  },
+  "coupes_pendant_la_parole": "414/594 (70 %)",
+  "coupes_dans_un_silence": {
+   "observe": 172,
+   "attendu_hasard": 162.2
+  },
+  "changement_de_voix_avec_coupe_a_0_5s": "23/57",
+  "premiere_parole": {
+   "mediane": 5.95,
+   "min": 2.91,
+   "max": 16.5
+  },
+  "derniere_parole_avant_fin": {
+   "mediane": 4.2,
+   "min": 0.89,
+   "max": 9.54,
+   "n": 7,
+   "exception": "coda sans parole de 35 s (v5-03)"
+  }
+ },
+ "valeurs": {
+  "entretien": {
+   "n": 162,
+   "R": 86,
+   "M": 42,
+   "G": 25,
+   "TG": 9,
+   "L": 0,
+   "parts": {
+    "R": 0.53,
+    "M": 0.26,
+    "G_TG": 0.21
+   }
+  },
+  "meme_personne_deux_plans": "second plus serré 9/10 (v5-07)",
+  "personne_en_situation": {
+   "n": 77,
+   "M": 29,
+   "R": 23,
+   "L": 14,
+   "G": 9,
+   "TG": 1,
+   "D": 1
+  },
+  "illustration_film_tourne_v5-07": {
+   "n": 66,
+   "L": 25,
+   "D": 23,
+   "M": 18
+  },
+  "progression_film": "serrage croissant 3/8 seulement : pas de règle large -> serré à l'échelle du film",
+  "regard": {
+   "a_cote_objectif_equipe": "4/4",
+   "dans_objectif_auto_filme": "2/2"
+  }
+ },
+ "mouvement": {
+  "entretien_fixe_a_l_oeil": "18/20",
+  "entretien_derive": "2/65",
+  "personne_en_situation_derive": "10/28",
+  "illustration_derive": "24/123",
+  "regle": "entretien fixe ; le mouvement va aux illustrations et aux personnes en situation"
+ },
+ "raccords": {
+  "base": "48 coupes vues à l'oeil",
+  "aucun_raccord_image": 17,
+  "place_ou_forme": 10,
+  "regard_ou_geste": 4,
+  "mouvement_action": 4,
+  "sens_mot": 4,
+  "meme_personne_plus_serre": 3,
+  "meme_sujet_autre_etape": 3,
+  "lieu_vers_personne": 2,
+  "lumiere": 1,
+  "par_le_noir": "changement de chapitre seulement (3/3)"
+ },
+ "nb_format": {
+  "nb_tout_le_film": "2/8 (+ 2/2 variantes)",
+  "nb_personnes_couleur_ecrans": "2/8",
+  "couleur": "5/8",
+  "nb_pour_portraits": "4/4",
+  "letterbox": {
+   "films": "1/8",
+   "ratio_mesure": 2.36,
+   "ratio_pratique": 2.39,
+   "ratio_statut": "convention"
+  },
+  "plein_cadre_16_9": "6/7 (v6-06 exclu)"
+ },
+ "ouverture": {
+  "part_du_noir": "6/8",
+  "son_calme_3s": {
+   "films": "8/8",
+   "ecart_db": {
+    "min": 9.7,
+    "max": 47.8,
+    "mediane": 16.7
+   }
+  },
+  "premiere_parole": {
+   "mediane": 5.95,
+   "min": 2.91,
+   "max": 16.5,
+   "part_duree": [
+    0.013,
+    0.086
+   ]
+  },
+  "texte_en_ouverture": "4/8 (question, thèse, lettre, texte dicté)",
+  "voix_dans_le_noir": "1/8",
+  "images_sans_parole": "3/8"
+ },
+ "fin": {
+  "pose_plan_tenu": {
+   "films": "5/5",
+   "durees": [
+    5.74,
+    7.17,
+    6.44,
+    8.14,
+    7.61
+   ]
+  },
+  "choral_rafale_puis_logo": "3/3",
+  "logo": {
+   "films": "5/8",
+   "durees": {
+    "min": 2.2,
+    "max": 4.24,
+    "mediane": 3.77
+   },
+   "regle": "logo de l'utilisateur seulement s'il le fournit (convention)"
+  },
+  "fondu_au_noir_final": "1/8 (1,7 s)",
+  "coupe_au_noir_final": "1/8 (0,43 s)",
+  "coupe_directe": "6/8",
+  "son_sur_la_fin": "6/8 avec du son (-15 à -36 dB) ; 2/8 dans le silence",
+  "retour_lieu_deja_vu": "2/8"
+ },
+ "son": {
+  "fond_continu": {
+   "films": "8/8",
+   "ecart_silences_vs_parole_db": {
+    "min": 0.2,
+    "max": 15.8,
+    "mediane": 5.5
+   },
+   "sous_moins_50db_max": 0.2
+  },
+  "tiers_ecart_db_max": 4.6,
+  "pic_10s_dernier_dixieme": "3/8",
+  "coupes_sur_attaque": {
+   "observe": 363,
+   "sur": 597,
+   "hasard": 361.5,
+   "conclusion": "non démontré"
+  },
+  "coupes_hors_parole_sur_attaque": {
+   "observe": 45,
+   "sur": 99,
+   "hasard": 39.5,
+   "conclusion": "écart trop faible"
+  },
+  "musique": "convention : sans paroles, continue sous les voix, assez basse pour une voix claire, remonte dans les respirations, ne commande pas les coupes"
+ },
+ "structure": [
+  {
+   "partie": "ouverture",
+   "contenu": "noir, son calme ; texte (question, thèse), voix dans le noir, ou images sans parole",
+   "mesure": "première parole à 5,95 s (2,9 à 16,5) ; noir d'abord 6/8 ; son calme 8/8"
+  },
+  {
+   "partie": "entree_des_voix",
+   "contenu": "la voix sur une illustration, le visage ensuite, le nom en bandeau sur ce visage",
+   "mesure": "voix d'abord 13/20 ; visage 3,0 s après (1,5 à 4,7) ; bandeau 2,1 s"
+  },
+  {
+   "partie": "corps_en_chapitres",
+   "contenu": "une idée, une personne ou une étape par chapitre ; parole aux deux tiers sur l'illustration",
+   "mesure": "chapitres de 19 à 35 s (v5-05) ; parole sur le visage 33 %"
+  },
+  {
+   "partie": "respirations",
+   "contenu": "musique seule sur des images",
+   "mesure": "6/8 films ; 3 à 9,3 s ; 0,6 par minute"
+  },
+  {
+   "partie": "changement_de_chapitre",
+   "contenu": "un noir de 0,4 à 1 s, un blanc, ou un carton",
+   "mesure": "au plus 1 noir interne par film (3 films)"
+  },
+  {
+   "partie": "montee",
+   "contenu": "posé : par le propos ; choral : rafales",
+   "mesure": "rafale finale 4/8 ; rafales au milieu 4/8"
+  },
+  {
+   "partie": "resolution",
+   "contenu": "dernières phrases, plans plus longs",
+   "mesure": "plan >= 5 s dans le dernier cinquième 5/5 posés"
+  },
+  {
+   "partie": "fin",
+   "contenu": "posé : plan tenu (large de préférence) ; choral : rafale d'oeuvres puis logo",
+   "mesure": "plan tenu 5,7 à 8,1 s ; dernière parole 4,2 s avant la fin ; logo 2,2 à 4,2 s"
+  }
+ ],
+ "controles": [
+  {
+   "id": "D1",
+   "quoi": "plan médian",
+   "cible": {
+    "pose": [
+     1.8,
+     2.2
+    ],
+    "choral": [
+     1.0,
+     1.5
+    ]
+   },
+   "alerte": "posé < 1,5 ou > 2,8 s ; choral > 1,8 s",
+   "statut": "observé 5/5 et 3/3 ; seuils convention"
+  },
+  {
+   "id": "D2",
+   "quoi": "coupes par minute",
+   "cible": {
+    "pose": [
+     20,
+     27
+    ],
+    "choral": [
+     33,
+     45
+    ]
+   },
+   "alerte": "hors de 18 à 48",
+   "statut": "observé 8/8 ; seuil convention"
+  },
+  {
+   "id": "D3",
+   "quoi": "forme du rythme",
+   "cible": "posé : fin pas plus rapide ; choral : fin plus rapide que le début",
+   "alerte": "l'inverse",
+   "statut": "observé 5/5 et 3/3"
+  },
+  {
+   "id": "D4",
+   "quoi": "plan >= 5 s dans le dernier cinquième (posé)",
+   "cible": "oui",
+   "alerte": "absent",
+   "statut": "observé 5/5"
+  },
+  {
+   "id": "D5",
+   "quoi": "transitions autres que la coupe",
+   "cible": "<= 2 %",
+   "alerte": "fondu enchaîné entre deux plans de parole ; plus d'un noir interne",
+   "statut": "observé 12/606"
+  },
+  {
+   "id": "D6",
+   "quoi": "part de parole",
+   "cible": [
+    0.51,
+    0.88
+   ],
+   "alerte": "< 0,45 ou > 0,92",
+   "statut": "observé 8/8 ; seuil convention"
+  },
+  {
+   "id": "D7",
+   "quoi": "respiration >= 3 s (posé > 90 s)",
+   "cible": ">= 1",
+   "alerte": "aucune",
+   "statut": "observé 6/8 ; seuil convention"
+  },
+  {
+   "id": "D8",
+   "quoi": "parole entendue sur le visage",
+   "cible": [
+    0.25,
+    0.55
+   ],
+   "alerte": "> 0,60 hors film de réactions",
+   "statut": "observé 6/8 sous 0,55"
+  },
+  {
+   "id": "D9",
+   "quoi": "entrée par la voix",
+   "cible": "au moins la première personne entendue avant d'être vue, visage 1,5 à 4,7 s après",
+   "alerte": "toutes face caméra d'emblée",
+   "statut": "observé 13/20"
+  },
+  {
+   "id": "D10",
+   "quoi": "plan d'entretien",
+   "cible": "<= 3,2 s (p90)",
+   "alerte": "> 5 s avant le dernier cinquième",
+   "statut": "observé 162 plans"
+  },
+  {
+   "id": "D11",
+   "quoi": "valeur de l'entretien",
+   "cible": "R, M, G, TG",
+   "alerte": "plan large",
+   "statut": "observé 0/162 large"
+  },
+  {
+   "id": "D12",
+   "quoi": "même personne deux plans de suite",
+   "cible": "second plus serré",
+   "alerte": "même valeur (saute)",
+   "statut": "observé 9/10"
+  },
+  {
+   "id": "D13",
+   "quoi": "caméra sur l'entretien",
+   "cible": "fixe",
+   "alerte": "mouvement visible",
+   "statut": "observé 18/20"
+  },
+  {
+   "id": "D14",
+   "quoi": "changement de voix et coupe",
+   "cible": "décalés",
+   "alerte": "plus de 2 sur 3 à la coupe exacte",
+   "statut": "observé 23/57 ; seuil convention"
+  },
+  {
+   "id": "D15",
+   "quoi": "bandeau de nom",
+   "cible": "2 à 3,5 s, en bas, hors du visage, sans boîte, nom + fonction",
+   "alerte": "boîte, centré, sur le visage, > 5 s",
+   "statut": "observé 27 durées, 8 personnes"
+  },
+  {
+   "id": "D16",
+   "quoi": "cartons-message",
+   "cible": "0 à 3, petits, centrés, <= 12 mots",
+   "alerte": "> 3, > 12 mots, boîte",
+   "statut": "observé 8/8"
+  },
+  {
+   "id": "D17",
+   "quoi": "ouverture",
+   "cible": "noir et son calme ; parole entre 3 et 17 s",
+   "alerte": "parole dès la première seconde",
+   "statut": "observé 8/8"
+  },
+  {
+   "id": "D18",
+   "quoi": "fin",
+   "cible": "dernière parole 1 à 10 s avant la fin ; plan tenu (posé) ou rafale + logo (choral)",
+   "alerte": "coupe sur une phrase",
+   "statut": "observé 7/7"
+  },
+  {
+   "id": "D19",
+   "quoi": "rafale finale",
+   "cible": "oeuvres ou produit",
+   "alerte": "visages",
+   "statut": "observé 4/4"
+  },
+  {
+   "id": "D20",
+   "quoi": "son entre les phrases",
+   "cible": "fond continu",
+   "alerte": "< -50 dB sur plus de 20 % des silences de parole",
+   "statut": "observé 8/8"
+  },
+  {
+   "id": "D21",
+   "quoi": "noir et blanc",
+   "cible": "tout le film, ou personnes N&B et écrans couleur",
+   "alerte": "mélange sans règle",
+   "statut": "observé 4/4 et 2/2"
+  }
+ ],
+ "sources": "analyse plan par plan du corpus (non publiée)"
+}

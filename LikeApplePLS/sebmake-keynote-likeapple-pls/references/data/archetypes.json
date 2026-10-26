@@ -1,0 +1,1171 @@
+[
+ {
+  "id": "A1",
+  "nom": "Carte-titre",
+  "nom_corpus": "Carte-titre (mot seul)",
+  "fond": "noir",
+  "schema": "Un à trois mots centrés, très gros, seuls sur fond uni noir ou gris clair, parfois en dégradé de la section.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Le nom apparaît à l'instant où il est dit ; rien d'autre à l'écran.",
+  "moment": "Ouverture d'un chapitre ou d'une fonction",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "38:22",
+    "path": "fr/v1/frames/frame_0321.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "03:00",
+    "path": "fr/v3/frames/frame_0075.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "28:06",
+    "path": "fr/v8/frames/frame_0339.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A2",
+  "nom": "Icône ou logo + nom",
+  "nom_corpus": "Icône ou logo + nom",
+  "fond": "gris",
+  "schema": "Grande icône d'app centrée, nom en un à trois mots dessous, plus petit ; ou icône à gauche, nom à droite.",
+  "elements": [
+   {
+    "role": "logo",
+    "position": "centre",
+    "taille": "xl"
+   },
+   {
+    "role": "titre",
+    "position": "bas",
+    "taille": "m"
+   }
+  ],
+  "regle": "L'icône annonce le sujet ; le nom reste court et plus petit que l'icône.",
+  "moment": "Annonce d'une app, d'une techno ou d'un service",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v7",
+    "t": "1:17:40",
+    "path": "fr/v7/frames/frame_0791.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "18:16",
+    "path": "fr/v8/extra/t1097.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:40:50",
+    "path": "fr/v6/extra/t2450.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A3",
+  "nom": "Sommaire typographique",
+  "nom_corpus": "Sommaire des plateformes",
+  "fond": "gris",
+  "schema": "Quatre à six noms d'OS empilés, un par ligne, alignés à droite ou centrés, chacun dans sa couleur.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "droite",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Propre aux WWDC ; affiché à l'ouverture, repris à l'identique avant la clôture.",
+  "moment": "Ouverture, juste après l'accueil du CEO",
+  "presence": [
+   "v6",
+   "v1",
+   "v7",
+   "v8"
+  ],
+  "exemples": [
+   {
+    "k": "v6",
+    "t": "0:08:20",
+    "path": "fr/v6/extra/t500.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "5:20",
+    "path": "fr/v7/extra/t320.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "13:05",
+    "path": "fr/v8/extra/t785.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A4",
+  "nom": "Phrase-thèse",
+  "nom_corpus": "Phrase-thèse ou superlatif écrit",
+  "fond": "noir",
+  "schema": "Une ou deux lignes centrées de trois à huit mots, texte seul, blanc ou dégradé couleur produit.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "l"
+   }
+  ],
+  "regle": "Le superlatif est écrit mot pour mot pendant qu'il est dit ; aucun pictogramme.",
+  "moment": "Après une démo ou un chiffre, pour fixer le bénéfice",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v3"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "47:50",
+    "path": "fr/v3/frames/frame_0543.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "26:02",
+    "path": "fr/v2/extra/t1562.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "3:30",
+    "path": "fr/v5/extra/t210.jpg"
+   }
+  ],
+  "variantes": [
+   "v4"
+  ]
+ },
+ {
+  "id": "A5",
+  "nom": "Gros chiffre + libellé",
+  "nom_corpus": "Gros chiffre + libellé",
+  "fond": "noir",
+  "schema": "Chiffre géant centré sur 30 à 40 % de la hauteur, libellé d'une ligne dessous, neuf mots au plus.",
+  "elements": [
+   {
+    "role": "chiffre",
+    "position": "centre",
+    "taille": "xl"
+   },
+   {
+    "role": "libelle",
+    "position": "bas",
+    "taille": "m"
+   }
+  ],
+  "regle": "Un seul chiffre géant par slide-chiffre ; libellé court ; base de comparaison écrite dans le libellé en 2025-2026 (v3, v4), en partie avant (v2 contre le PC, v7 contre Chrome).",
+  "moment": "Preuve d'un bénéfice, juste après son énoncé",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "57:00",
+    "path": "fr/v1/extra/t3420.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "05:55",
+    "path": "fr/v3/extra/t355.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:29:11",
+    "path": "fr/v6/extra/t1751_full.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A6",
+  "nom": "Graphique comparatif",
+  "nom_corpus": "Graphique comparatif sans graduation",
+  "fond": "noir",
+  "schema": "Titre en haut ; courbes, barres, anneaux ou frise : Apple en couleur, concurrent en gris ; étiquettes au bout ; aucune valeur sur l'axe des performances.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "haut",
+    "taille": "m"
+   },
+   {
+    "role": "graphique",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "En général seul l'écart est écrit (v6 affiche les deux valeurs) ; construction en deux à quatre temps ; concurrent nommé seulement aux WWDC.",
+  "moment": "Partie technique : puce, navigateur, performance soutenue",
+  "presence": [
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "10:06",
+    "path": "fr/v2/extra/t606.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "1:19:55",
+    "path": "fr/v1/extra/t4795.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:27:45",
+    "path": "fr/v6/extra/t1665_full.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A7",
+  "nom": "Liste sans puces",
+  "nom_corpus": "Liste de texte sans puces",
+  "fond": "noir",
+  "schema": "Deux à six lignes centrées de deux à cinq mots, sans puces ; la ligne active blanche, les suivantes grises.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "centre",
+    "taille": "m"
+   }
+  ],
+  "regle": "Les lignes s'allument une à une au rythme de la voix (6/8) ; v8 les affiche en bloc.",
+  "moment": "Énumération de bénéfices ou plan d'un sous-chapitre",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "16:35",
+    "path": "fr/v2/extra/t995.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "07:52",
+    "path": "fr/v4/extra/t472.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "4:22",
+    "path": "fr/v8/extra/t262.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A8",
+  "nom": "Liste à coches",
+  "nom_corpus": "Liste à pictogrammes ou à coches",
+  "fond": "noir",
+  "schema": "Trois à six lignes courtes, chacune précédée d'un pictogramme ou d'un cercle de couleur, centrées.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "centre",
+    "taille": "m"
+   }
+  ],
+  "regle": "Les coches se posent ligne par ligne (v7) ou toutes d'un coup sur la phrase de promesse (v5) ; surtout pour la confiance et la vie privée.",
+  "moment": "Argument de confiance ou récap d'un service",
+  "presence": [
+   "v5",
+   "v7",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "26:45",
+    "path": "fr/v5/extra/t1605.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "1:13:40",
+    "path": "fr/v7/extra/t4420.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "6:25",
+    "path": "fr/v5/extra/t385.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A9",
+  "nom": "Objet + texte",
+  "nom_corpus": "Objet + texte côte à côte",
+  "fond": "gris",
+  "schema": "Produit ou écran sur une moitié ; de l'autre côté un mot, une affirmation courte ou une liste de trois lignes.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "gauche",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "droite",
+    "taille": "m"
+   }
+  ],
+  "regle": "L'objet d'abord, le texte ensuite ; le texte ne dépasse pas quatre lignes.",
+  "moment": "Détail d'une fonction ou d'une caractéristique",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "22:05",
+    "path": "fr/v3/extra/t1325.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "37:50",
+    "path": "fr/v5/extra/t2270.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "6:31",
+    "path": "fr/v8/frames/frame_0132.jpg"
+   }
+  ],
+  "variantes": [
+   "v1"
+  ]
+ },
+ {
+  "id": "A10",
+  "nom": "Capture plein cadre",
+  "nom_corpus": "Écran d'appareil plein cadre",
+  "fond": "gris",
+  "schema": "Appareil de face, centré, sur presque toute la hauteur, interface réelle animée, heure 9:41, aucun texte ajouté.",
+  "elements": [
+   {
+    "role": "ecran",
+    "position": "centre",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Le texte vient de l'interface ; la voix explique ce que l'écran montre.",
+  "moment": "Toute explication de fonction",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "7:25",
+    "path": "fr/v1/frames/frame_0054.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "25:12",
+    "path": "fr/v2/frames/frame_0328.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "20:00",
+    "path": "fr/v3/frames/frame_0282.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A11",
+  "nom": "Schéma à bloc surligné",
+  "nom_corpus": "Schéma de puce avec bloc surligné",
+  "fond": "noir",
+  "schema": "Plan de puce au trait, logo et nom en coin ; un bloc allumé relié par un filet à une légende latérale.",
+  "elements": [
+   {
+    "role": "graphique",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "gauche",
+    "taille": "s"
+   },
+   {
+    "role": "logo",
+    "position": "haut",
+    "taille": "s"
+   }
+  ],
+  "regle": "Un bloc à la fois ; la légende tient en un titre et cinq lignes au plus.",
+  "moment": "Section silicium, avant les chiffres de performance",
+  "presence": [
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "11:23",
+    "path": "fr/v2/extra/t683.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "33:30",
+    "path": "fr/v3/extra/t2010.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "14:28",
+    "path": "fr/v4/extra/t868.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A12",
+  "nom": "Vue intérieure",
+  "nom_corpus": "Éclaté ou vue intérieure",
+  "fond": "noir",
+  "schema": "Rendu sombre et métallique plein cadre, composants séparés ou appareil en transparence, une étiquette au plus.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "plein",
+    "taille": "xl"
+   },
+   {
+    "role": "note",
+    "position": "bas",
+    "taille": "s"
+   }
+  ],
+  "regle": "Pas de texte, ou une seule étiquette ; mouvement de caméra lent.",
+  "moment": "Film matériel ou partie ingénierie",
+  "presence": [
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "55:03",
+    "path": "fr/v3/frames/frame_0603.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "1:09:45",
+    "path": "fr/v4/extra/t4185.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "1:21:40",
+    "path": "fr/v6/extra/t4900.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A13",
+  "nom": "Produit seul",
+  "nom_corpus": "Produit seul en rendu",
+  "fond": "gris",
+  "schema": "Produit centré sur la moitié de la hauteur, éclairage studio, ombre douce, aucun texte, fond selon la catégorie.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "centre",
+    "taille": "l"
+   }
+  ],
+  "regle": "Fond selon la catégorie : noir pour l'iPhone ou la puce, gris clair pour AirPods et Duo ; la Watch est sur clair en v3, sur noir en v4 ; rotation lente.",
+  "moment": "Révélation, puis appui de chaque caractéristique",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "08:52",
+    "path": "fr/v3/frames/frame_0134.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "31:20",
+    "path": "fr/v4/frames/frame_0354.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "23:40",
+    "path": "fr/v2/extra/t1420.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A14",
+  "nom": "Bento",
+  "nom_corpus": "Bento récapitulatif",
+  "fond": "blanc",
+  "schema": "Tuile centrale avec le nom ou le produit ; autour, huit à vingt tuiles arrondies inégales, chacune un visuel et un à quatre mots.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "grille",
+    "position": "plein",
+    "taille": "m"
+   },
+   {
+    "role": "chiffre",
+    "position": "gauche",
+    "taille": "m"
+   }
+  ],
+  "regle": "Une par section, en fin de section ; la tuile centrale apparaît d'abord, les autres s'assemblent autour.",
+  "moment": "Fin de section, pendant la phrase de récap",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "31:40",
+    "path": "fr/v1/extra/t1900.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "28:55",
+    "path": "fr/v2/extra/t1735.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "48:44",
+    "path": "fr/v8/extra/t2924.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A15",
+  "nom": "Mur d'abondance",
+  "nom_corpus": "Mur d'abondance",
+  "fond": "noir",
+  "schema": "Grille dense qui déborde du cadre : couvertures, icônes, affiches ou petites cartes, texte trop petit pour être lu.",
+  "elements": [
+   {
+    "role": "grille",
+    "position": "plein",
+    "taille": "s"
+   }
+  ],
+  "regle": "Montre la quantité sans la détailler ; souvent à la place d'un chiffre dit à l'oral.",
+  "moment": "Après le récap, ou pour illustrer un volume",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v7",
+   "v8",
+   "v3"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "21:12",
+    "path": "fr/v5/frames/frame_0373.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "6:48",
+    "path": "fr/v7/extra/t408.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "41:34",
+    "path": "fr/v8/extra/t2494.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A16",
+  "nom": "Logos partenaires",
+  "nom_corpus": "Grille de logos partenaires",
+  "fond": "noir",
+  "schema": "Logos monochromes en ligne ou en grille régulière jusqu'à cinq rangées, sans texte, Apple au centre s'il est membre.",
+  "elements": [
+   {
+    "role": "grille",
+    "position": "centre",
+    "taille": "m"
+   },
+   {
+    "role": "logo",
+    "position": "centre",
+    "taille": "s"
+   }
+  ],
+  "regle": "Logos d'une seule couleur ; les marques tierces apparaissent surtout ici.",
+  "moment": "Preuve d'adoption après l'annonce d'un standard",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "1:01:00",
+    "path": "fr/v1/extra/t3660.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "54:15",
+    "path": "fr/v5/extra/t3255.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "33:10",
+    "path": "fr/v8/extra/t1990.jpg"
+   }
+  ],
+  "variantes": [
+   "v7"
+  ]
+ },
+ {
+  "id": "A17",
+  "nom": "Citation ou témoignage",
+  "nom_corpus": "Citation de presse ou de partenaire",
+  "fond": "noir",
+  "schema": "Deux à quatre lignes blanches grasses alignées à gauche, source en gris ou en rouge sur une ligne dessous.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "gauche",
+    "taille": "m"
+   },
+   {
+    "role": "note",
+    "position": "gauche",
+    "taille": "s"
+   }
+  ],
+  "regle": "L'orateur la lit à voix haute ; plus aucune citation de presse ou de partenaire après 2020 (seule la citation de Steve Jobs ouvre v3).",
+  "moment": "Preuve sociale en ouverture de section",
+  "presence": [
+   "v5",
+   "v6",
+   "v1"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "25:05",
+    "path": "fr/v1/extra/t1505.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "1:56:00",
+    "path": "fr/v6/extra/t6960.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "7:15",
+    "path": "fr/v5/extra/t435.jpg"
+   }
+  ],
+  "variantes": [
+   "v3"
+  ]
+ },
+ {
+  "id": "A18",
+  "nom": "Photo plein cadre",
+  "nom_corpus": "Photo plein cadre",
+  "fond": "photo",
+  "schema": "Photo sur tout le cadre ; pour une photo d'exemple, petit cartouche translucide en bas à droite avec les réglages.",
+  "elements": [
+   {
+    "role": "photo",
+    "position": "plein",
+    "taille": "xl"
+   },
+   {
+    "role": "note",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "Usage avant l'argument ; exemple de prise de vue comme preuve de qualité.",
+  "moment": "Ouverture émotionnelle ou chapitre caméra",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "1:01:45",
+    "path": "fr/v5/extra/t3705.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "1:04:50",
+    "path": "fr/v3/extra/t3890.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "24:30",
+    "path": "fr/v2/extra/t1470.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A19",
+  "nom": "Prix",
+  "nom_corpus": "Slide de prix",
+  "fond": "noir",
+  "schema": "Produit à gauche ; à droite le nom en gras, From en petit gris, le prix en gros, la capacité en gris.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "gauche",
+    "taille": "l"
+   },
+   {
+    "role": "titre",
+    "position": "droite",
+    "taille": "m"
+   },
+   {
+    "role": "chiffre",
+    "position": "droite",
+    "taille": "l"
+   },
+   {
+    "role": "note",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "Le nom d'abord, le prix ensuite ; deux modèles au plus, quatre pour une gamme (v3) ; parfois un prix d'ancrage plus élevé avant (v5, v6).",
+  "moment": "Fin du bloc produit, juste avant la disponibilité",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "28:41",
+    "path": "fr/v2/extra/t1721.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "29:13",
+    "path": "fr/v4/extra/t1753.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "21:36",
+    "path": "fr/v5/extra/t1296.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A20",
+  "nom": "Disponibilité",
+  "nom_corpus": "Slide de disponibilité",
+  "fond": "blanc",
+  "schema": "Petit libellé gris au-dessus d'un grand mot ou d'une date ; produit ou gamme d'appareils dessous ou à côté.",
+  "elements": [
+   {
+    "role": "libelle",
+    "position": "haut",
+    "taille": "s"
+   },
+   {
+    "role": "titre",
+    "position": "haut",
+    "taille": "l"
+   },
+   {
+    "role": "produit",
+    "position": "bas",
+    "taille": "l"
+   }
+  ],
+  "regle": "Deux à quatre mots en tout ; le grand mot change sur la même image (4/4 WWDC).",
+  "moment": "Toute dernière étape d'une annonce",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "41:33",
+    "path": "fr/v2/extra/t2493.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "29:10",
+    "path": "fr/v3/extra/t1750.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "2:15:05",
+    "path": "fr/v6/extra/t8105.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A21",
+  "nom": "Synthé nom et fonction",
+  "nom_corpus": "Synthé nom et fonction",
+  "fond": "scene",
+  "schema": "Deux lignes sans fond en bas à gauche, ou à droite selon l'orateur : nom en gras, fonction en regular.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "bas",
+    "taille": "s"
+   }
+  ],
+  "regle": "Une seule fois par intervenant, jamais pour l'hôte, absent en direct ; pas forcément pour tous (v1 : 17 sur 20).",
+  "moment": "Première apparition de chaque intervenant",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "5:30",
+    "path": "fr/v2/extra/t330.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "05:04",
+    "path": "fr/v3/extra/t304.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "14:35",
+    "path": "fr/v7/frames/frame_0232.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A22",
+  "nom": "Plan large + écran",
+  "nom_corpus": "Orateur en plan large à côté d'un écran géant",
+  "fond": "scene",
+  "schema": "Orateur en pied, petit, sur un côté ; écran géant sur la moitié de la largeur avec la slide ; sol qui reflète.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "gauche",
+    "taille": "s"
+   },
+   {
+    "role": "ecran",
+    "position": "droite",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Plan de respiration entre deux slides plein cadre ; la slide reste lisible.",
+  "moment": "Entrée d'un intervenant et chaque nouvelle slide",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "32:22",
+    "path": "fr/v2/frames/frame_0408.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "14:23",
+    "path": "fr/v1/frames/frame_0099.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "16:38",
+    "path": "fr/v8/frames/frame_0248.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A23",
+  "nom": "Orateur dans la slide",
+  "nom_corpus": "Orateur dans la slide (plan serré)",
+  "fond": "scene",
+  "schema": "Orateur en plan taille sur un tiers ; derrière, l'écran remplit le cadre, mot géant coupé par le bord.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "droite",
+    "taille": "l"
+   },
+   {
+    "role": "titre",
+    "position": "gauche",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Le plan large donne le texte, le plan serré donne l'expression.",
+  "moment": "Plan de parole par défaut",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "26:30",
+    "path": "fr/v5/extra/t1590.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "25:49",
+    "path": "fr/v7/frames/frame_0328.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "25:01",
+    "path": "fr/v2/extra/t1501.jpg"
+   }
+  ],
+  "variantes": [
+   "v8"
+  ]
+ },
+ {
+  "id": "A24",
+  "nom": "Décor sans écran",
+  "nom_corpus": "Orateur dans un décor réel, sans écran",
+  "fond": "photo",
+  "schema": "Orateur centré en pied puis en plan taille, devant une architecture ou un lieu lié au sujet, aucun texte.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "centre",
+    "taille": "m"
+   },
+   {
+    "role": "photo",
+    "position": "plein",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Le lieu remplace la slide ; propre au préenregistré.",
+  "moment": "Accueil, relais, cadrage d'une section",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "01:36",
+    "path": "fr/v3/frames/frame_0060.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "1:41",
+    "path": "fr/v7/frames/frame_0045.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "45:55",
+    "path": "fr/v1/frames/frame_0392.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A25",
+  "nom": "Démo manipulée",
+  "nom_corpus": "Démo manipulée",
+  "fond": "gris",
+  "schema": "Main qui tient l'appareil devant un fond uni ; ou orateur à une table, l'écran de l'appareil géant au mur.",
+  "elements": [
+   {
+    "role": "ecran",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "orateur",
+    "position": "gauche",
+    "taille": "s"
+   }
+  ],
+  "regle": "Alterner plan large, mains et flux plein cadre ; l'orateur commente à la première personne.",
+  "moment": "Après l'annonce d'une fonction, avant la phrase-bilan",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v7",
+   "v8"
+  ],
+  "exemples": [
+   {
+    "k": "v6",
+    "t": "0:32:03",
+    "path": "fr/v6/frames/frame_0167.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "15:36",
+    "path": "fr/v7/frames/frame_0241.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "8:59",
+    "path": "fr/v1/frames/frame_0059.jpg"
+   }
+  ],
+  "variantes": []
+ }
+]

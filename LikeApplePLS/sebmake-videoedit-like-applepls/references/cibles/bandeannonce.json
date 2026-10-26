@@ -1,0 +1,495 @@
+{
+ "famille": "bande_annonce_usage",
+ "version": "mesure du 2026-10-25",
+ "lecture": "Durées en secondes. Les médianes et quantiles portent sur les plans d'image (valeur S, R, M ou L relevée à l'œil), hors noirs, cartons, logos et plans de scène. 'observe' = mesuré, avec son compte ; 'convention' = choix de la skill, non mesuré.",
+ "corpus": {
+  "bandes_annonces": {
+   "films": 6,
+   "ids": [
+    "v5-08",
+    "v6-02",
+    "v1-04",
+    "v7-02",
+    "v8-04",
+    "v5-06"
+   ],
+   "sous_familles": {
+    "oeuvre": [
+     "v6-02",
+     "v1-04"
+    ],
+    "catalogue_par_blocs": [
+     "v7-02",
+     "v8-04"
+    ],
+    "catalogue_mele": [
+     "v5-08",
+     "v5-06"
+    ]
+   },
+   "duree_s": {
+    "mediane": 89.2,
+    "min": 49.98,
+    "max": 119.02
+   }
+  },
+  "usage": {
+   "films": 2,
+   "ids": [
+    "v3-07",
+    "v4-04"
+   ],
+   "duree_s": {
+    "v3-07": 60.03,
+    "v4-04": 93.53
+   }
+  },
+  "plans_image_mesures": {
+   "bandes_annonces": 384,
+   "usage": 102
+  }
+ },
+ "durees": {
+  "debut": 1.2,
+  "milieu": 0.9,
+  "fin": 0.77,
+  "mediane": 0.87,
+  "p10": 0.47,
+  "p90": 1.74,
+  "ouverture_15pc": {
+   "mediane": 1.24,
+   "p90": 2.85
+  },
+  "pic_10s": {
+   "mediane": 0.62,
+   "p10": 0.41,
+   "p90": 1.46,
+   "position": {
+    "min": 0.78,
+    "max": 0.88,
+    "compte": "6 sur 6 bandes-annonces ; 7 sur 8 avec l'usage"
+   }
+  },
+  "unite": "s, plans d'image des 6 bandes-annonces ; début, milieu, fin = tiers de la durée",
+  "mediane_par_film": {
+   "min": 0.73,
+   "max": 1.65,
+   "valeurs": {
+    "v5-08": 1.2,
+    "v6-02": 0.83,
+    "v1-04": 1.12,
+    "v7-02": 0.73,
+    "v8-04": 0.75,
+    "v5-06": 1.65
+   }
+  },
+  "acceleration": "dernier tiers plus rapide que le premier : 6 sur 6 ; strictement décroissant (début > milieu > fin) : 4 sur 6",
+  "plans_image_par_minute": {
+   "mediane": 41.7,
+   "min": 31.2,
+   "max": 53.4
+  },
+  "changements_par_minute_noirs_et_cartons_compris": {
+   "mediane": 51.3,
+   "min": 31.2,
+   "max": 64.6
+  },
+  "usage": {
+   "debut": 1.3,
+   "milieu": 1.13,
+   "fin": 0.8,
+   "mediane": 1.17,
+   "p10": 0.37,
+   "p90": 1.9,
+   "par_film": {
+    "v3-07": 1.67,
+    "v4-04": 1.03
+   },
+   "pic_10s": {
+    "v3-07": {
+     "mediane": 1.17,
+     "position": 0.37
+    },
+    "v4-04": {
+     "mediane": 0.37,
+     "position": 0.78
+    }
+   },
+   "statut": "observe 2 films : cibles faibles"
+  },
+  "fermeture": {
+   "duree_s": {
+    "mediane": 7.97,
+    "min": 4.8,
+    "max": 15.41
+   },
+   "part": {
+    "mediane": 0.097,
+    "min": 0.061,
+    "max": 0.174
+   },
+   "compte": "8 films"
+  }
+ },
+ "transitions": {
+  "coupe": 0.922,
+  "fondu_enchaine": 0.017,
+  "fondu_depuis_noir": 0.048,
+  "fondu_au_noir": 0.013,
+  "comptes": {
+   "bandes_annonces": {
+    "coupe": 423,
+    "fondu_au_noir": 6,
+    "fondu_depuis_noir": 22,
+    "fondu_enchaine": 8
+   },
+   "usage": {
+    "coupe": 164,
+    "fondu_enchaine": 4,
+    "fondu_au_noir": 3
+   },
+   "total_bandes_annonces": 459
+  },
+  "fondu_enchaine_place": "6 sur 8 sont le passage d'un titre à l'image (un seul film) ; les fondus sont une borne basse (détection)",
+  "fondu_depuis_noir_place": "le logo ou le titre final sort du noir : 4 sur 6 ; la réplique de fin (bouton) sort du noir : 4 sur 4",
+  "noir": {
+   "nombre": 40,
+   "duree_mediane": 0.42,
+   "p10": 0.13,
+   "p90": 1.28,
+   "position": {
+    "premiers_10pc": 7,
+    "milieu": 12,
+    "derniers_20pc": 21
+   },
+   "longs_1s_et_plus": "6, tous dans les 2 bandes-annonces d'œuvre : 1 à l'ouverture, 3 entre des chapitres (16, 20, 42 %), 1 avant la fermeture (84 %), 1 après le titre",
+   "pulsation_image_noir": "1 bande-annonce sur 6 (7 noirs de 0,2 à 0,9 s entre 79 et 84 %) ; 1 film d'usage sur 2 (49 noirs de 0,1 à 0,6 s sur tout le film)"
+  },
+  "flash_blanc": "0 sur 8"
+ },
+ "raccords": {
+  "echantillon": "16 coupes consécutives au milieu de chaque film (8 + 8 passages par le noir pour v4-04)",
+  "continuite": {
+   "catalogue_par_blocs": "29 sur 32",
+   "catalogue_mele": "4 sur 32",
+   "oeuvre": "10 sur 32",
+   "usage_coupes_directes": "20 sur 24"
+  },
+  "rupture": {
+   "catalogue_mele": "28 sur 32",
+   "oeuvre": "22 sur 32",
+   "usage_par_le_noir": "6 sur 8"
+  },
+  "graphique": "12 sur 120 (couleur ou place reprise ; 6 dans l'aperçu de jeux)",
+  "mouvement": "7 sur 120",
+  "lumiere": "2 sur 128",
+  "personne_puis_produit": "8 sur 8 coupes directes dans le film d'usage au poignet"
+ },
+ "valeurs_plan": {
+  "large": {
+   "debut": 0.44,
+   "milieu": 0.28,
+   "fin": 0.26
+  },
+  "serre_ou_rapproche": {
+   "debut": 0.4,
+   "milieu": 0.39,
+   "fin": 0.44
+  },
+  "compte": "6 bandes-annonces, 384 plans ; la part de plans larges baisse du premier au dernier tiers dans 6 films sur 6",
+  "usage": {
+   "serre_ou_rapproche": {
+    "debut": 0.64,
+    "milieu": 0.63,
+    "fin": 0.52
+   },
+   "inserts_produit": {
+    "v3-07": "10 sur 29",
+    "v4-04": "23 sur 73"
+   }
+  }
+ },
+ "mouvement": {
+  "plans_fixes": "29 sur 384 (7,6 %) en bande-annonce ; 3 sur 117 en usage",
+  "image_tres_mobile": "53 sur 384, dont 47 aux tiers du milieu et de la fin",
+  "hausse_du_mouvement_debut_fin": "6 sur 6",
+  "mesure": "mouvement = écart d'image par seconde (caméra et sujet mêlés) ; fixe < 10 (convention du corpus)"
+ },
+ "cartons": {
+  "temps_avec_texte": {
+   "oeuvre": [
+    0.08,
+    0.17
+   ],
+   "catalogue_par_blocs": [
+    0.27,
+    0.28
+   ],
+   "catalogue_mele": [
+    0.1,
+    0.14
+   ],
+   "usage": [
+    0.08,
+    0.16
+   ]
+  },
+  "titre_de_bloc": {
+   "nombre": 20,
+   "duree_mediane": 1.0,
+   "min": 0.73,
+   "max": 2.27,
+   "ouvre_le_bloc": "20 sur 21",
+   "sur_noir": "12 sur 12 (2024)",
+   "sur_plan_large": "7 sur 9 (2025)"
+  },
+  "bloc": {
+   "duree_mediane": 4.5,
+   "p10": 2.2,
+   "p90": 6.9,
+   "min": 1.9,
+   "max": 7.8,
+   "compte": "21 blocs, 2 films"
+  },
+  "mot_choc": {
+   "nombre": 5,
+   "mots": [
+    1,
+    2
+   ],
+   "duree_s": [
+    0.97,
+    2.27
+   ],
+   "place": "15 à 25 % de la durée",
+   "compte": "2 films",
+   "image_monte_sous_le_texte": "3 sur 5"
+  },
+  "mention_initiale": {
+   "mots": 3,
+   "duree_s": 2.24,
+   "compte": "2 sur 2 bandes-annonces d'œuvre"
+  },
+  "credit": {
+   "nombre": 3,
+   "mots": [
+    8,
+    12
+   ],
+   "duree_s": [
+    2.04,
+    6.04
+   ],
+   "place": [
+    0.29,
+    0.45
+   ]
+  },
+  "slogan_final_construit": {
+   "compte": "2 films (catalogue 2025, usage 2026)",
+   "mots": [
+    4,
+    9
+   ],
+   "etapes": 3,
+   "place": [
+    0.84,
+    0.96
+   ],
+   "duree_s": [
+    2.0,
+    4.3
+   ]
+  },
+  "titre_ou_logo_final": {
+   "compte": "8 sur 8",
+   "debut_position": [
+    0.9,
+    0.96
+   ],
+   "duree_mediane": 3.54,
+   "min": 2.5,
+   "max": 7.68,
+   "note": "7 sur 8 entre 2,5 et 4,8 s ; 7,7 s pour un titre animé lettre à lettre"
+  },
+  "usage": "texte seulement dans les 10 derniers % : 2 sur 2 ; une phrase (3 à 9 mots) puis le nom"
+ },
+ "parole": {
+  "repliques": 108,
+  "duree_mediane": 1.7,
+  "p10": 1.0,
+  "p90": 3.12,
+  "mots_mediane": 6,
+  "mots_p90": 10,
+  "part_du_temps": {
+   "mediane": 0.48,
+   "min": 0.28,
+   "max": 0.58,
+   "note": "temps des sous-titres : borne haute"
+  },
+  "part_dans_le_pic": {
+   "mediane": 0.21,
+   "min": 0.16,
+   "max": 0.38,
+   "compte": "moins de parole dans le pic que sur le film : 4 sur 5"
+  },
+  "replique_a_cheval_sur_une_coupe": "94 sur 108",
+  "replique_sur_un_noir": "12 sur 108",
+  "premiere_replique": "dans les 5 premiers % : 4 sur 5",
+  "derniere_replique": "entre 83 et 94 % de la durée : 5 sur 5",
+  "bouton": {
+   "compte": "4 sur 6 bandes-annonces",
+   "plans": [
+    1,
+    2
+   ],
+   "duree_s": [
+    2.31,
+    3.44
+   ]
+  },
+  "usage": {
+   "voix_off": "1 film sur 2 : 18 phrases, médiane 2,17 s, 45 % du temps, se tait pendant le pic",
+   "sans_voix": "1 film sur 2 (musique et bruitages)"
+  }
+ },
+ "image": {
+  "format": "fiction en format large 2,0 à 2,39:1 : 4 sur 4 mesurables ; usage et jeux en plein cadre 16:9 : 3 sur 3",
+  "noir_et_blanc": "0 sur 8, sauf 2 plans d'archive dans 1 bande-annonce d'époque",
+  "ouverture_dans_le_noir": {
+   "compte": "7 sur 7 mesurables",
+   "duree_mediane": 0.6,
+   "min": 0.13,
+   "max": 4.2
+  }
+ },
+ "musique": {
+  "statut": "convention",
+  "raison": "les vidéos n'ont pas de son ; seuls les sous-titres signalent la musique (6 films sur 8)",
+  "regle": "musique seule sur l'accroche, sur la montée finale et sous le logo ; coupes posées sur les temps forts pendant le pic ; silence ou coupure nette juste avant le bouton"
+ },
+ "structure": [
+  {
+   "temps": "noir d'ouverture",
+   "de": 0.0,
+   "a": 0.01,
+   "duree_s": [
+    0.13,
+    4.2
+   ],
+   "statut": "observe 7 sur 7"
+  },
+  {
+   "temps": "accroche",
+   "de": 0.0,
+   "a": 0.2,
+   "contenu": "réplique dès les premières secondes, images de situation, plans larges",
+   "plans_s": 1.24,
+   "statut": "réplique dès le début : observe 4 sur 5 parlées ; part de plans larges la plus haute : 6 sur 6"
+  },
+  {
+   "temps": "annonce",
+   "de": 0.15,
+   "a": 0.25,
+   "contenu": "catalogue : mots-chocs, phrase ou logo ; œuvre : crédits entre 29 et 45 %",
+   "statut": "observe 3 sur 3 catalogues avec parole ; 2 sur 2 œuvres"
+  },
+  {
+   "temps": "corps",
+   "de": 0.25,
+   "a": 0.78,
+   "contenu": "catalogue : blocs de 4,5 s ouverts par leur titre ; œuvre : l'histoire en répliques",
+   "plans_s": 0.9,
+   "statut": "observe"
+  },
+  {
+   "temps": "pic",
+   "de": 0.78,
+   "a": 0.88,
+   "contenu": "œuvres et scènes mêlées, plans les plus courts, moins de parole",
+   "plans_s": 0.62,
+   "statut": "observe 6 sur 6"
+  },
+  {
+   "temps": "fermeture",
+   "de": 0.83,
+   "a": 1.0,
+   "contenu": "noir, réplique de fin sur 1 ou 2 plans, noir, titre ou logo qui sort du noir",
+   "duree_s": 7.97,
+   "statut": "observe 8 sur 8 (bouton 4 sur 6)"
+  }
+ ],
+ "structure_usage": [
+  {
+   "temps": "ouverture",
+   "de": 0.0,
+   "a": 0.05,
+   "contenu": "noir, puis un plan qui découvre la situation (plan-séquence de 5,1 s ou lueur du produit)",
+   "statut": "observe 2 sur 2"
+  },
+  {
+   "temps": "scènes de vie",
+   "de": 0.05,
+   "a": 0.78,
+   "contenu": "scènes de 4 à 7 plans : situation, personne, produit, ce que fait le produit ; un plan sur trois montre le produit",
+   "statut": "observe 2 sur 2"
+  },
+  {
+   "temps": "pic",
+   "de": 0.78,
+   "a": 0.9,
+   "contenu": "montage alterné rapide (1 film) ; l'autre ralentit",
+   "statut": "observe 1 sur 2"
+  },
+  {
+   "temps": "fin",
+   "de": 0.9,
+   "a": 1.0,
+   "contenu": "phrase de 3 à 9 mots, puis le nom ou le logo",
+   "statut": "observe 2 sur 2"
+  }
+ ],
+ "seuils_critique": {
+  "plan_image_median_s": {
+   "cible": [
+    0.75,
+    1.2
+   ],
+   "alerte_au_dessus": 1.65,
+   "alerte_en_dessous": 0.5
+  },
+  "dernier_tiers_plus_rapide_que_le_premier": true,
+  "pic_position": [
+   0.78,
+   0.88
+  ],
+  "pic_plan_median_s": [
+   0.5,
+   0.85
+  ],
+  "fermeture_part": [
+   0.06,
+   0.17
+  ],
+  "coupes_franches_min": 0.9,
+  "fondus_enchaines_max": 0.03,
+  "replique_max_s": 3.1,
+  "replique_max_mots": 10,
+  "titre_bloc_s": [
+   0.8,
+   2.3
+  ],
+  "titre_final_s": [
+   2.5,
+   4.8
+  ],
+  "part_plans_larges_debut_min": 0.35,
+  "plans_fixes_max": 0.15,
+  "statut": "convention calée sur l'observé : chaque seuil reprend une médiane, un quantile ou une borne mesurée",
+  "ouverture_noir_s": [
+   0.1,
+   4.2
+  ]
+ },
+ "sources": "analyse plan par plan du corpus (non publiée)"
+}

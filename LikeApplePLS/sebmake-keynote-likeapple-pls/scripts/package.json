@@ -1,0 +1,21 @@
+{
+  "name": "sebmake-keynote-likeapple-pls-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Moteur de rendu .pptx et aperçu HTML 16:9 pour la skill sebmake-keynote-likeapple-pls.",
+  "license": "UNLICENSED",
+  "main": "build_deck.js",
+  "bin": {
+    "build-deck": "build_deck.js"
+  },
+  "scripts": {
+    "build": "node build_deck.js",
+    "exemple": "node build_deck.js ../assets/exemple-deck.json ../assets/exemple-deck.pptx --preview ../assets/exemple-deck.html"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  }
+}

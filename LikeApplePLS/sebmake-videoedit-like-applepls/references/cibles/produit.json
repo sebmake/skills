@@ -1,0 +1,235 @@
+{
+ "famille": "produit_revelation",
+ "version": "mesure du 2026-10-25",
+ "lecture": "Durées en secondes ; positions en part de la durée du film (0 = début, 1 = fin). Les médianes et quantiles portent sur les plans d'image (valeur 1, 2, 3, 4 ou A relevée à l'œil), hors noirs et cartons. Début, milieu, fin = tiers de la durée. 'observe' = mesuré, avec son compte ; 'convention' = choix de la skill, non mesuré. Détail : analyse plan par plan du corpus (non publiée).",
+ "corpus": {
+  "films": 16,
+  "exclu": {"v8-03": "intermède d'architecture, aucun produit montré"},
+  "sous_familles": {
+   "revelation_objet": ["v5-04", "v6-05", "v2-06", "v2-07", "v2-08", "v3-02", "v4-05"],
+   "logiciel": ["v6-03", "v6-04", "v1-02", "v7-03"],
+   "materiaux_voix_off": ["v3-05", "v3-06", "v4-03"],
+   "usage_gamme": ["v3-04", "v4-06"]
+  },
+  "duree_s": {
+   "tous": {"mediane": 35.7, "min": 24.09, "max": 127.55},
+   "sans_voix_off": {"films": 13, "mediane": 31.9, "min": 24.09, "max": 51.0},
+   "revelation_objet": {"mediane": 33.4, "min": 24.09, "max": 51.0},
+   "logiciel": {"mediane": 32.88, "min": 24.59, "max": 45.06},
+   "materiaux_voix_off": {"mediane": 109.78, "min": 53.57, "max": 127.55},
+   "usage_gamme": {"valeurs": [30.36, 31.9]}
+  },
+  "plans": {"tous": 252, "image": 213},
+  "bornes": "corrigées à l'œil sur 16 segments sur 17 (précision ±0,5 s)",
+  "images_regardees": "environ 1 900 images extraites (planches à 1, 2 et 5 images/s) + 17 planches par plan + 8 images pleine taille des noms"
+ },
+ "durees": {
+  "debut": 2.05,
+  "milieu": 2.37,
+  "fin": 2.04,
+  "mediane": 2.17,
+  "p10": 0.73,
+  "p90": 7.16,
+  "unite": "s, 213 plans d'image regroupés des 16 films",
+  "quartiles": {"tout": [1.23, 3.77], "debut": [1.21, 3.39], "milieu": [1.25, 3.53], "fin": [1.27, 5.54]},
+  "mediane_des_medianes_par_film": {"tout": 2.57, "debut": 2.57, "milieu": 2.54, "fin": 4.06, "lecture": "chaque film pèse autant ; le dernier tiers est tiré par le plan final tenu"},
+  "fin_sans_plan_final": {"mediane": 1.4, "quartiles": [1.2, 2.9], "plans": 45, "regle": "pas de règle : plus court que la médiane du film dans 4 films sur 8"},
+  "premier_plan_image": {"mediane": 3.27, "quartiles": [2.32, 7.9]},
+  "dernier_plan_image": {"mediane": 7.42, "quartiles": [6.05, 8.48], "compte": "au moins 4 s dans 13 sur 16 ; les 3 autres finissent sur un carton du nom"},
+  "plus_long_plan": {"mediane": 8.09, "compte": "au moins 5 s dans 14 sur 16 ; dans le dernier tiers 8 sur 16, dans le premier tiers 5 sur 16"},
+  "plan_de_revelation_tenu": {"mediane": 8.04, "min": 4.89, "max": 9.0, "compte": "10 films à révélation tardive"},
+  "pic_5_plans": {"mediane": 1.17, "compte": "11 films d'au moins 8 plans ; commence dans la première moitié 8 sur 11 ; avant la révélation 7 sur 7 films à révélation tardive"},
+  "acceleration": "pas de règle : seconde moitié plus rapide 9 sur 16, plus lente 5, stable 2 ; forme en U stricte 8 sur 16 ; dernier tiers plus lent que le milieu 11 sur 16 (plan final tenu)",
+  "mediane_par_film": {"min": 1.0, "max": 16.47, "films_qui_coupent": {"films": 14, "min": 1.0, "max": 3.6}, "plan_sequence": {"v6-03": 7.96, "v4-05": 16.47}},
+  "plans_image_par_minute": {
+   "tous": {"mediane": 16.59, "quartiles": [14.0, 22.59]},
+   "revelation_objet": {"mediane": 16.1, "min": 4.08, "max": 21.56},
+   "logiciel": {"mediane": 24.33, "min": 5.33, "max": 32.42},
+   "materiaux_voix_off": {"mediane": 14.76, "min": 13.64, "max": 31.36},
+   "usage_gamme": {"valeurs": [13.17, 25.69]},
+   "films_qui_coupent": {"films": 14, "min": 13.17, "max": 32.42}
+  },
+  "plan_sequence": "2 films sur 16 tiennent presque tout en mouvement continu (4 plans en 45 s ; 3 plans en 44 s)"
+ },
+ "transitions": {
+  "total": 234,
+  "coupe": {"n": 194, "part": 0.83, "films": "16 sur 16"},
+  "fondu_au_noir": {"n": 11, "part": 0.047, "films": "6 sur 16", "duree_mediane": 0.94, "duree_min": 0.37, "duree_max": 2.57, "tiers": [3, 3, 5]},
+  "fondu_depuis_noir": {"n": 10, "part": 0.043, "films": "5 sur 16", "duree_mediane": 0.94, "duree_min": 0.7, "duree_max": 1.33, "tiers": [6, 4, 0]},
+  "noir": {"n": 21, "part": 0.09, "lecture": "fondus au noir et depuis le noir réunis"},
+  "fondu": {"n": 7, "part": 0.03, "films": "6 sur 16", "verif": "2 vus à l'œil, 5 douteux", "duree_mediane": 0.69, "duree_min": 0.07, "duree_max": 1.43, "tiers": [2, 4, 1], "lecture": "fondu enchaîné ; borne basse ; les 2 vus à l'œil entrent dans un plan clé (nom, première personne)"},
+  "poussee": {"n": 7, "part": 0.03, "films": "1 sur 16 (usage)", "lecture": "l'objet en main sort du cadre en flou de bougé et le plan suivant prend sa place, environ 0,2 s à l'œil"},
+  "blanc": {"n": 3, "part": 0.013, "films": "1 sur 16 (logiciel)", "duree": [0.2, 0.67]},
+  "sortie_objet_vers_nom": {"n": 1, "films": "1 sur 16"},
+  "apparition_nom_dans_image": {"n": 1, "films": "1 sur 16"},
+  "regles": {
+   "coupe_min_part": 0.8,
+   "fondu_enchaine_max_par_film": 1,
+   "fondu_depuis_noir_dernier_tiers": "0 sur 10 : à éviter",
+   "statut": "observe"
+  }
+ },
+ "valeurs_de_plan": {
+  "codes": {"1": "détail (macro, matière)", "2": "serré (pièce, partie, écran rempli, mains)", "3": "objet entier (seul, en main ou en gamme)", "4": "large (décor, paysage, personnes en pied)", "A": "abstrait (lumière, particules)"},
+  "part_detail_serre": {"debut": 0.7, "milieu": 0.65, "fin": 0.48},
+  "part_entier_large": {"debut": 0.3, "milieu": 0.35, "fin": 0.52},
+  "valeur_moyenne": {"debut": 2.25, "milieu": 2.33, "fin": 2.57},
+  "plans": 201,
+  "premier_plan_image": {"large": 6, "serre": 5, "entier": 4, "detail": 1, "compte": "les 4 'entier' sont des films à objet dès le début ; en révélation tardive, objet entier 0 sur 10"},
+  "dernier_plan_image": {"entier": 13, "large": 1, "serre": 1, "abstrait": 1, "sur": 16},
+  "progression": "large sans l'objet → serré sur ses parties → objet entier (révélation tardive)",
+  "statut": "observe"
+ },
+ "mouvement": {
+  "plans": 197,
+  "fixe_moins_de_10": 14,
+  "lent_10_50": 72,
+  "moyen_50_200": 79,
+  "fort_200_et_plus": 32,
+  "part_fixe": 0.07,
+  "fixes": "sortie du noir (4), tableau large ou silhouette (6), photo (2), plans très courts (2)",
+  "lecture": "écart moyen de gris par seconde, caméra et sujet mêlés ; < 10 = image fixe (convention du corpus)"
+ },
+ "raccords": {
+  "sur": 16,
+  "mouvement": 12,
+  "lumiere_ouvre": 7,
+  "ecran": {"films": 5, "logiciel": "3 sur 4", "lecture": "entrer dans l'écran, ou reculer et montrer que l'image était l'écran"},
+  "noir": 4,
+  "lumiere_transition": 4,
+  "decor": {"films": 4, "lecture": "propre aux keynotes (l'orateur sort ou rentre) ; hors scène : commencer et finir dans le même lieu (convention)"},
+  "axe": 3,
+  "graphique": 3,
+  "poussee": 1,
+  "ordre_de_fabrication": "2 sur 16",
+  "statut": "observe, à l'œil, présence par film"
+ },
+ "noirs": {
+  "ouverture": {"films": "13 sur 16", "mediane": 1.1, "min": 0.33, "max": 12.56, "courts": "9 sur 13 au plus 1,6 s"},
+  "internes": {"films": "4 sur 16", "n": 9, "mediane": 0.7, "plage_courte": [0.26, 0.9], "long": "un noir de 7,9 s avant une révélation (1 film)"},
+  "fin": {"films": "8 sur 16", "mediane": 0.95, "min": 0.1, "max": 2.81},
+  "avant_revelation_dans_les_3s": "1 sur 10",
+  "premiere_image_apres": {"mediane": 0.95, "min": 0.0, "max": 12.56}
+ },
+ "ouverture": {
+  "sortie_du_noir_par_fondu_ou_lumiere": "8 sur 16",
+  "noir_puis_coupe": "5 sur 16",
+  "sans_noir_depuis_le_decor": "3 sur 16",
+  "premier_plan_revelation_tardive": "décor ou paysage 6 sur 10 ; matière, pièce ou liseré serré 4 sur 10 ; objet entier 0 sur 10",
+  "fin_de_l_accroche": {"mediane_s": 5.84, "min": 1.67, "max": 22.09, "part_mediane": 0.155}
+ },
+ "fin": {
+  "apres_dernier_plan_image": {"rien": 5, "noir": 4, "nom": 3, "nom_puis_noir": 4, "sur": 16},
+  "logo_seul": "0 sur 16",
+  "date_ou_slogan": "0 sur 16",
+  "passage_de_main": "l'orateur parle ou la salle applaudit moins de 1,5 s après la dernière image : 15 sur 16"
+ },
+ "cartons": {
+  "nom": {
+   "ecrit_carton": 5,
+   "integre_image": 2,
+   "dit_voix_off": 1,
+   "absent_dit_par_l_orateur_apres": 8,
+   "sur": 16,
+   "position": {"mediane": 0.94, "min": 0.83, "max": 0.96, "films": 7},
+   "duree": {"mediane": 2.4, "min": 1.27, "max": 4.5, "films": 7},
+   "taille_pct_hauteur": {"discret": [4.1, 5.0], "heros": [9, 12], "lecture": "discret pour un objet, héros pour un logiciel : 2 + 2 mesures ; plus 2 noms intégrés en grandes lettres"},
+   "fond": "uni 5 sur 5 (noir 2, blanc 2, dégradé 1)",
+   "centre": "horizontalement 5 sur 5, verticalement 4 sur 5",
+   "entree": {"coupe": 3, "depuis_blanc": 1, "objet_sort_du_cadre": 1, "fondu_enchaine": 1, "lettres_autour_de_l_objet": 1},
+   "sortie": {"fondu_au_noir": 2, "coupe_au_noir": 2, "retour_scene": 3},
+   "sans_orateur": "toujours écrire le nom (convention)"
+  },
+  "phrase": {"films": "1 sur 16", "mots": 5, "duree": 1.8, "taille_pct_hauteur": 4, "place": "centre, dans une zone sombre de l'image", "position": 0.66},
+  "explicatif": "0 sur 16",
+  "chiffre": "0 sur 16",
+  "bandeau_personne": {"films": "2 sur 16", "place": "bas gauche", "quand": "dans les 4,5 premières secondes", "usage": "nom et fonction du narrateur"},
+  "legende_credit": {"films": "1 sur 16", "place": "haut gauche", "duree": 2.2},
+  "deux_textes_simultanes": "0 sur 16",
+  "cartons_par_minute": "au plus 2 textes par film (nom + phrase ou bandeau) ; aucun film n'a plus de 2 textes"
+ },
+ "parole": {
+  "sans_voix_off": "13 sur 16",
+  "voix_off": {"films": "3 sur 16", "sous_famille": "matériaux 3 sur 3", "narrateur_visible_en_train_de_parler": "0 sur 3", "bandeau_du_narrateur": "2 sur 3"},
+  "part_du_temps": {"valeurs": [0.69, 0.61, 0.69], "cible": [0.6, 0.7], "lecture": "borne haute (sous-titres)"},
+  "premiere_replique_apres_debut_s": {"valeurs": [4.58, 4.56, 3.94], "cible": [3.9, 4.6]},
+  "silence_final_s": {"valeurs": [2.27, 3.64, 3.11], "cible": [2.3, 3.6]},
+  "replique_mediane_s": {"valeurs": [2.72, 3.07, 1.87]},
+  "silence_entre_repliques_mediane_s": {"valeurs": [1.25, 0.97, 0.73]},
+  "plus_long_silence_s": {"valeurs": [5.51, 18.19, 2.5], "lecture": "un film laisse 18 s de musique seule à 78 % de la durée (1 sur 3)"},
+  "mots_par_minute_de_film": {"valeurs": [104, 76, 108]},
+  "image_avant_le_mot": {"compte": "7 sur 10 correspondances dans 1 film", "avance_s": [0, 1.8], "retard_s": [1.5, 2.5], "retard_compte": "2 sur 10"},
+  "fin_de_voix": "sur le nom ou juste avant le carton du nom : 3 sur 3",
+  "son_de_l_image": "1 film d'usage garde 3,6 s d'un son venu de l'image ; ce n'est pas une voix off",
+  "rapport_parole_illustration": "environ deux tiers du temps avec voix, un tiers d'images seules ; début et fin muets"
+ },
+ "couleur_format": {
+  "noir_et_blanc_desature": "0 sur 16",
+  "monochrome_voulu": "3 sur 16 (à l'œil)",
+  "plans_desatures_calcul": "19 sur 200, dont 16 dans 2 films monochromes",
+  "format_16_9_plein": "13 sur 16",
+  "tres_large": "3 sur 16 (3,9:1), une même keynote en salle : ne pas imiter",
+  "photos_avec_bandes": "1 sur 16 (4 plans)"
+ },
+ "musique": {
+  "mesurable": false,
+  "reperes_sous_titres": "musique signalée dans 11 sur 16 ; dans les 1,3 premières secondes pour 9 ; morceau identifié par son titre dans 6 ; aucun repère dans 5",
+  "calage_coupes": "non démontré (mesure de la skill sœur sebmake-videopresentation-likeapplepls : 16 coupes sur 62, contre 16,4 au hasard)",
+  "regle": "caler les grands changements (sortie du noir, révélation, nom) sur la musique, pas chaque coupe ; finir sur une résolution puis un noir court",
+  "statut": "convention"
+ },
+ "structure": [
+  {"temps": "ouverture", "quoi": "noir, puis une image naît par la lumière ou un fondu", "duree_s": [0.3, 1.6], "statut": "observe 13 sur 16 (noir) ; 8 sur 16 (naissance)"},
+  {"temps": "accroche", "quoi": "un monde (décor, paysage) ou une matière, jamais l'objet entier", "premier_plan_s": {"mediane": 3.27, "quartiles": [2.32, 7.9]}, "fin_part": {"mediane": 0.155, "min": 0.05, "max": 0.5}, "statut": "observe 10 sur 10 (révélation tardive)"},
+  {"temps": "montee", "quoi": "détails, pièces, fabrication ou usages ; on serre ; raccords sur le mouvement", "plans_s": {"mediane": 2.37, "quartiles": [1.25, 3.53]}, "detail_serre": [0.65, 0.7], "pic": {"plans": 5, "mediane_s": 1.17, "place": "première moitié 8 sur 11"}, "statut": "observe"},
+  {"temps": "revelation", "quoi": "l'objet entier, seul, plan tenu, souvent en recul (5 sur 10) ou en rotation (3 sur 10)", "position": {"mediane": 0.77, "min": 0.69, "max": 0.82}, "tenu_s": {"mediane": 8.04, "min": 4.89, "max": 9.0}, "statut": "observe 10 films"},
+  {"temps": "nom", "quoi": "seul, centré, sur fond uni ou dans l'image ; discret pour un objet, héros pour un logiciel", "position": {"mediane": 0.94, "min": 0.83, "max": 0.96}, "duree_s": {"mediane": 2.4, "min": 1.27, "max": 4.5}, "statut": "observe 7 films ; toujours présent sans orateur : convention"},
+  {"temps": "fin", "quoi": "dernier plan d'image : l'objet entier tenu ; puis rien, un noir court, ou le nom puis un noir", "dernier_plan_s": {"mediane": 7.42, "quartiles": [6.05, 8.48]}, "noir_final_s": {"mediane": 0.95, "min": 0.1, "max": 2.81}, "statut": "observe 13 sur 16 (objet entier)"}
+ ],
+ "schema_alternatif": {
+  "nom": "objet dès le début",
+  "compte": "5 sur 16 (logiciel 2, usage et gamme 2, matériaux 1)",
+  "objet_entier_position": [0.01, 0.18],
+  "suite": "un plan par usage ou par fonction, l'objet en main ou à l'écran ; fin sur une gamme (2) ou le nom (3)",
+  "choix": "un objet nouveau → révélation tardive ; un logiciel, un usage, une gamme → objet dès le début"
+ },
+ "controles_critique": [
+  {"id": "K1", "si": "révélation avant 0,60 de la durée dans un film de révélation", "niveau": "alerte", "base": "10 sur 10 après 0,69"},
+  {"id": "K2", "si": "premier plan d'image = objet entier dans un film de révélation", "niveau": "alerte", "base": "0 sur 10"},
+  {"id": "K3", "si": "plan d'image médian < 1,0 s ou > 3,6 s, hors plan-séquence voulu", "niveau": "alerte", "base": "14 films qui coupent : 1,0 à 3,6 s"},
+  {"id": "K4", "si": "moins de 13 ou plus de 33 plans d'image par minute, hors plan-séquence", "niveau": "alerte", "base": "13,2 à 32,4 sur 14 films"},
+  {"id": "K5", "si": "aucun plan de 5 s ou plus", "niveau": "alerte", "base": "14 sur 16 en ont un"},
+  {"id": "K6", "si": "dernier plan d'image < 4 s sans carton du nom derrière", "niveau": "alerte", "base": "13 sur 16 ≥ 4 s ; les 3 autres finissent sur le nom"},
+  {"id": "K7", "si": "plus d'un fondu enchaîné, ou plus de 10 % de fondus enchaînés", "niveau": "alerte", "base": "3 % ; jamais 2 vus à l'œil dans un film"},
+  {"id": "K8", "si": "fondu depuis le noir dans le dernier tiers", "niveau": "note", "base": "0 sur 10"},
+  {"id": "K9", "si": "moins de 50 % de détails ou de plans serrés dans les deux premiers tiers", "niveau": "alerte", "base": "65 à 70 %"},
+  {"id": "K10", "si": "dernier plan d'image ni objet entier ni large", "niveau": "alerte", "base": "14 sur 16"},
+  {"id": "K11", "si": "nom avant 0,83 de la durée ou moins de 1,3 s à l'écran", "niveau": "alerte", "base": "7 sur 7 entre 0,83 et 0,96, au moins 1,27 s"},
+  {"id": "K12", "si": "plus d'une phrase, un carton chiffré ou explicatif, deux textes à l'écran en même temps", "niveau": "alerte", "base": "0 sur 16"},
+  {"id": "K13", "si": "logo seul, date ou slogan en fin", "niveau": "alerte", "base": "0 sur 16"},
+  {"id": "K14", "si": "plus de 2 noirs internes", "niveau": "note", "base": "1 film sur 16 (montée en chapitres par le noir)"},
+  {"id": "K15", "si": "plus de 25 % de plans fixes (écart < 10)", "niveau": "note", "base": "7 %"},
+  {"id": "K16", "si": "voix off > 75 % du temps, ou commence avant 3 s, ou finit à moins de 2 s de la fin", "niveau": "alerte", "base": "61 à 69 % ; 3,9 à 4,6 s ; 2,3 à 3,6 s (3 sur 3)"},
+  {"id": "K17", "si": "l'image arrive plus de 2 s après la phrase qui la nomme", "niveau": "note", "base": "7 sur 10 avant ou avec (1 film)"},
+  {"id": "K18", "si": "film sans voix de plus de 60 s sans chapitres", "niveau": "note", "base": "13 sur 13 sans voix entre 24 et 51 s"},
+  {"id": "K19", "si": "noir et blanc désaturé sur un film produit", "niveau": "note", "base": "0 sur 16"},
+  {"id": "K20", "si": "coupes calées sur chaque temps de la musique", "niveau": "note", "base": "convention"}
+ ],
+ "accord_skills_soeurs": {
+  "revelation": "77 % ici (10 films) ; 76 % dans sebmake-videopresentation-likeapplepls (13 sur 14) : accord",
+  "nom": "94 % ici (7) ; 94 % (15) : accord",
+  "plus_long_plan": "8,1 s, 14 sur 16 ≥ 5 s ; 8,3 s, 16 sur 19 : accord",
+  "plan_median": "2,17 s ici (213 plans, films produit seuls) ; 1,17 s pour la montée (662 plans, films produit et ouvertures) : bases différentes ; 1,2 s correspond ici au passage le plus rapide",
+  "cadence": "révélation 16, matériaux 15, logiciel 24 plans par minute ; 19, 16, 33 : même ordre",
+  "taille_nom": "discret 4-5 %, héros 9-12 % ; 4-5 %, 9-13 % : accord",
+  "motion": "sebmake-motiondesign-likeapplepls : on coupe d'abord, fondus enchaînés sous 1 s ; ici 83 % de coupes, un seul fondu douteux à 1,43 s : accord"
+ },
+ "limites": [
+  "3 films de matériaux et 2 d'usage : règles fragiles pour ces sous-familles",
+  "valeurs de plan, raccords, ouvertures, fins et noms relevés à l'œil par une seule personne",
+  "fondus : borne basse ; plans continus qui peuvent cacher des coupes",
+  "bornes des films à ±0,5 s",
+  "pas de son : musique en convention",
+  "parts de parole : bornes hautes (sous-titres)"
+ ]
+}

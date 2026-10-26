@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "comp": { "nom": "exemple-motion", "format": "16:9", "cadence": 30, "duree": 20, "fond": "fond", "epoque": "2024-2026" },
+  "theme": {
+    "couleurs": { "fond": "#0E1013", "texte": "#F4F4F2", "secondaire": "#9A9CA3", "accent": "#4C8DFF", "voile": "#000000" },
+    "polices": { "titre": ["Inter-SemiBold", "Inter-Bold", "Arial-BoldMT"], "texte": ["Inter-Regular", "ArialMT"], "chiffre": ["Inter-Bold", "Arial-BoldMT"], "surtitre": ["Inter-Medium", "ArialMT"] }
+  },
+  "elements": [
+    { "id": "fond", "type": "fond", "couleur": "fond", "recette": "coupe", "debut": 0 },
+
+    { "id": "surtitre", "type": "surtitre", "contenu": "Nouveau", "position": [50, 41], "taille": 3.2, "couleur": "accent", "recette": "avec", "avec": "titre" },
+    { "id": "titre", "type": "titre", "contenu": "Un objet, rien de plus.", "position": [50, 50], "taille": 9, "recette": "titre-fondu-montee", "debut": 0.1, "fin": 3.0 },
+
+    { "id": "cam-produit", "type": "nul-camera", "position": [50, 50], "recette": "camera-poussee", "debut": 3.0, "fin": 6.4, "options": { "facteur": 1.05 } },
+    { "id": "produit", "type": "image", "fichier": "exemple/produit.png", "position": [50, 52], "taille": 72, "ratio": 0.64, "parent": "cam-produit",
+      "recette": "produit-entree", "debut": 3.0, "fin": 6.4,
+      "puis": [ { "recette": "balayage-lumiere", "decalage": 1.1, "options": { "T": 0.5, "sens": "gauche" } } ] },
+
+    { "id": "liste", "type": "liste", "lignes": ["Léger.", "Silencieux.", "Fait pour durer."], "position": [50, 50], "taille": 6, "alignement": "gauche",
+      "recette": "liste-cascade", "debut": 6.45, "fin": 9.6 },
+
+    { "id": "chiffre", "type": "chiffre", "contenu": "[À FOURNIR]", "libelle": "heures d'autonomie", "source": "[À FOURNIR]", "position": [50, 46], "taille": 14,
+      "recette": "chiffre-pose", "debut": 9.8, "fin": 12.4 },
+
+    { "id": "cam-panneau", "type": "nul-camera", "position": [50, 50], "recette": "zoom-detail", "debut": 13.3, "options": { "facteur": 2.0, "point": [64.2, 60.1] } },
+    { "id": "panneau", "type": "capture", "fichier": "exemple/panneau.png", "position": [50, 52], "taille": 56, "ratio": 1.5, "parent": "cam-panneau",
+      "recette": "panneau-pose", "debut": 12.6, "fin": 16.9, "options": { "depuis": "bas" } },
+
+    { "id": "logo", "type": "logo", "fichier": "exemple/logo.png", "nom": "exemple", "position": [50, 49], "taille": 9, "ratio": 4.2,
+      "recette": "logo-fin", "debut": 17.4, "fin": 20, "options": { "entree": "coupe" } },
+    { "id": "mention", "type": "phrase", "contenu": "Bientôt disponible.", "position": [50, 59], "taille": 2.8, "couleur": "secondaire", "recette": "avec", "avec": "logo", "fin": 20 }
+  ],
+  "transitions": [
+    { "type": "passage-noir", "temps": 16.4, "de": ["panneau"], "vers": ["logo", "mention"] }
+  ]
+}

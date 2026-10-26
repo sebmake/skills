@@ -1,0 +1,210 @@
+{
+  "famille": "ouverture_ambiance",
+  "perimetre": "films d'ouverture et d'ambiance, sketches et fictions d'ouverture, films de clôture et hommage, transitions entre décors (vols de drone, couloirs, marche, travelling)",
+  "source": "analyse plan par plan du corpus (non publiée)",
+  "marquage": "« N sur M » = observé dans N cas sur M ; « convention » = choix de la skill, non mesuré ou trop peu de cas",
+  "corpus": {
+    "ouverture": ["v5-02", "v6-01", "v1-01", "v2-01", "v7-01", "v8-01", "v3-01", "v4-02"],
+    "sketch_fiction": ["v7-01", "v8-01", "v4-02", "v2-10"],
+    "seuil": ["v5-01", "v4-01"],
+    "hommage": ["v2-02"],
+    "cloture": ["v2-09", "v2-10", "v8-06"],
+    "transition_decor": ["v1-03", "v1-06", "v2-03", "v2-05", "v8-02", "v8-05"]
+  },
+
+  "durees": {
+    "unite": "secondes",
+    "base": "7 ouvertures montées (sans v1-01, plan-séquence), corps = sans le premier ni le dernier plan d'image, noirs exclus",
+    "film": {"mediane": 99.3, "min": 65.0, "max": 143.0, "n": 8, "cible_conseil": [60, 120], "statut_cible": "convention"},
+    "debut": {
+      "seuil": {"noir_seul": [0.97, 1.0], "carton_plus_noir": [5.74, 9.81], "salle_en_public": 35.0, "compte": "6 sur 8 ont un seuil ; 2 entrent directement dans l'image", "cible": [0.5, 1.5], "cible_avec_carton": [4.0, 10.0]},
+      "premier_plan_image": {"mediane": 6.77, "min": 1.07, "max": 70.94, "au_moins_5s": "5 sur 8", "cible": [5.0, 10.0]},
+      "tiers_1_plan_median": 1.60
+    },
+    "milieu": {
+      "tiers_2_plan_median": 1.30,
+      "pic": {"position_pct": [61, 79], "compte": "5 sur 7", "plan_median_glissant_5_plans": [0.40, 0.73], "cible_position_pct": [60, 80], "cible_plans": [0.4, 0.7]},
+      "plans_longs_au_milieu": {"compte": "9 plans d'au moins 5 s dans 6 films", "ouvrent_une_scene": "6 sur 9", "part_max_au_dela_de_3_2s": 0.10}
+    },
+    "fin": {
+      "tiers_3_plan_median": 1.24,
+      "dernier_plan_image": {"mediane": 7.06, "min": 4.34, "max": 17.95, "au_moins_5s": "6 sur 8", "ratio_sur_plan_median_min": 3.5, "compte_ratio": "7 sur 7", "cible": [5.0, 11.0]},
+      "deceleration": "les 3 à 5 derniers plans s'allongent (observé à l'œil, exemples v3-01 et v2-01)"
+    },
+    "mediane": 1.33,
+    "p10": 0.65,
+    "p25": 0.90,
+    "p75": 2.13,
+    "p90": 3.17,
+    "n_plans": 337,
+    "mediane_des_medianes_par_film": {"valeur": 1.44, "min": 1.20, "max": 3.17},
+    "changements_par_minute": {"mediane": 29.6, "min": 12.9, "max": 39.8, "cible": [25, 40], "compte_cible": "5 sur 7"},
+    "forme": {"U": "4 sur 7", "acceleration_puis_atterrissage": "1 sur 7 (fiction narrée) + la clôture v2-09", "plat": "1 sur 7 (ambiance)", "premier_tiers_le_plus_lent_ou_egal": "6 sur 7"}
+  },
+
+  "transitions": {
+    "base": "8 ouvertures, 367 changements de plan",
+    "coupe": {"part": 0.978, "compte": "359 sur 367"},
+    "fondu": {
+      "enchaine": {"compte": "2 sur 367 (1 net, 1 douteux)", "place": "1 net à 94 % : de l'animation vers la scène réelle", "duree_s": 1.2, "cible_part_max": 0.05, "statut_cible": "convention"},
+      "depuis_ou_vers_noir": {"compte": 6, "place": "6 sur 6 dans les 10 premiers %", "duree_s": [0.27, 1.47]}
+    },
+    "noir": {"compte": 17, "base": "6 ouvertures en prise de vue réelle ou animée", "a_l_entree": "15 sur 17 dans les 11 premiers %", "duree_s": {"mediane": 0.67, "min": 0.17, "max": 4.3}, "au_milieu": "1 sur 17 (ouverture à froid)"},
+    "volet": {"compte": "1, à la toute fin du clip de clôture (rideau sur le logo)", "au_milieu": "0"},
+    "fondu_au_blanc": 0,
+    "cloture_hommage": {"changements": 111, "coupe": 101, "fondu_enchaine": 9, "volet": 1, "note": "les 9 fondus enchaînés sont dans le clip chanté, 0,17 à 0,33 s"},
+    "transition_decor": {"changements": 30, "coupe": 30, "passages_masques_dans_le_sombre": "14 sur 30, dans 4 transitions sur 6"}
+  },
+
+  "cartons": {
+    "base": "8 ouvertures ; durées sur 7 cartons et titres de 6 films",
+    "nombre_par_film": {"aucun": "2 sur 8", "un_ou_deux": "5 sur 8", "generique_complet": "1 sur 8 (pastiche)", "cible": [0, 2]},
+    "place": {"seuil": "4 sur 8", "fin": "4 sur 8", "milieu": "0 sur 7 hors générique pastiche (1 sous-titre gag dans une fiction)"},
+    "mots": {"mediane": 6, "min": 3, "max": 16, "au_dela_de_12": "1 sur 7 (une citation)"},
+    "duree_s": {"mediane": 4.74, "min": 1.94, "max": 9.74},
+    "secondes_par_mot": {"mediane": 0.50, "min": 0.32, "max": 2.09, "cible_min": 0.5, "statut_cible": "observé (médiane de 7)"},
+    "fond": {"sur_noir": "4 sur 7", "dans_une_zone_calme_de_l_image": "3 sur 7"},
+    "noir_apres_carton_de_seuil_s": [0.8, 4.3],
+    "nom_de_lieu_sur_la_premiere_image": "1 sur 8 : petites capitales, en bas à gauche, 6,3 s",
+    "titre_dans_le_decor_en_fin": "2 sur 8",
+    "bandeaux_de_nom": {"base": "clôture v2-09, 7 personnes, 13 plans", "place": "bas gauche, 2 lignes (nom, rôle), petits", "duree_par_personne_s": {"mediane": 2.93, "min": 1.80, "max": 3.47}, "plans_par_personne": [1, 3], "position_pct": [29, 77], "jamais_a_la_premiere_apparition": "7 sur 7"},
+    "logo_final_cloture_s": {"valeurs": [1.7, 3.1, 8.3], "compte": "3 sur 4 films de clôture ou hommage"}
+  },
+
+  "parole": {
+    "ouverture": {
+      "part_du_temps": {"aucune": "4 sur 8", "au_plus_28_pct": "3 sur 8", "fiction_narree": 0.63},
+      "cible_part_max": 0.30,
+      "fin_sans_parole_s": {"valeurs": [15.0, 17.2, 33.3], "compte": "3 sur 3 films parlés hors fiction narrée", "cible": [15, 30]},
+      "sketch_dialogue": "une scène dialoguée au premier tiers (v7-01 : 7 à 28 s), puis action et musique",
+      "tirade_s": {"v7-01": {"mediane": 3.4, "max": 13.4}, "v8-01": {"mediane": 4.0, "max": 5.3}, "v4-02": {"mediane": 3.6, "max": 11.8}},
+      "mots_par_minute": {"v6-01": 11.5, "v7-01": 24.7, "v8-01": 47.4, "v4-02": 75.5},
+      "coupes_pendant_la_parole": {"v7-01": "9 sur 42", "v8-01": "17 sur 71", "v4-02": "25 sur 62"}
+    },
+    "fiction_narree": {"chapitres": 6, "duree_chapitre_s": {"mediane": 26.4, "min": 14.1, "max": 29.3}, "regle": "chaque chapitre ouvert par une phrase de la voix off"},
+    "cloture_temoignages": {"film": "v2-09", "part_du_temps": 0.66, "mots_par_minute": 114.7, "tirade_s": {"mediane": 5.0, "max": 13.1}, "coupes_pendant_la_parole": "33 sur 68", "premiere_parole_s": 6.2, "cible_part": [0.5, 0.65]},
+    "hommage_voix_off": {"film": "v2-02", "part_du_temps": 0.51, "mots_par_minute": 70.1, "tirade_s": {"mediane": 2.0, "max": 4.3}},
+    "sketch_un_plan": {"film": "v2-10", "part_du_temps": 0.89, "duree_plan_s": 43.2},
+    "clip_chante": {"film": "v8-06", "part_du_temps": 0.88, "changements_au_debut_d_un_vers": "9 sur 16 à ± 0,45 s (hasard 2,5)"}
+  },
+
+  "valeurs_de_plan": {
+    "premier_plan": {"serre": "4 sur 7", "large": "3 sur 7"},
+    "dernier_plan": {"large": "5 sur 7", "serre": "0 sur 7", "autre": "2 sur 7 (orateur en plan rapproché après 4 plans larges ; plan moyen puis carton)"},
+    "par_tiers_3_films_214_plans": {"large_pct": [8, 6, 19], "serre_pct": [41, 38, 19]},
+    "scene_ouverte_large_puis_serree": "8 scènes sur 11",
+    "regle": "du serré vers le large à l'échelle du film ; large puis serré à l'échelle de la scène"
+  },
+
+  "raccords": {
+    "composition_a_la_coupe": "égale au hasard (453 coupes : médiane 0,05 contre 0,06 ; au-dessus de 0,5 : 4,9 % contre 4,9 %)",
+    "sens_du_mouvement": {"statut": "convention", "mesure": "34 coupes mesurables : même sens 7, opposé 12, hasard ≈ 29 % de même sens"},
+    "procedes_vus_a_l_oeil_35_coupes": {
+      "forme_au_centre": "7 sur 7 dans une suite d'objets (v3-01)",
+      "graphique_de_couleur": "3 sur 5 (v2-03)",
+      "passage_masque_dans_le_sombre": "14 sur 30 coupes de transitions, 4 transitions sur 6",
+      "sur_l_action": 4,
+      "cause_et_effet": 2,
+      "dans_l_axe_sur_le_mouvement": 3,
+      "par_la_lumiere": "1 film (visage né d'une flamme entre 5 noirs en 16 s)",
+      "saute": 1
+    },
+    "montage_alterne": {"film": "v8-01", "retour_du_second_lieu_s": {"mediane": 12.8, "min": 6.8, "max": 20.3}, "plan_du_second_lieu_s": {"mediane": 1.46, "min": 0.70, "max": 2.34}, "statut": "relevé à l'œil"}
+  },
+
+  "mouvement": {
+    "seuil_fixe": "mouvement < 10 (convention de lecture du corpus)",
+    "ouverture_plans_fixes": "30 sur 351 (9 %)",
+    "ouverture_mouvement_fort": "136 sur 351 (39 %) au-dessus de 100",
+    "transition_decor_plans_fixes": "0 sur 33",
+    "photos_immobiles": "22 sur 22 photos (v2-02), aucun zoom lent",
+    "plan_sequence_anime": "v1-01 : 70,9 s sans coupe détectée"
+  },
+
+  "noir_et_blanc_format": {
+    "noir_et_blanc": {"films": "3 sur 20 entièrement ou presque (gens, portraits, nuit)", "chapitre": "1 fiction, 9 plans sur 58, pour un genre", "couleur_au_sommet": "1 cas : 6 plans couleur à 91-94 % (0,13 à 1,87 s) dans un film noir et blanc"},
+    "format_large": {"compte": "2 ouvertures sur 8", "ratios": [4.0, 2.38], "un_seul_format_par_film": "2 sur 2"},
+    "photos_sur_noir": "25 sur 27 (hommage)"
+  },
+
+  "musique": {
+    "coupe_sur_attaque_forte": {"tolerance_s": 0.067, "net": "1 film sur 11 (photos : 18 sur 26, hasard 2,8)", "faible": "2 sur 11 (p ≈ 0,02 à 0,05)", "absent": "8 sur 11", "ensemble_sans_photos": "89 coupes contre 73 au hasard", "statut_regle": "convention : couper sur la phrase et les attaques fortes, pas sur la grille"},
+    "photos_sur_la_mesure": {"tempo_bpm": 105.0, "photos_de_4_temps": "19 sur 26", "durees_en_temps_entiers": "23 sur 26 à ± 0,25 temps", "autres_durees_en_temps": [1, 2, 5, 6, 8]},
+    "clip_changement_au_vers": "9 sur 16 (hasard 2,5 ; p < 0,001)",
+    "son_qui_suit_la_coupe": "2 films sur 8 : attaque 0,35 s après la coupe en médiane contre 0,59 s au hasard (signal faible)",
+    "sommet_sonore_position_pct": {"mediane": 68, "apres_60_pct": "7 sur 8", "cible_min_pct": 60},
+    "volume_et_vitesse_de_coupe_lies": "3 ouvertures sur 7 (corrélation de rang ≥ 0,4)",
+    "depart_du_silence": "4 ouvertures sur 8",
+    "fin": {"musique_continue_sous_l_atterrissage": 3, "creux_sur_carton_ou_logo_db": [-49, -39], "creux_compte": 5, "silence_total_sur_le_logo": 2},
+    "pre_son_avant_coupe_s": {"valeur": 1.2, "compte": "1 cas (sous-titres)", "cible": [0.5, 1.5], "statut": "convention"},
+    "transition_meme_phrase_musicale": "2 sur 2 dans une keynote ; arrêt 1,2 à 1,3 s avant la parole"
+  },
+
+  "structure": [
+    {"temps": "seuil", "contenu": "noir et silence, ou carton sur noir puis noir", "duree_s": [0.5, 10.0], "observe": "6 sur 8", "regle": "noir 0,5 à 1,5 s ; avec carton : 0,5 s par mot puis 0,8 à 1,5 s de noir"},
+    {"temps": "premier_plan", "contenu": "un détail ou une lumière (serré), ou un plan de situation (large)", "duree_s": [5.0, 10.0], "observe": "au moins 5 s : 5 sur 8 ; serré 4 sur 7, large 3 sur 7"},
+    {"temps": "corps", "contenu": "montage court et régulier ; scènes ouvertes larges puis serrées ; gestes en très gros plans", "plan_median_s": 1.33, "plans_s": [0.65, 3.17], "changements_par_minute": [25, 40], "observe": "337 plans, 7 films"},
+    {"temps": "pic", "contenu": "5 plans les plus rapides, sur le moment le plus fort du son", "position_pct": [60, 80], "plans_s": [0.4, 0.7], "observe": "5 sur 7"},
+    {"temps": "atterrissage", "contenu": "3 à 5 plans qui s'allongent, puis un plan long, large, sur le lieu ou la personne qui va parler ; sinon un carton", "duree_dernier_plan_s": [5.0, 11.0], "observe": "au moins 5 s : 6 sur 8 ; lieu ou orateur : 6 sur 8 ; même plan que l'orateur : 3 sur 8"}
+  ],
+
+  "sous_familles": {
+    "sketch_fiction": {
+      "duree_s": [85, 143],
+      "plan_median_s": [1.35, 1.70],
+      "structure_sketch": ["plan de situation (avec nom de lieu, ou ouverture à froid de 2 à 3 s puis 1 à 1,5 s de noir)", "scène dialoguée au premier tiers", "préparation en très gros plans de 0,5 à 1,3 s", "action, pic", "finale musicale sans parole 15 à 33 s", "nom ou titre dans le décor, plan de 6 à 11 s"],
+      "structure_fiction_narree": ["carton", "noir", "chapitres de 14 à 29 s ouverts par la voix off", "dernier chapitre qui amène la personne"],
+      "ouverture_a_froid": "1 sur 8",
+      "sketch_apres_generique": {"compte": "1 keynote sur 8", "forme": "0,5 s de noir, un plan frontal fixe de 43 s sur fond uni, fin dans le silence"}
+    },
+    "cloture_hommage": {
+      "cloture_temoignages": ["noir 0,9 s", "carton de 11 mots, 4,7 s", "portraits, voix des gens 66 % du temps", "dernier tiers plus rapide (plan médian 0,98 s)", "pic vers 90 % (médiane glissante 0,20 s)", "plan-signature 3,1 s"],
+      "plan_median_s": {"v2-09": 1.08, "v2-02": 2.30, "v8-06": 5.81},
+      "changements_par_minute": {"v2-09": 45.1, "v2-02": 26.4, "v8-06": 6.0},
+      "hommage_photo": "photos immobiles sur noir, une par mesure, voix off, logo 1,7 s",
+      "clip_chante": "plans longs (médiane 5,8 s), fondus enchaînés courts au début des vers, volet final, fondu vers le silence sur le logo"
+    },
+    "transition_decor": {
+      "duree_s": {"mediane": 23.9, "min": 11.2, "max": 31.4, "cible": [15, 30]},
+      "plans": {"mediane": 4.5, "min": 1, "max": 13},
+      "depart_apres_phrase_de_relais_s": {"mediane": 1.26, "min": 0.59, "max": 4.2, "n": 5, "cible": [1.0, 1.5]},
+      "mouvement_vers_l_avant": "6 sur 6",
+      "coupes_cachees_dans_le_sombre": "4 sur 6",
+      "plans_fixes": "0 sur 33",
+      "texte": "0 sur 6",
+      "rythme": "départ vif (0,1 à 2,4 s), arrivée lente (4 à 14 s)",
+      "arrivee_plan_le_plus_long": "4 sur 5",
+      "arrivee_porte_les_premiers_mots": "6 sur 6",
+      "arrivee_tenue_avant_parole_s": {"mediane": 9.3, "min": 6.7, "max": 11.5, "n": 5, "cible": [7.0, 11.5]},
+      "arrivee_duree_totale_s": {"mediane": 14.2, "min": 4.6, "max": 33.4},
+      "musique": "une même phrase musicale par transition dans une keynote (2 sur 2), arrêt 1,2 à 1,3 s avant la parole"
+    }
+  },
+
+  "critique": [
+    {"constat": "premier plan d'image < 3 s sans seuil", "repere": "5 sur 8 au moins 5 s ; 6 sur 8 avec seuil", "message": "entrée brusque : allonger le premier plan ou ajouter un noir (sauf ouverture à froid voulue)"},
+    {"constat": "plan médian du corps > 2,1 s ou < 0,9 s", "repere": "médiane 1,33 s ; quartiles 0,90-2,13 s", "message": "trop lent ou trop haché pour la famille"},
+    {"constat": "pas de pic, ou pic avant 50 %", "repere": "pic entre 61 et 79 % : 5 sur 7", "message": "pas de sommet : 5 plans courts vers les deux tiers"},
+    {"constat": "dernier plan < 5 s ou < 3,5 fois le plan médian", "repere": "6 sur 8 au moins 5 s ; 7 sur 7 au moins 3,5 fois", "message": "l'atterrissage manque : tenir le dernier plan"},
+    {"constat": "fin sur un détail serré", "repere": "0 sur 7", "message": "finir large, sur le lieu ou la personne"},
+    {"constat": "fondus enchaînés > 5 % des changements (hors clip)", "repere": "2 sur 367", "message": "remplacer par des coupes franches"},
+    {"constat": "noir au milieu du film", "repere": "15 noirs sur 17 à l'entrée", "message": "le noir sert à entrer ou à finir"},
+    {"constat": "texte au milieu, ou plus de 2 textes", "repere": "0 sur 7 au milieu ; 1 à 2 textes", "message": "déplacer au seuil ou à la fin, ou supprimer"},
+    {"constat": "carton tenu moins de 0,3 s par mot", "repere": "0,32 à 2,09 s par mot, médiane 0,50", "message": "illisible : tenir plus longtemps"},
+    {"constat": "coupe sur chaque temps de la musique (images animées)", "repere": "net dans 1 film sur 11, et ce sont des photos", "message": "effet mécanique : couper sur la phrase et les attaques fortes"},
+    {"constat": "sommet sonore avant 50 %", "repere": "après 60 % dans 7 sur 8", "message": "la musique doit monter vers la fin"},
+    {"constat": "parole jusqu'à la fin (hors fiction narrée)", "repere": "15 à 33 s de musique seule à la fin, 3 sur 3", "message": "laisser respirer la fin"},
+    {"constat": "zoom lent ou glissement sur des photos", "repere": "0 sur 22 photos", "message": "poser les photos, immobiles"},
+    {"constat": "bandeau de nom dès la première apparition", "repere": "7 sur 7 après le premier tiers", "message": "montrer d'abord, nommer ensuite"},
+    {"constat": "transition entre décors avec plans fixes ou texte", "repere": "0 sur 33 plans fixes ; 0 sur 6 avec texte", "message": "un mouvement continu vers l'avant, sans texte"},
+    {"constat": "arrivée d'une transition tenue < 6 s avant la parole", "repere": "6,7 à 11,5 s (médiane 9,3)", "message": "tenir l'arrivée"}
+  ],
+
+  "limites": [
+    "petits nombres : 8 ouvertures, 3 sketches ou fictions, 3 clôtures, 6 transitions",
+    "valeurs de plan relevées à l'œil sur vignettes, 3 films entiers",
+    "fondus : borne basse",
+    "son recalé par les horodatages du flux ; contrôle direct net dans un seul film",
+    "sous-titres : temps à ± 0,3 s environ"
+  ]
+}

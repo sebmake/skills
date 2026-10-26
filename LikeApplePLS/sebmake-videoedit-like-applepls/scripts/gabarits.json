@@ -1,0 +1,977 @@
+{
+ "version": "2026-10-25",
+ "lecture": "Cibles de construction lues par assemble.py. Chaque entrée : v = valeur retenue ; plage = bornes admises ; statut = observe (mesuré, avec son compte dans base) ou convention (choix de la skill) ; src = où la valeur se lit dans references/cibles/<famille>.json (produit, ouverture, documentaire, bandeannonce). Temps en secondes, places en part de la durée (0 = début, 1 = fin). ; derive = la valeur est tirée de la source par un calcul dit en clair. Contrôle : python3 assemble.py --verifier-gabarits.",
+ "communs": {
+  "marge_prise_s": {
+   "v": 0.3,
+   "statut": "convention",
+   "base": "on n'utilise pas les 0,3 premières et dernières secondes d'un rush (départ et arrêt de la caméra)"
+  },
+  "tolerance_musique_s": {
+   "v": 0.6,
+   "statut": "convention",
+   "base": "un grand changement se cale sur une attaque de la musique si elle tombe à moins de 0,6 s"
+  },
+  "fondu_sortie_musique_s": {
+   "v": 1.0,
+   "statut": "convention",
+   "base": "la musique coupée avant sa fin s'éteint en 1 s"
+  },
+  "variation_durees": {
+   "v": [
+    1.0,
+    0.8,
+    1.25,
+    0.9,
+    1.15,
+    0.85,
+    1.1
+   ],
+   "statut": "convention",
+   "base": "suite fixe de facteurs autour de la durée cible, pour éviter des plans tous égaux ; bornée par la plage du temps"
+  },
+  "taille_bandeau_pct": {
+   "v": 2.9,
+   "plage": [
+    2.5,
+    3.3
+   ],
+   "statut": "observe",
+   "base": "documentaire : nom à 2,5-3,3 % de la hauteur, estimé à l'œil sur 5 images",
+   "src": "documentaire noms.bandeau.hauteur_nom_pct"
+  }
+ },
+ "produit": {
+  "duree_s": {
+   "v": 32.0,
+   "plage": [
+    24.0,
+    51.0
+   ],
+   "statut": "observe",
+   "base": "13 films sans voix : médiane 31,9 s, 24 à 51 s",
+   "src": "produit corpus.duree_s.sans_voix_off"
+  },
+  "noir_ouverture_s": {
+   "v": 1.1,
+   "plage": [
+    0.33,
+    1.6
+   ],
+   "statut": "observe",
+   "base": "noir d'ouverture 13 sur 16, médiane 1,1 s ; 9 sur 13 au plus 1,6 s",
+   "src": "produit noirs.ouverture"
+  },
+  "fondu_depuis_noir_s": {
+   "v": 0.94,
+   "plage": [
+    0.7,
+    1.33
+   ],
+   "statut": "observe",
+   "base": "image qui naît par un fondu ou la lumière 8 sur 16 ; fondu médian 0,94 s",
+   "src": "produit transitions.fondu_depuis_noir"
+  },
+  "premier_plan_s": {
+   "v": 3.27,
+   "plage": [
+    2.32,
+    7.9
+   ],
+   "statut": "observe",
+   "base": "premier plan d'image, médiane 3,27 s (quartiles 2,32-7,9), 16 films",
+   "src": "produit durees.premier_plan_image"
+  },
+  "plan_debut_s": {
+   "v": 2.05,
+   "statut": "observe",
+   "base": "213 plans, premier tiers",
+   "src": "produit durees.debut"
+  },
+  "plan_milieu_s": {
+   "v": 2.37,
+   "statut": "observe",
+   "base": "213 plans, tiers du milieu",
+   "src": "produit durees.milieu"
+  },
+  "plan_quartiles_s": {
+   "v": [
+    1.23,
+    3.77
+   ],
+   "statut": "observe",
+   "base": "quartiles des 213 plans d'image",
+   "src": "produit durees.quartiles.tout"
+  },
+  "pic": {
+   "n": 5,
+   "v": 1.17,
+   "place": 0.3,
+   "statut": "observe",
+   "base": "5 plans de 1,17 s (médiane, 11 films) ; dans la première moitié 8 sur 11 ; avant la révélation 7 sur 7. Place 0,30 : convention dans la première moitié",
+   "src": "produit durees.pic_5_plans"
+  },
+  "part_serre_min": {
+   "v": 0.65,
+   "statut": "observe",
+   "base": "détail ou serré : 70 % au premier tiers, 65 % au milieu",
+   "src": "produit valeurs_de_plan.part_detail_serre"
+  },
+  "revelation_place": {
+   "v": 0.77,
+   "plage": [
+    0.69,
+    0.82
+   ],
+   "statut": "observe",
+   "base": "10 films à révélation tardive",
+   "src": "produit structure[revelation].position"
+  },
+  "revelation_tenu_s": {
+   "v": 8.04,
+   "plage": [
+    4.89,
+    9.0
+   ],
+   "statut": "observe",
+   "base": "plan qui révèle, 10 films",
+   "src": "produit durees.plan_de_revelation_tenu"
+  },
+  "dernier_plan_s": {
+   "v": 7.42,
+   "plage": [
+    6.05,
+    8.48
+   ],
+   "statut": "observe",
+   "base": "dernier plan d'image, quartiles ; au moins 4 s dans 13 sur 16",
+   "src": "produit durees.dernier_plan_image"
+  },
+  "nom_place": {
+   "v": 0.94,
+   "plage": [
+    0.83,
+    0.96
+   ],
+   "statut": "observe",
+   "base": "nom écrit dans 7 films",
+   "src": "produit cartons.nom.position"
+  },
+  "nom_duree_s": {
+   "v": 2.4,
+   "plage": [
+    1.27,
+    4.5
+   ],
+   "statut": "observe",
+   "base": "7 films",
+   "src": "produit cartons.nom.duree"
+  },
+  "nom_taille_pct": {
+   "objet": 4.5,
+   "logiciel": 10.5,
+   "plage_objet": [
+    4.1,
+    5.0
+   ],
+   "plage_logiciel": [
+    9.0,
+    12.0
+   ],
+   "statut": "observe",
+   "base": "2 + 2 mesures : discret pour un objet, héros pour un logiciel ; valeur retenue = milieu de la plage (convention)",
+   "src": "produit cartons.nom.taille_pct_hauteur"
+  },
+  "nom_fond": {
+   "v": "noir",
+   "statut": "convention",
+   "base": "fond uni 5 sur 5 : noir 2, blanc 2, dégradé 1 ; le noir est un choix de la skill"
+  },
+  "nom_sortie": {
+   "v": "fondu",
+   "statut": "convention",
+   "base": "sortie du nom : fondu au noir 2, coupe au noir 2, retour en scène 3 ; le fondu est un choix de la skill"
+  },
+  "noir_final_s": {
+   "v": 0.95,
+   "plage": [
+    0.1,
+    2.81
+   ],
+   "statut": "observe",
+   "base": "noir final 8 sur 16, médiane 0,95 s",
+   "src": "produit noirs.fin"
+  },
+  "fondu_au_noir_s": {
+   "v": 0.94,
+   "plage": [
+    0.37,
+    2.57
+   ],
+   "statut": "observe",
+   "base": "11 fondus au noir dans 6 films",
+   "src": "produit transitions.fondu_au_noir"
+  },
+  "plans_par_minute": {
+   "plage": [
+    13.2,
+    32.4
+   ],
+   "statut": "observe",
+   "base": "14 films qui coupent",
+   "src": "produit durees.plans_image_par_minute.films_qui_coupent"
+  },
+  "plan_median_film": {
+   "plage": [
+    1.0,
+    3.6
+   ],
+   "statut": "observe",
+   "base": "14 films qui coupent",
+   "src": "produit durees.mediane_par_film.films_qui_coupent"
+  },
+  "coupes_min": {
+   "v": 0.8,
+   "statut": "observe",
+   "base": "83 % de coupes (194 sur 234), 16 films",
+   "src": "produit transitions.regles.coupe_min_part"
+  },
+  "objet_des_le_debut_place": {
+   "v": 0.05,
+   "plage": [
+    0.01,
+    0.18
+   ],
+   "statut": "observe",
+   "base": "objet entier à 1, 2, 5, 9 et 18 % de la durée (5 films)",
+   "src": "produit schema_alternatif.objet_entier_position"
+  },
+  "plan_logiciel_s": {
+   "v": 2.47,
+   "statut": "observe",
+   "base": "logiciel : 24,3 plans d'image par minute (médiane, 4 films), soit 2,47 s par plan en moyenne",
+   "src": "produit durees.plans_image_par_minute.logiciel",
+   "derive": "60 / médiane des plans par minute (24,33)"
+  }
+ },
+ "ouverture": {
+  "duree_s": {
+   "v": 90.0,
+   "plage": [
+    60.0,
+    120.0
+   ],
+   "statut": "convention",
+   "base": "observé 65 à 143 s (médiane 99,3 s, 8 ouvertures) ; 60 à 120 s est la cible de la skill",
+   "src": "ouverture durees.film"
+  },
+  "seuil_noir_s": {
+   "v": 1.0,
+   "plage": [
+    0.5,
+    1.5
+   ],
+   "statut": "observe",
+   "base": "seuil 6 sur 8 ; noir seul 0,97 à 1,0 s",
+   "src": "ouverture durees.debut.seuil"
+  },
+  "carton_s_par_mot": {
+   "v": 0.5,
+   "plage": [
+    0.32,
+    2.09
+   ],
+   "statut": "observe",
+   "base": "médiane de 7 cartons",
+   "src": "ouverture cartons.secondes_par_mot"
+  },
+  "carton_duree_min_s": {
+   "v": 1.94,
+   "statut": "observe",
+   "base": "carton le plus court des 7 mesurés",
+   "src": "ouverture cartons.duree_s.min"
+  },
+  "noir_apres_carton_s": {
+   "v": 1.0,
+   "plage": [
+    0.8,
+    1.5
+   ],
+   "statut": "convention",
+   "base": "observé 0,8 à 4,3 s ; cible 0,8 à 1,5 s",
+   "src": "ouverture cartons.noir_apres_carton_de_seuil_s"
+  },
+  "fondu_depuis_noir_s": {
+   "v": 0.9,
+   "plage": [
+    0.27,
+    1.47
+   ],
+   "statut": "convention",
+   "base": "6 fondus avec le noir, 6 sur 6 dans les 10 premiers % (0,27 à 1,47 s) ; 0,9 s est un choix dans la plage",
+   "src": "ouverture transitions.fondu.depuis_ou_vers_noir"
+  },
+  "premier_plan_s": {
+   "v": 6.77,
+   "plage": [
+    5.0,
+    10.0
+   ],
+   "statut": "observe",
+   "base": "médiane 6,77 s ; au moins 5 s : 5 sur 8",
+   "src": "ouverture durees.debut.premier_plan_image"
+  },
+  "plan_tiers_s": {
+   "v": [
+    1.6,
+    1.3,
+    1.24
+   ],
+   "statut": "observe",
+   "base": "plan médian par tiers, 7 ouvertures montées, 337 plans",
+   "src": "ouverture durees.debut.tiers_1_plan_median / milieu / fin"
+  },
+  "plan_quartiles_s": {
+   "v": [
+    0.9,
+    2.13
+   ],
+   "statut": "observe",
+   "base": "337 plans",
+   "src": "ouverture durees.p25 / p75"
+  },
+  "plan_p10_p90_s": {
+   "v": [
+    0.65,
+    3.17
+   ],
+   "statut": "observe",
+   "base": "337 plans, p10 et p90",
+   "src": "ouverture durees.p10 / p90"
+  },
+  "plan_long_max_part": {
+   "v": 0.1,
+   "seuil_s": 3.2,
+   "statut": "observe",
+   "base": "au plus 1 plan sur 10 dépasse 3,2 s",
+   "src": "ouverture durees.milieu.plans_longs_au_milieu"
+  },
+  "geste_s": {
+   "plage": [
+    0.5,
+    1.3
+   ],
+   "statut": "observe",
+   "base": "gestes et objets en très gros plans",
+   "src": "observé à l'œil (analyse non publiée)"
+  },
+  "pic": {
+   "n": 5,
+   "v": 0.55,
+   "plage": [
+    0.4,
+    0.7
+   ],
+   "place": [
+    0.6,
+    0.8
+   ],
+   "statut": "observe",
+   "base": "pic entre 61 et 79 % : 5 sur 7 ; médiane glissante 0,40 à 0,73 s",
+   "src": "ouverture durees.milieu.pic"
+  },
+  "changements_par_minute": {
+   "plage": [
+    25,
+    40
+   ],
+   "statut": "observe",
+   "base": "5 ouvertures sur 7",
+   "src": "ouverture durees.changements_par_minute"
+  },
+  "atterrissage": {
+   "n": 4,
+   "plage_n": [
+    3,
+    5
+   ],
+   "facteur": 1.35,
+   "statut": "convention",
+   "base": "3 à 5 plans qui s'allongent (observé à l'œil) ; 4 plans et un facteur 1,35 d'un plan au suivant sont des choix de la skill"
+  },
+  "dernier_plan_s": {
+   "v": 7.06,
+   "plage": [
+    5.0,
+    11.0
+   ],
+   "ratio_min": 3.5,
+   "statut": "observe",
+   "base": "médiane 7,06 s ; au moins 5 s : 6 sur 8 ; au moins 3,5 fois le plan médian : 7 sur 7 ; large 5 sur 7",
+   "src": "ouverture durees.fin.dernier_plan_image"
+  },
+  "titre_fin_s": {
+   "v": 4.74,
+   "plage": [
+    1.94,
+    9.74
+   ],
+   "statut": "observe",
+   "base": "durée médiane des cartons et titres (7) ; titre dans le décor en fin 2 sur 8",
+   "src": "ouverture cartons.duree_s"
+  },
+  "noir_final_s": {
+   "v": 0.5,
+   "statut": "convention",
+   "base": "dans les keynotes, la scène suit le film ; hors scène, la skill finit sur un noir court"
+  },
+  "transition_decor": {
+   "duree_s": {
+    "v": 24.0,
+    "plage": [
+     15.0,
+     30.0
+    ],
+    "statut": "observe",
+    "base": "6 transitions : médiane 23,9 s (11,2 à 31,4) ; cible 15 à 30 s",
+    "src": "ouverture sous_familles.transition_decor.duree_s"
+   },
+   "depart_plans_s": {
+    "plage": [
+     0.1,
+     2.4
+    ],
+    "statut": "observe",
+    "base": "départ vif",
+    "src": "ouverture sous_familles.transition_decor.rythme"
+   },
+   "arrivee_s": {
+    "v": 9.3,
+    "plage": [
+     7.0,
+     11.5
+    ],
+    "statut": "observe",
+    "base": "arrivée tenue avant la parole, médiane 9,3 s (5 cas) ; arrivée = plan le plus long 4 sur 5",
+    "src": "ouverture sous_familles.transition_decor.arrivee_tenue_avant_parole_s"
+   },
+   "plans": {
+    "v": 5,
+    "plage": [
+     1,
+     13
+    ],
+    "statut": "observe",
+    "base": "médiane 4,5 plans (6 transitions) ; 5 retenu",
+    "src": "ouverture sous_familles.transition_decor.plans",
+    "derive": "médiane 4,5 arrondie à 5"
+   }
+  },
+  "cloture": {
+   "noir_s": {
+    "v": 0.9,
+    "statut": "observe",
+    "base": "1 film (v2-09)",
+    "src": "ouverture sous_familles.cloture_hommage.cloture_temoignages"
+   },
+   "carton_mots_max": {
+    "v": 11,
+    "statut": "observe",
+    "base": "1 film : carton de 11 mots, 4,7 s"
+   },
+   "plan_s": {
+    "v": 1.08,
+    "statut": "observe",
+    "base": "plan médian de la clôture témoignages (1 film)",
+    "src": "ouverture sous_familles.cloture_hommage.plan_median_s.v2-09"
+   },
+   "plan_dernier_tiers_s": {
+    "v": 0.98,
+    "statut": "observe",
+    "base": "1 film",
+    "src": "ouverture sous_familles.cloture_hommage.cloture_temoignages"
+   },
+   "pic": {
+    "n": 5,
+    "v": 0.3,
+    "place": 0.9,
+    "statut": "convention",
+    "base": "pic vers 90 % (médiane glissante 0,20 s, 1 film) ; 0,3 s par plan est un choix de la skill, au-dessus du minimum lisible"
+   },
+   "signature_s": {
+    "v": 3.1,
+    "plage": [
+     1.5,
+     3.5
+    ],
+    "statut": "observe",
+    "base": "plan-signature 3,1 s (1 film) ; logo final 1,7, 3,1, 8,3 s (3 films)",
+    "src": "ouverture cartons.logo_final_cloture_s"
+   },
+   "bandeau_s": {
+    "v": 2.93,
+    "plage": [
+     1.8,
+     3.47
+    ],
+    "statut": "observe",
+    "base": "7 personnes ; jamais à la première apparition 7 sur 7",
+    "src": "ouverture cartons.bandeaux_de_nom"
+   }
+  }
+ },
+ "documentaire": {
+  "duree_s": {
+   "v": 142.0,
+   "plage": [
+    78.0,
+    324.0
+   ],
+   "statut": "observe",
+   "base": "8 films : médiane 142,4 s",
+   "src": "documentaire corpus.duree_film"
+  },
+  "noir_ouverture_s": {
+   "v": 0.93,
+   "statut": "observe",
+   "base": "le film part du noir 6 sur 8 ; noir médian 0,93 s (12 noirs)",
+   "src": "documentaire durees.par_type.noir"
+  },
+  "premiere_parole_s": {
+   "v": 5.95,
+   "plage": [
+    2.91,
+    16.5
+   ],
+   "statut": "observe",
+   "base": "8 films",
+   "src": "documentaire parole.premiere_parole"
+  },
+  "silence_entre_prises_s": {
+   "v": 1.58,
+   "plage": [
+    0.99,
+    3.14
+   ],
+   "statut": "observe",
+   "base": "médiane des médianes par film (8 films)",
+   "src": "documentaire parole.silence_entre_prises"
+  },
+  "prise_s": {
+   "v": 5.91,
+   "plage": [
+    1.91,
+    19.78
+   ],
+   "statut": "observe",
+   "base": "107 prises, p10-p90",
+   "src": "documentaire parole.prise"
+  },
+  "couverture_parole": {
+   "v": 0.767,
+   "plage": [
+    0.506,
+    0.883
+   ],
+   "statut": "observe",
+   "base": "8 films",
+   "src": "documentaire parole.couverture"
+  },
+  "parole_sur_visage": {
+   "v": 0.33,
+   "plage": [
+    0.25,
+    0.55
+   ],
+   "statut": "observe",
+   "base": "médiane 0,33 ; sous 0,55 : 6 sur 8",
+   "src": "documentaire parole.parole_sur_visage",
+   "derive": "plage = cible de la règle (0,25-0,55), pas min-max"
+  },
+  "voix_avant_visage_s": {
+   "v": 3.0,
+   "plage": [
+    1.53,
+    4.7
+   ],
+   "statut": "observe",
+   "base": "13 premières prises sur 20 entrent par la voix ; visage 3,0 s après (12 cas)",
+   "src": "documentaire parole.voix_avant_visage"
+  },
+  "decalage_coupe_voix_s": {
+   "v": 0.6,
+   "statut": "convention",
+   "base": "changement de voix et coupe ensemble à 0,5 s près : 23 sur 57 seulement ; on décale l'image de 0,6 s (choix de la skill)"
+  },
+  "entretien_max_s": {
+   "v": 3.16,
+   "statut": "observe",
+   "base": "p90 des 162 plans d'entretien ; plus de 5 s seulement dans le dernier cinquième (4 sur 4)",
+   "src": "documentaire durees.par_type.entretien",
+   "derive": "p90 (3,16), pas la médiane"
+  },
+  "valeurs_entretien": {
+   "v": {
+    "rapproche": 0.53,
+    "moyen": 0.26,
+    "serre": 0.21
+   },
+   "statut": "observe",
+   "base": "162 plans d'entretien : R 53 %, M 26 %, G et TG 21 %, large 0",
+   "src": "documentaire valeurs.entretien.parts"
+  },
+  "bandeau_s": {
+   "v": 2.07,
+   "plage": [
+    0.9,
+    3.47
+   ],
+   "statut": "observe",
+   "base": "27 bandeaux ; 4 films sur 8 nomment par un bandeau",
+   "src": "documentaire noms.bandeau.duree"
+  },
+  "respiration_s": {
+   "v": 4.0,
+   "plage": [
+    3.0,
+    9.33
+   ],
+   "statut": "convention",
+   "base": "16 respirations de 3,0 à 9,3 s dans 6 films sur 8, 0,6 par minute ; 4 s est un choix dans la plage",
+   "src": "documentaire durees.respirations"
+  },
+  "respiration_par_minute": {
+   "v": 0.6,
+   "statut": "observe",
+   "base": "médiane, 8 films",
+   "src": "documentaire durees.respirations.par_minute_mediane"
+  },
+  "noir_chapitre_s": {
+   "v": 0.7,
+   "plage": [
+    0.4,
+    1.0
+   ],
+   "statut": "convention",
+   "base": "au plus 1 noir interne par film (3 films : 0,4, 1,0, 2,47 s) ; 0,7 s est un choix dans la cible 0,4-1 s",
+   "src": "documentaire transitions.noir_interne"
+  },
+  "pose": {
+   "plan_tiers_s": {
+    "v": [
+     1.87,
+     1.9,
+     2.47
+    ],
+    "statut": "observe",
+    "base": "323 plans, 5 films posés",
+    "src": "documentaire durees.regimes.pose"
+   },
+   "plan_plage_s": {
+    "v": [
+     1.0,
+     4.46
+    ],
+    "statut": "observe",
+    "base": "p10-p90",
+    "src": "documentaire durees.regimes.pose"
+   },
+   "plan_final_s": {
+    "v": 7.17,
+    "plage": [
+     5.74,
+     8.14
+    ],
+    "statut": "observe",
+    "base": "plan tenu final 5 sur 5 (5,74 ; 6,44 ; 7,17 ; 7,61 ; 8,14), médiane 7,17",
+    "src": "documentaire fin.pose_plan_tenu"
+   },
+   "derniere_parole_avant_fin_s": {
+    "v": 4.2,
+    "plage": [
+     0.89,
+     9.54
+    ],
+    "statut": "observe",
+    "base": "7 films",
+    "src": "documentaire parole.derniere_parole_avant_fin"
+   }
+  },
+  "choral": {
+   "plan_tiers_s": {
+    "v": [
+     1.53,
+     1.2,
+     1.13
+    ],
+    "statut": "observe",
+    "base": "273 plans, 3 films choraux",
+    "src": "documentaire durees.regimes.choral"
+   },
+   "plan_plage_s": {
+    "v": [
+     0.47,
+     2.6
+    ],
+    "statut": "observe",
+    "base": "p10-p90",
+    "src": "documentaire durees.regimes.choral"
+   },
+   "rafale_finale": {
+    "n": 4,
+    "v": 0.35,
+    "plage": [
+     0.29,
+     0.42
+    ],
+    "place": 0.9,
+    "statut": "observe",
+    "base": "4 films sur 8, entre 90 et 97 % ; 3 à 5 plans de 0,29 à 0,42 s ; œuvres ou produit, jamais un visage 4 sur 4 ; 4 plans et 0,35 s : milieu des plages (convention)",
+    "src": "documentaire durees.rafales.finale"
+   },
+   "logo_s": {
+    "v": 3.77,
+    "plage": [
+     2.2,
+     4.24
+    ],
+    "statut": "observe",
+    "base": "logo final 5 sur 8 ; seulement si l'utilisateur le fournit (convention)",
+    "src": "documentaire fin.logo"
+   },
+   "derniere_parole_avant_fin_s": {
+    "v": 4.2,
+    "plage": [
+     0.89,
+     9.54
+    ],
+    "statut": "observe",
+    "base": "7 films",
+    "src": "documentaire parole.derniere_parole_avant_fin"
+   }
+  }
+ },
+ "bande_annonce": {
+  "duree_s": {
+   "v": 89.0,
+   "plage": [
+    50.0,
+    119.0
+   ],
+   "statut": "observe",
+   "base": "6 bandes-annonces : médiane 89,2 s",
+   "src": "bandeannonce corpus.bandes_annonces.duree_s"
+  },
+  "duree_usage_s": {
+   "v": 60.0,
+   "plage": [
+    60.0,
+    94.0
+   ],
+   "statut": "observe",
+   "base": "2 films d'usage : 60 et 93,5 s",
+   "src": "bandeannonce corpus.usage.duree_s"
+  },
+  "noir_ouverture_s": {
+   "v": 0.6,
+   "plage": [
+    0.13,
+    4.2
+   ],
+   "statut": "observe",
+   "base": "7 sur 7 mesurables",
+   "src": "bandeannonce image.ouverture_dans_le_noir"
+  },
+  "plan_tiers_s": {
+   "v": [
+    1.2,
+    0.9,
+    0.77
+   ],
+   "statut": "observe",
+   "base": "384 plans d'image, 6 bandes-annonces",
+   "src": "bandeannonce durees.debut / milieu / fin"
+  },
+  "plan_ouverture_s": {
+   "v": 1.24,
+   "statut": "observe",
+   "base": "15 premiers %, 48 plans",
+   "src": "bandeannonce durees.ouverture_15pc"
+  },
+  "pic": {
+   "v": 0.62,
+   "plage": [
+    0.41,
+    1.46
+   ],
+   "place": [
+    0.78,
+    0.88
+   ],
+   "statut": "observe",
+   "base": "6 sur 6",
+   "src": "bandeannonce durees.pic_10s"
+  },
+  "part_large_debut_min": {
+   "v": 0.35,
+   "statut": "convention",
+   "base": "observé 39 à 56 % de plans larges au premier tiers ; seuil de la skill",
+   "src": "bandeannonce seuils_critique.part_plans_larges_debut_min"
+  },
+  "accroche_fin": {
+   "v": 0.17,
+   "statut": "convention",
+   "base": "accroche de 15 à 20 % (catalogue par blocs, 2 films) ; 0,17 = 15 s sur 90 dans la timeline type"
+  },
+  "mot_choc_s": {
+   "v": 1.5,
+   "plage": [
+    0.97,
+    2.27
+   ],
+   "statut": "convention",
+   "base": "5 mots-chocs de 0,97 à 2,27 s, entre 15 et 25 % ; 1,5 s est un choix dans la plage",
+   "src": "bandeannonce cartons.mot_choc"
+  },
+  "titre_bloc_s": {
+   "v": 1.0,
+   "plage": [
+    0.73,
+    2.27
+   ],
+   "statut": "observe",
+   "base": "20 titres ; ouvre son bloc 20 sur 21",
+   "src": "bandeannonce cartons.titre_de_bloc"
+  },
+  "bloc_s": {
+   "v": 4.5,
+   "plage": [
+    1.9,
+    7.8
+   ],
+   "statut": "observe",
+   "base": "21 blocs, 2 films ; 3 à 6 plans",
+   "src": "bandeannonce cartons.bloc"
+  },
+  "fermeture_part": {
+   "v": 0.097,
+   "plage": [
+    0.061,
+    0.174
+   ],
+   "statut": "observe",
+   "base": "8 films ; durée médiane 7,97 s",
+   "src": "bandeannonce durees.fermeture"
+  },
+  "noir_avant_bouton_s": {
+   "v": 0.42,
+   "statut": "observe",
+   "base": "noir médian 0,42 s (40 noirs) ; noir entre le pic et la suite 4 sur 6",
+   "src": "bandeannonce transitions.noir.duree_mediane"
+  },
+  "bouton_s": {
+   "v": 2.8,
+   "plage": [
+    2.31,
+    3.44
+   ],
+   "statut": "convention",
+   "base": "bouton 4 sur 6, 1 ou 2 plans de 2,31 à 3,44 s ; 2,8 s est un choix dans la plage ; sort du noir par un fondu 4 sur 4",
+   "src": "bandeannonce parole.bouton"
+  },
+  "noir_apres_bouton_s": {
+   "v": 0.2,
+   "statut": "convention",
+   "base": "timeline type de l'analyse (noir 0,2 s)"
+  },
+  "titre_final_s": {
+   "v": 3.54,
+   "plage": [
+    2.5,
+    4.8
+   ],
+   "statut": "observe",
+   "base": "8 sur 8 ; 7 sur 8 entre 2,5 et 4,8 s ; sort du noir 4 sur 6",
+   "src": "bandeannonce cartons.titre_ou_logo_final"
+  },
+  "fondu_depuis_noir_s": {
+   "v": 0.5,
+   "statut": "convention",
+   "base": "le titre et le bouton sortent du noir par un fondu (observé) ; sa durée n'a pas été mesurée"
+  },
+  "noir_final_s": {
+   "v": 0.5,
+   "statut": "convention",
+   "base": "fermeture : titre ou logo, puis (noir)"
+  },
+  "replique_max_s": {
+   "v": 3.1,
+   "statut": "observe",
+   "base": "p90 de 108 répliques ; 10 mots au plus",
+   "src": "bandeannonce parole"
+  },
+  "part_parole": {
+   "v": 0.48,
+   "plage": [
+    0.28,
+    0.58
+   ],
+   "statut": "observe",
+   "base": "5 bandes-annonces parlées, borne haute",
+   "src": "bandeannonce parole.part_du_temps"
+  },
+  "usage": {
+   "plan_tiers_s": {
+    "v": [
+     1.3,
+     1.13,
+     0.8
+    ],
+    "statut": "observe",
+    "base": "2 films : cibles faibles",
+    "src": "bandeannonce durees.usage"
+   },
+   "scene_s": {
+    "v": 10.0,
+    "plage": [
+     4.0,
+     12.0
+    ],
+    "statut": "observe",
+    "base": "v3-07 : 5 scènes de 4 à 12 s, médiane 10 s (1 film)"
+   },
+   "ouverture_plan_s": {
+    "v": 5.1,
+    "statut": "observe",
+    "base": "plan-séquence d'ouverture de 5,1 s (1 film sur 2)"
+   },
+   "pic": {
+    "v": 0.5,
+    "plage": [
+     0.37,
+     0.8
+    ],
+    "place": [
+     0.78,
+     0.9
+    ],
+    "statut": "convention",
+    "base": "pic à 78-90 % : 1 film sur 2 accélère (plans de 0,37 s), l'autre ralentit ; 0,5 s est un choix de la skill dans la plage"
+   },
+   "nom_s": {
+    "v": 3.4,
+    "plage": [
+     2.5,
+     3.4
+    ],
+    "statut": "observe",
+    "base": "2 films : logo 2,5 s, nom 3,4 s"
+   },
+   "phrase_s": {
+    "v": 3.0,
+    "statut": "convention",
+    "base": "une phrase de 3 à 9 mots avant le nom (2 sur 2) ; sa durée n'a pas été mesurée"
+   }
+  }
+ }
+}
