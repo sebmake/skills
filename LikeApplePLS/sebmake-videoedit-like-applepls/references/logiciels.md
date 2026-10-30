@@ -72,6 +72,10 @@ Options : `--nom NOM` (nom du projet et de la séquence ; préfixe `TEST-` pour 
 
 Sur les essais faits à l'écriture de la skill, trois séquences (25 et 23,976 images par seconde, avec musique, paroles, bandeaux, dix cartons) ont été construites et relues par `sequence.inspect` sans écart, et chaque plan d'entretien est retombé sur sa parole à l'image près.
 
+### 2.2 bis Le montage composé, et la carte
+
+`compose_montage.py plan.json` puis `filmcraft_build.py montage.json` posent les chapitres sur V1, une voix par phrase sur A1, la musique sur A2 (atténuée sous les voix si `attenuation_db` : son essentiel de FilmCraft), les sons sur A3 et les sous-titres sur C1 ; les pistes portent le nom de leur rôle. `--carte carte-montage.md` décrit chaque piste et ce qu'elle porte ; `--capture capture.png` prend la fenêtre de FilmCraft (l'app passe au premier plan ; l'écran doit être allumé, sinon « no frame was presented »). Ce sont les deux pièces à montrer pour expliquer le montage avant qu'on le retouche à la main.
+
 ### 2.3 Regarder le résultat
 
 La vérification compare des nombres. Regarde aussi les images : ouvre la planche du dossier `--images`, et vérifie que chaque carton est lisible, que rien de noir ne cache une image, que la révélation et la fin tombent où le plan le dit.

@@ -1,6 +1,6 @@
 
 <a href="https://github.com/sebmake/skills">
-<img width="720" alt="Previews from the four skills: slide layouts, a product film, a motion example and a test edit" src="assets/likeapplepls.jpg" />
+<img width="720" alt="Previews from the four skills: slide layouts, a product film, an app walkthrough built in EffectCraft and the same walkthrough assembled in FilmCraft" src="assets/likeapplepls.jpg" />
 </a>
 
 # LikeApplePLS
@@ -41,8 +41,8 @@ An agent left to itself will guess at all of that, and it will make up what's mi
 
 - **[sebmake-keynote-likeapple-pls](./LikeApplePLS/sebmake-keynote-likeapple-pls/SKILL.md)** — Builds a 16:9 deck the way Apple builds its keynotes, plus the script to read over it, for Keynote, PowerPoint, Figma Slides, Canva or video.
 - **[sebmake-videopresentation-likeapplepls](./LikeApplePLS/sebmake-videopresentation-likeapplepls/SKILL.md)** — Makes a silent product film, one to two minutes long, cut like Apple's reveal films, then 15 to 60 second versions in 16:9, 9:16 and 1:1.
-- **[sebmake-motiondesign-likeapplepls](./LikeApplePLS/sebmake-motiondesign-likeapplepls/SKILL.md)** — Tells you how to animate a title, a number, a logo or a screenshot, from about 640 measured animations, then writes the After Effects or EffectCraft script.
-- **[sebmake-videoedit-like-applepls](./LikeApplePLS/sebmake-videoedit-like-applepls/SKILL.md)** — Cuts your footage like Apple's keynote films, in FilmCraft or as an XML file for DaVinci Resolve and Premiere Pro, and reviews an edit you've already made, usually down to the timecode.
+- **[sebmake-motiondesign-likeapplepls](./LikeApplePLS/sebmake-motiondesign-likeapplepls/SKILL.md)** — Tells you how to animate a title, a number, a logo or a screenshot, from about 640 measured animations, then writes the After Effects or EffectCraft script. Also builds narrated app walkthroughs, layer by layer.
+- **[sebmake-videoedit-like-applepls](./LikeApplePLS/sebmake-videoedit-like-applepls/SKILL.md)** — Cuts your footage like Apple's keynote films, in FilmCraft or as an XML file for DaVinci Resolve and Premiere Pro, assembles rendered chapters with voice, subtitles and ducked music, and reviews an edit you've already made, usually down to the timecode.
 
 ---
 

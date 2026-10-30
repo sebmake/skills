@@ -67,6 +67,8 @@ python3 "$SKILL/scripts/ec.py" script motion.jsx                                
 python3 "$SKILL/scripts/ec.py" frames "<nom de la comp>" controle/ --pas 0.5 --max 640   # une image toutes les 0,5 s
 python3 "$SKILL/scripts/ec.py" frame "<nom de la comp>" 4.3 image.png 1920       # une image précise
 python3 "$SKILL/scripts/ec.py" render "<nom de la comp>" rendus/motion.mp4      # rendu H.264, attend la fin
+python3 "$SKILL/scripts/ec.py" capture capture.png "<nom de la comp>"           # la fenêtre de l'app, pour montrer la mécanique
+python3 "$SKILL/scripts/sonde_ec.py" "<nom de la comp>" --carte carte.md        # la carte des calques et les repères
 ```
 
 - Le nom de la composition est `comp.nom` du `motion.json` (préfixé si `--prefixe`).
@@ -97,6 +99,9 @@ python3 "$SKILL/scripts/ec.py" render "<nom de la comp>" rendus/motion.mp4      
 | le flou paraît deux fois trop fort ou trop faible | le réglage « Flou » du flou gaussien vaut 2 σ dans EffectCraft | le moteur convertit (`md_sigma`) ; à vérifier à l'œil dans After Effects |
 | la police n'est pas la bonne | une police absente ne se signale pas | liste de polices avec repli dans le thème ; EffectCraft fournit Inter (Regular, Medium, SemiBold, Bold) |
 | le rendu est retiré ou reste dans la file | la file de rendu garde les éléments rendus | `ec.py render` les retire, sauf `--garder 1` |
+| une image enfant d'un calque nul ignore son zoom | EffectCraft n'applique pas l'échelle d'un nul à une image enfant (la position, si) | faire porter l'échelle par l'image elle-même ; ses enfants de forme suivent bien (`scene-demontee.md` § 1) |
+| les enfants d'une image sont deux fois trop grands et décalés | l'image parente est plus grande que la composition | image ≤ composition ; format 4K pour une capture ×2 |
+| `ui.screenshot` : « no frame was presented » | fenêtre de l'app cachée ou écran en veille | `ec.py capture` met l'app au premier plan ; l'écran doit être allumé |
 | le mouvement part dans le mauvais sens | la vitesse d'un ease n'a pas le signe de la variation | voir `courbes.md` § 8 |
 
 ---

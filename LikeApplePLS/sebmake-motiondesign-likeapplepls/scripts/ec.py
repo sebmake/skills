@@ -16,6 +16,8 @@ Usage :
     python3 ec.py render "<comp>" <sortie.mp4> [--format h264] [--garder 1]
                                                         file de rendu → fichier vidéo (attend la fin) ; l'élément
                                                         rendu est retiré de la file, sauf avec --garder 1
+    python3 ec.py capture <sortie.png> ["<comp>"]      capture de la fenêtre de l'app (projet, composition, timeline)
+    python3 ec.py --autoriser garder <projet.ecproj>   enregistre le projet dans un fichier NEUF, sur demande seulement
     python3 ec.py cmd <commande> ['<paramètres JSON>']  une commande de engine.commands
     python3 ec.py raw '<requête JSON>'                  une méthode brute : {"method": ..., "params": ...}
     python3 ec.py commandes [filtre]                    liste des commandes connues de l'app
@@ -199,6 +201,26 @@ def main(argv):
                     pass
             print("fichier : %s (%s)" % (sortie, "%d octets" % os.path.getsize(sortie) if existe else "absent"))
             return 0 if r.get("ok") and existe else 1
+        if act == "capture":
+            # la fenêtre entière de l'app (projet, composition, timeline) : pour montrer comment la scène est faite
+            sortie = os.path.abspath(a[1])
+            activer()   # une fenêtre cachée ne présente aucune image à capturer
+            if len(a) > 2:
+                try:
+                    executer(o, "comp.open", {"comp": a[2]})
+                except Exception:
+                    pass
+            r = requete(o, "ui.screenshot", {"path": sortie})
+            afficher(o, r); return 0 if r.get("ok") and os.path.exists(sortie) else 1
+        if act == "garder":
+            # enregistre le projet dans un fichier NEUF (jamais par-dessus) : seulement si l'utilisateur l'a demandé
+            sortie = os.path.abspath(a[1])
+            if os.path.exists(sortie):
+                print("refusé : %s existe déjà ; choisir un autre nom" % sortie); return 4
+            if not o.autoriser:
+                raise PermissionError("file.saveAs")
+            r = executer(o, "file.saveAs", {"path": sortie})
+            afficher(o, r); return 0 if r.get("ok") else 1
         if act == "cmd":
             r = executer(o, a[1], json.loads(a[2]) if len(a) > 2 else {})
             afficher(o, r); return 0 if r.get("ok") else 1

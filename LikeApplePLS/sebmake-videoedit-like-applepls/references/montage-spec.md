@@ -287,6 +287,25 @@ Le `journal` dit aussi chaque repli : une exigence levée faute de rush qui la r
 
 ---
 
+### 2.8 Le montage composé
+
+`compose_montage.py plan.json` écrit un `montage.json` ordinaire (un plan `image` par chapitre, coupe franche ; une parole par phrase ; un marqueur par chapitre ; `schema: "compose"`), plus trois champs que seul `filmcraft_build.py` lit :
+
+```json
+"musique": { "chemin": "…/musique.wav", "debut_img": 0, "entree_img": 0, "duree_img": 600, "fondu_sortie_img": 60,
+             "niveau_db": -6, "attenuation_db": 12, "piste": "A2" },
+"sons": [ { "n": 1, "nom": "clic", "chemin": "…/clic.wav", "debut_img": 210, "entree_img": 0, "duree_img": 2, "piste": "A3" } ],
+"sous_titres": "…/montage.srt"
+```
+
+| Champ | Sens |
+|---|---|
+| `musique.attenuation_db` | de combien la musique s'efface sous les paroles. FilmCraft : paroles en « dialogue », musique en « music » (son essentiel), `ducking.reduceDb`, puis `generateDucking` pose les images clés de volume |
+| `sons` | sons ponctuels sur A3, chacun à son instant (en « sfx » quand l'atténuation est demandée) |
+| `sous_titres` | un SRT importé sur la piste de sous-titres C1 ; il n'est pas incrusté dans la vidéo rendue |
+
+Le XML FCP7 et l'EDL n'emportent ni les sons ponctuels, ni l'atténuation, ni les sous-titres : à refaire dans Premiere ou Resolve (importer le SRT, baisser la musique sous la voix).
+
 ## 3. Ce que les sorties savent faire
 
 | Élément | XML FCP7 (Premiere, Resolve) | EDL CMX3600 | FilmCraft |
@@ -317,6 +336,10 @@ Premiere Pro et DaVinci Resolve ne sont pas installés sur la machine où la ski
 | cartons | `graphics.newText`, `graphics.set`, `graphics.align` | `text`, `size`, `font`, `seconds`, `track: 1` (= V2), `time` ; `props.align`, `props.position`, `props.fill_color` |
 | niveau de la musique | `effects.setParam` | `clip`, `effect: 0` (volume), `param: "level"`, `value` en dB |
 | transitions | `sequence.applyVideoTransition`, `sequence.applyAudioTransition` | `clip`, `effect` (`cross_dissolve`, `dip_to_white`, `push`, `constant_power`), `frames`, `edge` (`in`, `out`) : FilmCraft aligne seul (centré entre deux plans, au début après un trou, à la fin avant un trou) |
+| pistes nommées | `timeline.setTrack` | `track`, `name` |
+| sous-titres | `captions.import` | `path`, `name` |
+| atténuation sous la voix | `essentialSound.setType`, `essentialSound.set`, `essentialSound.generateDucking` | `clips`, `type` (`dialogue`, `music`, `sfx`) ; `key: "ducking.reduceDb"`, `value` |
+| capture (`--capture`) | `ui.screenshot` (méthode, pas commande) | `path` ; fenêtre au premier plan, écran allumé |
 | marqueurs | `markers.add` | `target: "program"`, `time`, `name`, `comment`, `durationFrames` |
 | vérification | `sequence.inspect` | `item` |
 | images de contrôle | `file.exportFrame` | `path`, `format: "png"`, `target: "program"`, `time`, `sequence` |

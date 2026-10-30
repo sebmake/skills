@@ -39,6 +39,8 @@ Sommaire :
 
 ---
 
+**Film de fonctionnalités** (un produit logiciel montré par ses composants d'interface, un verbe par fonctionnalité, des formes qui jouent) : `film-fonctionnalites.md`. Les fiches ci-dessous donnent les mouvements ; cette fiche-là dit comment les composer.
+
 ## 2. Titre (un nom ou 1 à 4 mots)
 
 **Quoi animer.** L'opacité, et la position verticale si le titre doit être remarqué. Rien d'autre.

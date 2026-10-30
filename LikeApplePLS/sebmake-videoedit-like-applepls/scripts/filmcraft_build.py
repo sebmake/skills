@@ -14,11 +14,14 @@ Usage :
   3. une séquence au format du montage (3 pistes vidéo, 3 pistes son) ;
   4. V1 : chaque plan à sa place, entrée et durée à l'image près (son du rush coupé) ; fonds colorés des cartons ;
   5. V2 : les cartons en titres natifs (modifiables), à la taille et à la place du montage ;
-  6. A1 paroles, A2 musique (niveau, fondu de sortie), A3 son des images ;
+  6. A1 paroles, A2 musique (niveau, fondu de sortie, atténuation sous les paroles), A3 son des images et sons ponctuels ;
+     pistes nommées par leur rôle ; sous-titres importés d'un SRT (piste C1) ;
   7. transitions : fondus enchaînés centrés, sorties du noir, départs au noir, passage au blanc, poussée ;
   8. marqueurs de séquence (temps de la structure, cartons) ;
   9. vérification par sequence.inspect : chaque plan, chaque parole, la musique, chaque transition ;
  10. --images : une image du programme au milieu de chaque plan (file.exportFrame) et une planche (ffmpeg) ;
+ 10 bis. --capture : une capture de la fenêtre de FilmCraft, séquence ouverte ; --carte : la carte du montage (pistes,
+     éléments, ce que fait chacune), à lire pour comprendre le montage ou le retoucher à la main ;
  11. --rendre : la vidéo H.264 de toute la durée du montage (file.exportMedia, de 0 à la durée : un noir final
      est un trou sur V1, et un export « séquence entière » s'arrête au dernier élément, sans lui).
 
@@ -43,7 +46,10 @@ EFFETS_FC = {"fondu": "cross_dissolve", "blanc": "dip_to_white", "poussee": "pus
 COMMANDES = ["project.inspect", "file.newProject", "file.newBin", "file.import", "file.newSequence", "sequence.open",
              "sequence.inspect", "timeline.place", "file.newColorMatte", "graphics.newText", "graphics.set", "graphics.align",
              "effects.setParam", "sequence.applyVideoTransition", "sequence.applyAudioTransition", "markers.add",
-             "file.exportFrame", "file.exportMedia", "file.saveAs"]
+             "file.exportFrame", "file.exportMedia", "file.saveAs", "timeline.setTrack", "captions.import",
+             "essentialSound.setType", "essentialSound.set", "essentialSound.generateDucking"]
+NOMS_PISTES = [("V1", "Image"), ("V2", "Cartons et textes"), ("A1", "Paroles et voix"), ("A2", "Musique"),
+               ("A3", "Son des images et gestes")]
 
 
 class Simule:
@@ -92,6 +98,8 @@ class Constructeur:
         self.clips_v2 = {}   # n du plan → clip graphique
         self.clips_a = []    # (parole n, clip)
         self.clip_musique = None
+        self.clips_sons = []    # (n, clip) des sons ponctuels sur A3
+        self.attenuation = None
         self.transitions = []
         self.ecarts = []
         self.notes = []
@@ -124,6 +132,9 @@ class Constructeur:
                 chemins.append(q["chemin"])
         if self.m.get("musique") and self.m["musique"]["chemin"] not in chemins:
             chemins.append(self.m["musique"]["chemin"])
+        for x in self.m.get("sons", []):
+            if x["chemin"] not in chemins:
+                chemins.append(x["chemin"])
         manquants = [x for x in chemins if not os.path.exists(x)]
         if manquants:
             raise SystemExit("fichiers introuvables : %s" % ", ".join(manquants))
@@ -220,6 +231,30 @@ class Constructeur:
         for p in self.m["plans"]:
             if p["type"] == "image" and p.get("son_image"):
                 self.placer(self.items[p["chemin"]], "A3", p["debut_img"], p["entree_img"], p["duree_img"], video=False, audio=True)
+        for x in self.m.get("sons", []):
+            clip = self.placer(self.items[x["chemin"]], "A3", x["debut_img"], x.get("entree_img", 0), x["duree_img"], video=False, audio=True)
+            self.clips_sons.append((x.get("n"), clip))
+        # la musique s'efface sous les paroles : rôles du son essentiel, puis atténuation générée par l'app
+        if mus and mus.get("attenuation_db") and self.clip_musique is not None and self.clips_a:
+            paroles = [c for _, c in self.clips_a if c is not None]
+            self.c.cmd("essentialSound.setType", {"clips": paroles, "type": "dialogue"})
+            self.c.cmd("essentialSound.setType", {"clips": [self.clip_musique], "type": "music"})
+            if self.clips_sons:
+                self.c.cmd("essentialSound.setType", {"clips": [c for _, c in self.clips_sons if c is not None], "type": "sfx"})
+            self.c.cmd("essentialSound.set", {"clips": [self.clip_musique], "key": "ducking.reduceDb", "value": -abs(float(mus["attenuation_db"]))})
+            r = self.c.cmd("essentialSound.generateDucking", {"clips": [self.clip_musique]})
+            self.attenuation = r
+            self.notes.append("musique atténuée de %.0f dB sous les paroles (son essentiel de FilmCraft)" % abs(float(mus["attenuation_db"])))
+
+    # 6 bis. pistes nommées, sous-titres
+    def habiller(self):
+        for piste, nom in NOMS_PISTES:
+            self.c.essayer("timeline.setTrack", {"track": piste, "name": nom}) if hasattr(self.c, "essayer") else \
+                self.c.cmd("timeline.setTrack", {"track": piste, "name": nom})
+        st = self.m.get("sous_titres")
+        if st:
+            self.c.cmd("captions.import", {"path": os.path.abspath(st), "name": "Sous-titres"})
+            self.notes.append("sous-titres importés : %s" % os.path.basename(st))
 
     # 7. transitions
     def transitions_(self):
@@ -290,6 +325,11 @@ class Constructeur:
                 vol = next((e for e in it.get("effects", []) if e.get("effect") == "volume"), None)
                 if vol is None or "%.1f" % float(self.m["musique"]["niveau_db"]) not in str(vol["params"].get("level")):
                     self.ecarts.append("niveau de la musique non appliqué")
+        if self.clips_sons:
+            a3 = {x["clip"] for x in a[2]["items"]}
+            manquants = [n for n, c in self.clips_sons if c not in a3]
+            if manquants:
+                self.ecarts.append("sons absents de A3 : %s" % manquants)
         # transitions : nombre, alignement et place
         tv = {tr["id"]: tr for t in v for tr in t.get("transitions", [])}
         for piste, bord, n, res in self.transitions:
@@ -316,6 +356,52 @@ class Constructeur:
             if not (dernier["type"] == "noir" and img(r["duration"]) == dernier["debut_img"]):
                 self.ecarts.append("durée %d ≠ %d images" % (img(r["duration"]), self.m["duree_img"]))
         return r
+
+    # 10 bis. capture de l'app et carte du montage
+    def capture(self, chemin):
+        fc.activer()
+        self.c.essayer("sequence.open", {"item": self.seq}) if hasattr(self.c, "essayer") else None
+        for z in ("view.zoomToSequence", "timeline.zoomToSequence", "timeline.zoomToFit"):
+            if hasattr(self.c, "essayer") and self.c.essayer(z, {})[0]:
+                break
+        r = self.c.requete("ui.screenshot", {"path": chemin}) if hasattr(self.c, "requete") else {"ok": False}
+        if r.get("ok") and os.path.exists(chemin):
+            self.notes.append("capture de FilmCraft : %s" % chemin)
+        else:
+            self.notes.append("capture impossible (%s)" % (r.get("error") or "simulation"))
+
+    def carte(self, chemin, insp):
+        fps = self.fps
+        s_ = lambda ticks: float(Fraction(int(ticks)) / TICKS_PAR_S)
+        m = self.m
+        L = ["# Carte du montage « %s »" % (self.a.nom or m["titre"]), "",
+             "%d × %d, %s i/s, %.2f s. Chaque piste a un rôle ; on retouche dans FilmCraft, puis on relit (`fc.py inspecter`, "
+             "`lire_timeline.py`) et on reporte dans `montage.json`." % (m["format"]["largeur"], m["format"]["hauteur"],
+                                                                         m["format"]["fps"], m["duree_img"] / float(fps)), "",
+             "| Piste | Rôle | Éléments | De → à | Ce qu'il faut savoir |", "|---|---|---|---|---|"]
+        roles = {
+            "V1": "les plans, bout à bout, sans trou (un trou = un noir)",
+            "V2": "les cartons et textes, titres natifs modifiables",
+            "A1": "chaque parole ou phrase de voix à son instant ; type « dialogue » du son essentiel",
+            "A2": "la musique ; son niveau, son fondu de sortie, et son atténuation sous les paroles (images clés de volume générées)",
+            "A3": "le son des images et les sons ponctuels (gestes, clics)",
+        }
+        if insp:
+            for k, t in enumerate(insp.get("video", [])[:2] + insp.get("audio", [])[:3]):
+                piste = (["V1", "V2"] + ["A1", "A2", "A3"])[k]
+                its = t.get("items", [])
+                deb = "%.2f → %.2f s" % (s_(its[0]["start"]), s_(its[-1]["end"])) if its else "—"
+                L.append("| %s · %s | %s | %d | %s | %s |" % (piste, dict(NOMS_PISTES)[piste], roles[piste], len(its), deb,
+                                                             "%d transition(s)" % len(t.get("transitions", [])) if t.get("transitions") else ""))
+        if m.get("sous_titres"):
+            L.append("| C1 · Sous-titres | les sous-titres, importés de `%s` ; un sous-titre = une phrase dite | — | — | "
+                     "se retouchent dans le panneau Sous-titres ; refaire le SRT pour les garder |" % os.path.basename(m["sous_titres"]))
+        L += ["", "Marqueurs : %d (temps de la structure, cartons)." % len(m.get("marqueurs", []))]
+        if self.attenuation is not None:
+            L.append("Atténuation : générée par FilmCraft sur la musique (%s)." % json.dumps(self.attenuation, ensure_ascii=False)[:160])
+        with open(chemin, "w", encoding="utf-8") as f:
+            f.write("\n".join(L) + "\n")
+        self.notes.append("carte du montage : %s" % chemin)
 
     # 10. images de contrôle
     def images(self, dossier):
@@ -347,6 +433,8 @@ def main(argv=None):
     ap.add_argument("--images", help="dossier des images de contrôle (une par plan) et de la planche")
     ap.add_argument("--enregistrer", help="chemin .fcproj qui n'existe pas encore")
     ap.add_argument("--rendre", help="vidéo H.264 (.mp4) qui n'existe pas encore : toute la durée du montage, noir final compris")
+    ap.add_argument("--capture", help="capture PNG de la fenêtre de FilmCraft, séquence ouverte")
+    ap.add_argument("--carte", help="carte du montage en Markdown (pistes, rôles, éléments)")
     ap.add_argument("--rapport")
     ap.add_argument("--port", type=int, default=9876)
     ap.add_argument("--simulation", action="store_true")
@@ -384,9 +472,14 @@ def main(argv=None):
         b.piste_v1()
         b.piste_v2()
         b.pistes_son()
+        b.habiller()
         b.transitions_()
         b.marqueurs()
-        b.verifier()
+        insp = b.verifier()
+        if a.carte:
+            b.carte(os.path.abspath(a.carte), insp)
+        if a.capture and not a.simulation:
+            b.capture(os.path.abspath(a.capture))
         planche = None
         if a.images and not a.simulation:
             planche, n = b.images(a.images)
@@ -407,16 +500,16 @@ def main(argv=None):
         print("FilmCraft a refusé une commande : %s" % e)
         return 1
     rapport = {"sequence": b.seq, "nom": nom, "plans_v1": len(b.clips_v1), "cartons_v2": len(b.clips_v2),
-               "paroles": len(b.clips_a), "musique": bool(b.clip_musique), "transitions": len(b.transitions),
+               "paroles": len(b.clips_a), "musique": bool(b.clip_musique), "sons": len(b.clips_sons), "transitions": len(b.transitions),
                "ecarts": b.ecarts, "notes": b.notes}
     if a.simulation:
         rapport["commandes"] = client.journal
     if a.rapport:
         with open(a.rapport, "w", encoding="utf-8") as f:
             json.dump(rapport, f, ensure_ascii=False, indent=1)
-    print("FilmCraft%s : séquence « %s » (id %s) — %d plans sur V1, %d cartons sur V2, %d paroles, %s, %d transitions" % (
+    print("FilmCraft%s : séquence « %s » (id %s) — %d plans sur V1, %d cartons sur V2, %d paroles, %s, %d sons, %d transitions" % (
         " (simulation)" if a.simulation else "", nom, b.seq, len(b.clips_v1), len(b.clips_v2), len(b.clips_a),
-        "musique" if b.clip_musique else "sans musique", len(b.transitions)))
+        "musique" if b.clip_musique else "sans musique", len(b.clips_sons), len(b.transitions)))
     for x in b.notes:
         print("  " + x)
     if a.simulation:

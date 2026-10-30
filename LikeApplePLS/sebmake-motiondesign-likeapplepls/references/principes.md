@@ -275,6 +275,8 @@ Deux manières se succèdent dans le corpus.
 - **Les valeurs de départ cachées** : un mouvement qui démarre sous un fondu n'est pas visible avant 20 % d'opacité ; son départ est extrapolé.
 - **Le flou de départ du chiffre** au-delà de 6,7 % H : c'est la borne de la mesure, pas une valeur.
 
+- **Les films de fonctionnalités** (composant sorti de l'écran, formes qui jouent, fond par chapitre) : deux films relevés en 2025-2026, pas de comptes « N sur M » ; voir `film-fonctionnalites.md`, tout y est convention.
+
 ## 15. Limites du corpus
 
 - Vidéo compressée en 960 × 540 : les mouvements de moins de 0,1 % H se confondent avec le bruit.
