@@ -1,0 +1,2408 @@
+{
+ "recettes": {
+  "coupe": {
+   "famille": "commun",
+   "types": [
+    "titre",
+    "phrase",
+    "surtitre",
+    "liste",
+    "chiffre",
+    "logo",
+    "image",
+    "capture",
+    "icone",
+    "forme",
+    "fond",
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Already full on the first frame: 14 titles out of 29, 6 sentences out of 12, 4 cards out of 16, 3 kickers out of 13; product resting or levitating still in 10 holds out of 13.",
+   "params": {}
+  },
+  "avec": {
+   "famille": "texte",
+   "types": [
+    "surtitre",
+    "phrase",
+    "titre",
+    "icone"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "The kicker arrives with its word: 8 out of 11 separable, at most 0.06 s apart. It takes the recipe and the start of the element named in `avec`.",
+   "params": {
+    "ecart": {
+     "defaut": 0,
+     "min": -0.06,
+     "max": 0.06,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "offset at the middle of the fade, 8 out of 11"
+    }
+   }
+  },
+  "titre-fondu-montee": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase",
+    "chiffre"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "4 titles out of 29 (2024 ×2, 2025, 2026), identical to the hundredth in 3 cases out of 4. Opacity easeInOutCubic 4 out of 4; rise easeOutExpo 4 out of 4.",
+   "params": {
+    "T_opacite": {
+     "defaut": 0.77,
+     "min": 0.64,
+     "max": 0.77,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "T_position": {
+     "defaut": 0.92,
+     "min": 0.92,
+     "max": 1.17,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "retard_position": {
+     "defaut": 0.3,
+     "min": 0.26,
+     "max": 0.31,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "the rise becomes visible when opacity reaches 20 %"
+    },
+    "montee": {
+     "defaut": 15.3,
+     "min": 7.4,
+     "max": 15.5,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start below the final place (extrapolated)"
+    },
+    "flou": {
+     "defaut": 0,
+     "min": 0,
+     "max": 0.4,
+     "unite": "u",
+     "statut": "convention",
+     "note": "slight starting blur (sharpness 0.58 to 0.68, 3 out of 4); value not measured"
+    }
+   }
+  },
+  "titre-fondu": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase",
+    "surtitre"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Slow fade in place: 5 titles out of 29; 10→90 % median 0.43 s (0.27 to 0.71); mixed curves (ease 2, easeInQuad 2, ease-in 1): \"ease\" curve kept.",
+   "params": {
+    "d1090": {
+     "defaut": 0.43,
+     "min": 0.27,
+     "max": 0.71,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "10→90 % duration of the opacity"
+    }
+   }
+  },
+  "titre-balayage": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase"
+   ],
+   "majeur": false,
+   "epoque": "2024-2026",
+   "mesure": "The word is revealed left to right behind a soft-edged front: 3 titles out of 29 (all in 2025); linear front 2 out of 2 measured; soft edge 2.8 % of the frame width.",
+   "params": {
+    "T": {
+     "defaut": 0.6,
+     "min": 0.33,
+     "max": 0.86,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "front crossing, linear (2 measurements: 0.33 and 0.86 s key to key)"
+    },
+    "bord": {
+     "defaut": 2.8,
+     "min": 2.8,
+     "max": 6.3,
+     "unite": "% L",
+     "statut": "mesuré",
+     "note": "width of the soft edge"
+    }
+   }
+  },
+  "phrase-zoom-arriere": {
+   "famille": "texte",
+   "types": [
+    "phrase",
+    "titre"
+   ],
+   "majeur": true,
+   "epoque": "2019-2020",
+   "mesure": "2 sentences out of 12 (November 2020): scale ×7.5 and ×8.1 on the first frame, ease curve 2 out of 2; opacity ease-in-out; blur 4.4 and ≥ 6.7 % H at the start.",
+   "params": {
+    "depart": {
+     "defaut": 8,
+     "min": 7.5,
+     "max": 8.1,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "starting scale"
+    },
+    "T_echelle": {
+     "defaut": 0.42,
+     "min": 0.4,
+     "max": 0.45,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "d1090_opacite": {
+     "defaut": 0.35,
+     "min": 0.33,
+     "max": 0.37,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity 10→90 %"
+    },
+    "flou": {
+     "defaut": 5,
+     "min": 4.4,
+     "max": 6.7,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "σ of the starting blur; it decreases with the scale (convention)"
+    }
+   }
+  },
+  "chute": {
+   "famille": "texte",
+   "types": [
+    "phrase",
+    "chiffre",
+    "titre"
+   ],
+   "majeur": true,
+   "epoque": "2019-2020",
+   "mesure": "Drops from above with no bounce: 6 drops (3 sentences Nov. 2020, 3 numbers June 2020); easeInQuad 5 out of 6; T 0.20 to 0.27 s; no bounce (≤ 1.5 % H, 6 out of 6). The smoke that follows is not reproduced.",
+   "params": {
+    "T": {
+     "defaut": 0.23,
+     "min": 0.2,
+     "max": 0.27,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "hauteur": {
+     "defaut": 68,
+     "min": 45,
+     "max": 75,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start above the place (extrapolated)"
+    }
+   }
+  },
+  "phrase-par-le-bas": {
+   "famille": "texte",
+   "types": [
+    "phrase"
+   ],
+   "majeur": true,
+   "epoque": "2019-2020",
+   "mesure": "1 sentence out of 12 (June 2020): enters from below the frame, already opaque, ease curve, T 0.65 s.",
+   "params": {
+    "T": {
+     "defaut": 0.65,
+     "min": 0.6,
+     "max": 0.7,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "depart": {
+     "defaut": 58,
+     "min": 50,
+     "max": 60,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start below the final place"
+    }
+   }
+  },
+  "liste-cascade": {
+   "famille": "texte",
+   "types": [
+    "liste"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "3 lists (2024, 2025 ×2), 10 gaps of 0.093 to 0.113 s; each line fades in easeInOutCubic (11 out of 13), starting with its rise: T 1.14 s (1.00 to 1.17; 11 lines fitted from the start of the rise; 10→90 % measured 0.72 s, tail included); rises 21 to 23 % H (extrapolated), easeInOutQuint 7 lines out of 11 (T 1.17 s) or easeInOutQuart 4 (T 0.98 s); at 25 % opacity, the line is still 18 % H below its place (11 out of 11). Lines top to bottom in 16 lists out of 16.",
+   "params": {
+    "decalage": {
+     "defaut": 0.1,
+     "min": 0.093,
+     "max": 0.113,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two lines"
+    },
+    "T_opacite": {
+     "defaut": 1.14,
+     "min": 1,
+     "max": 1.17,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity of each line, key to key, starting with the rise (11 lines)"
+    },
+    "T_position": {
+     "defaut": 1.17,
+     "min": 0.98,
+     "max": 1.17,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "rise of each line, easeInOutQuint, key to key"
+    },
+    "montee": {
+     "defaut": 21,
+     "min": 18,
+     "max": 23,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start below the place"
+    }
+   }
+  },
+  "liste-cascade-rapide": {
+   "famille": "texte",
+   "types": [
+    "liste"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "2 lists (2024, 2026), 13 gaps of 0.029 to 0.066 s; fade 10→90 % 0.42 s (2026) and 0.56 s (2024), tail included; in easeInOutCubic, T 0.75 s (0.64 to 0.83; 7 lines out of 8 in 2026); rise 4 % H (2026) or none (2024).",
+   "params": {
+    "decalage": {
+     "defaut": 0.05,
+     "min": 0.029,
+     "max": 0.066,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two lines"
+    },
+    "T_opacite": {
+     "defaut": 0.75,
+     "min": 0.64,
+     "max": 0.83,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity of each line, easeInOutCubic, key to key (7 lines)"
+    },
+    "montee": {
+     "defaut": 4,
+     "min": 0,
+     "max": 4.1,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start below the place"
+    },
+    "T_position": {
+     "defaut": 1,
+     "min": 1,
+     "max": 1.02,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "easeInOutQuint, 1 case"
+    }
+   }
+  },
+  "liste-par-le-bas": {
+   "famille": "texte",
+   "types": [
+    "liste"
+   ],
+   "majeur": true,
+   "epoque": "2019-2020",
+   "mesure": "4 lists (June 2020): already opaque lines rising from +31 % H (27 to 35); offset 0.37 s (0.362 to 0.377, 4 gaps); easeOutQuart (pooled fit, error 0.005), T 0.63 to 0.67 s.",
+   "params": {
+    "decalage": {
+     "defaut": 0.37,
+     "min": 0.362,
+     "max": 0.377,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two lines"
+    },
+    "T": {
+     "defaut": 0.65,
+     "min": 0.63,
+     "max": 0.67,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "depart": {
+     "defaut": 31,
+     "min": 27,
+     "max": 35,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "on the first visible frame"
+    }
+   }
+  },
+  "liste-au-fil": {
+   "famille": "texte",
+   "types": [
+    "liste"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "3 lists (2024 ×2, 2025): one line when it is spoken, gaps of 1.4 to 3.6 s; new line easeInOutCubic (opacity, T 1.17 s) and easeInOutQuart (rise of 14 to 17 % H, T 0.95 s); lines already there move up half a line spacing at each addition (2 lists out of 2).",
+   "params": {
+    "intervalle": {
+     "defaut": 2,
+     "min": 1.4,
+     "max": 3.6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two lines (or the `temps` list)"
+    },
+    "T_opacite": {
+     "defaut": 1.17,
+     "min": 1.1,
+     "max": 1.2,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 line measured cleanly"
+    },
+    "T_position": {
+     "defaut": 0.95,
+     "min": 0.9,
+     "max": 1,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "rise"
+    },
+    "montee": {
+     "defaut": 15,
+     "min": 14,
+     "max": 17,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "start of the new line"
+    }
+   }
+  },
+  "nom-remonte": {
+   "famille": "texte",
+   "types": [
+    "phrase",
+    "chiffre"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "On a price slide, the name moves up to make room for the label and price that enter below: 5 out of 5 (Nov. 2020 ×3, Sept. 2025 ×2). Name: ease 3 out of 5, T 0.50 s (0.45 to 0.53), +10 % H (7.4 to 10.7). Price: fade 10→90 % 0.30 s (0.22 to 0.41).",
+   "params": {
+    "T_nom": {
+     "defaut": 0.5,
+     "min": 0.45,
+     "max": 0.53,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "remontee": {
+     "defaut": 10,
+     "min": 7.4,
+     "max": 10.7,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "travel of the name"
+    },
+    "d1090_opacite": {
+     "defaut": 0.3,
+     "min": 0.22,
+     "max": 0.41,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "fade of the label and the price"
+    },
+    "montee": {
+     "defaut": 10,
+     "min": 6,
+     "max": 14,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "rise of the label and the price"
+    }
+   }
+  },
+  "mot-remplace": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase",
+    "surtitre"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "The old word disappears and the new one appears on the same frame: 3 changes out of 14 (2024, 2025 ×2). The word does not morph or roll (0 out of 14).",
+   "params": {}
+  },
+  "mot-fondu-enchaine": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase",
+    "surtitre"
+   ],
+   "majeur": false,
+   "epoque": "2024-2026",
+   "mesure": "1 case (2024): the old one blurs and fades (10→90 % 0.50 s), the new one appears (0.47 s, easeInOutSine); midpoints 0.61 s apart.",
+   "params": {
+    "d1090_ancien": {
+     "defaut": 0.5,
+     "min": 0.45,
+     "max": 0.55,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "d1090_nouveau": {
+     "defaut": 0.47,
+     "min": 0.42,
+     "max": 0.52,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "ecart": {
+     "defaut": 0.61,
+     "min": 0.55,
+     "max": 0.65,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between the two midpoints"
+    },
+    "flou": {
+     "defaut": 1.5,
+     "min": 0,
+     "max": 3,
+     "unite": "u",
+     "statut": "convention",
+     "note": "blur of the old word, not measured"
+    }
+   }
+  },
+  "mot-glisse": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase",
+    "surtitre"
+   ],
+   "majeur": false,
+   "epoque": "2019-2020",
+   "mesure": "1 case (Nov. 2020): the old one rises while fading (0.22 s, ease-in), the new one arrives below (0.20 s, easeInCubic); 0.16 s apart.",
+   "params": {
+    "d1090_ancien": {
+     "defaut": 0.22,
+     "min": 0.2,
+     "max": 0.25,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "d1090_nouveau": {
+     "defaut": 0.2,
+     "min": 0.18,
+     "max": 0.23,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "ecart": {
+     "defaut": 0.16,
+     "min": 0.14,
+     "max": 0.18,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "1 case"
+    },
+    "glisse": {
+     "defaut": 6,
+     "min": 3,
+     "max": 10,
+     "unite": "u",
+     "statut": "convention",
+     "note": "slide amplitude, not measured"
+    }
+   }
+  },
+  "chiffre-pose": {
+   "famille": "texte",
+   "types": [
+    "chiffre",
+    "titre"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "18 numbers out of 27 (Nov. 2020 2, Sept. 2025 14, Sept. 2026 2): starts too big and blurred, then settles without overshoot (18 out of 18). Scale easeOutExpo 11 out of 18, T 0.67 s; opacity 10→90 % 0.20 s (ease-in-out); label +0.23 s from the middle of the number’s fade to the middle of its own (15 out of 18), fade 10→90 % 0.27 s, ease-in-out 15 out of 15 (high-pass measurement, not disturbed by the blurred number). The number never counts up (0 out of 27).",
+   "params": {
+    "depart": {
+     "defaut": 4.1,
+     "min": 1.9,
+     "max": 8,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "starting scale (extrapolated; ×3.4 on the first frame)"
+    },
+    "T_echelle": {
+     "defaut": 0.67,
+     "min": 0.25,
+     "max": 0.8,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "d1090_opacite": {
+     "defaut": 0.2,
+     "min": 0.18,
+     "max": 0.62,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity 10→90 %"
+    },
+    "flou": {
+     "defaut": 6.7,
+     "min": 1.1,
+     "max": 6.7,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "σ of the blur on the first frame (measurement limit); decreases with the zoom (curve: convention)"
+    },
+    "retard_libelle": {
+     "defaut": 0.23,
+     "min": 0.19,
+     "max": 0.3,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "from the middle of the number’s fade to the middle of the label’s"
+    },
+    "d1090_libelle": {
+     "defaut": 0.27,
+     "min": 0.26,
+     "max": 0.27,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "label fade, ease-in-out 15 out of 15"
+    }
+   }
+  },
+  "chiffre-croissance": {
+   "famille": "texte",
+   "types": [
+    "chiffre"
+   ],
+   "majeur": true,
+   "epoque": "2019-2020",
+   "mesure": "6 numbers out of 27 (June 2020): grows from ×0.22 (0.19 to 0.37), overshoots by 5 % then comes back (6 out of 6), easeOutBack, T 0.83 s (0.72 to 0.88); opacity 10→90 % 0.22 s (ease-out 4 out of 6); label +0.26 s, fade 0.11 s.",
+   "params": {
+    "depart": {
+     "defaut": 0.22,
+     "min": 0.19,
+     "max": 0.37,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "starting scale"
+    },
+    "T_echelle": {
+     "defaut": 0.83,
+     "min": 0.72,
+     "max": 0.88,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "d1090_opacite": {
+     "defaut": 0.22,
+     "min": 0.2,
+     "max": 0.24,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity 10→90 %"
+    },
+    "retard_libelle": {
+     "defaut": 0.26,
+     "min": 0.16,
+     "max": 0.29,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "from the middle of the number’s fade to the middle of the label’s"
+    },
+    "d1090_libelle": {
+     "defaut": 0.11,
+     "min": 0.1,
+     "max": 0.15,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "label fade"
+    }
+   }
+  },
+  "carton-fondu": {
+   "famille": "texte",
+   "types": [
+    "titre",
+    "phrase"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Film card: fades in without moving, 7 fades out of 7; 10→90 % 0.45 s (0.31 to 0.78); linear 3 out of 7.",
+   "params": {
+    "d1090": {
+     "defaut": 0.45,
+     "min": 0.31,
+     "max": 0.78,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opacity 10→90 %"
+    }
+   }
+  },
+  "carton-groupes": {
+   "famille": "texte",
+   "types": [
+    "phrase"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "The sentence builds up in meaning groups (2 to 4 words), never word by word: 3 cards (2019, 2025, 2026); gaps of 0.6 to 2.5 s; each group fades in like a card; the line recenters at each addition (seen, not measured).",
+   "params": {
+    "ecart": {
+     "defaut": 0.75,
+     "min": 0.6,
+     "max": 2.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two groups (0.61 / 0.77 / 0.85 s in 2025-2026)"
+    },
+    "d1090": {
+     "defaut": 0.45,
+     "min": 0.31,
+     "max": 0.78,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "fade of each group"
+    },
+    "T_recentrage": {
+     "defaut": 0.3,
+     "min": 0.2,
+     "max": 0.5,
+     "unite": "s",
+     "statut": "convention",
+     "note": "line recentering, easeOutCubic"
+    }
+   }
+  },
+  "produit-entree": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme"
+   ],
+   "majeur": true,
+   "epoque": "2024-2026",
+   "mesure": "The product comes in from the right on the cut (7 out of 7 within ± 0.1 s), brakes and settles: 9 entries; brakes 8 out of 8, out-cubic curve (error 0.075); 0→100 % 0.88 s (0.82 to 0.93); motion blur from a 118° shutter (74 to 169°).",
+   "params": {
+    "T": {
+     "defaut": 0.9,
+     "min": 0.82,
+     "max": 0.93,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key ≈ 0→100 % duration"
+    },
+    "depuis": {
+     "defaut": "droite",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "droite (right) 7 out of 7; gauche (left): convention"
+    },
+    "obturateur": {
+     "defaut": 120,
+     "min": 74,
+     "max": 169,
+     "unite": "°",
+     "statut": "mesuré",
+     "note": "shutter angle of the motion blur"
+    }
+   }
+  },
+  "produit-poussee": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme",
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Slow push-in toward the object: 11 push-ins, linear 7 out of 11; ×1.27 (×1.02 to ×2.58) over 4.1 s (2.2 to 8.6). Starts with the shot, still moving at the cut (9 out of 17). On a held slide: ×1.02 to ×1.06 over 5 to 8 s (3 out of 7).",
+   "params": {
+    "facteur": {
+     "defaut": 1.27,
+     "min": 1.02,
+     "max": 2.58,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "end scale / start scale"
+    },
+    "duree": {
+     "defaut": 4.1,
+     "min": 2.2,
+     "max": 8.6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "default: the whole time the element is on screen"
+    }
+   }
+  },
+  "produit-recul": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme",
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Pull-back that brakes: 6 pull-backs, brake 4 out of 6 (ease-out, pooled curve); ×0.45 (×0.05 to ×0.84) over 5.8 s (2.7 to 8.5).",
+   "params": {
+    "facteur": {
+     "defaut": 0.45,
+     "min": 0.05,
+     "max": 0.84,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "end scale / start scale"
+    },
+    "duree": {
+     "defaut": 5.8,
+     "min": 2.7,
+     "max": 8.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "0→100 % duration"
+    }
+   }
+  },
+  "produit-pivot": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Pivot from profile to front: 4 slide pivots out of 5 linear, over 1.7 to 2.6 s; a quarter turn at most (0 out of 7 beyond); starts 0.2 to 0.3 s after the cut (2 out of 2); the object ends facing front (4 out of 4).",
+   "params": {
+    "angle": {
+     "defaut": 90,
+     "min": 12,
+     "max": 90,
+     "unite": "°",
+     "statut": "mesuré",
+     "note": "from profile (90°) to front (0°)"
+    },
+    "T": {
+     "defaut": 2,
+     "min": 1.7,
+     "max": 2.6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "linear"
+    },
+    "delai": {
+     "defaut": 0.25,
+     "min": 0.2,
+     "max": 0.3,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "after the cut"
+    }
+   }
+  },
+  "produit-rotation": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "In-plane rotation (object seen from above): 6 instances, 83° median (19 to 160°), linear 2 out of 6; duration 4.2 s (1.4 to 9.5). No full turn (0 out of 17).",
+   "params": {
+    "angle": {
+     "defaut": 83,
+     "min": 19,
+     "max": 160,
+     "unite": "°",
+     "statut": "mesuré",
+     "note": "angle covered"
+    },
+    "duree": {
+     "defaut": 4.2,
+     "min": 1.4,
+     "max": 9.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "linear"
+    }
+   }
+  },
+  "produit-flotte": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "The levitating product does not move: less than 0.3 % H over 2 to 18 s in 10 holds out of 13; no floating bob (0 out of 14). The levitation comes from the shadow, the reflection and the camera moving around it.",
+   "params": {
+    "derive": {
+     "defaut": 0,
+     "min": 0,
+     "max": 10,
+     "unite": "u/s",
+     "statut": "convention",
+     "note": "linear drift of a suspended object (2 films: 1 to 10 % H/s)"
+    },
+    "ombre": {
+     "defaut": 1,
+     "min": 0,
+     "max": 1,
+     "unite": "",
+     "statut": "convention",
+     "note": "soft ground shadow (1 = yes)"
+    }
+   }
+  },
+  "eclate": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "forme"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Exploded view: 7 openings (brake 5 out of 7, ease-out, 0→100 % 1.9 s; spread ×1.5, from ×1.08 to ×4.6); 9 closings or settles (1.2 s, from 1.1 to 2.8; plate settles linear 3 out of 3). No bounce (1 out of 15 at 3.9 %, within the margin).",
+   "params": {
+    "sens": {
+     "defaut": "ouvre",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "ouvre = opens (ease-out) or ferme = closes (linear)"
+    },
+    "T_ouvre": {
+     "defaut": 1.9,
+     "min": 0.2,
+     "max": 18.8,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "opening"
+    },
+    "T_ferme": {
+     "defaut": 1.2,
+     "min": 1.1,
+     "max": 2.8,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "closing or settle"
+    },
+    "amplitude": {
+     "defaut": 1,
+     "min": 0.5,
+     "max": 3,
+     "unite": "×",
+     "statut": "convention",
+     "note": "multiplies the offsets of the pieces"
+    },
+    "decalage": {
+     "defaut": 0,
+     "min": 0,
+     "max": 3.15,
+     "unite": "s",
+     "statut": "convention",
+     "note": "between two pieces (1 case at 3.15 s; not measurable elsewhere)"
+    }
+   }
+  },
+  "balayage-lumiere": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme",
+    "titre"
+   ],
+   "majeur": false,
+   "epoque": "2024-2026",
+   "mesure": "A light sweep crosses once, at constant speed: 8 sweeps over a chip or an edge, 0.28 s median (0.10 to 1.17), width 31 to 32 % of the object; a single pass 11 out of 11; toward the left 4, the top 4, the right 3, the bottom 0.",
+   "params": {
+    "T": {
+     "defaut": 0.28,
+     "min": 0.1,
+     "max": 1.17,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "crossing, linear"
+    },
+    "largeur": {
+     "defaut": 31,
+     "min": 5,
+     "max": 32,
+     "unite": "% objet",
+     "statut": "mesuré",
+     "note": "band width"
+    },
+    "sens": {
+     "defaut": "droite",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "gauche, haut or droite (left, up, right); never down (0 out of 11)"
+    },
+    "intensite": {
+     "defaut": 45,
+     "min": 20,
+     "max": 80,
+     "unite": "%",
+     "statut": "convention",
+     "note": "band opacity (Add mode)"
+    },
+    "inclinaison": {
+     "defaut": 20,
+     "min": 0,
+     "max": 35,
+     "unite": "°",
+     "statut": "convention",
+     "note": "band tilt"
+    }
+   }
+  },
+  "revelation-lumiere": {
+   "famille": "objet",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Out of black: 12 instances, 10→90 % 1.6 s (0.1 to 6.0), linear or speeding up 8 out of 12; a chip on a slide in 0.3 to 0.6 s, 0.2 to 0.4 s after the cut (4 out of 4). Fade-out to dark: 7 instances, 10→90 % 1.0 s. Flash that falls back: 3 chips out of 12 (+11 to +28 %).",
+   "params": {
+    "d1090": {
+     "defaut": 1.6,
+     "min": 0.1,
+     "max": 6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "linear"
+    },
+    "delai": {
+     "defaut": 0.3,
+     "min": 0.2,
+     "max": 0.4,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "after the cut (slide)"
+    },
+    "sens": {
+     "defaut": "allume",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "allume = lights up (out of black) or eteint = goes dark (10→90 % 1.0 s)"
+    },
+    "eclat": {
+     "defaut": 0,
+     "min": 0,
+     "max": 28,
+     "unite": "%",
+     "statut": "mesuré",
+     "note": "flash above the final value (3 out of 12, chips; 3-key shape: convention)"
+    }
+   }
+  },
+  "panneau-pose": {
+   "famille": "interface",
+   "types": [
+    "capture",
+    "forme",
+    "image",
+    "icone"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Arriving panel: 16 instances, visible 0.36 s (0.17 to 0.50); none over 0.5 s (16 out of 16); the 4 measured curves end softly (out-expo from an edge, ease within the page); 6 % overshoot 1 time out of 4 (a rising card).",
+   "params": {
+    "visible": {
+     "defaut": 0.36,
+     "min": 0.17,
+     "max": 0.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "2→98 % duration"
+    },
+    "distance": {
+     "defaut": 40,
+     "min": 15.9,
+     "max": 62,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "travel (35 to 62 % H from an edge, 15.9 % H within the page)"
+    },
+    "depuis": {
+     "defaut": "bas",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "bas, haut, gauche, droite (bottom, top, left, right)"
+    },
+    "dans_la_page": {
+     "defaut": 0,
+     "min": 0,
+     "max": 1,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "1 = slides within the page (ease curve, 15.9 % H)"
+    },
+    "carte": {
+     "defaut": 0,
+     "min": 0,
+     "max": 1,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "1 = rising card, overshoot ≤ 6 % (out-back)"
+    },
+    "fondu": {
+     "defaut": 1,
+     "min": 0,
+     "max": 1,
+     "unite": "",
+     "statut": "convention",
+     "note": "opacity fade over the first third"
+    }
+   }
+  },
+  "zoom-detail": {
+   "famille": "interface",
+   "types": [
+    "capture",
+    "image",
+    "nul-camera"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Zoom into a detail: 27 instances, visible 0.67 s (0.60 to 1.00: 27 out of 27 within these bounds); ×2.2 going in (×1.45 to ×3.0); no overshoot above 1.1 %, no rotation, no linear zoom (0 out of 27); hold on the detail 7.2 s median.",
+   "params": {
+    "facteur": {
+     "defaut": 2.2,
+     "min": 1.45,
+     "max": 3,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "going in (coming out: ×1.6 to ×8.3)"
+    },
+    "T": {
+     "defaut": 0.95,
+     "min": 0.6,
+     "max": 1.53,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "sens": {
+     "defaut": "entre",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "entre = in (17) or sort = out (10)"
+    },
+    "point": {
+     "defaut": [
+      50,
+      50
+     ],
+     "min": null,
+     "max": null,
+     "unite": "%",
+     "statut": "convention",
+     "note": "detail point, in % of the element"
+    }
+   }
+  },
+  "defilement": {
+   "famille": "interface",
+   "types": [
+    "capture"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Scroll: 27 instances, visible 0.73 s, 59.5 % H (14 to 196), peak speed 168 % H/s (max 791); soft ending 14 out of 27; never more than 2 frame heights (27 out of 27). Flung gesture: 1.72 s (4 cases); continuous linear 68 % H/s (1 case).",
+   "params": {
+    "distance": {
+     "defaut": 59.5,
+     "min": 14,
+     "max": 196,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "travel"
+    },
+    "T": {
+     "defaut": 1.07,
+     "min": 0.94,
+     "max": 2.16,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "mode": {
+     "defaut": "presentation",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "presentation (S curve, 2024-2026), geste (flung gesture), continu (continuous, linear)"
+    },
+    "fenetre": {
+     "defaut": [
+      60,
+      60
+     ],
+     "min": null,
+     "max": null,
+     "unite": "u",
+     "statut": "convention",
+     "note": "width and height of the visible area"
+    }
+   }
+  },
+  "empilement": {
+   "famille": "interface",
+   "types": [
+    "capture"
+   ],
+   "majeur": true,
+   "epoque": "toutes",
+   "mesure": "Screens stacking in a row: 29 instances; each new screen enters from the side and pushes the row by 26.6 % H (23.5 to 63) in 0.66 s visible; arrivals never overlap (11 out of 11); gap 1.67 s (0.83 to 10.5); S curve 17 out of 19; no overshoot (0 out of 19).",
+   "params": {
+    "intervalle": {
+     "defaut": 1.67,
+     "min": 0.83,
+     "max": 10.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "between two arrivals (burst: 0.85 s, 3 cases)"
+    },
+    "T": {
+     "defaut": 0.79,
+     "min": 0.6,
+     "max": 1,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key (2024-2026 0.79; 2019-2020 0.96)"
+    },
+    "ecart": {
+     "defaut": 4,
+     "min": 2,
+     "max": 8,
+     "unite": "u",
+     "statut": "convention",
+     "note": "space between two screens"
+    }
+   }
+  },
+  "assombrir-autour": {
+   "famille": "interface",
+   "types": [
+    "image",
+    "capture",
+    "icone",
+    "logo",
+    "forme",
+    "titre",
+    "phrase",
+    "surtitre",
+    "chiffre",
+    "liste"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "A black scrim falls on everything except the element: 20 instances, visible 0.45 s (0.12 to 0.71); S curve 13 out of 18; scrim 40 % median (24 to 62 for an interface, 33 to 73 for a spotlight); never all the way to black (20 out of 20). The background blurs with it (σ 0.34 % H, 10 out of 14 with a scrim).",
+   "params": {
+    "niveau": {
+     "defaut": 40,
+     "min": 5,
+     "max": 73,
+     "unite": "%",
+     "statut": "mesuré",
+     "note": "scrim opacity (spotlight: 65 to 70)"
+    },
+    "T": {
+     "defaut": 0.53,
+     "min": 0.4,
+     "max": 0.6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "flou": {
+     "defaut": 0,
+     "min": 0,
+     "max": 0.78,
+     "unite": "u",
+     "statut": "mesuré",
+     "note": "σ of the background blur (0.34 median; spotlight 0.78)"
+    }
+   }
+  },
+  "camera-poussee": {
+   "famille": "camera",
+   "types": [
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Camera push-in: linear 7 out of 11, ×1.27 over 4.1 s; starts less than 0.25 s after the cut (9 out of 17) and is still moving at the cut (9 out of 17).",
+   "params": {
+    "facteur": {
+     "defaut": 1.27,
+     "min": 1.02,
+     "max": 2.58,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "end scale / start scale"
+    }
+   }
+  },
+  "camera-recul": {
+   "famille": "camera",
+   "types": [
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Camera pull-back: brakes 4 out of 6 (ease-out), ×0.45 over 5.8 s; the pull-back that reveals the whole object from a detail lasts 7.4 to 8.5 s (3 cases).",
+   "params": {
+    "facteur": {
+     "defaut": 0.45,
+     "min": 0.05,
+     "max": 0.84,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "end scale / start scale"
+    }
+   }
+  },
+  "camera-travelling": {
+   "famille": "camera",
+   "types": [
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Constant-speed move: 216 shots out of the 309 that move; 4.7 % H/s median; parallax: the foreground moves 1.9 times faster than the background (0.9 to 12.4), linear 8 out of 13.",
+   "params": {
+    "vitesse": {
+     "defaut": 4.7,
+     "min": 0.5,
+     "max": 48,
+     "unite": "u/s",
+     "statut": "mesuré",
+     "note": "speed of the reference layer (depth 1)"
+    },
+    "direction": {
+     "defaut": [
+      -1,
+      0
+     ],
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "convention",
+     "note": "direction of the image movement"
+    }
+   }
+  },
+  "camera-se-pose": {
+   "famille": "camera",
+   "types": [
+    "nul-camera"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "Move that slows to a stop within the shot: 7 out of 21; arrives at zero speed 7 out of 7; 10→90 % 2.1 to 5.2 s (median 4.4); out-cubic curve.",
+   "params": {
+    "d1090": {
+     "defaut": 4.4,
+     "min": 2.1,
+     "max": 5.2,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "10→90 % duration"
+    },
+    "facteur": {
+     "defaut": 0.68,
+     "min": 0.46,
+     "max": 1,
+     "unite": "×",
+     "statut": "mesuré",
+     "note": "end scale / start scale (pull-back that settles)"
+    },
+    "deplacement": {
+     "defaut": [
+      0,
+      0
+     ],
+     "min": null,
+     "max": null,
+     "unite": "u",
+     "statut": "convention",
+     "note": "added translation"
+    }
+   }
+  },
+  "logo-fin": {
+   "famille": "fin",
+   "types": [
+    "logo",
+    "titre",
+    "image"
+   ],
+   "majeur": false,
+   "epoque": "toutes",
+   "mesure": "End name or logo: 20 entries, cut 10, fade 10 (10→90 % 0.65 s; out 3, linear 2, ease 1, in 4); does not move (≤ 1.1 % H, 18 out of 20); vertical center between 47 and 51 % H (15 out of 20); held 2.6 s (1.25 to 4.7). Final keynote card: held 4 to 50 s.",
+   "params": {
+    "entree": {
+     "defaut": "fondu",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "coupe (cut) or fondu (fade), in equal shares"
+    },
+    "d1090": {
+     "defaut": 0.65,
+     "min": 0.27,
+     "max": 2,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "fade, out-quad curve"
+    }
+   }
+  }
+ },
+ "transitions": {
+  "coupe": {
+   "mesure": "Over 95 % of image changes: 1,967 cuts against 61 fades in the films, 6,894 against 82 in the live switching.",
+   "params": {}
+  },
+  "raccord": {
+   "mesure": "Graphic match cut: 22 out of 22 are cuts; center moved by 3.2 % H (median), size changed by less than 12 % (21 out of 22).",
+   "params": {}
+  },
+  "fondu-enchaine": {
+   "mesure": "Crossfade, short and rare: 25 checked, 10→90 % 0.29 s, total duration 0.25 to 0.98 s; none over 1 s; no dominant curve (linear kept).",
+   "params": {
+    "T": {
+     "defaut": 0.54,
+     "min": 0.25,
+     "max": 0.98,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "total duration"
+    }
+   }
+  },
+  "passage-noir": {
+   "mesure": "Fade to black linear 21 out of 21 (T 0.50 s, 11 out of 21 at 15 frames); black held 0.57 s (0.40 to 1.50; never under 0.40 s, 25 out of 25); fade from black linear 11 out of 16 (T 0.50 s).",
+   "params": {
+    "T_fondu": {
+     "defaut": 0.5,
+     "min": 0.33,
+     "max": 1.27,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "each fade"
+    },
+    "noir": {
+     "defaut": 0.5,
+     "min": 0.4,
+     "max": 1.5,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "black held"
+    }
+   }
+  },
+  "fondu-au-noir": {
+   "mesure": "Fade to black: linear 21 out of 21, T 0.50 s (0.33 to 1.27).",
+   "params": {
+    "T": {
+     "defaut": 0.5,
+     "min": 0.33,
+     "max": 1.27,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "linear"
+    }
+   }
+  },
+  "fondu-depuis-noir": {
+   "mesure": "Fade from black: 16 instances; short and linear 11 (T 0.50 s); long ones (0.68 to 2.71 s) brake 5 out of 5.",
+   "params": {
+    "T": {
+     "defaut": 0.5,
+     "min": 0.34,
+     "max": 2.71,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "above 0.68 s, the curve brakes (out-cubic)"
+    }
+   }
+  },
+  "montee-du-noir": {
+   "mesure": "Cut to black, short black (0.27 s, 33 cases), then the image rises from black: soft start 13 out of 14, linear 0; 10→90 % 0.39 s (0.17 to 0.74).",
+   "params": {
+    "noir": {
+     "defaut": 0.27,
+     "min": 0.1,
+     "max": 0.5,
+     "unite": "s",
+     "statut": "convention",
+     "note": "black held: median 0.27 s measured (33 cases); bounds: convention"
+    },
+    "d1090": {
+     "defaut": 0.39,
+     "min": 0.17,
+     "max": 0.74,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "rise, in-out-cubic curve"
+    }
+   }
+  },
+  "glissade": {
+   "mesure": "The whole shot leaves to the side and the next one comes in: 16 slides (2024-2026), 138 % H (about one frame width), visible 0.70 s; horizontal 32 out of 32; no overshoot; motion blur seen 10 out of 16 (strength not measured).",
+   "params": {
+    "T": {
+     "defaut": 0.89,
+     "min": 0.64,
+     "max": 0.94,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "sens": {
+     "defaut": "gauche",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "gauche or droite (left or right); never vertical (0 out of 32)"
+    }
+   }
+  },
+  "poussee": {
+   "mesure": "One content pushes another within a fixed frame: 7 instances, visible 0.57 s, shared curve (0.43, 0.08, 0.21, 1).",
+   "params": {
+    "T": {
+     "defaut": 0.75,
+     "min": 0.6,
+     "max": 1.02,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "key to key"
+    },
+    "sens": {
+     "defaut": "gauche",
+     "min": null,
+     "max": null,
+     "unite": "",
+     "statut": "mesuré",
+     "note": "horizontal"
+    }
+   }
+  },
+  "bascule-lumiere": {
+   "mesure": "The light changes within the shot with no cut: 12 instances; the 4 slow switches (1.2 to 2.6 s) are eased 4 out of 4 (in-out-sine 2); the object stays lit while the background goes dark.",
+   "params": {
+    "T": {
+     "defaut": 2.4,
+     "min": 1.2,
+     "max": 2.6,
+     "unite": "s",
+     "statut": "mesuré",
+     "note": "total duration"
+    },
+    "niveau": {
+     "defaut": 85,
+     "min": 30,
+     "max": 100,
+     "unite": "%",
+     "statut": "convention",
+     "note": "final darkening of the background"
+    }
+   }
+  }
+ },
+ "courbes": {
+  "lineaire": {
+   "bezier": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 0.1,
+     "vitesse": 1
+    },
+    "entree": {
+     "influence": 0.1,
+     "vitesse": 1
+    }
+   },
+   "part_10_90": 0.8,
+   "part_visible": 0.96,
+   "n": "fades to black 21 out of 21; push-ins 7 out of 11; slide pivots 4 out of 5; parallax 8 out of 13; light sweeps r² 0.91"
+  },
+  "ease": {
+   "bezier": [
+    0.25,
+    0.1,
+    0.25,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 25,
+     "vitesse": 0.4
+    },
+    "entree": {
+     "influence": 75,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.519,
+   "part_visible": 0.783,
+   "n": "name that moves up above a price 3 out of 5; sentence zoom-out 2 out of 2; slow title fade 2 out of 5"
+  },
+  "ease-in": {
+   "bezier": [
+    0.42,
+    0,
+    1,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 42,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 0.1,
+     "vitesse": 1.7241379310344827
+    }
+   },
+   "part_10_90": 0.679,
+   "part_visible": 0.879,
+   "n": "pivot that speeds up (variant); fade-out to dark"
+  },
+  "ease-out": {
+   "bezier": [
+    0,
+    0,
+    0.58,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 0.1,
+     "vitesse": 1.7241379310344829
+    },
+    "entree": {
+     "influence": 42.00000000000001,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.679,
+   "part_visible": 0.879,
+   "n": "pull-backs 4 out of 6 (pooled curve); exploded view opening 5 out of 7; 2020 number opacity 4 out of 6"
+  },
+  "ease-in-out": {
+   "bezier": [
+    0.42,
+    0,
+    0.58,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 42,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 42.00000000000001,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.559,
+   "part_visible": 0.799,
+   "n": "opacity of the settling number (pooled fit, 18 numbers); interface scrim"
+  },
+  "easeInOutCubic": {
+   "bezier": [
+    0.645,
+    0.045,
+    0.355,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 64.5,
+     "vitesse": 0.06976744186046512
+    },
+    "entree": {
+     "influence": 64.5,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.444,
+   "part_visible": 0.738,
+   "n": "opacity of \"fade + rise\" titles 4 out of 4; cascade lines 11 out of 13"
+  },
+  "easeOutExpo": {
+   "bezier": [
+    0.19,
+    1,
+    0.22,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 19,
+     "vitesse": 5.2631578947368425
+    },
+    "entree": {
+     "influence": 78,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.288,
+   "part_visible": 0.509,
+   "n": "title rise 4 out of 4; settling number scale 11 out of 18"
+  },
+  "easeInOutQuart": {
+   "bezier": [
+    0.77,
+    0,
+    0.175,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 77,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 82.5,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.342,
+   "part_visible": 0.654,
+   "n": "cascade line rise (0.10 s) 4 lines out of 11; new line as the voice speaks"
+  },
+  "easeInOutQuint": {
+   "bezier": [
+    0.86,
+    0,
+    0.07,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 86,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 93,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.286,
+   "part_visible": 0.616,
+   "n": "cascade line rise (0.10 s) 7 lines out of 11; fast cascade (0.05 s)"
+  },
+  "easeInQuad": {
+   "bezier": [
+    0.55,
+    0.085,
+    0.68,
+    0.53
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 55.00000000000001,
+     "vitesse": 0.15454545454545454
+    },
+    "entree": {
+     "influence": 31.999999999999996,
+     "vitesse": 1.4687500000000002
+    }
+   },
+   "part_10_90": 0.634,
+   "part_visible": 0.888,
+   "n": "drop from above 5 out of 6 (2020 sentences and numbers)"
+  },
+  "easeOutQuart": {
+   "bezier": [
+    0.165,
+    0.84,
+    0.44,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 16.5,
+     "vitesse": 5.090909090909091
+    },
+    "entree": {
+     "influence": 56.00000000000001,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.451,
+   "part_visible": 0.712,
+   "n": "lines entering from below (June 2020), pooled fit"
+  },
+  "easeOutBack": {
+   "bezier": [
+    0.175,
+    0.885,
+    0.32,
+    1.275
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 17.5,
+     "vitesse": 5.057142857142858
+    },
+    "entree": {
+     "influence": 68,
+     "vitesse": -0.40441176470588225
+    }
+   },
+   "part_10_90": 0.264,
+   "part_visible": 0.349,
+   "n": "number that grows in 2020, 6 out of 6 (overshoot +5 %)"
+  },
+  "easeInOutSine": {
+   "bezier": [
+    0.445,
+    0.05,
+    0.55,
+    0.95
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 44.5,
+     "vitesse": 0.11235955056179776
+    },
+    "entree": {
+     "influence": 44.99999999999999,
+     "vitesse": 0.11111111111111122
+    }
+   },
+   "part_10_90": 0.575,
+   "part_visible": 0.834,
+   "n": "new word in a crossfade (1 case)"
+  },
+  "easeInCubic": {
+   "bezier": [
+    0.55,
+    0.055,
+    0.675,
+    0.19
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 55.00000000000001,
+     "vitesse": 0.09999999999999999
+    },
+    "entree": {
+     "influence": 32.49999999999999,
+     "vitesse": 2.492307692307693
+    }
+   },
+   "part_10_90": 0.535,
+   "part_visible": 0.836,
+   "n": "sliding word (1 case); 2024 fast cascade 7 out of 7"
+  },
+  "easeOutCubic": {
+   "bezier": [
+    0.215,
+    0.61,
+    0.355,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 21.5,
+     "vitesse": 2.8372093023255816
+    },
+    "entree": {
+     "influence": 64.5,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.506,
+   "part_visible": 0.763,
+   "n": "recentering of a line being built (convention)"
+  },
+  "out-cubic": {
+   "bezier": [
+    0.33,
+    1,
+    0.68,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 33,
+     "vitesse": 3.0303030303030303
+    },
+    "entree": {
+     "influence": 31.999999999999996,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.506,
+   "part_visible": 0.727,
+   "n": "blurred side entry 8 out of 8 (pooled curve, error 0.075)"
+  },
+  "out-quad": {
+   "bezier": [
+    0.5,
+    1,
+    0.89,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 50,
+     "vitesse": 2
+    },
+    "entree": {
+     "influence": 10.999999999999998,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.631,
+   "part_visible": 0.842,
+   "n": "logo lighting up (3 \"out\" fades out of 10); pull-back that settles"
+  },
+  "out-quint": {
+   "bezier": [
+    0.22,
+    1,
+    0.36,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 22,
+     "vitesse": 4.545454545454546
+    },
+    "entree": {
+     "influence": 64,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.351,
+   "part_visible": 0.573,
+   "n": "gesture scroll (variant)"
+  },
+  "out-expo": {
+   "bezier": [
+    0.16,
+    1,
+    0.3,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 16,
+     "vitesse": 6.25
+    },
+    "entree": {
+     "influence": 70,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.313,
+   "part_visible": 0.539,
+   "n": "side panel (1 out of 4 measured); background blurring (soft ending 8 out of 14)"
+  },
+  "out-sine": {
+   "bezier": [
+    0.61,
+    1,
+    0.88,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 61,
+     "vitesse": 1.639344262295082
+    },
+    "entree": {
+     "influence": 12,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.655,
+   "part_visible": 0.853,
+   "n": "final sign appearing (1 case)"
+  },
+  "out-back": {
+   "bezier": [
+    0.34,
+    1.56,
+    0.64,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 34,
+     "vitesse": 4.588235294117647
+    },
+    "entree": {
+     "influence": 36,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.273,
+   "part_visible": 0.347,
+   "n": "card rising with a 6 % overshoot (1 panel out of 4)"
+  },
+  "in-quad": {
+   "bezier": [
+    0.11,
+    0,
+    0.5,
+    0
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 11,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 50,
+     "vitesse": 2
+    }
+   },
+   "part_10_90": 0.631,
+   "part_visible": 0.842,
+   "n": "reveal and fade-out that speed up (variant)"
+  },
+  "in-sine": {
+   "bezier": [
+    0.12,
+    0,
+    0.39,
+    0
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 12,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 61,
+     "vitesse": 1.639344262295082
+    }
+   },
+   "part_10_90": 0.655,
+   "part_visible": 0.853,
+   "n": "image rising from black after a cut (v3, v4)"
+  },
+  "in-out-sine": {
+   "bezier": [
+    0.37,
+    0,
+    0.63,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 37,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 37,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.587,
+   "part_visible": 0.818,
+   "n": "slow light switch 2 out of 4; logo fading out"
+  },
+  "in-out-cubic": {
+   "bezier": [
+    0.65,
+    0,
+    0.35,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 65,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 65,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.426,
+   "part_visible": 0.71,
+   "n": "image rising from black (v4, v7) 4 out of 14"
+  },
+  "in-out-quart": {
+   "bezier": [
+    0.76,
+    0,
+    0.24,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 76,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 76,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.363,
+   "part_visible": 0.668,
+   "n": "slow light switch (1 case)"
+  },
+  "montage-2020": {
+   "bezier": [
+    0.36,
+    0,
+    0.25,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 36,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 75,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.481,
+   "part_visible": 0.747,
+   "n": "2019-2020 zooms, slides and rows: 21 instances, error 0.018"
+  },
+  "montage-2024": {
+   "bezier": [
+    0.6,
+    0.4,
+    0.17,
+    0.95
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 60,
+     "vitesse": 0.6666666666666667
+    },
+    "entree": {
+     "influence": 83,
+     "vitesse": 0.06024096385542174
+    }
+   },
+   "part_10_90": 0.482,
+   "part_visible": 0.801,
+   "n": "2024-2026 zooms, slides and rows: 56 instances, error 0.026"
+  },
+  "zoom-2024": {
+   "bezier": [
+    0.56,
+    0.32,
+    0.19,
+    0.98
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 56.00000000000001,
+     "vitesse": 0.5714285714285714
+    },
+    "entree": {
+     "influence": 81,
+     "vitesse": 0.024691358024691377
+    }
+   },
+   "part_10_90": 0.471,
+   "part_visible": 0.776,
+   "n": "zoom into a detail, 2024-2026: 18 instances, error 0.028"
+  },
+  "zoom-sortie": {
+   "bezier": [
+    0.64,
+    0.47,
+    0.15,
+    0.94
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 64,
+     "vitesse": 0.7343749999999999
+    },
+    "entree": {
+     "influence": 85,
+     "vitesse": 0.07058823529411772
+    }
+   },
+   "part_10_90": 0.478,
+   "part_visible": 0.805,
+   "n": "zoom back out of the detail: 10 instances, error 0.019"
+  },
+  "rangee-2024": {
+   "bezier": [
+    0.67,
+    0.49,
+    0.09,
+    0.88
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 67,
+     "vitesse": 0.7313432835820894
+    },
+    "entree": {
+     "influence": 91,
+     "vitesse": 0.13186813186813187
+    }
+   },
+   "part_10_90": 0.495,
+   "part_visible": 0.848,
+   "n": "screens stacking up, 2024-2026: 14 instances, error 0.014"
+  },
+  "glissade": {
+   "bezier": [
+    0.65,
+    0.5,
+    0.15,
+    0.93
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 65,
+     "vitesse": 0.7692307692307692
+    },
+    "entree": {
+     "influence": 85,
+     "vitesse": 0.08235294117647053
+    }
+   },
+   "part_10_90": 0.484,
+   "part_visible": 0.814,
+   "n": "whole shot sliding to the next: 16 instances, error 0.030"
+  },
+  "poussee-ecran": {
+   "bezier": [
+    0.43,
+    0.08,
+    0.21,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 43,
+     "vitesse": 0.18604651162790697
+    },
+    "entree": {
+     "influence": 79,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.461,
+   "part_visible": 0.75,
+   "n": "one content pushes another, fixed frame: 7 instances, error 0.019"
+  },
+  "voile": {
+   "bezier": [
+    0.44,
+    0.21,
+    0.29,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 44,
+     "vitesse": 0.47727272727272724
+    },
+    "entree": {
+     "influence": 71,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.504,
+   "part_visible": 0.783,
+   "n": "background darkening: 18 instances, error 0.021"
+  },
+  "voile-2024": {
+   "bezier": [
+    0.52,
+    0.42,
+    0.34,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 52,
+     "vitesse": 0.8076923076923076
+    },
+    "entree": {
+     "influence": 65.99999999999999,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.526,
+   "part_visible": 0.787,
+   "n": "background darkening, 2024-2026: 9 instances, error 0.021"
+  },
+  "defilement": {
+   "bezier": [
+    0.36,
+    0,
+    0.25,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 36,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 75,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.481,
+   "part_visible": 0.747,
+   "n": "scroll: 27 instances, error 0.033"
+  },
+  "defilement-2024": {
+   "bezier": [
+    0.39,
+    0.06,
+    0.25,
+    1
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 39,
+     "vitesse": 0.15384615384615383
+    },
+    "entree": {
+     "influence": 75,
+     "vitesse": 0
+    }
+   },
+   "part_10_90": 0.481,
+   "part_visible": 0.759,
+   "n": "presentation scroll, 2024-2026: 12 instances, error 0.020"
+  },
+  "geste": {
+   "bezier": [
+    0.43,
+    0,
+    0.06,
+    0.82
+   ],
+   "ae": {
+    "sortie": {
+     "influence": 43,
+     "vitesse": 0
+    },
+    "entree": {
+     "influence": 94,
+     "vitesse": 0.19148936170212771
+    }
+   },
+   "part_10_90": 0.506,
+   "part_visible": 0.81,
+   "n": "scroll flung with a finger flick: 4 instances, error 0.019"
+  }
+ }
+}

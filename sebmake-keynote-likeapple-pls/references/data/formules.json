@@ -1,0 +1,1493 @@
+[
+ {
+  "fonction": "ouverture",
+  "gabarit_en": "Thank you. Thank you. [× n, while the room settles]",
+  "gabarit_fr": "Merci. Merci.",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 9,
+   "v6": 4,
+   "v1": 0,
+   "v2": 0,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v6",
+   "t": "0:02:05"
+  }
+ },
+ {
+  "fonction": "ouverture",
+  "gabarit_en": "Good morning! [And] welcome to [place / event].",
+  "gabarit_fr": "Bonjour. Bienvenue à [lieu]. / Bonjour et bienvenue à [lieu].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 4,
+   "v1": 2,
+   "v2": 0,
+   "v7": 1,
+   "v8": 2,
+   "v3": 1,
+   "v4": 1
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v8",
+   "t": "0:01:57"
+  }
+ },
+ {
+  "fonction": "ouverture",
+  "gabarit_en": "Today [is / we have] a huge day [of announcements] for [X].",
+  "gabarit_fr": "Aujourd'hui est un [très] grand jour pour [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 4,
+   "v2": 2,
+   "v7": 2,
+   "v8": 1,
+   "v3": 1,
+   "v4": 0
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v2",
+   "t": "0:43:48"
+  }
+ },
+ {
+  "fonction": "ouverture",
+  "gabarit_en": "We have [so much] to [cover] today.",
+  "gabarit_fr": "Nous avons [beaucoup de choses] à [dire] aujourd'hui. / Nous avons [un programme chargé] aujourd'hui.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 1,
+   "v2": 0,
+   "v7": 1,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v8",
+   "t": "0:03:48"
+  }
+ },
+ {
+  "fonction": "ouverture",
+  "gabarit_en": "Let's get started [by / with] [X]. / Let's dive in.",
+  "gabarit_fr": "Voyons [ça] ensemble, [à commencer] par [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 2,
+   "v6": 2,
+   "v1": 4,
+   "v2": 1,
+   "v7": 0,
+   "v8": 2,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v1",
+   "t": "0:05:08"
+  }
+ },
+ {
+  "fonction": "cadrage",
+  "gabarit_en": "At [company], [value] [has always been / is] [X].",
+  "gabarit_fr": "Chez [entreprise], [valeur] fait [partie] de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 3,
+   "v6": 1,
+   "v1": 5,
+   "v2": 1,
+   "v7": 1,
+   "v8": 1,
+   "v3": 1,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v1",
+   "t": "0:55:28"
+  }
+ },
+ {
+  "fonction": "cadrage",
+  "gabarit_en": "This year, [we're + verb] [X].",
+  "gabarit_fr": "Cette année, [nous + verbe] [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 4,
+   "v6": 20,
+   "v1": 40,
+   "v2": 2,
+   "v7": 16,
+   "v8": 15,
+   "v3": 8,
+   "v4": 9
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v1",
+   "t": "0:07:40"
+  }
+ },
+ {
+  "fonction": "cadrage",
+  "gabarit_en": "We think / We believe [X].",
+  "gabarit_fr": "Nous pensons [depuis toujours] que [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 8,
+   "v6": 8,
+   "v1": 10,
+   "v2": 0,
+   "v7": 2,
+   "v8": 6,
+   "v3": 0,
+   "v4": 2
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v6",
+   "t": "0:19:58"
+  }
+ },
+ {
+  "fonction": "cadrage",
+  "gabarit_en": "Our goal [was simple]: to [verb] [X]. / We wanted to [verb].",
+  "gabarit_fr": "Notre objectif était simple : [verbe] [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 10,
+   "v6": 11,
+   "v1": 5,
+   "v2": 2,
+   "v7": 3,
+   "v8": 2,
+   "v3": 2,
+   "v4": 3
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:53:58"
+  }
+ },
+ {
+  "fonction": "cadrage",
+  "gabarit_en": "What if you could [X]? / Wouldn't it be [great] if [X]?",
+  "gabarit_fr": "Et si vous pouviez [X] ? / Imaginez que [situation].",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 1,
+   "v6": 0,
+   "v1": 4,
+   "v2": 0,
+   "v7": 0,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v1",
+   "t": "0:27:51"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "Introducing [Name].",
+  "gabarit_fr": "Voici [Nom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 0,
+   "v7": 2,
+   "v8": 1,
+   "v3": 4,
+   "v4": 4
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v3",
+   "t": "0:17:32"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "[And] here it is. This is [Name].",
+  "gabarit_fr": "La voici. Voici [Nom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 2,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 2
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v4",
+   "t": "0:06:28"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "[Today] we're / we are [introducing / announcing] [X].",
+  "gabarit_fr": "Nous [proposons / lançons / présentons] [X]. / C'est pourquoi nous lançons [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 3,
+   "v6": 7,
+   "v1": 11,
+   "v2": 1,
+   "v7": 6,
+   "v8": 8,
+   "v3": 5,
+   "v4": 3
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v5",
+   "t": "0:26:40"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "It's called [Name]. / [X] we call [Name].",
+  "gabarit_fr": "[X] appelée [Nom]. / Elle s'appelle [Nom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 4,
+   "v6": 10,
+   "v1": 4,
+   "v2": 1,
+   "v7": 4,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v6",
+   "t": "0:40:40"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "We're [excited / thrilled] to [announce / introduce] [X].",
+  "gabarit_fr": "Nous avons [le plaisir] de [vous présenter / vous annoncer] [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 7,
+   "v6": 9,
+   "v1": 7,
+   "v2": 2,
+   "v7": 6,
+   "v8": 4,
+   "v3": 5,
+   "v4": 1
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v8",
+   "t": "0:08:46"
+  }
+ },
+ {
+  "fonction": "annonce du nom",
+  "gabarit_en": "[Question about the name] [story of the name] [Name].",
+  "gabarit_fr": "[Question sur le nom] [récit] [Nom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 1,
+   "v2": 0,
+   "v7": 1,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v8",
+   "t": "0:54:06"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "the [adj-est / most + adj] [X] ever",
+  "gabarit_fr": "le/la [X] le plus [adj] à ce jour",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 5,
+   "v6": 7,
+   "v1": 1,
+   "v2": 15,
+   "v7": 4,
+   "v8": 3,
+   "v3": 20,
+   "v4": 15
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:57:07"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "the [adj-est] [X] we've ever [made / had]",
+  "gabarit_fr": "le/la [X] le plus [adj] que nous ayons jamais [conçu]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 7,
+   "v1": 0,
+   "v2": 11,
+   "v7": 0,
+   "v8": 0,
+   "v3": 7,
+   "v4": 6
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v4",
+   "t": "0:20:53"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "the world's [best / first / fastest] [X]",
+  "gabarit_fr": "[le/la meilleur(e) / le plus + adj] [X] au monde",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 5,
+   "v6": 6,
+   "v1": 5,
+   "v2": 10,
+   "v7": 4,
+   "v8": 1,
+   "v3": 6,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v6",
+   "t": "0:04:18"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "for the first time [ever]",
+  "gabarit_fr": "pour la (toute) première fois",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 2,
+   "v6": 9,
+   "v1": 5,
+   "v2": 3,
+   "v7": 1,
+   "v8": 1,
+   "v3": 8,
+   "v4": 1
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v8",
+   "t": "0:09:08"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "our most [adj] [X] [yet]",
+  "gabarit_fr": "notre [X] le plus [adj] à ce jour / notre [meilleur] à ce jour",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 4,
+   "v2": 8,
+   "v7": 5,
+   "v8": 1,
+   "v3": 8,
+   "v4": 8
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v7",
+   "t": "0:03:01"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "[adj-er / more + adj] than ever [before]",
+  "gabarit_fr": "plus [adj] que jamais",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 3,
+   "v6": 8,
+   "v1": 18,
+   "v2": 11,
+   "v7": 7,
+   "v8": 11,
+   "v3": 1,
+   "v4": 11
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v7",
+   "t": "0:02:14"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "[X], by far / by far the [X]",
+  "gabarit_fr": "[X], et de loin / de loin le [X]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 3,
+   "v1": 2,
+   "v2": 5,
+   "v7": 0,
+   "v8": 0,
+   "v3": 4,
+   "v4": 2
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v3",
+   "t": "0:05:44"
+  }
+ },
+ {
+  "fonction": "superlatifs",
+  "gabarit_en": "industry-leading / best-in-class [X]",
+  "gabarit_fr": "la meilleure [X] du marché",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 2,
+   "v6": 2,
+   "v1": 6,
+   "v2": 10,
+   "v7": 2,
+   "v8": 0,
+   "v3": 5,
+   "v4": 1
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v2",
+   "t": "0:12:35"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "[N] times [more + adj / faster / the X]",
+  "gabarit_fr": "[N] fois plus [adj]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 4,
+   "v1": 3,
+   "v2": 29,
+   "v7": 0,
+   "v8": 0,
+   "v3": 12,
+   "v4": 5
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v3",
+   "t": "0:06:06"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "up to [N] [unit / times / %]",
+  "gabarit_fr": "jusqu'à [N] [unité]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 4,
+   "v1": 0,
+   "v2": 27,
+   "v7": 1,
+   "v8": 0,
+   "v3": 18,
+   "v4": 21
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v3",
+   "t": "0:52:32"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "[X] more than / compared to [baseline: previous version]",
+  "gabarit_fr": "[X] de plus que [base : version précédente] / par rapport à [X]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 2,
+   "v2": 7,
+   "v7": 0,
+   "v8": 0,
+   "v3": 10,
+   "v4": 6
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v3",
+   "t": "0:12:06"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "an incredible [N]% / up to [N]% [faster]",
+  "gabarit_fr": "[N] % plus [adj]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 7,
+   "v6": 10,
+   "v1": 2,
+   "v2": 5,
+   "v7": 0,
+   "v8": 0,
+   "v3": 11,
+   "v4": 20
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v6",
+   "t": "0:27:00"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "That's enough to [concrete equivalent]. / That's [N] more [unit].",
+  "gabarit_fr": "C'est assez pour [équivalent]. / soit [N] [unité] de plus",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 0,
+   "v2": 3,
+   "v7": 0,
+   "v8": 0,
+   "v3": 2,
+   "v4": 2
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v3",
+   "t": "0:52:32"
+  }
+ },
+ {
+  "fonction": "chiffres et comparaisons",
+  "gabarit_en": "over [N] [million / billion] [items] [every day]",
+  "gabarit_fr": "plus de [N] [millions / milliards] de [objets] [chaque jour]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 12,
+   "v6": 14,
+   "v1": 12,
+   "v2": 4,
+   "v7": 4,
+   "v8": 5,
+   "v3": 7,
+   "v4": 2
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v4",
+   "t": "0:09:04"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "Now, [sentence].",
+  "gabarit_fr": "Maintenant, [phrase]. / Parlons maintenant de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 27,
+   "v6": 169,
+   "v1": 53,
+   "v2": 13,
+   "v7": 28,
+   "v8": 21,
+   "v3": 18,
+   "v4": 14
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:20:30"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "[Now / Next,] let's talk about [X].",
+  "gabarit_fr": "Parlons [maintenant] de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 3,
+   "v6": 6,
+   "v1": 11,
+   "v2": 1,
+   "v7": 12,
+   "v8": 8,
+   "v3": 5,
+   "v4": 4
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v4",
+   "t": "0:17:37"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "Next, let's turn to [X]. / Next up, [X].",
+  "gabarit_fr": "Passons [maintenant] à [X]. / Parlons maintenant de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 6,
+   "v1": 8,
+   "v2": 0,
+   "v7": 4,
+   "v8": 1,
+   "v3": 1,
+   "v4": 0
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v3",
+   "t": "0:12:52"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "Let's start with [X].",
+  "gabarit_fr": "Commençons par [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 8,
+   "v1": 3,
+   "v2": 0,
+   "v7": 7,
+   "v8": 2,
+   "v3": 2,
+   "v4": 0
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v3",
+   "t": "0:02:44"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "And that's not all. / But we [didn't stop] there. / And there's more.",
+  "gabarit_fr": "[Et] ce n'est pas tout.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 4,
+   "v6": 2,
+   "v1": 6,
+   "v2": 2,
+   "v7": 3,
+   "v8": 4,
+   "v3": 2,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v7",
+   "t": "0:17:58"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "And of course, [X].",
+  "gabarit_fr": "Et bien sûr, [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 2,
+   "v1": 5,
+   "v2": 0,
+   "v7": 2,
+   "v8": 0,
+   "v3": 0,
+   "v4": 2
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v4",
+   "t": "1:14:34"
+  }
+ },
+ {
+  "fonction": "relance interne",
+  "gabarit_en": "[Before we close], one last [announcement]: [X].",
+  "gabarit_fr": "[Avant de terminer], une dernière [annonce] : [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 1,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 1
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v2",
+   "t": "0:02:11"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "Here's [First name] [to tell you more].",
+  "gabarit_fr": "Voici [Prénom], [qui va vous] [en dire plus].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 3,
+   "v2": 4,
+   "v7": 13,
+   "v8": 16,
+   "v3": 10,
+   "v4": 11
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v4",
+   "t": "0:08:19"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "To tell you more [about X], [here's First name].",
+  "gabarit_fr": "Pour vous [en dire plus], voici [Prénom]. / [Prénom] va vous [en dire plus].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 6,
+   "v6": 8,
+   "v1": 17,
+   "v2": 4,
+   "v7": 10,
+   "v8": 13,
+   "v3": 10,
+   "v4": 12
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:04:21"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "I'd like to [invite] [First Last, role] [to the stage]. / Please welcome [Name]. / I'll hand it [off] to [Name].",
+  "gabarit_fr": "Je [passe] la parole à [Prénom]. / Pour la scène : J'invite [Prénom Nom] à me [rejoindre].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 4,
+   "v6": 14,
+   "v1": 10,
+   "v2": 1,
+   "v7": 1,
+   "v8": 1,
+   "v3": 1,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v6",
+   "t": "0:12:18"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "Thank you, [First name]. / Thanks, [First name]. [the incoming speaker thanks the outgoing one]",
+  "gabarit_fr": "Merci, [Prénom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 13,
+   "v6": 24,
+   "v1": 30,
+   "v2": 0,
+   "v7": 2,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v6",
+   "t": "0:12:39"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "[Now / And now,] back to [First name]. / Back to you, [First name].",
+  "gabarit_fr": "[Retour] à toi, [Prénom]. / À toi, [Prénom]. / Je [(re)passe] la parole à [Prénom].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 5,
+   "v6": 13,
+   "v1": 7,
+   "v2": 5,
+   "v7": 11,
+   "v8": 10,
+   "v3": 10,
+   "v4": 7
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:11:44"
+  }
+ },
+ {
+  "fonction": "passage de relais",
+  "gabarit_en": "Over to [First name] [to tell you] [about X].",
+  "gabarit_fr": "Je [passe] la parole à [Prénom], qui va vous [parler] de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 3,
+   "v1": 6,
+   "v2": 1,
+   "v7": 2,
+   "v8": 1,
+   "v3": 1,
+   "v4": 1
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v4",
+   "t": "0:13:15"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "Let's take a [closer] look [at X].",
+  "gabarit_fr": "Voyons cela ensemble. / Découvrons [X]. / Regardons ça !",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 4,
+   "v6": 10,
+   "v1": 13,
+   "v2": 1,
+   "v7": 5,
+   "v8": 2,
+   "v3": 2,
+   "v4": 1
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v8",
+   "t": "0:07:57"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "Let me show you. [first-person gesture]",
+  "gabarit_fr": "Je vous montre. / Je vais vous montrer.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 5,
+   "v1": 11,
+   "v2": 2,
+   "v7": 5,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v7",
+   "t": "0:14:55"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "[And] check this out!",
+  "gabarit_fr": "Et regardez.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 7,
+   "v1": 3,
+   "v2": 1,
+   "v7": 2,
+   "v8": 1,
+   "v3": 0,
+   "v4": 1
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v7",
+   "t": "0:15:18"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "[gesture]. Just like that.",
+  "gabarit_fr": "[geste], d'un geste.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 8,
+   "v1": 4,
+   "v2": 0,
+   "v7": 2,
+   "v8": 0,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v1",
+   "t": "0:08:26"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "Let's see [X] in action.",
+  "gabarit_fr": "Découvrons [X] en action.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 3,
+   "v1": 3,
+   "v2": 1,
+   "v7": 2,
+   "v8": 2,
+   "v3": 2,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v3",
+   "t": "1:08:13"
+  }
+ },
+ {
+  "fonction": "introduction de démo",
+  "gabarit_en": "[I'd like to welcome] [Name] for a live demo.",
+  "gabarit_fr": "[Nom] va vous faire [une démonstration] en direct.",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 0,
+   "v6": 5,
+   "v1": 4,
+   "v2": 0,
+   "v7": 1,
+   "v8": 0,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v1",
+   "t": "0:39:14"
+  }
+ },
+ {
+  "fonction": "témoignage ou invité",
+  "gabarit_en": "We've partnered with / we've been working [closely] with [our friends at] [partner].",
+  "gabarit_fr": "Nous collaborons avec [partenaire]. ",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 10,
+   "v6": 4,
+   "v1": 7,
+   "v2": 0,
+   "v7": 0,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v1",
+   "t": "1:35:31"
+  }
+ },
+ {
+  "fonction": "témoignage ou invité",
+  "gabarit_en": "Let's hear from [some of them]. / We hear from [many people] about [impact].",
+  "gabarit_fr": "Nous avons [entendu] [beaucoup de personnes] [témoigner] de [impact].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 0,
+   "v1": 0,
+   "v2": 0,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 1
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v5",
+   "t": "0:42:36"
+  }
+ },
+ {
+  "fonction": "témoignage ou invité",
+  "gabarit_en": "It's [truly] [remarkable] to see how [product] can [help].",
+  "gabarit_fr": "C'est [remarquable] de voir que [produit] peut [aider].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 1,
+   "v7": 0,
+   "v8": 0,
+   "v3": 1,
+   "v4": 0
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v3",
+   "t": "0:16:43"
+  }
+ },
+ {
+  "fonction": "témoignage ou invité",
+  "gabarit_en": "[Look at] what [outlet] [says]. / [Reporter] says it [X].",
+  "gabarit_fr": "Voyez ce qu'en dit [média].",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 2,
+   "v2": 0,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 1,
+  "repere": {
+   "k": "v1",
+   "t": "0:20:33"
+  }
+ },
+ {
+  "fonction": "témoignage ou invité",
+  "gabarit_en": "[I am] proud and honored to [X]. / It's an honor [to X].",
+  "gabarit_fr": "C'est un honneur de [X].",
+  "fr_officiel": false,
+  "comptes": {
+   "v5": 2,
+   "v6": 1,
+   "v1": 0,
+   "v2": 0,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 2,
+  "repere": {
+   "k": "v5",
+   "t": "1:42:31"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[Product] starts at [just] $[N].",
+  "gabarit_fr": "[Produit] est [disponible] à partir de [prix].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 0,
+   "v2": 3,
+   "v7": 0,
+   "v8": 0,
+   "v3": 7,
+   "v4": 3
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v3",
+   "t": "0:28:50"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[Product] starts at [price], [same price as base]. / still [available for] [price]",
+  "gabarit_fr": "[Produit] est [proposé] à partir de [prix], [au même prix que base].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 1,
+   "v7": 0,
+   "v8": 0,
+   "v3": 3,
+   "v4": 4
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v3",
+   "t": "1:09:47"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[X] will be available [date / this fall].",
+  "gabarit_fr": "[X] sera disponible [date / cet automne].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 3,
+   "v6": 6,
+   "v1": 4,
+   "v2": 1,
+   "v7": 10,
+   "v8": 4,
+   "v3": 4,
+   "v4": 6
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v2",
+   "t": "0:41:33"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "You can pre-order [X] [today], and [it'll] be available [date].",
+  "gabarit_fr": "Précommandez [X] dès aujourd'hui. / En précommande dès aujourd'hui, [X] seront disponibles le [date].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 0,
+   "v1": 0,
+   "v2": 1,
+   "v7": 0,
+   "v8": 1,
+   "v3": 3,
+   "v4": 3
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v3",
+   "t": "0:12:29"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[X] [is coming / will be available] later this year / this fall / next month.",
+  "gabarit_fr": "cet automne / plus tard dans l'année / d'ici [la fin de l'année] / le mois prochain",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 8,
+   "v6": 9,
+   "v1": 6,
+   "v2": 3,
+   "v7": 12,
+   "v8": 4,
+   "v3": 1,
+   "v4": 5
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v6",
+   "t": "0:04:18"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[X] [will be available] as [developer betas] today[, public beta: date].",
+  "gabarit_fr": "[X] [seront disponibles] en [bêta] dès aujourd'hui.",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 1,
+   "v2": 0,
+   "v7": 1,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v8",
+   "t": "1:28:39"
+  }
+ },
+ {
+  "fonction": "prix et disponibilité",
+  "gabarit_en": "[X] is available for free [with Y].",
+  "gabarit_fr": "[X] est disponible gratuitement [sur Y].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 0,
+   "v1": 1,
+   "v2": 0,
+   "v7": 3,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v7",
+   "t": "1:36:09"
+  }
+ },
+ {
+  "fonction": "récap",
+  "gabarit_en": "So that's [Name / what's coming to X].",
+  "gabarit_fr": "Voilà pour [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 6,
+   "v6": 4,
+   "v1": 10,
+   "v2": 4,
+   "v7": 8,
+   "v8": 8,
+   "v3": 5,
+   "v4": 2
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:12:06"
+  }
+ },
+ {
+  "fonction": "récap",
+  "gabarit_en": "And that's [Name], [one-line definition].",
+  "gabarit_fr": "Voilà pour [Nom], [définition].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 0,
+   "v1": 5,
+   "v2": 0,
+   "v7": 2,
+   "v8": 2,
+   "v3": 1,
+   "v4": 3
+  },
+  "n_keynotes": 6,
+  "repere": {
+   "k": "v4",
+   "t": "0:49:06"
+  }
+ },
+ {
+  "fonction": "récap",
+  "gabarit_en": "Those are [just] some of the [new features] coming to [X].",
+  "gabarit_fr": "Ce ne sont que [quelques-unes] des [nouveautés] de [X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 3,
+   "v1": 5,
+   "v2": 0,
+   "v7": 2,
+   "v8": 2,
+   "v3": 0,
+   "v4": 1
+  },
+  "n_keynotes": 5,
+  "repere": {
+   "k": "v8",
+   "t": "0:31:07"
+  }
+ },
+ {
+  "fonction": "récap",
+  "gabarit_en": "our [best / all-new] [X] lineup [ever]",
+  "gabarit_fr": "notre [meilleure / toute nouvelle] gamme de [X] [à ce jour]",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 2,
+   "v1": 1,
+   "v2": 3,
+   "v7": 6,
+   "v8": 1,
+   "v3": 8,
+   "v4": 5
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v3",
+   "t": "1:09:24"
+  }
+ },
+ {
+  "fonction": "récap",
+  "gabarit_en": "What a [adj] day [for X].",
+  "gabarit_fr": "Que d'annonces [pour X].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 2,
+   "v2": 0,
+   "v7": 0,
+   "v8": 1,
+   "v3": 0,
+   "v4": 0
+  },
+  "n_keynotes": 3,
+  "repere": {
+   "k": "v1",
+   "t": "1:46:20"
+  }
+ },
+ {
+  "fonction": "clôture",
+  "gabarit_en": "We can't wait [for you] to [verb].",
+  "gabarit_fr": "Nous avons hâte de [verbe] / que vous [verbe].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 8,
+   "v6": 6,
+   "v1": 6,
+   "v2": 3,
+   "v7": 1,
+   "v8": 4,
+   "v3": 2,
+   "v4": 1
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v3",
+   "t": "0:39:39"
+  }
+ },
+ {
+  "fonction": "clôture",
+  "gabarit_en": "[Our products] [enrich] [people's lives] / [change] [the world] for the better.",
+  "gabarit_fr": "[enrichir] [nos vies] / [changer] [le monde] pour le meilleur",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 7,
+   "v6": 2,
+   "v1": 3,
+   "v2": 1,
+   "v7": 1,
+   "v8": 1,
+   "v3": 3,
+   "v4": 0
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v3",
+   "t": "1:11:15"
+  }
+ },
+ {
+  "fonction": "clôture",
+  "gabarit_en": "I'm [so] proud of [the teams] [who built X]. / I'd like to thank [everyone at company].",
+  "gabarit_fr": "Je suis [fier / fière] de ce que [les équipes de l'entreprise] ont [accompli].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 1,
+   "v1": 0,
+   "v2": 1,
+   "v7": 0,
+   "v8": 0,
+   "v3": 0,
+   "v4": 3
+  },
+  "n_keynotes": 4,
+  "repere": {
+   "k": "v4",
+   "t": "1:16:45"
+  }
+ },
+ {
+  "fonction": "clôture",
+  "gabarit_en": "[So] thank you [very much] for joining us. / Thank you [all] for coming.",
+  "gabarit_fr": "Merci de votre attention. / Merci [à toutes et à tous] d'avoir [suivi] [cette présentation].",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 1,
+   "v6": 1,
+   "v1": 1,
+   "v2": 1,
+   "v7": 1,
+   "v8": 1,
+   "v3": 1,
+   "v4": 1
+  },
+  "n_keynotes": 8,
+  "repere": {
+   "k": "v4",
+   "t": "1:16:45"
+  }
+ },
+ {
+  "fonction": "clôture",
+  "gabarit_en": "Have a great [day / week / event].",
+  "gabarit_fr": "Passez une excellente [journée]. / Excellent [événement] !",
+  "fr_officiel": true,
+  "comptes": {
+   "v5": 0,
+   "v6": 1,
+   "v1": 1,
+   "v2": 1,
+   "v7": 1,
+   "v8": 1,
+   "v3": 1,
+   "v4": 1
+  },
+  "n_keynotes": 7,
+  "repere": {
+   "k": "v7",
+   "t": "1:42:55"
+  }
+ }
+]

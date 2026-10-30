@@ -1,0 +1,172 @@
+{
+  "etapes": [
+    {
+      "n": 1,
+      "nom": "Theme opener",
+      "fonction": "Signal that a new topic starts and name the area.",
+      "gabarit_en": "Now, let's [talk about / turn to] [domain]. / Next, let's turn to [X].",
+      "gabarit_fr": "Passons maintenant à [X]. / Parlons maintenant de [X].",
+      "visuel": "A single word or icon on black; an aerial transition between sets (prerecorded).",
+      "presence_n": 8
+    },
+    {
+      "n": 2,
+      "nom": "Anchor",
+      "fonction": "Build legitimacy: status, heritage or a success figure for what exists today.",
+      "gabarit_en": "[X] is [the most popular] [category] [in the world]. / When we [created] [X] [N] years ago, we [wanted] to [mission].",
+      "gabarit_fr": "[X] est [le / la] [catégorie] [la plus populaire] [au monde]. / Quand nous avons [créé] [X] il y a [N] ans, nous [voulions] [mission].",
+      "visuel": "Speaker in a wide shot; big figure + label; timeline; the old product alone.",
+      "presence_n": 8
+    },
+    {
+      "n": 3,
+      "nom": "Tension",
+      "fonction": "Open a gap: a life problem, a flaw in others (unnamed) or a rhetorical question.",
+      "gabarit_en": "Today, [X] [fact A]. But [obstacle]. / Others [flaw]. / Wouldn't it be [great] if [wish]?",
+      "gabarit_fr": "Aujourd'hui, [X]… Mais [obstacle]. / D'autres ont [défaut]. / Et si [souhait] ?",
+      "visuel": "Screen showing the problem; checklist with empty circles; line drawing of competitors.",
+      "presence_n": 7,
+      "presence_detail": "7/8: missing from v2 (a catalyst instead). Explicit rhetorical question 5/8 (v5, v6, v1, v7, v8), 0/3 at product events."
+    },
+    {
+      "n": 4,
+      "nom": "Promise",
+      "fonction": "Say the answer is coming, without naming it.",
+      "gabarit_en": "And today, we [do just that]. / This year, [we go further]. / [teaser]… [And] here it is.",
+      "gabarit_fr": "Et aujourd'hui, [c'est chose faite]. / Cette année, [nous allons plus loin]. / La voici.",
+      "visuel": "Shot of the presenter; sometimes black before the film.",
+      "presence_n": 8
+    },
+    {
+      "n": 5,
+      "nom": "Reveal video",
+      "fonction": "Show the object in an emotional way before the argument (major announcements).",
+      "gabarit_en": "[Paradox line]. This is [Name].",
+      "gabarit_fr": "[Phrase-paradoxe]. Voici [Nom].",
+      "visuel": "Music film or hardware film: product floating, macros, exploded views; 10 s to 2 min 15.",
+      "presence_n": 8
+    },
+    {
+      "n": 6,
+      "nom": "Name",
+      "fonction": "Set down the word to remember.",
+      "gabarit_en": "Introducing [Name]. / This is [Name]. / We call it [Name]. / It's called [Name].",
+      "gabarit_fr": "Voici [Nom]. / Nous l'appelons [Nom].",
+      "visuel": "Word or wordmark alone on a plain background; typographic reveal; live applause.",
+      "presence_n": 8,
+      "presence_detail": "8/8. Naming with a form like [we call it]: 3/8 (v5, v6, v2). Fake deliberation (a question about the name before giving it): 3/8 (v1, v7, v8). Applause after the name when live: 2/2, not after every name."
+    },
+    {
+      "n": 7,
+      "nom": "Definition and verdict",
+      "fonction": "Say in one sentence what it does for the user, then judge it.",
+      "gabarit_en": "[Name] is the [fast, easy] way to [benefit] without [pain point]. / [Name] is [verdict].",
+      "gabarit_fr": "[Nom] est le moyen [simple et rapide] de [bénéfice] sans [douleur]. / [Nom] est [verdict].",
+      "visuel": "Thesis line on screen; product alone.",
+      "presence_n": 8
+    },
+    {
+      "n": 8,
+      "nom": "Handover to the expert",
+      "fonction": "Go from the person who names to the person who explains.",
+      "gabarit_en": "To tell you [more], here's [First name]. / I'd like to [invite] [First Last], [role].",
+      "gabarit_fr": "Voici [Prénom], qui va vous [en dire plus]. / Je [passe] la parole à [Prénom].",
+      "visuel": "Walk-in + name/role lower third (prerecorded); stage entrance under applause (live).",
+      "presence_n": 8
+    },
+    {
+      "n": 9,
+      "nom": "Pillars",
+      "fonction": "Run each pillar as a loop: title card, technology, benefit, figure, use case, brief comment.",
+      "gabarit_en": "[Product] delivers up to [N] times [metric] than [baseline: previous version]. [Brief comment.]",
+      "gabarit_fr": "[Produit] offre jusqu'à [N] fois plus de [métrique] que [base : version précédente]. [Commentaire bref.]",
+      "visuel": "Title card; big figure + label; chip diagram; comparison chart without a scale.",
+      "presence_n": 8,
+      "presence_detail": "8/8. Comparative figure (N times): 5/8 (v6, v1, v2, v3, v4); 0 in v5, v7, v8."
+    },
+    {
+      "n": 10,
+      "nom": "Demo",
+      "fonction": "Show the gesture and how easy it is, in the first person.",
+      "gabarit_en": "Let me show you [how it works]. → I just [tap] here… → Check this out. → Just like that.",
+      "gabarit_fr": "Laissez-moi vous montrer [comment ça marche]. → Il suffit de [toucher] ici… → Et voilà.",
+      "visuel": "Full-bleed device screen; hands-on demo; fiction played by actors; live demo on stage (live).",
+      "presence_n": 8
+    },
+    {
+      "n": 11,
+      "nom": "Third-party proof",
+      "fonction": "Let others say it works: press, partners, developers, users.",
+      "gabarit_en": "[Look at] what [outlet] [says]. / [Partners] [support] [X] [from today].",
+      "gabarit_fr": "Voici ce qu'en dit [média]. / [Partenaires] [prennent en charge] [X] dès aujourd'hui.",
+      "visuel": "Quote on black; grid of single-color logos; filmed testimonial; a third-party app as an example.",
+      "presence_n": 8
+    },
+    {
+      "n": 12,
+      "nom": "Second wind",
+      "fonction": "Bring attention back when the topic seems done; often opens the best argument.",
+      "gabarit_en": "But that's not all. / And there's more! / But we [didn't stop] there.",
+      "gabarit_fr": "[Mais] ce n'est pas tout. / [Et] ce n'est pas tout.",
+      "visuel": "No visual of its own; a new slide.",
+      "presence_n": 8
+    },
+    {
+      "n": 13,
+      "nom": "Safeguard",
+      "fonction": "Head off the objection: privacy, security, language or country limits. Privacy stated in the negative: 6/8 (v5, v6, v1, v7, v8, v4).",
+      "gabarit_en": "[Data] stay [with you], so [no one] [, not even us,] can [access it].",
+      "gabarit_fr": "[Vos données] restent [chez vous] : personne, [pas même nous], n'y a accès.",
+      "visuel": "Manifesto line; ⚠/✓ lists; legal note at the bottom of the screen.",
+      "presence_n": 8,
+      "presence_detail": "8/8 in the broad sense (v2: security; v3: positive reassurance only). Privacy commitment stated in the negative: 6/8."
+    },
+    {
+      "n": 14,
+      "nom": "Mini-recap",
+      "fonction": "Close the topic: one name, three strengths. Comes before the return handover in about 2 cases out of 3 (44 out of 67); handover without a recap in 6/8 keynotes.",
+      "gabarit_en": "So that's [Name]! [Delivering / With] [A], [B] and [C].",
+      "gabarit_fr": "Voilà pour [Nom] : [A], [B] et [C].",
+      "visuel": "Bento grid (product or platform level); a list that gets checked off (service).",
+      "presence_n": 8
+    },
+    {
+      "n": 15,
+      "nom": "Price and availability",
+      "fonction": "Say how much (price usually anchored, not always: iPhone 18 Pro, iPhone Duo, iPhone Air without a reference point) and when; price present in 5/8, availability in 8/8.",
+      "gabarit_en": "[And even with] [gain], [Product] [still] starts at [price]. / You can [pre-order] [Product] [day]; [it ships] [date].",
+      "gabarit_fr": "[Produit] est [disponible] à partir de [prix]. / [Précommande] dès [jour], disponible le [date].",
+      "visuel": "Price slide (product + “From” + price); date slide (small line + huge date).",
+      "presence_n": 8,
+      "presence_detail": "Availability 8/8; price 5/8 (v5, v6, v2, v3, v4); pre-order 3/8 (v3, v4; v8 for a third-party game)."
+    },
+    {
+      "n": 16,
+      "nom": "Return handover",
+      "fonction": "Hand back, give a verdict, move on.",
+      "gabarit_en": "Back to you, [First name]. → Thank you, [First name]. [One-sentence verdict].",
+      "gabarit_fr": "Je [rends] la parole à [Prénom]. → Merci, [Prénom]. [Jugement d'une phrase].",
+      "visuel": "Shot of the host; transition to the next set.",
+      "presence_n": 8,
+      "presence_detail": "8/8. Thanks by name: 13 (v5), 25 (v6), 30 (v1), then 0 to 2."
+    }
+  ],
+  "variantes": [
+    {
+      "nom": "Hardware product (v2, v3, v4, v6 Mac Pro)",
+      "differences": "Film before the name (4/4 examples; no film for the Apple Watch in v3 or v4); pillars with figures against the previous generation or an unnamed PC; sub-handovers to domain experts; price usually anchored (still, same price, $30 less, overpriced competitor), except iPhone 18 Pro, iPhone Duo, iPhone Air; pre-order and date; recap + bento; late name possible for a 2nd product (Pro Display XDR); price grouped at the end of the part for the iPhone lineup (v3); availability grouped for the Macs (v2); 5 to 25 min."
+    },
+    {
+      "nom": "Software feature (WWDC: v6, v1, v7, v8)",
+      "differences": "Short form of 2 to 3 min; tension = a life moment; name in the middle (It's called, called, we're introducing); no film, no price, no handover in 3 examples out of 4 (v8: incoming and return handover); first-person demo; developer part (API) 4/4, a coda is common but not fixed; availability pushed to a grouped block (developer beta, public, fall; two blocks in v7); recap then Next; rapid-fire mode of 15 to 30 s for small features; no comparative figures in 2024-2025 (0 in v7 and v8)."
+    },
+    {
+      "nom": "Service (v5)",
+      "differences": "Three voices: the CEO who names, the VP who explains, the CEO who concludes; long anchor with success figures for what exists today; visual tension (an empty checklist that gets checked off); name through We call it + wordmark + applause; mood film; privacy stated in the negative; price anchored on the total value then extended to the family, or no price on purpose; availability by country; recap through the list of principles; 15 to 34 min; content variant (TV+) with no interface, carried by seven blocks of guests."
+    },
+    {
+      "nom": "Technology or chip (v2 M1, v1 Apple Silicon, v7 Apple Intelligence, v8 Liquid Glass)",
+      "differences": "Long heritage before the name; principles or requirements before the product; name held in suspense (we call it... M1) or category name before the product name; agenda announced in three parts; silicon expert in a lab set; proof through a chart without a scale against an unnamed PC, or through experience demos; no price; availability = transition schedule or compatible devices; recap as a triad + slogan; 5 to 37 min, often an event within the event."
+    }
+  ]
+}

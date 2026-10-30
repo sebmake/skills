@@ -1,0 +1,1171 @@
+[
+ {
+  "id": "A1",
+  "nom": "Title card",
+  "nom_corpus": "Title card (single word)",
+  "fond": "noir",
+  "schema": "One to three centered words, very large, alone on a plain black or light gray background, sometimes in the section's gradient.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "xl"
+   }
+  ],
+  "regle": "The name appears the moment it is said; nothing else on screen.",
+  "moment": "Opening of a chapter or a feature",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "38:22",
+    "path": "fr/v1/frames/frame_0321.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "03:00",
+    "path": "fr/v3/frames/frame_0075.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "28:06",
+    "path": "fr/v8/frames/frame_0339.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A2",
+  "nom": "Icon or logo + name",
+  "nom_corpus": "Icon or logo + name",
+  "fond": "gris",
+  "schema": "Large app icon centered, name in one to three words below, smaller; or icon on the left, name on the right.",
+  "elements": [
+   {
+    "role": "logo",
+    "position": "centre",
+    "taille": "xl"
+   },
+   {
+    "role": "titre",
+    "position": "bas",
+    "taille": "m"
+   }
+  ],
+  "regle": "The icon announces the topic; the name stays short and smaller than the icon.",
+  "moment": "Announcement of an app, a technology or a service",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v7",
+    "t": "1:17:40",
+    "path": "fr/v7/frames/frame_0791.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "18:16",
+    "path": "fr/v8/extra/t1097.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:40:50",
+    "path": "fr/v6/extra/t2450.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A3",
+  "nom": "Typographic agenda",
+  "nom_corpus": "Platform agenda",
+  "fond": "gris",
+  "schema": "Four to six OS names stacked, one per line, right-aligned or centered, each in its own color.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "droite",
+    "taille": "xl"
+   }
+  ],
+  "regle": "Specific to WWDC; shown at the opening, repeated exactly before the close.",
+  "moment": "Opening, right after the CEO's welcome",
+  "presence": [
+   "v6",
+   "v1",
+   "v7",
+   "v8"
+  ],
+  "exemples": [
+   {
+    "k": "v6",
+    "t": "0:08:20",
+    "path": "fr/v6/extra/t500.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "5:20",
+    "path": "fr/v7/extra/t320.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "13:05",
+    "path": "fr/v8/extra/t785.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A4",
+  "nom": "Thesis line",
+  "nom_corpus": "Thesis line or written superlative",
+  "fond": "noir",
+  "schema": "One or two centered lines of three to eight words, text only, white or in a product-color gradient.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "l"
+   }
+  ],
+  "regle": "The superlative is written word for word while it is said; no pictogram.",
+  "moment": "After a demo or a figure, to lock in the benefit",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v3"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "47:50",
+    "path": "fr/v3/frames/frame_0543.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "26:02",
+    "path": "fr/v2/extra/t1562.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "3:30",
+    "path": "fr/v5/extra/t210.jpg"
+   }
+  ],
+  "variantes": [
+   "v4"
+  ]
+ },
+ {
+  "id": "A5",
+  "nom": "Big figure + label",
+  "nom_corpus": "Big figure + label",
+  "fond": "noir",
+  "schema": "Giant figure centered over 30 to 40 % of the height, one-line label below, nine words at most.",
+  "elements": [
+   {
+    "role": "chiffre",
+    "position": "centre",
+    "taille": "xl"
+   },
+   {
+    "role": "libelle",
+    "position": "bas",
+    "taille": "m"
+   }
+  ],
+  "regle": "Only one giant figure per figure slide; short label; comparison baseline written in the label in 2025-2026 (v3, v4), partly before that (v2 against the PC, v7 against Chrome).",
+  "moment": "Proof of a benefit, right after it is stated",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "57:00",
+    "path": "fr/v1/extra/t3420.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "05:55",
+    "path": "fr/v3/extra/t355.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:29:11",
+    "path": "fr/v6/extra/t1751_full.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A6",
+  "nom": "Comparison chart",
+  "nom_corpus": "Comparison chart without a scale",
+  "fond": "noir",
+  "schema": "Title at the top; curves, bars, rings or timeline: Apple in color, competitor in gray; labels at the end; no values on the performance axis.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "haut",
+    "taille": "m"
+   },
+   {
+    "role": "graphique",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "Usually only the gap is written (v6 shows both values); built in two to four steps; competitor named only at WWDC.",
+  "moment": "Technical part: chip, browser, sustained performance",
+  "presence": [
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "10:06",
+    "path": "fr/v2/extra/t606.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "1:19:55",
+    "path": "fr/v1/extra/t4795.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "0:27:45",
+    "path": "fr/v6/extra/t1665_full.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A7",
+  "nom": "List without bullets",
+  "nom_corpus": "Text list without bullets",
+  "fond": "noir",
+  "schema": "Two to six centered lines of two to five words, no bullets; the active line white, the following ones gray.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "centre",
+    "taille": "m"
+   }
+  ],
+  "regle": "Lines light up one by one with the voice (6/8); v8 shows them as a block.",
+  "moment": "List of benefits or outline of a sub-chapter",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "16:35",
+    "path": "fr/v2/extra/t995.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "07:52",
+    "path": "fr/v4/extra/t472.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "4:22",
+    "path": "fr/v8/extra/t262.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A8",
+  "nom": "Checklist",
+  "nom_corpus": "List with pictograms or checks",
+  "fond": "noir",
+  "schema": "Three to six short lines, each preceded by a pictogram or a colored circle, centered.",
+  "elements": [
+   {
+    "role": "liste",
+    "position": "centre",
+    "taille": "m"
+   }
+  ],
+  "regle": "Checks land line by line (v7) or all at once on the promise line (v5); mostly for trust and privacy.",
+  "moment": "Trust argument or recap of a service",
+  "presence": [
+   "v5",
+   "v7",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "26:45",
+    "path": "fr/v5/extra/t1605.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "1:13:40",
+    "path": "fr/v7/extra/t4420.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "6:25",
+    "path": "fr/v5/extra/t385.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A9",
+  "nom": "Object + text",
+  "nom_corpus": "Object + text side by side",
+  "fond": "gris",
+  "schema": "Product or screen on one half; on the other side a word, a short claim or a three-line list.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "gauche",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "droite",
+    "taille": "m"
+   }
+  ],
+  "regle": "The object first, the text after; the text never goes past four lines.",
+  "moment": "Detail of a feature or a characteristic",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "22:05",
+    "path": "fr/v3/extra/t1325.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "37:50",
+    "path": "fr/v5/extra/t2270.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "6:31",
+    "path": "fr/v8/frames/frame_0132.jpg"
+   }
+  ],
+  "variantes": [
+   "v1"
+  ]
+ },
+ {
+  "id": "A10",
+  "nom": "Full-bleed screenshot",
+  "nom_corpus": "Full-bleed device screen",
+  "fond": "gris",
+  "schema": "Device from the front, centered, over almost the full height, real animated interface, time 9:41, no added text.",
+  "elements": [
+   {
+    "role": "ecran",
+    "position": "centre",
+    "taille": "xl"
+   }
+  ],
+  "regle": "The text comes from the interface; the voice explains what the screen shows.",
+  "moment": "Any explanation of a feature",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "7:25",
+    "path": "fr/v1/frames/frame_0054.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "25:12",
+    "path": "fr/v2/frames/frame_0328.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "20:00",
+    "path": "fr/v3/frames/frame_0282.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A11",
+  "nom": "Diagram with a highlighted block",
+  "nom_corpus": "Chip diagram with a highlighted block",
+  "fond": "noir",
+  "schema": "Line drawing of a chip, logo and name in a corner; one lit block linked by a thin rule to a side caption.",
+  "elements": [
+   {
+    "role": "graphique",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "gauche",
+    "taille": "s"
+   },
+   {
+    "role": "logo",
+    "position": "haut",
+    "taille": "s"
+   }
+  ],
+  "regle": "One block at a time; the caption fits in a title and five lines at most.",
+  "moment": "Silicon section, before the performance figures",
+  "presence": [
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "11:23",
+    "path": "fr/v2/extra/t683.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "33:30",
+    "path": "fr/v3/extra/t2010.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "14:28",
+    "path": "fr/v4/extra/t868.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A12",
+  "nom": "Inside view",
+  "nom_corpus": "Exploded or inside view",
+  "fond": "noir",
+  "schema": "Dark, metallic full-bleed render, separated components or a see-through device, one label at most.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "plein",
+    "taille": "xl"
+   },
+   {
+    "role": "note",
+    "position": "bas",
+    "taille": "s"
+   }
+  ],
+  "regle": "No text, or a single label; slow camera move.",
+  "moment": "Hardware film or engineering part",
+  "presence": [
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "55:03",
+    "path": "fr/v3/frames/frame_0603.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "1:09:45",
+    "path": "fr/v4/extra/t4185.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "1:21:40",
+    "path": "fr/v6/extra/t4900.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A13",
+  "nom": "Product alone",
+  "nom_corpus": "Product alone, rendered",
+  "fond": "gris",
+  "schema": "Product centered over half the height, studio lighting, soft shadow, no text, background by category.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "centre",
+    "taille": "l"
+   }
+  ],
+  "regle": "Background by category: black for the iPhone or the chip, light gray for AirPods and Duo; the Watch is on light in v3, on black in v4; slow rotation.",
+  "moment": "Reveal, then support for each characteristic",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "08:52",
+    "path": "fr/v3/frames/frame_0134.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "31:20",
+    "path": "fr/v4/frames/frame_0354.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "23:40",
+    "path": "fr/v2/extra/t1420.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A14",
+  "nom": "Bento",
+  "nom_corpus": "Recap bento",
+  "fond": "blanc",
+  "schema": "Center tile with the name or the product; around it, eight to twenty uneven rounded tiles, each with a visual and one to four words.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "grille",
+    "position": "plein",
+    "taille": "m"
+   },
+   {
+    "role": "chiffre",
+    "position": "gauche",
+    "taille": "m"
+   }
+  ],
+  "regle": "One per section, at the end of the section; the center tile appears first, the others assemble around it.",
+  "moment": "End of a section, during the recap line",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "31:40",
+    "path": "fr/v1/extra/t1900.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "28:55",
+    "path": "fr/v2/extra/t1735.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "48:44",
+    "path": "fr/v8/extra/t2924.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A15",
+  "nom": "Wall of abundance",
+  "nom_corpus": "Wall of abundance",
+  "fond": "noir",
+  "schema": "Dense grid that runs off the frame: covers, icons, posters or small cards, text too small to read.",
+  "elements": [
+   {
+    "role": "grille",
+    "position": "plein",
+    "taille": "s"
+   }
+  ],
+  "regle": "Shows the quantity without detailing it; often replaces a figure said out loud.",
+  "moment": "After the recap, or to illustrate a volume",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v7",
+   "v8",
+   "v3"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "21:12",
+    "path": "fr/v5/frames/frame_0373.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "6:48",
+    "path": "fr/v7/extra/t408.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "41:34",
+    "path": "fr/v8/extra/t2494.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A16",
+  "nom": "Partner logos",
+  "nom_corpus": "Partner logo grid",
+  "fond": "noir",
+  "schema": "Single-color logos in a row or a regular grid of up to five rows, no text, Apple in the center if it is a member.",
+  "elements": [
+   {
+    "role": "grille",
+    "position": "centre",
+    "taille": "m"
+   },
+   {
+    "role": "logo",
+    "position": "centre",
+    "taille": "s"
+   }
+  ],
+  "regle": "Single-color logos; third-party brands appear mostly here.",
+  "moment": "Proof of adoption after a standard is announced",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "1:01:00",
+    "path": "fr/v1/extra/t3660.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "54:15",
+    "path": "fr/v5/extra/t3255.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "33:10",
+    "path": "fr/v8/extra/t1990.jpg"
+   }
+  ],
+  "variantes": [
+   "v7"
+  ]
+ },
+ {
+  "id": "A17",
+  "nom": "Quote or testimonial",
+  "nom_corpus": "Press or partner quote",
+  "fond": "noir",
+  "schema": "Two to four bold white lines aligned left, source in gray or red on one line below.",
+  "elements": [
+   {
+    "role": "titre",
+    "position": "gauche",
+    "taille": "m"
+   },
+   {
+    "role": "note",
+    "position": "gauche",
+    "taille": "s"
+   }
+  ],
+  "regle": "The presenter reads it out loud; no press or partner quote after 2020 (only the Steve Jobs quote opens v3).",
+  "moment": "Social proof at the opening of a section",
+  "presence": [
+   "v5",
+   "v6",
+   "v1"
+  ],
+  "exemples": [
+   {
+    "k": "v1",
+    "t": "25:05",
+    "path": "fr/v1/extra/t1505.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "1:56:00",
+    "path": "fr/v6/extra/t6960.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "7:15",
+    "path": "fr/v5/extra/t435.jpg"
+   }
+  ],
+  "variantes": [
+   "v3"
+  ]
+ },
+ {
+  "id": "A18",
+  "nom": "Full-bleed photo",
+  "nom_corpus": "Full-bleed photo",
+  "fond": "photo",
+  "schema": "Photo over the whole frame; for a sample photo, a small translucent caption box at the bottom right with the settings.",
+  "elements": [
+   {
+    "role": "photo",
+    "position": "plein",
+    "taille": "xl"
+   },
+   {
+    "role": "note",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "Use before argument; a sample shot as proof of quality.",
+  "moment": "Emotional opening or camera chapter",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "1:01:45",
+    "path": "fr/v5/extra/t3705.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "1:04:50",
+    "path": "fr/v3/extra/t3890.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "24:30",
+    "path": "fr/v2/extra/t1470.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A19",
+  "nom": "Price",
+  "nom_corpus": "Price slide",
+  "fond": "noir",
+  "schema": "Product on the left; on the right the name in bold, From in small gray, the price in large, the capacity in gray.",
+  "elements": [
+   {
+    "role": "produit",
+    "position": "gauche",
+    "taille": "l"
+   },
+   {
+    "role": "titre",
+    "position": "droite",
+    "taille": "m"
+   },
+   {
+    "role": "chiffre",
+    "position": "droite",
+    "taille": "l"
+   },
+   {
+    "role": "note",
+    "position": "droite",
+    "taille": "s"
+   }
+  ],
+  "regle": "The name first, the price after; two models at most, four for a lineup (v3); sometimes a higher anchor price before (v5, v6).",
+  "moment": "End of the product block, right before availability",
+  "presence": [
+   "v5",
+   "v6",
+   "v2",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "28:41",
+    "path": "fr/v2/extra/t1721.jpg"
+   },
+   {
+    "k": "v4",
+    "t": "29:13",
+    "path": "fr/v4/extra/t1753.jpg"
+   },
+   {
+    "k": "v5",
+    "t": "21:36",
+    "path": "fr/v5/extra/t1296.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A20",
+  "nom": "Availability",
+  "nom_corpus": "Availability slide",
+  "fond": "blanc",
+  "schema": "Small gray label above a large word or a date; product or device lineup below or beside it.",
+  "elements": [
+   {
+    "role": "libelle",
+    "position": "haut",
+    "taille": "s"
+   },
+   {
+    "role": "titre",
+    "position": "haut",
+    "taille": "l"
+   },
+   {
+    "role": "produit",
+    "position": "bas",
+    "taille": "l"
+   }
+  ],
+  "regle": "Two to four words in all; the large word changes on the same image (4/4 WWDC).",
+  "moment": "The very last step of an announcement",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "41:33",
+    "path": "fr/v2/extra/t2493.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "29:10",
+    "path": "fr/v3/extra/t1750.jpg"
+   },
+   {
+    "k": "v6",
+    "t": "2:15:05",
+    "path": "fr/v6/extra/t8105.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A21",
+  "nom": "Name and role lower third",
+  "nom_corpus": "Name and role lower third",
+  "fond": "scene",
+  "schema": "Two lines with no background at the bottom left, or right depending on the presenter: name in bold, role in regular.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "libelle",
+    "position": "bas",
+    "taille": "s"
+   }
+  ],
+  "regle": "Only once per speaker, never for the host, absent when live; not always for everyone (v1: 17 out of 20).",
+  "moment": "First appearance of each speaker",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "5:30",
+    "path": "fr/v2/extra/t330.jpg"
+   },
+   {
+    "k": "v3",
+    "t": "05:04",
+    "path": "fr/v3/extra/t304.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "14:35",
+    "path": "fr/v7/frames/frame_0232.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A22",
+  "nom": "Wide shot + screen",
+  "nom_corpus": "Presenter in a wide shot next to a giant screen",
+  "fond": "scene",
+  "schema": "Full-length presenter, small, on one side; giant screen over half the width with the slide; reflective floor.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "gauche",
+    "taille": "s"
+   },
+   {
+    "role": "ecran",
+    "position": "droite",
+    "taille": "xl"
+   }
+  ],
+  "regle": "A breathing shot between two full-frame slides; the slide stays readable.",
+  "moment": "Entrance of a speaker and each new slide",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v2",
+    "t": "32:22",
+    "path": "fr/v2/frames/frame_0408.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "14:23",
+    "path": "fr/v1/frames/frame_0099.jpg"
+   },
+   {
+    "k": "v8",
+    "t": "16:38",
+    "path": "fr/v8/frames/frame_0248.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A23",
+  "nom": "Presenter in the slide",
+  "nom_corpus": "Presenter in the slide (close shot)",
+  "fond": "scene",
+  "schema": "Presenter in a medium shot over one third; behind, the screen fills the frame, a giant word cut by the edge.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "droite",
+    "taille": "l"
+   },
+   {
+    "role": "titre",
+    "position": "gauche",
+    "taille": "xl"
+   }
+  ],
+  "regle": "The wide shot gives the text, the close shot gives the expression.",
+  "moment": "Default speaking shot",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v2",
+   "v7",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v5",
+    "t": "26:30",
+    "path": "fr/v5/extra/t1590.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "25:49",
+    "path": "fr/v7/frames/frame_0328.jpg"
+   },
+   {
+    "k": "v2",
+    "t": "25:01",
+    "path": "fr/v2/extra/t1501.jpg"
+   }
+  ],
+  "variantes": [
+   "v8"
+  ]
+ },
+ {
+  "id": "A24",
+  "nom": "Set without a screen",
+  "nom_corpus": "Presenter in a real set, without a screen",
+  "fond": "photo",
+  "schema": "Presenter centered, full length then medium shot, in front of architecture or a place tied to the topic, no text.",
+  "elements": [
+   {
+    "role": "orateur",
+    "position": "centre",
+    "taille": "m"
+   },
+   {
+    "role": "photo",
+    "position": "plein",
+    "taille": "xl"
+   }
+  ],
+  "regle": "The place replaces the slide; specific to prerecorded events.",
+  "moment": "Welcome, handover, framing of a section",
+  "presence": [
+   "v1",
+   "v2",
+   "v7",
+   "v8",
+   "v3",
+   "v4"
+  ],
+  "exemples": [
+   {
+    "k": "v3",
+    "t": "01:36",
+    "path": "fr/v3/frames/frame_0060.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "1:41",
+    "path": "fr/v7/frames/frame_0045.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "45:55",
+    "path": "fr/v1/frames/frame_0392.jpg"
+   }
+  ],
+  "variantes": []
+ },
+ {
+  "id": "A25",
+  "nom": "Hands-on demo",
+  "nom_corpus": "Hands-on demo",
+  "fond": "gris",
+  "schema": "A hand holding the device against a plain background; or the presenter at a table, the device screen giant on the wall.",
+  "elements": [
+   {
+    "role": "ecran",
+    "position": "centre",
+    "taille": "l"
+   },
+   {
+    "role": "orateur",
+    "position": "gauche",
+    "taille": "s"
+   }
+  ],
+  "regle": "Alternate wide shot, hands and full-frame feed; the presenter comments in the first person.",
+  "moment": "After a feature is announced, before the summary line",
+  "presence": [
+   "v5",
+   "v6",
+   "v1",
+   "v7",
+   "v8"
+  ],
+  "exemples": [
+   {
+    "k": "v6",
+    "t": "0:32:03",
+    "path": "fr/v6/frames/frame_0167.jpg"
+   },
+   {
+    "k": "v7",
+    "t": "15:36",
+    "path": "fr/v7/frames/frame_0241.jpg"
+   },
+   {
+    "k": "v1",
+    "t": "8:59",
+    "path": "fr/v1/frames/frame_0059.jpg"
+   }
+  ],
+  "variantes": []
+ }
+]

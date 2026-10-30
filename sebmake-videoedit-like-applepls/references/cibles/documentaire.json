@@ -1,0 +1,755 @@
+{
+ "famille": "documentaire_temoignage",
+ "statut": "N/M = observed in N cases out of M; 'convention' = a choice made by the skill, not measured. Times in seconds.",
+ "corpus": {
+  "films": [
+   "v5-03",
+   "v5-05",
+   "v5-07",
+   "v2-04",
+   "v3-03",
+   "v2-09",
+   "v1-05",
+   "v6-06"
+  ],
+  "variantes_sans_entretien": [
+   "v2-02",
+   "v6-01"
+  ],
+  "groupes": {
+   "entretiens_croises": [
+    "v5-03",
+    "v5-05",
+    "v5-07"
+   ],
+   "voix_filmees_par_les_gens_ou_sur_le_vif": [
+    "v2-04",
+    "v3-03",
+    "v2-09"
+   ],
+   "une_seule_voix": [
+    "v1-05",
+    "v6-06"
+   ]
+  },
+  "plans_image": 596,
+  "transitions": 606,
+  "plans_etiquetes_a_l_oeil": 744,
+  "duree_film": {
+   "mediane": 142.4,
+   "min": 78.4,
+   "max": 323.8
+  },
+  "limites": [
+   "dissolves = lower bound",
+   "shot type and value judged by eye on one frame per shot",
+   "the sound does not separate music and voice",
+   "v6 (2019) shows all its films in a ~4:1 band: excluded from the format rules"
+  ]
+ },
+ "durees": {
+  "base": "596 picture shots from the 8 films (excluding blacks and logos), thirds by shot midpoint",
+  "debut": 1.79,
+  "milieu": 1.67,
+  "fin": 1.53,
+  "mediane": 1.67,
+  "p10": 0.63,
+  "p90": 3.64,
+  "regimes": {
+   "pose": {
+    "films": [
+     "v5-03",
+     "v5-07",
+     "v3-03",
+     "v1-05",
+     "v6-06"
+    ],
+    "plans": 323,
+    "debut": 1.87,
+    "milieu": 1.9,
+    "fin": 2.47,
+    "fin_p90": 6.17,
+    "mediane": 2.0,
+    "p10": 1.0,
+    "p90": 4.46,
+    "mediane_par_film": [
+     1.84,
+     1.85,
+     1.97,
+     2.15,
+     2.19
+    ],
+    "coupes_par_minute": [
+     19.9,
+     20.7,
+     20.7,
+     23.0,
+     27.3
+    ],
+    "forme": "ending not faster (0/5 speed up > 15 %), longest shots at the end; shot >= 5 s in the last fifth 5/5"
+   },
+   "choral": {
+    "films": [
+     "v5-05",
+     "v2-04",
+     "v2-09"
+    ],
+    "plans": 273,
+    "debut": 1.53,
+    "milieu": 1.2,
+    "fin": 1.13,
+    "fin_p10": 0.41,
+    "mediane": 1.2,
+    "p10": 0.47,
+    "p90": 2.6,
+    "mediane_par_film": [
+     1.03,
+     1.07,
+     1.53
+    ],
+    "coupes_par_minute": [
+     32.6,
+     43.5,
+     45.1
+    ],
+    "forme": "ending faster than the start 3/3; final burst 3/3; shot >= 5 s in the last fifth 0/3"
+   }
+  },
+  "par_type": {
+   "entretien": {
+    "n": 162,
+    "mediane": 1.77,
+    "p10": 0.63,
+    "p90": 3.16,
+    "regle": "> 5 s only in the last fifth (4/4 cases)"
+   },
+   "personne_en_situation": {
+    "n": 77,
+    "mediane": 1.4,
+    "p10": 0.8,
+    "p90": 3.13
+   },
+   "illustration": {
+    "n": 325,
+    "mediane": 1.67,
+    "p10": 0.61,
+    "p90": 3.66
+   },
+   "carton": {
+    "n": 27,
+    "mediane": 1.67,
+    "p10": 0.43,
+    "p90": 3.96
+   },
+   "titre_de_chapitre": {
+    "n": 5,
+    "min": 2.94,
+    "max": 6.51,
+    "mediane": 4.17
+   },
+   "noir": {
+    "n": 12,
+    "mediane": 0.93
+   },
+   "logo_final": {
+    "n": 5,
+    "min": 2.2,
+    "max": 4.24,
+    "mediane": 3.77
+   }
+  },
+  "rafales": {
+   "definition": "at least 3 shots in a row under 0.8 s",
+   "finale": "4/8 (v5-03, v5-05, v2-04, v2-09), between 90 and 97 %; 3 to 5 shots of 0.29 to 0.42 s on average; works or product, never a face 4/4",
+   "au_milieu": "4/8 (v2-04 x5, v3-03, v2-09, v1-05); faces possible (3/4 films)"
+  },
+  "respirations": {
+   "definition": "at least 3 s without speech in the middle of the film",
+   "films": "6/8",
+   "n": 16,
+   "min": 3.0,
+   "max": 9.33,
+   "par_minute_mediane": 0.6
+  }
+ },
+ "transitions": {
+  "total": 606,
+  "coupe": 594,
+  "part_coupe": 0.98,
+  "fondu": 1,
+  "fondu_note": "1 cross dissolve, between two technical images; 0 between two speech shots",
+  "noir": 8,
+  "noir_detail": {
+   "depuis_noir": 5,
+   "vers_noir": 3,
+   "role": "opening 2, graphics on black 2, chapter change 3 (2 to + 1 from), end before logo 1"
+  },
+  "blanc": 2,
+  "volet": 1,
+  "noir_interne": {
+   "regle": "a pass through black or white = a chapter change (3/3), at most 1 per film",
+   "durees": [
+    0.4,
+    1.0,
+    2.47
+   ],
+   "position": [
+    0.46,
+    0.21,
+    0.67
+   ]
+  },
+  "borne_basse": true
+ },
+ "cartons": {
+  "aucun_carton": "3/8 (v5-07, v1-05, v6-06)",
+  "question_ou_these_ouverture": {
+   "films": "2/8",
+   "durees": [
+    3.17,
+    4.74
+   ],
+   "mots_these": 12,
+   "note": "the question builds word by word (v2-04)"
+  },
+  "conclusion_alternee_avec_image": {
+   "films": "1/8",
+   "n": 3,
+   "mots": [
+    3,
+    7,
+    4
+   ],
+   "durees": [
+    1.67,
+    2.87,
+    3.07
+   ],
+   "images_entre": {
+    "min": 1.07,
+    "max": 8.44
+   }
+  },
+  "mots_echos": {
+   "films": "1/8 (choral mode)",
+   "plans": 11,
+   "durees": {
+    "min": 0.2,
+    "max": 1.94,
+    "mediane": 0.67
+   },
+   "regle": "picks up a word just heard 10/10"
+  },
+  "lettre_tapee": {
+   "films": "1/8",
+   "n": 11,
+   "durees": {
+    "min": 0.77,
+    "max": 17.05
+   },
+   "regle": "only if the film is about something written (convention)"
+  },
+  "taille": {
+   "hauteur_ligne_pct": [
+    5.2,
+    5.7
+   ],
+   "mesures": "5/6; one question at 11 %",
+   "centre": "6/6",
+   "largeur_pct": [
+    23,
+    63
+   ],
+   "fond": "black 4/6, dark picture 1/6, light gray 1/6",
+   "lignes": [
+    1,
+    2
+   ],
+   "boite": 0
+  },
+  "max_mots": {
+   "valeur": 12,
+   "statut": "observed 106/109 in sebmake-videopresentation; 12 words max here too"
+  }
+ },
+ "noms": {
+  "facon": {
+   "bandeau": "4/8",
+   "titre_de_chapitre": "1/8",
+   "aucun": "3/8"
+  },
+  "bandeau": {
+   "duree": {
+    "mediane": 2.07,
+    "p10": 0.9,
+    "p90": 3.47,
+    "n": 27
+   },
+   "hauteur_nom_pct": [
+    2.5,
+    3.3
+   ],
+   "hauteur_statut": "estimated by eye on 5 frames",
+   "contenu": "name + role (4/4 films)",
+   "place": "at the bottom, left 3/6 or right 3/6, clear of the face; on the side opposite the face 3/6",
+   "boite": "0 (8 people seen)",
+   "moment": "the person's first face shot (4/5 in v5-03)",
+   "entree": "after the cut, with a fade (2/2 seen)",
+   "plans_consecutifs": "can stay over 2 to 3 shots of the same person (4 people in v2-09)"
+  },
+  "titre_de_chapitre": {
+   "duree": {
+    "min": 2.94,
+    "max": 6.51
+   },
+   "place": "start of each chapter 5/5",
+   "forme": "name large over a wide picture, project small below"
+  }
+ },
+ "parole": {
+  "couverture": {
+   "mediane": 0.767,
+   "min": 0.506,
+   "max": 0.883,
+   "par_film": {
+    "v5-03": 0.506,
+    "v5-05": 0.824,
+    "v5-07": 0.749,
+    "v2-04": 0.883,
+    "v3-03": 0.818,
+    "v2-09": 0.659,
+    "v1-05": 0.785,
+    "v6-06": 0.593
+   }
+  },
+  "prise": {
+   "definition": "lines separated by less than 0.6 s",
+   "n": 107,
+   "mediane": 5.91,
+   "p10": 1.91,
+   "p90": 19.78
+  },
+  "tour_locuteur": {
+   "n": 60,
+   "films": 3,
+   "mediane": 5.14,
+   "p10": 1.93,
+   "p90": 16.37
+  },
+  "silence_entre_prises": {
+   "mediane_des_medianes": 1.58,
+   "min": 0.99,
+   "max": 3.14
+  },
+  "voix_par_replique_choral": 1.88,
+  "parole_sur_visage": {
+   "mediane": 0.33,
+   "min": 0.18,
+   "max": 0.82,
+   "sous_55pct": "6/8",
+   "par_film": {
+    "v1-05": 0.18,
+    "v6-06": 0.23,
+    "v3-03": 0.29,
+    "v5-03": 0.32,
+    "v5-05": 0.34,
+    "v5-07": 0.52,
+    "v2-04": 0.57,
+    "v2-09": 0.82
+   }
+  },
+  "personne_a_l_ecran_part_du_temps": {
+   "mediane": 0.285,
+   "min": 0.17,
+   "max": 0.68
+  },
+  "voix_avant_visage": {
+   "cas": "13/20 first speaking turns",
+   "delai": {
+    "mediane": 3.0,
+    "min": 1.53,
+    "max": 4.7,
+    "n": 12
+   }
+  },
+  "coupes_pendant_la_parole": "414/594 (70 %)",
+  "coupes_dans_un_silence": {
+   "observe": 172,
+   "attendu_hasard": 162.2
+  },
+  "changement_de_voix_avec_coupe_a_0_5s": "23/57",
+  "premiere_parole": {
+   "mediane": 5.95,
+   "min": 2.91,
+   "max": 16.5
+  },
+  "derniere_parole_avant_fin": {
+   "mediane": 4.2,
+   "min": 0.89,
+   "max": 9.54,
+   "n": 7,
+   "exception": "35 s coda without speech (v5-03)"
+  }
+ },
+ "valeurs": {
+  "entretien": {
+   "n": 162,
+   "R": 86,
+   "M": 42,
+   "G": 25,
+   "TG": 9,
+   "L": 0,
+   "parts": {
+    "R": 0.53,
+    "M": 0.26,
+    "G_TG": 0.21
+   }
+  },
+  "meme_personne_deux_plans": "second one tighter 9/10 (v5-07)",
+  "personne_en_situation": {
+   "n": 77,
+   "M": 29,
+   "R": 23,
+   "L": 14,
+   "G": 9,
+   "TG": 1,
+   "D": 1
+  },
+  "illustration_film_tourne_v5-07": {
+   "n": 66,
+   "L": 25,
+   "D": 23,
+   "M": 18
+  },
+  "progression_film": "tightening over time 3/8 only: no wide -> tight rule across the film",
+  "regard": {
+   "a_cote_objectif_equipe": "4/4",
+   "dans_objectif_auto_filme": "2/2"
+  }
+ },
+ "mouvement": {
+  "entretien_fixe_a_l_oeil": "18/20",
+  "entretien_derive": "2/65",
+  "personne_en_situation_derive": "10/28",
+  "illustration_derive": "24/123",
+  "regle": "static interview; movement goes to illustrations and to people in situation"
+ },
+ "raccords": {
+  "base": "48 cuts seen by eye",
+  "aucun_raccord_image": 17,
+  "place_ou_forme": 10,
+  "regard_ou_geste": 4,
+  "mouvement_action": 4,
+  "sens_mot": 4,
+  "meme_personne_plus_serre": 3,
+  "meme_sujet_autre_etape": 3,
+  "lieu_vers_personne": 2,
+  "lumiere": 1,
+  "par_le_noir": "chapter change only (3/3)"
+ },
+ "nb_format": {
+  "nb_tout_le_film": "2/8 (+ 2/2 variants)",
+  "nb_personnes_couleur_ecrans": "2/8",
+  "couleur": "5/8",
+  "nb_pour_portraits": "4/4",
+  "letterbox": {
+   "films": "1/8",
+   "ratio_mesure": 2.36,
+   "ratio_pratique": 2.39,
+   "ratio_statut": "convention"
+  },
+  "plein_cadre_16_9": "6/7 (v6-06 excluded)"
+ },
+ "ouverture": {
+  "part_du_noir": "6/8",
+  "son_calme_3s": {
+   "films": "8/8",
+   "ecart_db": {
+    "min": 9.7,
+    "max": 47.8,
+    "mediane": 16.7
+   }
+  },
+  "premiere_parole": {
+   "mediane": 5.95,
+   "min": 2.91,
+   "max": 16.5,
+   "part_duree": [
+    0.013,
+    0.086
+   ]
+  },
+  "texte_en_ouverture": "4/8 (question, thesis, letter, dictated text)",
+  "voix_dans_le_noir": "1/8",
+  "images_sans_parole": "3/8"
+ },
+ "fin": {
+  "pose_plan_tenu": {
+   "films": "5/5",
+   "durees": [
+    5.74,
+    7.17,
+    6.44,
+    8.14,
+    7.61
+   ]
+  },
+  "choral_rafale_puis_logo": "3/3",
+  "logo": {
+   "films": "5/8",
+   "durees": {
+    "min": 2.2,
+    "max": 4.24,
+    "mediane": 3.77
+   },
+   "regle": "user's logo only if they provide it (convention)"
+  },
+  "fondu_au_noir_final": "1/8 (1.7 s)",
+  "coupe_au_noir_final": "1/8 (0.43 s)",
+  "coupe_directe": "6/8",
+  "son_sur_la_fin": "6/8 with sound (-15 to -36 dB); 2/8 in silence",
+  "retour_lieu_deja_vu": "2/8"
+ },
+ "son": {
+  "fond_continu": {
+   "films": "8/8",
+   "ecart_silences_vs_parole_db": {
+    "min": 0.2,
+    "max": 15.8,
+    "mediane": 5.5
+   },
+   "sous_moins_50db_max": 0.2
+  },
+  "tiers_ecart_db_max": 4.6,
+  "pic_10s_dernier_dixieme": "3/8",
+  "coupes_sur_attaque": {
+   "observe": 363,
+   "sur": 597,
+   "hasard": 361.5,
+   "conclusion": "not shown"
+  },
+  "coupes_hors_parole_sur_attaque": {
+   "observe": 45,
+   "sur": 99,
+   "hasard": 39.5,
+   "conclusion": "gap too small"
+  },
+  "musique": "convention: no lyrics, runs under the voices, low enough for a clear voice, rises in the breathers, does not drive the cuts"
+ },
+ "structure": [
+  {
+   "partie": "ouverture",
+   "contenu": "black, calm sound; text (question, thesis), voice over black, or images without speech",
+   "mesure": "first speech at 5.95 s (2.9 to 16.5); black first 6/8; calm sound 8/8"
+  },
+  {
+   "partie": "entree_des_voix",
+   "contenu": "the voice over an illustration, the face next, the name in a lower third over that face",
+   "mesure": "voice first 13/20; face 3.0 s later (1.5 to 4.7); lower third 2.1 s"
+  },
+  {
+   "partie": "corps_en_chapitres",
+   "contenu": "one idea, one person or one step per chapter; two thirds of the speech over illustration",
+   "mesure": "chapters of 19 to 35 s (v5-05); speech over the face 33 %"
+  },
+  {
+   "partie": "respirations",
+   "contenu": "music alone over images",
+   "mesure": "6/8 films; 3 to 9.3 s; 0.6 per minute"
+  },
+  {
+   "partie": "changement_de_chapitre",
+   "contenu": "a black of 0.4 to 1 s, a white, or a title card",
+   "mesure": "at most 1 internal black per film (3 films)"
+  },
+  {
+   "partie": "montee",
+   "contenu": "calm: driven by what is said; choral: bursts",
+   "mesure": "final burst 4/8; bursts in the middle 4/8"
+  },
+  {
+   "partie": "resolution",
+   "contenu": "last sentences, longer shots",
+   "mesure": "shot >= 5 s in the last fifth 5/5 calm films"
+  },
+  {
+   "partie": "fin",
+   "contenu": "calm: held shot (wide if possible); choral: burst of works, then logo",
+   "mesure": "held shot 5.7 to 8.1 s; last speech 4.2 s before the end; logo 2.2 to 4.2 s"
+  }
+ ],
+ "controles": [
+  {
+   "id": "D1",
+   "quoi": "median shot",
+   "cible": {
+    "pose": [
+     1.8,
+     2.2
+    ],
+    "choral": [
+     1.0,
+     1.5
+    ]
+   },
+   "alerte": "calm < 1.5 or > 2.8 s; choral > 1.8 s",
+   "statut": "observed 5/5 and 3/3; thresholds are a convention"
+  },
+  {
+   "id": "D2",
+   "quoi": "cuts per minute",
+   "cible": {
+    "pose": [
+     20,
+     27
+    ],
+    "choral": [
+     33,
+     45
+    ]
+   },
+   "alerte": "outside 18 to 48",
+   "statut": "observed 8/8; threshold is a convention"
+  },
+  {
+   "id": "D3",
+   "quoi": "shape of the pacing",
+   "cible": "calm: ending not faster; choral: ending faster than the start",
+   "alerte": "the reverse",
+   "statut": "observed 5/5 and 3/3"
+  },
+  {
+   "id": "D4",
+   "quoi": "shot >= 5 s in the last fifth (calm)",
+   "cible": "yes",
+   "alerte": "absent",
+   "statut": "observed 5/5"
+  },
+  {
+   "id": "D5",
+   "quoi": "transitions other than the cut",
+   "cible": "<= 2 %",
+   "alerte": "cross dissolve between two speech shots; more than one internal black",
+   "statut": "observed 12/606"
+  },
+  {
+   "id": "D6",
+   "quoi": "share of speech",
+   "cible": [
+    0.51,
+    0.88
+   ],
+   "alerte": "< 0.45 or > 0.92",
+   "statut": "observed 8/8; threshold is a convention"
+  },
+  {
+   "id": "D7",
+   "quoi": "breather >= 3 s (calm > 90 s)",
+   "cible": ">= 1",
+   "alerte": "none",
+   "statut": "observed 6/8; threshold is a convention"
+  },
+  {
+   "id": "D8",
+   "quoi": "speech heard over the face",
+   "cible": [
+    0.25,
+    0.55
+   ],
+   "alerte": "> 0.60 except a reaction film",
+   "statut": "observed 6/8 under 0.55"
+  },
+  {
+   "id": "D9",
+   "quoi": "entry through the voice",
+   "cible": "at least the first person heard before being seen, face 1.5 to 4.7 s later",
+   "alerte": "everyone facing the camera from the start",
+   "statut": "observed 13/20"
+  },
+  {
+   "id": "D10",
+   "quoi": "interview shot",
+   "cible": "<= 3.2 s (p90)",
+   "alerte": "> 5 s before the last fifth",
+   "statut": "observed 162 shots"
+  },
+  {
+   "id": "D11",
+   "quoi": "interview shot size",
+   "cible": "R, M, G, TG",
+   "alerte": "wide shot",
+   "statut": "observed 0/162 wide"
+  },
+  {
+   "id": "D12",
+   "quoi": "same person in two shots in a row",
+   "cible": "second one tighter",
+   "alerte": "same size (jump)",
+   "statut": "observed 9/10"
+  },
+  {
+   "id": "D13",
+   "quoi": "camera on the interview",
+   "cible": "static",
+   "alerte": "visible movement",
+   "statut": "observed 18/20"
+  },
+  {
+   "id": "D14",
+   "quoi": "voice change and cut",
+   "cible": "offset",
+   "alerte": "more than 2 out of 3 at the exact cut",
+   "statut": "observed 23/57; threshold is a convention"
+  },
+  {
+   "id": "D15",
+   "quoi": "name lower third",
+   "cible": "2 to 3.5 s, at the bottom, clear of the face, no box, name + role",
+   "alerte": "box, centered, over the face, > 5 s",
+   "statut": "observed 27 durations, 8 people"
+  },
+  {
+   "id": "D16",
+   "quoi": "message-title-cards",
+   "cible": "0 to 3, small, centered, <= 12 words",
+   "alerte": "> 3, > 12 words, box",
+   "statut": "observed 8/8"
+  },
+  {
+   "id": "D17",
+   "quoi": "ouverture",
+   "cible": "black and calm sound; speech between 3 and 17 s",
+   "alerte": "speech from the first second",
+   "statut": "observed 8/8"
+  },
+  {
+   "id": "D18",
+   "quoi": "fin",
+   "cible": "last speech 1 to 10 s before the end; held shot (calm) or burst + logo (choral)",
+   "alerte": "cut on a sentence",
+   "statut": "observed 7/7"
+  },
+  {
+   "id": "D19",
+   "quoi": "final burst",
+   "cible": "works or product",
+   "alerte": "faces",
+   "statut": "observed 4/4"
+  },
+  {
+   "id": "D20",
+   "quoi": "sound between sentences",
+   "cible": "continuous bed",
+   "alerte": "< -50 dB over more than 20 % of the speech gaps",
+   "statut": "observed 8/8"
+  },
+  {
+   "id": "D21",
+   "quoi": "black and white",
+   "cible": "the whole film, or people in B&W and screens in color",
+   "alerte": "mixed with no rule",
+   "statut": "observed 4/4 and 2/2"
+  }
+ ],
+ "sources": "shot-by-shot analysis of the corpus (not published)"
+}

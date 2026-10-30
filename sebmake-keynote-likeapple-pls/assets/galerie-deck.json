@@ -1,0 +1,2657 @@
+{
+ "meta": {
+  "titre": "Variant gallery",
+  "langue": "en",
+  "public": {
+   "type": "salon-conference",
+   "description": "Demo gallery for the engine"
+  },
+  "duree_min": 11,
+  "format": "powerpoint",
+  "ratio": "16:9",
+  "contexte": "direct"
+ },
+ "theme": {
+  "nom": "Atelier Nord (fictional)",
+  "couleurs": {
+   "fond_sombre": "#0F1114",
+   "fond_clair": "#F3F2EF",
+   "texte": "#17181B",
+   "texte_secondaire": "#6B6E73",
+   "accent": "#E0673C",
+   "accent2": "#F2A54A"
+  },
+  "polices": {
+   "titre": {
+    "nom": "Arial",
+    "repli": "Arial"
+   },
+   "texte": {
+    "nom": "Arial",
+    "repli": "Arial"
+   }
+  },
+  "point_accent": true,
+  "finale_accent": true
+ },
+ "intervenants": [
+  {
+   "id": "alix",
+   "nom": "Alix Martin",
+   "role": "Founder"
+  }
+ ],
+ "slides": [
+  {
+   "id": "g001-a1-aplat",
+   "bloc": "Text",
+   "archetype": "A1",
+   "variante": "aplat",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "surtitre": "New"
+   },
+   "notes": "Variant gallery: A1 “aplat”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g002-a1-degrade",
+   "bloc": "Text",
+   "archetype": "A1",
+   "variante": "degrade",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée"
+   },
+   "notes": "Variant gallery: A1 “degrade”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g003-a1-sur-image",
+   "bloc": "Text",
+   "archetype": "A1",
+   "variante": "sur-image",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Outside."
+   },
+   "notes": "Variant gallery: A1 “sur-image”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g004-a1-entoure",
+   "bloc": "Text",
+   "archetype": "A1",
+   "variante": "entoure",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "couronne": [
+     "Calm",
+     "Light",
+     "Wood",
+     "Linen",
+     "Silence",
+     "Morning",
+     "Standby",
+     "Evening",
+     "Stone",
+     "Air",
+     "Wool",
+     "Sand"
+    ]
+   },
+   "notes": "Variant gallery: A1 “entoure”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g005-a1-matiere",
+   "bloc": "Text",
+   "archetype": "A1",
+   "variante": "matiere",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée"
+   },
+   "notes": "Variant gallery: A1 “matiere”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g006-a2-icone-nom",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "icone-nom",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Notebook"
+   },
+   "notes": "Variant gallery: A2 “icone-nom”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g007-a2-icone-cote",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "icone-cote",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Shared notebook"
+   },
+   "notes": "Variant gallery: A2 “icone-cote”.",
+   "duree_s": 5,
+   "image": "galerie-images/icone.png"
+  },
+  {
+   "id": "g008-a2-logo-nom",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "logo-nom",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Studio"
+   },
+   "notes": "Variant gallery: A2 “logo-nom”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g009-a2-rangee",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "rangee",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A2 “rangee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g010-a2-objet-interface",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "objet-interface",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Book"
+   },
+   "notes": "Variant gallery: A2 “objet-interface”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g011-a2-icone-seule",
+   "bloc": "Text",
+   "archetype": "A2",
+   "variante": "icone-seule",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A2 “icone-seule”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g012-a4-aplat",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "aplat",
+   "fond": "sombre",
+   "textes": {
+    "titre": "An object\nthat stays quiet."
+   },
+   "notes": "Variant gallery: A4 “aplat”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g013-a4-degrade",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "degrade",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Made to last."
+   },
+   "notes": "Variant gallery: A4 “degrade”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g014-a4-mot-accent",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "mot-accent",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Made to *last*."
+   },
+   "notes": "Variant gallery: A4 “mot-accent”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g015-a4-definition",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "definition",
+   "fond": "sombre",
+   "textes": {
+    "mot": "orée",
+    "nature": "noun (French)",
+    "titre": "The edge of a wood, where the light comes in."
+   },
+   "notes": "Variant gallery: A4 “definition”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g016-a4-sur-image",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "sur-image",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Mornings, without a screen."
+   },
+   "notes": "Variant gallery: A4 “sur-image”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g017-a4-enchainee",
+   "bloc": "Text",
+   "archetype": "A4",
+   "variante": "enchainee",
+   "fond": "sombre",
+   "textes": {
+    "titre": "First, silence."
+   },
+   "notes": "Variant gallery: A4 “enchainee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g018-a7-centree",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "centree",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Calmer",
+     "Simpler",
+     "More durable"
+    ],
+    "actif": 2
+   },
+   "notes": "Variant gallery: A7 “centree”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g019-a7-empilement",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "empilement",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Calmer",
+     "Simpler",
+     "More durable"
+    ],
+    "actif": 2
+   },
+   "notes": "Variant gallery: A7 “empilement”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g020-a7-a-cote-icone",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "a-cote-icone",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Set with one gesture",
+     "Fits anywhere",
+     "Can be repaired"
+    ]
+   },
+   "notes": "Variant gallery: A7 “a-cote-icone”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g021-a7-a-cote-objet",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "a-cote-objet",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Solid wood",
+     "Washed linen",
+     "Recycled steel"
+    ]
+   },
+   "notes": "Variant gallery: A7 “a-cote-objet”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g022-a7-deux-colonnes",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "deux-colonnes",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Reading",
+     "Alarm",
+     "Nap",
+     "Standby",
+     "Music",
+     "Radio",
+     "Timer",
+     "Lamp",
+     "Reminder",
+     "Sharing"
+    ]
+   },
+   "notes": "Variant gallery: A7 “deux-colonnes”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g023-a7-sur-photo",
+   "bloc": "Text",
+   "archetype": "A7",
+   "variante": "sur-photo",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "On waking",
+     "In quiet",
+     "At bedtime"
+    ]
+   },
+   "notes": "Variant gallery: A7 “sur-photo”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g024-a8-coche-par-ligne",
+   "bloc": "Text",
+   "archetype": "A8",
+   "variante": "coche-par-ligne",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "No subscription",
+     "No screen",
+     "No notifications"
+    ]
+   },
+   "notes": "Variant gallery: A8 “coche-par-ligne”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g025-a8-cercles-puis-coches",
+   "bloc": "Text",
+   "archetype": "A8",
+   "variante": "cercles-puis-coches",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Gentle wake-up",
+     "Reading light",
+     "Silent standby"
+    ]
+   },
+   "notes": "Variant gallery: A8 “cercles-puis-coches”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g026-a8-picto-par-ligne",
+   "bloc": "Text",
+   "archetype": "A8",
+   "variante": "picto-par-ligne",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Long warranty",
+     "Spare parts available",
+     "Simple repairs"
+    ]
+   },
+   "notes": "Variant gallery: A8 “picto-par-ligne”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g027-a8-sur-contenu",
+   "bloc": "Text",
+   "archetype": "A8",
+   "variante": "sur-contenu",
+   "fond": "sombre",
+   "textes": {
+    "lignes": [
+     "Solid wood",
+     "Washed linen",
+     "Recycled steel"
+    ]
+   },
+   "notes": "Variant gallery: A8 “sur-contenu”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g028-a17-courte",
+   "bloc": "Text",
+   "archetype": "A17",
+   "variante": "courte",
+   "fond": "sombre",
+   "textes": {
+    "citation": "[TO PROVIDE: quote]",
+    "auteur": "[TO PROVIDE: source]"
+   },
+   "notes": "Variant gallery: A17 “courte”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g029-a17-longue",
+   "bloc": "Text",
+   "archetype": "A17",
+   "variante": "longue",
+   "fond": "sombre",
+   "textes": {
+    "citation": "[TO PROVIDE: quote]",
+    "auteur": "[TO PROVIDE: source]"
+   },
+   "notes": "Variant gallery: A17 “longue”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g030-a17-source-accent",
+   "bloc": "Text",
+   "archetype": "A17",
+   "variante": "source-accent",
+   "fond": "sombre",
+   "textes": {
+    "citation": "[TO PROVIDE: quote]",
+    "auteur": "[TO PROVIDE: source]"
+   },
+   "notes": "Variant gallery: A17 “source-accent”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g031-a17-centree-signature",
+   "bloc": "Text",
+   "archetype": "A17",
+   "variante": "centree-signature",
+   "fond": "sombre",
+   "textes": {
+    "citation": "[TO PROVIDE: quote]",
+    "auteur": "[TO PROVIDE: source]"
+   },
+   "notes": "Variant gallery: A17 “centree-signature”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g032-a21-gauche",
+   "bloc": "Text",
+   "archetype": "A21",
+   "variante": "gauche",
+   "fond": "sombre",
+   "textes": {
+    "nom": "Alix Martin",
+    "fonction": "Founder"
+   },
+   "notes": "Variant gallery: A21 “gauche”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g033-a21-droite",
+   "bloc": "Text",
+   "archetype": "A21",
+   "variante": "droite",
+   "fond": "sombre",
+   "textes": {
+    "nom": "Noé Garnier",
+    "fonction": "Design"
+   },
+   "notes": "Variant gallery: A21 “droite”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g034-a21-double",
+   "bloc": "Text",
+   "archetype": "A21",
+   "variante": "double",
+   "fond": "sombre",
+   "textes": {
+    "personnes": [
+     {
+      "nom": "Alix Martin",
+      "fonction": "Founder"
+     },
+     {
+      "nom": "Noé Garnier",
+      "fonction": "Design"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A21 “double”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g035-a21-carte-invite",
+   "bloc": "Text",
+   "archetype": "A21",
+   "variante": "carte-invite",
+   "fond": "sombre",
+   "textes": {
+    "nom": "Guest",
+    "fonction": "Partner studio"
+   },
+   "notes": "Variant gallery: A21 “carte-invite”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g036-a21-carte-portrait",
+   "bloc": "Text",
+   "archetype": "A21",
+   "variante": "carte-portrait",
+   "fond": "sombre",
+   "textes": {
+    "nom": "Guest",
+    "fonction": "Partner studio"
+   },
+   "notes": "Variant gallery: A21 “carte-portrait”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/photo.jpg",
+    "attendu": "black-and-white portrait of the guest"
+   }
+  },
+  {
+   "id": "g037-a3-centre",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "centre",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ],
+    "actif": 2
+   },
+   "notes": "Variant gallery: A3 “centre”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g038-a3-droite",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "droite",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ],
+    "actif": 3
+   },
+   "notes": "Variant gallery: A3 “droite”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g039-a3-ligne",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "ligne",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ],
+    "actif": 1
+   },
+   "notes": "Variant gallery: A3 “ligne”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g040-a3-numerote",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "numerote",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ]
+   },
+   "notes": "Variant gallery: A3 “numerote”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g041-a3-suffixe",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "suffixe",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials"
+    ],
+    "suffixe": "Orée"
+   },
+   "notes": "Variant gallery: A3 “suffixe”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g042-a3-ligne-active",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "ligne-active",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ],
+    "actif": 2
+   },
+   "notes": "Variant gallery: A3 “ligne-active”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g043-a3-couleurs",
+   "bloc": "Clear text",
+   "archetype": "A3",
+   "variante": "couleurs",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Light",
+     "Sound",
+     "Materials",
+     "Service"
+    ],
+    "couleurs": [
+     "#C2562F",
+     "#3F6E8C",
+     "#5E7F4A",
+     "#8A6A9E"
+    ]
+   },
+   "notes": "Variant gallery: A3 “couleurs”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g044-a4-sourdine",
+   "bloc": "Clear text",
+   "archetype": "A4",
+   "variante": "sourdine",
+   "fond": "clair",
+   "textes": {
+    "titre": "What if the object\nknew how to step back?"
+   },
+   "notes": "Variant gallery: A4 “sourdine”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g045-a7-filet",
+   "bloc": "Clear text",
+   "archetype": "A7",
+   "variante": "filet",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Alarm",
+     "Reading",
+     "Standby"
+    ],
+    "actif": 1
+   },
+   "notes": "Variant gallery: A7 “filet”.",
+   "duree_s": 5,
+   "image": "galerie-images/capture-large.jpg"
+  },
+  {
+   "id": "g046-a8-risque-puis-reponse",
+   "bloc": "Clear text",
+   "archetype": "A8",
+   "variante": "risque-puis-reponse",
+   "fond": "clair",
+   "textes": {
+    "lignes": [
+     "Too many screens",
+     "Too much noise",
+     "Too many cables"
+    ],
+    "etat": "risque"
+   },
+   "notes": "Variant gallery: A8 “risque-puis-reponse”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g047-a21-sur-clair",
+   "bloc": "Clear text",
+   "archetype": "A21",
+   "variante": "sur-clair",
+   "fond": "clair",
+   "textes": {
+    "nom": "Alix Martin",
+    "fonction": "Founder"
+   },
+   "notes": "Variant gallery: A21 “sur-clair”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g048-a9-appareil-centre-mot",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "appareil-centre-mot",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Shared notebook"
+   },
+   "notes": "Variant gallery: A9 “appareil-centre-mot”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/capture.jpg",
+    "attendu": "notebook screen on a phone"
+   }
+  },
+  {
+   "id": "g049-a9-objet-coupe",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "objet-coupe",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Cut from a single block."
+   },
+   "notes": "Variant gallery: A9 “objet-coupe”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/absent.png",
+    "attendu": "close-up of the cut-out product"
+   }
+  },
+  {
+   "id": "g050-a9-objet-liste",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "objet-liste",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Notebook",
+    "lignes": [
+     "Shares",
+     "Syncs",
+     "Reads offline"
+    ]
+   },
+   "notes": "Variant gallery: A9 “objet-liste”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g051-a9-objet-chiffre",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "objet-chiffre",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: gap]",
+    "libelle": "more light"
+   },
+   "notes": "Variant gallery: A9 “objet-chiffre”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g052-a9-annotee",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "annotee",
+   "fond": "sombre",
+   "textes": {
+    "annotations": [
+     "Solid wood",
+     "Washed linen",
+     "Recycled steel"
+    ]
+   },
+   "notes": "Variant gallery: A9 “annotee”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g053-a9-empilee",
+   "bloc": "Product and image",
+   "archetype": "A9",
+   "variante": "empilee",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "lignes": [
+     "Soft light",
+     "Clear sound",
+     "Real materials"
+    ]
+   },
+   "notes": "Variant gallery: A9 “empilee”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g054-a10-telephone-centre",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "telephone-centre",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “telephone-centre”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/capture.jpg",
+    "attendu": "notebook screen on a phone"
+   }
+  },
+  {
+   "id": "g055-a10-tablette-centre",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "tablette-centre",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “tablette-centre”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/absent.png",
+    "attendu": "dashboard on a tablet"
+   }
+  },
+  {
+   "id": "g056-a10-portable-centre",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "portable-centre",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “portable-centre”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/capture-large.jpg",
+    "attendu": "dashboard on a computer"
+   }
+  },
+  {
+   "id": "g057-a10-zoom-serre",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "zoom-serre",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “zoom-serre”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/absent.png",
+    "attendu": "device screen"
+   }
+  },
+  {
+   "id": "g058-a10-capture-nue",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "capture-nue",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “capture-nue”.",
+   "duree_s": 5,
+   "image": {
+    "chemin": "galerie-images/absent.png",
+    "attendu": "alarm list, full screen"
+   }
+  },
+  {
+   "id": "g059-a10-rangee",
+   "bloc": "Product and image",
+   "archetype": "A10",
+   "variante": "rangee",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A10 “rangee”.",
+   "duree_s": 5,
+   "images": [
+    "galerie-images/capture.jpg",
+    {
+     "chemin": "galerie-images/absent.png",
+     "attendu": "screen 2"
+    },
+    {
+     "chemin": "galerie-images/absent.png",
+     "attendu": "screen 3"
+    }
+   ]
+  },
+  {
+   "id": "g060-a12-macro-matiere",
+   "bloc": "Product and image",
+   "archetype": "A12",
+   "variante": "macro-matiere",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A12 “macro-matiere”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g061-a12-capot-ouvert",
+   "bloc": "Product and image",
+   "archetype": "A12",
+   "variante": "capot-ouvert",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A12 “capot-ouvert”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g062-a12-eclate-axial",
+   "bloc": "Product and image",
+   "archetype": "A12",
+   "variante": "eclate-axial",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Diffuser"
+   },
+   "notes": "Variant gallery: A12 “eclate-axial”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g063-a12-flux-lumiere",
+   "bloc": "Product and image",
+   "archetype": "A12",
+   "variante": "flux-lumiere",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A12 “flux-lumiere”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g064-a13-centre-entier",
+   "bloc": "Product and image",
+   "archetype": "A13",
+   "variante": "centre-entier",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A13 “centre-entier”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g065-a13-hero-coupe",
+   "bloc": "Product and image",
+   "archetype": "A13",
+   "variante": "hero-coupe",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A13 “hero-coupe”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g066-a13-profil-levitation",
+   "bloc": "Product and image",
+   "archetype": "A13",
+   "variante": "profil-levitation",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A13 “profil-levitation”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit-plat.png"
+  },
+  {
+   "id": "g067-a13-coloris",
+   "bloc": "Product and image",
+   "archetype": "A13",
+   "variante": "coloris",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A13 “coloris”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g068-a18-usage",
+   "bloc": "Product and image",
+   "archetype": "A18",
+   "variante": "usage",
+   "fond": "sombre",
+   "textes": {
+    "note": "Product in use"
+   },
+   "notes": "Variant gallery: A18 “usage”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g069-a18-exemple-cartouche",
+   "bloc": "Product and image",
+   "archetype": "A18",
+   "variante": "exemple-cartouche",
+   "fond": "sombre",
+   "textes": {
+    "note": "Guest room, evening light"
+   },
+   "notes": "Variant gallery: A18 “exemple-cartouche”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g070-a18-diptyque",
+   "bloc": "Product and image",
+   "archetype": "A18",
+   "variante": "diptyque",
+   "fond": "sombre",
+   "textes": {
+    "notes": [
+     "Morning",
+     "Evening"
+    ]
+   },
+   "notes": "Variant gallery: A18 “diptyque”.",
+   "duree_s": 5,
+   "images": [
+    "galerie-images/photo.jpg",
+    "galerie-images/matiere.jpg"
+   ]
+  },
+  {
+   "id": "g071-a18-photo-titre",
+   "bloc": "Product and image",
+   "archetype": "A18",
+   "variante": "photo-titre",
+   "fond": "sombre",
+   "textes": {
+    "titre": "At home."
+   },
+   "notes": "Variant gallery: A18 “photo-titre”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g072-a23-mot-coupe",
+   "bloc": "Product and image",
+   "archetype": "A23",
+   "variante": "mot-coupe",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée"
+   },
+   "notes": "Variant gallery: A23 “mot-coupe”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g073-a13-centre-entier",
+   "bloc": "Clear product",
+   "archetype": "A13",
+   "variante": "centre-entier",
+   "fond": "clair",
+   "textes": {},
+   "notes": "Variant gallery: A13 “centre-entier”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g074-a13-centre-entier",
+   "bloc": "Clear product",
+   "archetype": "A13",
+   "variante": "centre-entier",
+   "fond": "clair",
+   "textes": {},
+   "notes": "Variant gallery: A13 “centre-entier”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g075-a10-telephone-centre",
+   "bloc": "Clear product",
+   "archetype": "A10",
+   "variante": "telephone-centre",
+   "fond": "clair",
+   "textes": {},
+   "notes": "Variant gallery: A10 “telephone-centre”.",
+   "duree_s": 5,
+   "image": "galerie-images/capture.jpg"
+  },
+  {
+   "id": "g076-a5-centre",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "centre",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: gain]",
+    "libelle": "more light",
+    "surtitre": "Light"
+   },
+   "notes": "Variant gallery: A5 “centre”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g077-a5-bloc",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "bloc",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: gap]",
+    "libelle": "less energy for the same light"
+   },
+   "notes": "Variant gallery: A5 “bloc”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g078-a5-a-cote",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "a-cote",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: gap]",
+    "libelle": "more light"
+   },
+   "notes": "Variant gallery: A5 “a-cote”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g079-a5-sur-photo",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "sur-photo",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: duration]",
+    "libelle": "of soft light at wake-up"
+   },
+   "notes": "Variant gallery: A5 “sur-photo”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g080-a5-objet-anneau",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "objet-anneau",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: duration]",
+    "libelle": "hours"
+   },
+   "notes": "Variant gallery: A5 “objet-anneau”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g081-a5-objet-jauge",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "objet-jauge",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: battery life]"
+   },
+   "notes": "Variant gallery: A5 “objet-jauge”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g082-a5-contour",
+   "bloc": "Figures and proof",
+   "archetype": "A5",
+   "variante": "contour",
+   "fond": "sombre",
+   "textes": {
+    "chiffre": "[TO PROVIDE: gain]",
+    "libelle": "more light"
+   },
+   "notes": "Variant gallery: A5 “contour”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g083-a6-barres",
+   "bloc": "Figures and proof",
+   "archetype": "A6",
+   "variante": "barres",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Light at wake-up",
+    "barres": [
+     {
+      "libelle": "Standard lamp"
+     },
+     {
+      "libelle": "Orée",
+      "mise_en_avant": true
+     }
+    ]
+   },
+   "notes": "Variant gallery: A6 “barres”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g084-a6-deux-axes",
+   "bloc": "Figures and proof",
+   "archetype": "A6",
+   "variante": "deux-axes",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Light and power use",
+    "axe_x": "Power use",
+    "axe_y": "Light",
+    "sens_y": "Higher is better"
+   },
+   "notes": "Variant gallery: A6 “deux-axes”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g085-a6-anneaux",
+   "bloc": "Figures and proof",
+   "archetype": "A6",
+   "variante": "anneaux",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Share of recycled materials",
+    "barres": [
+     {
+      "libelle": "Standard lamp"
+     },
+     {
+      "libelle": "Orée",
+      "mise_en_avant": true
+     }
+    ]
+   },
+   "notes": "Variant gallery: A6 “anneaux”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g086-a6-frise",
+   "bloc": "Figures and proof",
+   "archetype": "A6",
+   "variante": "frise",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Light by generation",
+    "nom": "Orée",
+    "periodes": [
+     "[TO PROVIDE: year]",
+     "[TO PROVIDE: year]"
+    ]
+   },
+   "notes": "Variant gallery: A6 “frise”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g087-a6-classement",
+   "bloc": "Figures and proof",
+   "archetype": "A6",
+   "variante": "classement",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Ranking",
+    "colonnes": [
+     {
+      "logos": [
+       "Studio A",
+       "Studio B",
+       "Studio C"
+      ]
+     },
+     {
+      "logos": [
+       "Studio B",
+       "Studio A",
+       "Studio C"
+      ]
+     },
+     {
+      "logos": [
+       "Studio A",
+       "Studio C",
+       "Studio B"
+      ]
+     }
+    ]
+   },
+   "notes": "Variant gallery: A6 “classement”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g088-a11-legende-laterale",
+   "bloc": "Figures and proof",
+   "archetype": "A11",
+   "variante": "legende-laterale",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "blocs": [
+     {
+      "titre": "Diffuser",
+      "lignes": [
+       "Light without glare",
+       "Adjustable tint"
+      ]
+     }
+    ]
+   },
+   "notes": "Variant gallery: A11 “legende-laterale”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g089-a11-plusieurs-blocs",
+   "bloc": "Figures and proof",
+   "archetype": "A11",
+   "variante": "plusieurs-blocs",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "blocs": [
+     {
+      "titre": "Sensor",
+      "lignes": [
+       "Ambient light"
+      ]
+     },
+     {
+      "titre": "Diffuser",
+      "lignes": [
+       "Soft light"
+      ]
+     },
+     {
+      "titre": "Sound",
+      "lignes": [
+       "Gradual wake-up"
+      ]
+     }
+    ]
+   },
+   "notes": "Variant gallery: A11 “plusieurs-blocs”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g090-a11-schema-chiffre",
+   "bloc": "Figures and proof",
+   "archetype": "A11",
+   "variante": "schema-chiffre",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "chiffre": "[TO PROVIDE: gain]",
+    "libelle": "more light"
+   },
+   "notes": "Variant gallery: A11 “schema-chiffre”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g091-a11-carte-annotee",
+   "bloc": "Figures and proof",
+   "archetype": "A11",
+   "variante": "carte-annotee",
+   "fond": "sombre",
+   "textes": {
+    "annotations": [
+     "Sensor",
+     "Diffuser"
+    ]
+   },
+   "notes": "Variant gallery: A11 “carte-annotee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g092-a11-carre-halo",
+   "bloc": "Figures and proof",
+   "archetype": "A11",
+   "variante": "carre-halo",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée"
+   },
+   "notes": "Variant gallery: A11 “carre-halo”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g093-a15-vignettes",
+   "bloc": "Figures and proof",
+   "archetype": "A15",
+   "variante": "vignettes",
+   "fond": "sombre",
+   "textes": {
+    "elements": [
+     {
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "image": "galerie-images/matiere.jpg"
+     },
+     {}
+    ]
+   },
+   "notes": "Variant gallery: A15 “vignettes”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g094-a15-icones",
+   "bloc": "Figures and proof",
+   "archetype": "A15",
+   "variante": "icones",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: A15 “icones”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g095-a15-mots",
+   "bloc": "Figures and proof",
+   "archetype": "A15",
+   "variante": "mots",
+   "fond": "sombre",
+   "textes": {
+    "elements": [
+     "Reading",
+     "Alarm",
+     "Nap",
+     "Standby",
+     "Music",
+     "Radio",
+     "Timer",
+     "Lamp",
+     "Reminder",
+     "Sharing",
+     "Meditation",
+     "Podcast",
+     "Nature",
+     "Rain"
+    ],
+    "deux_tons": true
+   },
+   "notes": "Variant gallery: A15 “mots”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g096-a15-nuage",
+   "bloc": "Figures and proof",
+   "archetype": "A15",
+   "variante": "nuage",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "elements": [
+     "Reading",
+     "Alarm",
+     "Nap",
+     "Standby",
+     "Music",
+     "Radio",
+     "Timer",
+     "Lamp",
+     "Reminder",
+     "Sharing",
+     "Rain",
+     "Nature",
+     "Podcast",
+     "Meditation"
+    ]
+   },
+   "notes": "Variant gallery: A15 “nuage”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g097-a15-forme",
+   "bloc": "Figures and proof",
+   "archetype": "A15",
+   "variante": "forme",
+   "fond": "sombre",
+   "textes": {
+    "forme": "coeur",
+    "elements": [
+     {
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "image": "galerie-images/matiere.jpg"
+     },
+     {},
+     {}
+    ]
+   },
+   "notes": "Variant gallery: A15 “forme”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g098-a16-grille",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "grille",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     "Studio A",
+     "Studio B",
+     "Studio C",
+     "Studio D",
+     "Studio E",
+     "Studio F",
+     "Studio G",
+     "Studio H",
+     "Studio I",
+     "Studio J"
+    ]
+   },
+   "notes": "Variant gallery: A16 “grille”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g099-a16-ligne",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "ligne",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     "Studio A",
+     "Studio B",
+     "Studio C"
+    ]
+   },
+   "notes": "Variant gallery: A16 “ligne”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g100-a16-logo-seul",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "logo-seul",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     "Partner studio"
+    ]
+   },
+   "notes": "Variant gallery: A16 “logo-seul”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g101-a16-mur-dense",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "mur-dense",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     "Studio A",
+     "Studio B",
+     "Studio C",
+     "Studio D",
+     "Studio E",
+     "Studio F",
+     "Studio G",
+     "Studio H",
+     "Studio I",
+     "Studio J",
+     "Studio K",
+     "Studio L",
+     "Studio M",
+     "Studio N",
+     "Studio O",
+     "Studio P",
+     "Studio Q",
+     "Studio R",
+     "Studio S",
+     "Studio T",
+     "Studio U",
+     "Studio V",
+     "Studio W",
+     "Studio X",
+     "Studio Y",
+     "Studio Z",
+     "Studio A",
+     "Studio B",
+     "Studio C",
+     "Studio D",
+     "Studio E",
+     "Studio F",
+     "Studio G",
+     "Studio H",
+     "Studio I",
+     "Studio J",
+     "Studio K",
+     "Studio L",
+     "Studio M",
+     "Studio N",
+     "Studio O",
+     "Studio P",
+     "Studio Q",
+     "Studio R",
+     "Studio S",
+     "Studio T",
+     "Studio U",
+     "Studio V"
+    ]
+   },
+   "notes": "Variant gallery: A16 “mur-dense”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g102-a16-pastilles",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "pastilles",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     {
+      "nom": "Studio A",
+      "couleur": "#5C6B7A"
+     },
+     {
+      "nom": "Studio B",
+      "couleur": "#7A6A5C"
+     },
+     {
+      "nom": "Studio C",
+      "couleur": "#5C7A6B"
+     },
+     {
+      "nom": "Studio D",
+      "couleur": "#6B5C7A"
+     },
+     {
+      "nom": "Studio E",
+      "couleur": "#5C6B7A"
+     },
+     {
+      "nom": "Studio F",
+      "couleur": "#7A6A5C"
+     },
+     {
+      "nom": "Studio G",
+      "couleur": "#5C7A6B"
+     },
+     {
+      "nom": "Studio H",
+      "couleur": "#6B5C7A"
+     },
+     {
+      "nom": "Studio I",
+      "couleur": "#5C6B7A"
+     },
+     {
+      "nom": "Studio J",
+      "couleur": "#7A6A5C"
+     },
+     {
+      "nom": "Studio K",
+      "couleur": "#5C7A6B"
+     },
+     {
+      "nom": "Studio L",
+      "couleur": "#6B5C7A"
+     },
+     {
+      "nom": "Studio M",
+      "couleur": "#5C6B7A"
+     },
+     {
+      "nom": "Studio N",
+      "couleur": "#7A6A5C"
+     },
+     {
+      "nom": "Studio O",
+      "couleur": "#5C7A6B"
+     },
+     {
+      "nom": "Studio P",
+      "couleur": "#6B5C7A"
+     },
+     {
+      "nom": "Studio Q",
+      "couleur": "#5C6B7A"
+     },
+     {
+      "nom": "Studio R",
+      "couleur": "#7A6A5C"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A16 “pastilles”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g103-a16-soi-au-centre",
+   "bloc": "Figures and proof",
+   "archetype": "A16",
+   "variante": "soi-au-centre",
+   "fond": "sombre",
+   "textes": {
+    "logos": [
+     "Studio A",
+     "Studio B",
+     "Studio C",
+     "Studio D",
+     "Studio E",
+     "Studio F",
+     "Studio G",
+     "Studio H",
+     "Studio I",
+     "Studio J",
+     "Studio K",
+     "Studio L",
+     "Studio M",
+     "Studio N",
+     "Studio O",
+     "Studio P"
+    ]
+   },
+   "notes": "Variant gallery: A16 “soi-au-centre”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g104-a15-cartes-libelles",
+   "bloc": "Clear proof",
+   "archetype": "A15",
+   "variante": "cartes-libelles",
+   "fond": "clair",
+   "textes": {
+    "elements": [
+     {
+      "titre": "Reading"
+     },
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Nap"
+     },
+     {
+      "titre": "Standby"
+     },
+     {
+      "titre": "Music"
+     },
+     {
+      "titre": "Radio"
+     },
+     {
+      "titre": "Timer"
+     },
+     {
+      "titre": "Lamp"
+     },
+     {
+      "titre": "Reminder"
+     },
+     {
+      "titre": "Sharing"
+     },
+     {
+      "titre": "Rain"
+     },
+     {
+      "titre": "Nature"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A15 “cartes-libelles”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g105-a6-barres",
+   "bloc": "Clear proof",
+   "archetype": "A6",
+   "variante": "barres",
+   "fond": "clair",
+   "textes": {
+    "titre": "Light at wake-up",
+    "barres": [
+     {
+      "libelle": "Standard lamp"
+     },
+     {
+      "libelle": "Orée",
+      "mise_en_avant": true
+     }
+    ]
+   },
+   "notes": "Variant gallery: A6 “barres”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g106-a14-nom-au-centre",
+   "bloc": "Recap and conversion",
+   "archetype": "A14",
+   "variante": "nom-au-centre",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "tuiles": [
+     {
+      "titre": "Notebook",
+      "image": "galerie-images/capture.jpg"
+     },
+     {
+      "titre": "Light"
+     },
+     {
+      "titre": "Morning",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "Sharing"
+     },
+     {
+      "titre": "Silence"
+     },
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Standby"
+     },
+     {
+      "titre": "Timer"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “nom-au-centre”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g107-a14-mot-geant-et-produit",
+   "bloc": "Recap and conversion",
+   "archetype": "A14",
+   "variante": "mot-geant-et-produit",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Orée",
+    "tuiles": [
+     {
+      "titre": "Morning",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "Material",
+      "image": "galerie-images/matiere.jpg"
+     },
+     {
+      "titre": "of light",
+      "chiffre": "[TO PROVIDE: gain]"
+     },
+     {
+      "titre": "Evening",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "Colorways"
+     },
+     {
+      "titre": "Outside",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "Silence"
+     },
+     {
+      "titre": "Notebook"
+     },
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Standby"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “mot-geant-et-produit”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g108-a14-tuiles-chiffres",
+   "bloc": "Recap and conversion",
+   "archetype": "A14",
+   "variante": "tuiles-chiffres",
+   "fond": "sombre",
+   "textes": {
+    "tuiles": [
+     {
+      "titre": "of light",
+      "chiffre": "[TO PROVIDE: gain]"
+     },
+     {
+      "titre": "of battery life",
+      "chiffre": "[TO PROVIDE: duration]"
+     },
+     {
+      "titre": "of silence",
+      "chiffre": "[TO PROVIDE: level]"
+     },
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Outside",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "recycled",
+      "chiffre": "[TO PROVIDE: share]"
+     },
+     {
+      "titre": "Durable"
+     },
+     {
+      "titre": "Sharing"
+     },
+     {
+      "titre": "Standby"
+     },
+     {
+      "titre": "Orée"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “tuiles-chiffres”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g109-a14-grille-icones",
+   "bloc": "Recap and conversion",
+   "archetype": "A14",
+   "variante": "grille-icones",
+   "fond": "sombre",
+   "textes": {
+    "tuiles": [
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Reading"
+     },
+     {
+      "titre": "Standby"
+     },
+     {
+      "titre": "Nap"
+     },
+     {
+      "titre": "Music"
+     },
+     {
+      "titre": "Radio"
+     },
+     {
+      "titre": "Sharing"
+     },
+     {
+      "titre": "Notebook"
+     },
+     {
+      "titre": "Lamp"
+     },
+     {
+      "titre": "Rain"
+     },
+     {
+      "titre": "Nature"
+     },
+     {
+      "titre": "Reminder"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “grille-icones”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g110-a19-colonne",
+   "bloc": "Recap and conversion",
+   "archetype": "A19",
+   "variante": "colonne",
+   "fond": "sombre",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Orée",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]",
+      "note": "incl. tax"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A19 “colonne”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g111-a19-deux-offres",
+   "bloc": "Recap and conversion",
+   "archetype": "A19",
+   "variante": "deux-offres",
+   "fond": "sombre",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Orée",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     },
+     {
+      "nom": "Orée Mini",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A19 “deux-offres”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g112-a19-gamme-alignee",
+   "bloc": "Recap and conversion",
+   "archetype": "A19",
+   "variante": "gamme-alignee",
+   "fond": "sombre",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Orée Mini",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     },
+     {
+      "nom": "Orée",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     },
+     {
+      "nom": "Orée Duo",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A19 “gamme-alignee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g113-a19-prix-heros",
+   "bloc": "Recap and conversion",
+   "archetype": "A19",
+   "variante": "prix-heros",
+   "fond": "sombre",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Notebook",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]",
+      "note": "per month"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A19 “prix-heros”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g114-a19-ancrage",
+   "bloc": "Recap and conversion",
+   "archetype": "A19",
+   "variante": "ancrage",
+   "fond": "sombre",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Notebook",
+      "prix": "[TO PROVIDE: price]"
+     }
+    ],
+    "libelle": "What three separate services cost",
+    "etat": "reference"
+   },
+   "notes": "Variant gallery: A19 “ancrage”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g115-a20-haut-et-gamme",
+   "bloc": "Recap and conversion",
+   "archetype": "A20",
+   "variante": "haut-et-gamme",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Available",
+    "titre": "[TO PROVIDE: date]"
+   },
+   "notes": "Variant gallery: A20 “haut-et-gamme”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g116-a20-colonne",
+   "bloc": "Recap and conversion",
+   "archetype": "A20",
+   "variante": "colonne",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Available",
+    "titre": "[TO PROVIDE: date]"
+   },
+   "notes": "Variant gallery: A20 “colonne”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png"
+  },
+  {
+   "id": "g117-a20-suite-de-dates",
+   "bloc": "Recap and conversion",
+   "archetype": "A20",
+   "variante": "suite-de-dates",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Pre-order",
+    "titre": "Today"
+   },
+   "notes": "Variant gallery: A20 “suite-de-dates”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit-plat.png"
+  },
+  {
+   "id": "g118-a20-date-et-lieux",
+   "bloc": "Recap and conversion",
+   "archetype": "A20",
+   "variante": "date-et-lieux",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Available",
+    "titre": "[TO PROVIDE: date]",
+    "lieux": [
+     "France",
+     "Belgium",
+     "Switzerland",
+     "Canada"
+    ]
+   },
+   "notes": "Variant gallery: A20 “date-et-lieux”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g119-a20-mot-seul",
+   "bloc": "Recap and conversion",
+   "archetype": "A20",
+   "variante": "mot-seul",
+   "fond": "sombre",
+   "textes": {
+    "libelle": "Available",
+    "titre": "Today."
+   },
+   "notes": "Variant gallery: A20 “mot-seul”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g120-fin-signe-seul",
+   "bloc": "Recap and conversion",
+   "archetype": "FIN",
+   "variante": "signe-seul",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Thank you.",
+    "mentions": [
+     "Images for illustration only."
+    ]
+   },
+   "notes": "Variant gallery: FIN “signe-seul”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g121-fin-signe-et-ligne",
+   "bloc": "Recap and conversion",
+   "archetype": "FIN",
+   "variante": "signe-et-ligne",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Thank you.",
+    "libelle": "Made with care in Lyon."
+   },
+   "notes": "Variant gallery: FIN “signe-et-ligne”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g122-fin-signe-et-evenement",
+   "bloc": "Recap and conversion",
+   "archetype": "FIN",
+   "variante": "signe-et-evenement",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Fall meetup",
+    "lieu": "Lyon"
+   },
+   "notes": "Variant gallery: FIN “signe-et-evenement”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g123-fin-signe-sur-photo",
+   "bloc": "Recap and conversion",
+   "archetype": "FIN",
+   "variante": "signe-sur-photo",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Thank you.",
+    "libelle": "See you soon."
+   },
+   "notes": "Variant gallery: FIN “signe-sur-photo”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g124-coloris-rangee-chevauchee",
+   "bloc": "Recap and conversion",
+   "archetype": "COLORIS",
+   "variante": "rangee-chevauchee",
+   "fond": "sombre",
+   "textes": {
+    "coloris": [
+     {
+      "nom": "Sand",
+      "hex": "#C9B8A4"
+     },
+     {
+      "nom": "Moss",
+      "hex": "#7E8C7A"
+     },
+     {
+      "nom": "Night",
+      "hex": "#3C4A5C"
+     },
+     {
+      "nom": "Chalk",
+      "hex": "#D9D4CC"
+     }
+    ]
+   },
+   "notes": "Variant gallery: COLORIS “rangee-chevauchee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g125-coloris-un-par-un",
+   "bloc": "Recap and conversion",
+   "archetype": "COLORIS",
+   "variante": "un-par-un",
+   "fond": "sombre",
+   "textes": {
+    "coloris": [
+     {
+      "nom": "Moss",
+      "hex": "#7E8C7A"
+     }
+    ]
+   },
+   "notes": "Variant gallery: COLORIS “un-par-un”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g126-coloris-mur",
+   "bloc": "Recap and conversion",
+   "archetype": "COLORIS",
+   "variante": "mur",
+   "fond": "sombre",
+   "textes": {
+    "coloris": [
+     {
+      "hex": "#C9B8A4"
+     },
+     {
+      "hex": "#7E8C7A"
+     },
+     {
+      "hex": "#3C4A5C"
+     },
+     {
+      "hex": "#D9D4CC"
+     },
+     {
+      "hex": "#A65F46"
+     }
+    ]
+   },
+   "notes": "Variant gallery: COLORIS “mur”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g127-frise-trois-jalons",
+   "bloc": "Recap and conversion",
+   "archetype": "FRISE",
+   "variante": "trois-jalons",
+   "fond": "sombre",
+   "textes": {},
+   "notes": "Variant gallery: FRISE “trois-jalons”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g128-frise-courbe-et-saut",
+   "bloc": "Recap and conversion",
+   "archetype": "FRISE",
+   "variante": "courbe-et-saut",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Light by generation",
+    "nom": "Orée",
+    "chiffre": "[TO PROVIDE: gap]",
+    "periodes": [
+     "[TO PROVIDE: year]",
+     "[TO PROVIDE: year]"
+    ]
+   },
+   "notes": "Variant gallery: FRISE “courbe-et-saut”.",
+   "duree_s": 5,
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g129-a14-produit-au-centre",
+   "bloc": "Clear recap",
+   "archetype": "A14",
+   "variante": "produit-au-centre",
+   "fond": "clair",
+   "textes": {
+    "tuiles": [
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "of light",
+      "chiffre": "[TO PROVIDE: gain]"
+     },
+     {
+      "titre": "Notebook",
+      "image": "galerie-images/capture.jpg"
+     },
+     {
+      "titre": "Outside",
+      "image": "galerie-images/photo.jpg"
+     },
+     {
+      "titre": "Sharing"
+     },
+     {
+      "titre": "Silence"
+     },
+     {
+      "titre": "Durable"
+     },
+     {
+      "titre": "of battery life",
+      "chiffre": "[TO PROVIDE: duration]"
+     },
+     {
+      "titre": "Standby"
+     },
+     {
+      "titre": "Reading"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “produit-au-centre”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit.png",
+   "source": "[TO PROVIDE: source]"
+  },
+  {
+   "id": "g130-a14-theme-et-matieres",
+   "bloc": "Clear recap",
+   "archetype": "A14",
+   "variante": "theme-et-matieres",
+   "fond": "clair",
+   "textes": {
+    "titre": "Real materials",
+    "tuiles": [
+     {
+      "titre": "Colorways",
+      "coloris": [
+       {
+        "hex": "#C9B8A4"
+       },
+       {
+        "hex": "#7E8C7A"
+       },
+       {
+        "hex": "#3C4A5C"
+       }
+      ]
+     },
+     {
+      "titre": "Wood"
+     },
+     {
+      "titre": "Linen"
+     },
+     {
+      "titre": "Steel",
+      "image": "galerie-images/matiere.jpg"
+     },
+     {
+      "titre": "Oak"
+     },
+     {
+      "titre": "Wool"
+     },
+     {
+      "titre": "Stone"
+     },
+     {
+      "titre": "List",
+      "lignes": [
+       "Solid wood",
+       "Washed linen",
+       "Recycled steel"
+      ]
+     },
+     {
+      "titre": "Repairable"
+     },
+     {
+      "titre": "Durable"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A14 “theme-et-matieres”.",
+   "duree_s": 5,
+   "image": "galerie-images/photo.jpg"
+  },
+  {
+   "id": "g131-a19-nom-en-haut",
+   "bloc": "Clear recap",
+   "archetype": "A19",
+   "variante": "nom-en-haut",
+   "fond": "clair",
+   "textes": {
+    "offres": [
+     {
+      "nom": "Orée Plate",
+      "mention": "Prices start at",
+      "prix": "[TO PROVIDE: price]"
+     }
+    ]
+   },
+   "notes": "Variant gallery: A19 “nom-en-haut”.",
+   "duree_s": 5,
+   "image": "galerie-images/produit-plat.png"
+  },
+  {
+   "id": "g132-coloris-rangee-alignee",
+   "bloc": "Clear recap",
+   "archetype": "COLORIS",
+   "variante": "rangee-alignee",
+   "fond": "clair",
+   "textes": {
+    "coloris": [
+     {
+      "nom": "Sand",
+      "hex": "#C9B8A4"
+     },
+     {
+      "nom": "Moss",
+      "hex": "#7E8C7A"
+     },
+     {
+      "nom": "Night",
+      "hex": "#3C4A5C"
+     },
+     {
+      "nom": "Chalk",
+      "hex": "#D9D4CC"
+     }
+    ],
+    "afficher_noms": true
+   },
+   "notes": "Variant gallery: COLORIS “rangee-alignee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g133-coloris-eventail",
+   "bloc": "Clear recap",
+   "archetype": "COLORIS",
+   "variante": "eventail",
+   "fond": "clair",
+   "textes": {
+    "coloris": [
+     {
+      "hex": "#C9B8A4"
+     },
+     {
+      "hex": "#7E8C7A"
+     },
+     {
+      "hex": "#3C4A5C"
+     },
+     {
+      "hex": "#D9D4CC"
+     }
+    ]
+   },
+   "notes": "Variant gallery: COLORIS “eventail”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g134-frise-rangee-datee",
+   "bloc": "Clear recap",
+   "archetype": "FRISE",
+   "variante": "rangee-datee",
+   "fond": "clair",
+   "textes": {
+    "jalons": [
+     {
+      "titre": "Lamp",
+      "date": "[TO PROVIDE: year]"
+     },
+     {
+      "titre": "Alarm",
+      "date": "[TO PROVIDE: year]"
+     },
+     {
+      "titre": "Radio",
+      "date": "[TO PROVIDE: year]"
+     },
+     {
+      "titre": "Speaker",
+      "date": "[TO PROVIDE: year]"
+     },
+     {
+      "titre": "Notebook",
+      "date": "[TO PROVIDE: year]"
+     },
+     {
+      "titre": "Orée",
+      "date": "[TO PROVIDE: year]"
+     }
+    ]
+   },
+   "notes": "Variant gallery: FRISE “rangee-datee”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g135-frise-generations",
+   "bloc": "Clear recap",
+   "archetype": "FRISE",
+   "variante": "generations",
+   "fond": "clair",
+   "textes": {
+    "jalons": [
+     {
+      "titre": "Lamp"
+     },
+     {
+      "titre": "Alarm"
+     },
+     {
+      "titre": "Radio"
+     },
+     {
+      "titre": "Speaker"
+     },
+     {
+      "titre": "Orée"
+     }
+    ]
+   },
+   "notes": "Variant gallery: FRISE “generations”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g136-frise-objet-du-passe",
+   "bloc": "Clear recap",
+   "archetype": "FRISE",
+   "variante": "objet-du-passe",
+   "fond": "clair",
+   "textes": {},
+   "notes": "Variant gallery: FRISE “objet-du-passe”.",
+   "duree_s": 5
+  },
+  {
+   "id": "g137-fin-mot-final",
+   "bloc": "Close",
+   "archetype": "FIN",
+   "variante": "mot-final",
+   "fond": "sombre",
+   "textes": {
+    "titre": "Thank you.",
+    "libelle": "Atelier Nord"
+   },
+   "notes": "Variant gallery: FIN “mot-final”.",
+   "duree_s": 5
+  }
+ ]
+}

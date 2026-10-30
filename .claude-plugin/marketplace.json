@@ -1,0 +1,43 @@
+{
+  "name": "likeapplepls",
+  "metadata": { "description": "LikeApplePLS: four skills for decks, product films, motion design and video edits, built on the way Apple makes its keynotes." },
+  "owner": { "name": "sebmake" },
+  "plugins": [
+    {
+      "name": "sebmake-keynote-likeapple-pls",
+      "description": "Apple-keynote-style 16:9 decks plus the full speaker script, in your own branding.",
+      "version": "2.0.0",
+      "author": { "name": "sebmake" },
+      "source": "./sebmake-keynote-likeapple-pls",
+      "category": "productivity",
+      "homepage": "https://github.com/sebmake/LikeApplePLS"
+    },
+    {
+      "name": "sebmake-videopresentation-likeapplepls",
+      "description": "A silent 1-2 minute product film cut like Apple's reveal films, plus 15-60 s versions in 16:9, 9:16 and 1:1.",
+      "version": "2.0.0",
+      "author": { "name": "sebmake" },
+      "source": "./sebmake-videopresentation-likeapplepls",
+      "category": "productivity",
+      "homepage": "https://github.com/sebmake/LikeApplePLS"
+    },
+    {
+      "name": "sebmake-motiondesign-likeapplepls",
+      "description": "Keynote motion measured frame by frame, turned into After Effects and EffectCraft scripts; narrated app walkthroughs built layer by layer.",
+      "version": "2.0.0",
+      "author": { "name": "sebmake" },
+      "source": "./sebmake-motiondesign-likeapplepls",
+      "category": "productivity",
+      "homepage": "https://github.com/sebmake/LikeApplePLS"
+    },
+    {
+      "name": "sebmake-videoedit-like-applepls",
+      "description": "Cuts your footage like Apple's keynote films in FilmCraft, Premiere or Resolve, assembles chapters with voice and ducked music, and reviews an edit.",
+      "version": "2.0.0",
+      "author": { "name": "sebmake" },
+      "source": "./sebmake-videoedit-like-applepls",
+      "category": "productivity",
+      "homepage": "https://github.com/sebmake/LikeApplePLS"
+    }
+  ]
+}

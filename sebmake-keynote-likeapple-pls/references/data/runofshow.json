@@ -1,0 +1,1868 @@
+[
+ {
+  "k": "v5",
+  "titre": "Apple Event “It's show time” (services)",
+  "date": "2019-03-25",
+  "live": true,
+  "duree_contenu_s": 6497,
+  "segments": [
+   {
+    "d": 0,
+    "f": 35,
+    "type": "ouverture",
+    "label": "Holding card, the house lights go down"
+   },
+   {
+    "d": 35,
+    "f": 138,
+    "type": "ouverture",
+    "label": "Film: parody opening titles"
+   },
+   {
+    "d": 138,
+    "f": 194,
+    "type": "ceo",
+    "label": "Tim: entrance and welcome"
+   },
+   {
+    "d": 194,
+    "f": 400,
+    "type": "ceo",
+    "label": "Tim: what is a service?"
+   },
+   {
+    "d": 400,
+    "f": 621,
+    "type": "ceo",
+    "label": "Tim: Apple News+"
+   },
+   {
+    "d": 621,
+    "f": 768,
+    "type": "film",
+    "label": "“Journalism” film"
+   },
+   {
+    "d": 768,
+    "f": 861,
+    "type": "presentation",
+    "label": "News+: the offer (Roger Rosner)"
+   },
+   {
+    "d": 861,
+    "f": 1133,
+    "type": "demo",
+    "label": "News+ demo (Wyatt Mitchell)"
+   },
+   {
+    "d": 1133,
+    "f": 1407,
+    "type": "prix_dispo",
+    "label": "News+: price, availability, recap"
+   },
+   {
+    "d": 1407,
+    "f": 1569,
+    "type": "ceo",
+    "label": "Tim: Apple Pay in figures"
+   },
+   {
+    "d": 1569,
+    "f": 1647,
+    "type": "ceo",
+    "label": "Tim: Apple Card announcement"
+   },
+   {
+    "d": 1647,
+    "f": 2209,
+    "type": "presentation",
+    "label": "Apple Card (Jennifer Bailey)"
+   },
+   {
+    "d": 2209,
+    "f": 2250,
+    "type": "film",
+    "label": "Film: the titanium card"
+   },
+   {
+    "d": 2250,
+    "f": 2321,
+    "type": "prix_dispo",
+    "label": "Card: recap, availability"
+   },
+   {
+    "d": 2321,
+    "f": 2425,
+    "type": "ceo",
+    "label": "Tim: the App Store"
+   },
+   {
+    "d": 2425,
+    "f": 2589,
+    "type": "presentation",
+    "label": "Apple Arcade: the announcement (Ann Thai)"
+   },
+   {
+    "d": 2589,
+    "f": 2762,
+    "type": "temoignage",
+    "label": "“Developers” film"
+   },
+   {
+    "d": 2762,
+    "f": 2945,
+    "type": "presentation",
+    "label": "Arcade: details, recap"
+   },
+   {
+    "d": 2945,
+    "f": 3003,
+    "type": "film",
+    "label": "Film: preview of the games"
+   },
+   {
+    "d": 3003,
+    "f": 3028,
+    "type": "prix_dispo",
+    "label": "Arcade: availability"
+   },
+   {
+    "d": 3028,
+    "f": 3130,
+    "type": "ceo",
+    "label": "Tim: TV, handover"
+   },
+   {
+    "d": 3130,
+    "f": 3447,
+    "type": "presentation",
+    "label": "TV app, Channels (Peter Stern)"
+   },
+   {
+    "d": 3447,
+    "f": 3660,
+    "type": "demo",
+    "label": "TV app demo (Cindy Lin)"
+   },
+   {
+    "d": 3660,
+    "f": 3810,
+    "type": "prix_dispo",
+    "label": "TV app: availability, recap"
+   },
+   {
+    "d": 3810,
+    "f": 3912,
+    "type": "ceo",
+    "label": "Tim: Apple TV+ announcement"
+   },
+   {
+    "d": 3912,
+    "f": 3995,
+    "type": "presentation",
+    "label": "TV+ manifesto (Zack and Jamie)"
+   },
+   {
+    "d": 3995,
+    "f": 4322,
+    "type": "film",
+    "label": "“Storytellers” film"
+   },
+   {
+    "d": 4322,
+    "f": 4492,
+    "type": "invite",
+    "label": "Steven Spielberg"
+   },
+   {
+    "d": 4492,
+    "f": 4688,
+    "type": "invite",
+    "label": "Witherspoon, Aniston, Carell"
+   },
+   {
+    "d": 4688,
+    "f": 4865,
+    "type": "invite",
+    "label": "Jason Momoa, Alfre Woodard"
+   },
+   {
+    "d": 4865,
+    "f": 5210,
+    "type": "invite",
+    "label": "Kumail Nanjiani"
+   },
+   {
+    "d": 5210,
+    "f": 5405,
+    "type": "invite",
+    "label": "Big Bird and Cody"
+   },
+   {
+    "d": 5405,
+    "f": 5642,
+    "type": "invite",
+    "label": "J.J. Abrams, Sara Bareilles (song)"
+   },
+   {
+    "d": 5642,
+    "f": 5707,
+    "type": "recap",
+    "label": "Zack: recap of the talent"
+   },
+   {
+    "d": 5707,
+    "f": 5793,
+    "type": "film",
+    "label": "Apple TV+ trailer"
+   },
+   {
+    "d": 5793,
+    "f": 5877,
+    "type": "prix_dispo",
+    "label": "TV+: recap, “this fall”"
+   },
+   {
+    "d": 5877,
+    "f": 6006,
+    "type": "ceo",
+    "label": "Tim: introduces Oprah (film)"
+   },
+   {
+    "d": 6006,
+    "f": 6386,
+    "type": "invite",
+    "label": "Oprah Winfrey"
+   },
+   {
+    "d": 6386,
+    "f": 6532,
+    "type": "cloture",
+    "label": "Tim: overall recap, thanks"
+   },
+   {
+    "d": 6532,
+    "f": 6562,
+    "type": "post",
+    "label": "Final card, legal notes"
+   }
+  ]
+ },
+ {
+  "k": "v6",
+  "titre": "WWDC 2019 Keynote",
+  "date": "2019-06-03",
+  "live": true,
+  "duree_contenu_s": 8199,
+  "segments": [
+   {
+    "d": 0,
+    "f": 125,
+    "type": "ouverture",
+    "label": "B&W film: developers at night"
+   },
+   {
+    "d": 125,
+    "f": 323,
+    "type": "ceo",
+    "label": "Tim: welcome, recap of services"
+   },
+   {
+    "d": 323,
+    "f": 451,
+    "type": "film",
+    "label": "For All Mankind trailer"
+   },
+   {
+    "d": 451,
+    "f": 759,
+    "type": "ceo",
+    "label": "Tim: agenda, tvOS, handover"
+   },
+   {
+    "d": 759,
+    "f": 1030,
+    "type": "presentation",
+    "label": "watchOS 6 (Kevin Lynch)"
+   },
+   {
+    "d": 1030,
+    "f": 1370,
+    "type": "presentation",
+    "label": "Health (Sumbul Desai, Kevin)"
+   },
+   {
+    "d": 1370,
+    "f": 1589,
+    "type": "demo",
+    "label": "watchOS demo (Haley Allen), recap"
+   },
+   {
+    "d": 1589,
+    "f": 1692,
+    "type": "ceo",
+    "label": "Tim: iOS in figures, handover"
+   },
+   {
+    "d": 1692,
+    "f": 1805,
+    "type": "presentation",
+    "label": "iOS 13: the name, performance"
+   },
+   {
+    "d": 1805,
+    "f": 1854,
+    "type": "film",
+    "label": "Dark Mode film"
+   },
+   {
+    "d": 1854,
+    "f": 2035,
+    "type": "demo",
+    "label": "Dark Mode demo (Craig)"
+   },
+   {
+    "d": 2035,
+    "f": 2168,
+    "type": "presentation",
+    "label": "Safari, Mail, Reminders, Maps"
+   },
+   {
+    "d": 2168,
+    "f": 2315,
+    "type": "demo",
+    "label": "Maps demo (Meg Frost)"
+   },
+   {
+    "d": 2315,
+    "f": 2758,
+    "type": "presentation",
+    "label": "Privacy, Messages (Craig)"
+   },
+   {
+    "d": 2758,
+    "f": 2847,
+    "type": "invite",
+    "label": "Memoji influencers video"
+   },
+   {
+    "d": 2847,
+    "f": 3088,
+    "type": "presentation",
+    "label": "Memoji, Camera, Photos"
+   },
+   {
+    "d": 3088,
+    "f": 3346,
+    "type": "demo",
+    "label": "Photos demo (Justin Titi), recap"
+   },
+   {
+    "d": 3346,
+    "f": 3717,
+    "type": "presentation",
+    "label": "AirPods, HomePod, Siri (S. Lysik)"
+   },
+   {
+    "d": 3717,
+    "f": 3797,
+    "type": "recap",
+    "label": "iOS 13 recap, iPad teaser"
+   },
+   {
+    "d": 3797,
+    "f": 3828,
+    "type": "film",
+    "label": "iPad film"
+   },
+   {
+    "d": 3828,
+    "f": 4409,
+    "type": "presentation",
+    "label": "iPadOS: name, demo, Files (Craig)"
+   },
+   {
+    "d": 4409,
+    "f": 4619,
+    "type": "demo",
+    "label": "iPadOS demo (Toby Paterson)"
+   },
+   {
+    "d": 4619,
+    "f": 4708,
+    "type": "ceo",
+    "label": "Tim: recap, the Mac, teaser"
+   },
+   {
+    "d": 4708,
+    "f": 4760,
+    "type": "film",
+    "label": "Mac Pro film"
+   },
+   {
+    "d": 4760,
+    "f": 4801,
+    "type": "ceo",
+    "label": "Tim: Mac Pro on a plinth, handover"
+   },
+   {
+    "d": 4801,
+    "f": 5353,
+    "type": "presentation",
+    "label": "Mac Pro (John Ternus)"
+   },
+   {
+    "d": 5353,
+    "f": 5604,
+    "type": "demo",
+    "label": "Logic, Final Cut demo (D. Earl)"
+   },
+   {
+    "d": 5604,
+    "f": 6047,
+    "type": "presentation",
+    "label": "Pro Display XDR (C. Novielli)"
+   },
+   {
+    "d": 6047,
+    "f": 6140,
+    "type": "prix_dispo",
+    "label": "Mac Pro and XDR: price, availability"
+   },
+   {
+    "d": 6140,
+    "f": 6197,
+    "type": "ceo",
+    "label": "Tim: bridge to macOS"
+   },
+   {
+    "d": 6197,
+    "f": 6576,
+    "type": "presentation",
+    "label": "macOS Catalina (Craig)"
+   },
+   {
+    "d": 6576,
+    "f": 6670,
+    "type": "temoignage",
+    "label": "Voice Control film"
+   },
+   {
+    "d": 6670,
+    "f": 6997,
+    "type": "presentation",
+    "label": "Find My, Catalyst (Craig)"
+   },
+   {
+    "d": 6997,
+    "f": 7106,
+    "type": "invite",
+    "label": "Jira on Mac (Rob Chatfield)"
+   },
+   {
+    "d": 7106,
+    "f": 7310,
+    "type": "presentation",
+    "label": "Developers: AR, RealityKit"
+   },
+   {
+    "d": 7310,
+    "f": 7577,
+    "type": "invite",
+    "label": "Minecraft Earth (Mojang)"
+   },
+   {
+    "d": 7577,
+    "f": 7783,
+    "type": "presentation",
+    "label": "SwiftUI (Craig)"
+   },
+   {
+    "d": 7783,
+    "f": 8073,
+    "type": "demo",
+    "label": "SwiftUI demo (Josh Shaffer), recap"
+   },
+   {
+    "d": 8073,
+    "f": 8199,
+    "type": "cloture",
+    "label": "Tim: recap, betas, thanks"
+   },
+   {
+    "d": 8199,
+    "f": 8253,
+    "type": "post",
+    "label": "Audience leaves, final card"
+   }
+  ]
+ },
+ {
+  "k": "v1",
+  "titre": "WWDC 2020 Keynote",
+  "date": "2020-06-22",
+  "live": false,
+  "duree_contenu_s": 6475,
+  "segments": [
+   {
+    "d": 0,
+    "f": 81,
+    "type": "ouverture",
+    "label": "Film: Memoji around the globe"
+   },
+   {
+    "d": 81,
+    "f": 328,
+    "type": "ceo",
+    "label": "Tim: welcome, racism, Covid"
+   },
+   {
+    "d": 328,
+    "f": 402,
+    "type": "hote",
+    "label": "Craig: the 5 OSes, iOS 14"
+   },
+   {
+    "d": 402,
+    "f": 439,
+    "type": "film",
+    "label": "iOS 14 film"
+   },
+   {
+    "d": 439,
+    "f": 772,
+    "type": "demo",
+    "label": "App Library, widgets, PiP"
+   },
+   {
+    "d": 772,
+    "f": 998,
+    "type": "presentation",
+    "label": "Siri, Translate (Yael Garten)"
+   },
+   {
+    "d": 998,
+    "f": 1473,
+    "type": "presentation",
+    "label": "Messages, Maps (Stacey, Meg)"
+   },
+   {
+    "d": 1473,
+    "f": 1650,
+    "type": "demo",
+    "label": "CarPlay, Car Key (Emily Schubert)"
+   },
+   {
+    "d": 1650,
+    "f": 1890,
+    "type": "presentation",
+    "label": "App Clips (narrated film)"
+   },
+   {
+    "d": 1890,
+    "f": 1921,
+    "type": "recap",
+    "label": "iOS 14 recap, transition"
+   },
+   {
+    "d": 1921,
+    "f": 2008,
+    "type": "presentation",
+    "label": "iPadOS 14: framing"
+   },
+   {
+    "d": 2008,
+    "f": 2158,
+    "type": "demo",
+    "label": "iPadOS demo (Josh Shaffer)"
+   },
+   {
+    "d": 2158,
+    "f": 2360,
+    "type": "presentation",
+    "label": "iPadOS: Siri, search, Pencil"
+   },
+   {
+    "d": 2360,
+    "f": 2515,
+    "type": "demo",
+    "label": "Scribble demo (Jenny Chen)"
+   },
+   {
+    "d": 2515,
+    "f": 2556,
+    "type": "recap",
+    "label": "iPadOS recap, AirPods framing"
+   },
+   {
+    "d": 2556,
+    "f": 2711,
+    "type": "presentation",
+    "label": "AirPods (Mary-Ann Ionascu)"
+   },
+   {
+    "d": 2711,
+    "f": 2735,
+    "type": "film",
+    "label": "Drone transition"
+   },
+   {
+    "d": 2735,
+    "f": 3224,
+    "type": "presentation",
+    "label": "watchOS 7 (Kevin, Julz, Vera)"
+   },
+   {
+    "d": 3224,
+    "f": 3328,
+    "type": "recap",
+    "label": "Handwashing, watchOS recap"
+   },
+   {
+    "d": 3328,
+    "f": 3547,
+    "type": "presentation",
+    "label": "Privacy (Craig, Katie, Erik)"
+   },
+   {
+    "d": 3547,
+    "f": 3964,
+    "type": "presentation",
+    "label": "Home, HomeKit, tvOS 14"
+   },
+   {
+    "d": 3964,
+    "f": 4055,
+    "type": "film",
+    "label": "Foundation trailer"
+   },
+   {
+    "d": 4055,
+    "f": 4084,
+    "type": "recap",
+    "label": "Home recap, transition"
+   },
+   {
+    "d": 4084,
+    "f": 4166,
+    "type": "presentation",
+    "label": "macOS Big Sur: the name"
+   },
+   {
+    "d": 4166,
+    "f": 4318,
+    "type": "film",
+    "label": "Design film (Alan Dye)"
+   },
+   {
+    "d": 4318,
+    "f": 4540,
+    "type": "demo",
+    "label": "Big Sur demo (Craig)"
+   },
+   {
+    "d": 4540,
+    "f": 4908,
+    "type": "presentation",
+    "label": "Messages, Catalyst, Safari"
+   },
+   {
+    "d": 4908,
+    "f": 5110,
+    "type": "demo",
+    "label": "Safari demo (Beth Dakin)"
+   },
+   {
+    "d": 5110,
+    "f": 5162,
+    "type": "recap",
+    "label": "macOS recap, teaser"
+   },
+   {
+    "d": 5162,
+    "f": 5266,
+    "type": "ceo",
+    "label": "Tim: Apple Silicon"
+   },
+   {
+    "d": 5266,
+    "f": 5290,
+    "type": "film",
+    "label": "Transition to the lab"
+   },
+   {
+    "d": 5290,
+    "f": 5595,
+    "type": "presentation",
+    "label": "The chip (Johny Srouji)"
+   },
+   {
+    "d": 5595,
+    "f": 6026,
+    "type": "presentation",
+    "label": "Software, partners (Craig)"
+   },
+   {
+    "d": 6026,
+    "f": 6174,
+    "type": "demo",
+    "label": "Rosetta 2 demo (Andreas Wendker)"
+   },
+   {
+    "d": 6174,
+    "f": 6316,
+    "type": "prix_dispo",
+    "label": "Developer program, DTK"
+   },
+   {
+    "d": 6316,
+    "f": 6475,
+    "type": "cloture",
+    "label": "Tim: schedule, recap, thanks"
+   },
+   {
+    "d": 6475,
+    "f": 6531,
+    "type": "post",
+    "label": "Credits, health notice card"
+   }
+  ]
+ },
+ {
+  "k": "v2",
+  "titre": "Apple Event “One more thing” (M1)",
+  "date": "2020-11-10",
+  "live": false,
+  "duree_contenu_s": 2772,
+  "segments": [
+   {
+    "d": 0,
+    "f": 65,
+    "type": "ouverture",
+    "label": "Opening film, Tim walks in"
+   },
+   {
+    "d": 65,
+    "f": 148,
+    "type": "ceo",
+    "label": "Tim: welcome, fall recap"
+   },
+   {
+    "d": 148,
+    "f": 217,
+    "type": "ceo",
+    "label": "Tim: “one more thing”, the Mac"
+   },
+   {
+    "d": 217,
+    "f": 281,
+    "type": "film",
+    "label": "Tribute film to creators"
+   },
+   {
+    "d": 281,
+    "f": 308,
+    "type": "ceo",
+    "label": "Tim: the transition, handover"
+   },
+   {
+    "d": 308,
+    "f": 326,
+    "type": "film",
+    "label": "Transition through the hallways"
+   },
+   {
+    "d": 326,
+    "f": 410,
+    "type": "hote",
+    "label": "John Ternus: M1 announcement"
+   },
+   {
+    "d": 410,
+    "f": 796,
+    "type": "presentation",
+    "label": "The M1 chip (Johny Srouji)"
+   },
+   {
+    "d": 796,
+    "f": 840,
+    "type": "hote",
+    "label": "John: hardware-software bridge"
+   },
+   {
+    "d": 840,
+    "f": 1172,
+    "type": "presentation",
+    "label": "Big Sur on M1 (Craig)"
+   },
+   {
+    "d": 1172,
+    "f": 1325,
+    "type": "temoignage",
+    "label": "Developer montage"
+   },
+   {
+    "d": 1325,
+    "f": 1338,
+    "type": "presentation",
+    "label": "Craig: conclusion, handover"
+   },
+   {
+    "d": 1338,
+    "f": 1370,
+    "type": "film",
+    "label": "Aerial transition"
+   },
+   {
+    "d": 1370,
+    "f": 1391,
+    "type": "hote",
+    "label": "John: MacBook Air teaser"
+   },
+   {
+    "d": 1391,
+    "f": 1426,
+    "type": "film",
+    "label": "MacBook Air product film"
+   },
+   {
+    "d": 1426,
+    "f": 1452,
+    "type": "hote",
+    "label": "John: name, handover"
+   },
+   {
+    "d": 1452,
+    "f": 1756,
+    "type": "presentation",
+    "label": "MacBook Air (Laura Metz)"
+   },
+   {
+    "d": 1756,
+    "f": 1788,
+    "type": "hote",
+    "label": "John: picks up, teaser"
+   },
+   {
+    "d": 1788,
+    "f": 1818,
+    "type": "film",
+    "label": "Mac mini product film"
+   },
+   {
+    "d": 1818,
+    "f": 1836,
+    "type": "hote",
+    "label": "John: name, handover"
+   },
+   {
+    "d": 1836,
+    "f": 2068,
+    "type": "presentation",
+    "label": "Mac mini (Julie Broms)"
+   },
+   {
+    "d": 2068,
+    "f": 2104,
+    "type": "hote",
+    "label": "John: picks up, teaser"
+   },
+   {
+    "d": 2104,
+    "f": 2134,
+    "type": "film",
+    "label": "MacBook Pro product film"
+   },
+   {
+    "d": 2134,
+    "f": 2152,
+    "type": "hote",
+    "label": "John: name, handover"
+   },
+   {
+    "d": 2152,
+    "f": 2417,
+    "type": "presentation",
+    "label": "MacBook Pro 13\" (Shruti Haldea)"
+   },
+   {
+    "d": 2417,
+    "f": 2543,
+    "type": "recap",
+    "label": "John: recap of the 3 Macs, availability"
+   },
+   {
+    "d": 2543,
+    "f": 2637,
+    "type": "film",
+    "label": "Opening film (creators)"
+   },
+   {
+    "d": 2637,
+    "f": 2710,
+    "type": "cloture",
+    "label": "Tim: close, thanks"
+   },
+   {
+    "d": 2710,
+    "f": 2728,
+    "type": "post",
+    "label": "Outro, logo"
+   },
+   {
+    "d": 2728,
+    "f": 2772,
+    "type": "film",
+    "label": "Post-credits sketch “I'm a PC”"
+   },
+   {
+    "d": 2772,
+    "f": 2939,
+    "type": "post",
+    "label": "Health notice card, legal notes, logo"
+   }
+  ]
+ },
+ {
+  "k": "v7",
+  "titre": "WWDC 2024 Keynote",
+  "date": "2024-06-10",
+  "live": false,
+  "duree_contenu_s": 6185,
+  "segments": [
+   {
+    "d": 0,
+    "f": 85,
+    "type": "ouverture",
+    "label": "Sketch: skydive"
+   },
+   {
+    "d": 85,
+    "f": 205,
+    "type": "ceo",
+    "label": "Tim: welcome, Apple TV+"
+   },
+   {
+    "d": 205,
+    "f": 305,
+    "type": "film",
+    "label": "Apple TV+ trailer"
+   },
+   {
+    "d": 305,
+    "f": 340,
+    "type": "ceo",
+    "label": "Tim: agenda, handover"
+   },
+   {
+    "d": 340,
+    "f": 460,
+    "type": "presentation",
+    "label": "visionOS 2 (Mike Rockwell)"
+   },
+   {
+    "d": 460,
+    "f": 616,
+    "type": "presentation",
+    "label": "visionOS 2 (Haley Allen)"
+   },
+   {
+    "d": 616,
+    "f": 820,
+    "type": "presentation",
+    "label": "visionOS: developers, content, recap"
+   },
+   {
+    "d": 820,
+    "f": 874,
+    "type": "ceo",
+    "label": "Tim: Vision Pro availability, handover"
+   },
+   {
+    "d": 874,
+    "f": 1078,
+    "type": "demo",
+    "label": "iOS 18: customization (Craig)"
+   },
+   {
+    "d": 1078,
+    "f": 1231,
+    "type": "presentation",
+    "label": "iOS 18: privacy"
+   },
+   {
+    "d": 1231,
+    "f": 1450,
+    "type": "presentation",
+    "label": "Messages, Mail (Ronak Shah)"
+   },
+   {
+    "d": 1450,
+    "f": 1603,
+    "type": "presentation",
+    "label": "Maps, Wallet, Journal (Craig)"
+   },
+   {
+    "d": 1603,
+    "f": 1796,
+    "type": "demo",
+    "label": "Photos demo (Chelsea Burnette)"
+   },
+   {
+    "d": 1796,
+    "f": 1830,
+    "type": "recap",
+    "label": "iOS 18 recap, handover"
+   },
+   {
+    "d": 1830,
+    "f": 2162,
+    "type": "presentation",
+    "label": "AirPods, tvOS (Ron Huang)"
+   },
+   {
+    "d": 2162,
+    "f": 2284,
+    "type": "presentation",
+    "label": "watchOS 11 (David Clark)"
+   },
+   {
+    "d": 2284,
+    "f": 2391,
+    "type": "presentation",
+    "label": "App Vitals (Sumbul Desai)"
+   },
+   {
+    "d": 2391,
+    "f": 2585,
+    "type": "recap",
+    "label": "watchOS 11: continued, recap"
+   },
+   {
+    "d": 2585,
+    "f": 2794,
+    "type": "presentation",
+    "label": "iPadOS 18 (Craig)"
+   },
+   {
+    "d": 2794,
+    "f": 2917,
+    "type": "demo",
+    "label": "Math Notes demo (Jenny Chen)"
+   },
+   {
+    "d": 2917,
+    "f": 3035,
+    "type": "recap",
+    "label": "iPadOS: continued, recap"
+   },
+   {
+    "d": 3035,
+    "f": 3102,
+    "type": "presentation",
+    "label": "macOS Sequoia: the name"
+   },
+   {
+    "d": 3102,
+    "f": 3320,
+    "type": "demo",
+    "label": "iPhone Mirroring demo (Craig)"
+   },
+   {
+    "d": 3320,
+    "f": 3428,
+    "type": "presentation",
+    "label": "Windows, Passwords (Craig)"
+   },
+   {
+    "d": 3428,
+    "f": 3561,
+    "type": "presentation",
+    "label": "Safari (Beth Dakin)"
+   },
+   {
+    "d": 3561,
+    "f": 3687,
+    "type": "presentation",
+    "label": "Games on Mac (Craig)"
+   },
+   {
+    "d": 3687,
+    "f": 3800,
+    "type": "invite",
+    "label": "Ubisoft (Marc-Alexis Côté)"
+   },
+   {
+    "d": 3800,
+    "f": 3864,
+    "type": "prix_dispo",
+    "label": "macOS recap, OS availability"
+   },
+   {
+    "d": 3864,
+    "f": 3955,
+    "type": "ceo",
+    "label": "Tim: AI principles"
+   },
+   {
+    "d": 3955,
+    "f": 4000,
+    "type": "film",
+    "label": "Reveal film, the name"
+   },
+   {
+    "d": 4000,
+    "f": 4316,
+    "type": "presentation",
+    "label": "Apple Intelligence: capabilities"
+   },
+   {
+    "d": 4316,
+    "f": 4561,
+    "type": "presentation",
+    "label": "Architecture, Private Cloud"
+   },
+   {
+    "d": 4561,
+    "f": 5020,
+    "type": "demo",
+    "label": "Siri demo (Kelsey Peterson)"
+   },
+   {
+    "d": 5020,
+    "f": 5269,
+    "type": "presentation",
+    "label": "Writing Tools (Justin Titi)"
+   },
+   {
+    "d": 5269,
+    "f": 5527,
+    "type": "presentation",
+    "label": "Genmoji (Cyrus Irani)"
+   },
+   {
+    "d": 5527,
+    "f": 5730,
+    "type": "presentation",
+    "label": "Photos (S. Marineau-Mes)"
+   },
+   {
+    "d": 5730,
+    "f": 5922,
+    "type": "presentation",
+    "label": "Free of charge, ChatGPT (Craig)"
+   },
+   {
+    "d": 5922,
+    "f": 6106,
+    "type": "recap",
+    "label": "Developers, availability, AI recap"
+   },
+   {
+    "d": 6106,
+    "f": 6185,
+    "type": "cloture",
+    "label": "Tim: overall recap, thanks"
+   },
+   {
+    "d": 6185,
+    "f": 6244,
+    "type": "post",
+    "label": "Outro, “Shot on iPhone”, legal notes"
+   }
+  ]
+ },
+ {
+  "k": "v8",
+  "titre": "WWDC 2025 Keynote",
+  "date": "2025-06-09",
+  "live": false,
+  "duree_contenu_s": 5369,
+  "segments": [
+   {
+    "d": 0,
+    "f": 116,
+    "type": "ouverture",
+    "label": "Sketch: Craig drives, Tim on the radio"
+   },
+   {
+    "d": 116,
+    "f": 223,
+    "type": "ceo",
+    "label": "Tim: welcome, F1, Apple TV+, OS"
+   },
+   {
+    "d": 223,
+    "f": 239,
+    "type": "film",
+    "label": "Transition: the parked F1 car"
+   },
+   {
+    "d": 239,
+    "f": 486,
+    "type": "presentation",
+    "label": "Apple Intelligence (Craig)"
+   },
+   {
+    "d": 486,
+    "f": 503,
+    "type": "film",
+    "label": "Architecture film"
+   },
+   {
+    "d": 503,
+    "f": 757,
+    "type": "presentation",
+    "label": "Liquid Glass (Alan Dye film)"
+   },
+   {
+    "d": 757,
+    "f": 801,
+    "type": "presentation",
+    "label": "“26” numbering (Craig)"
+   },
+   {
+    "d": 801,
+    "f": 1093,
+    "type": "demo",
+    "label": "iOS 26 demo (Craig)"
+   },
+   {
+    "d": 1093,
+    "f": 1245,
+    "type": "presentation",
+    "label": "CarPlay (Emily Schubert)"
+   },
+   {
+    "d": 1245,
+    "f": 1269,
+    "type": "hote",
+    "label": "Craig: bridge, handover"
+   },
+   {
+    "d": 1269,
+    "f": 1567,
+    "type": "presentation",
+    "label": "Phone, Messages (Darin Adler)"
+   },
+   {
+    "d": 1567,
+    "f": 1800,
+    "type": "presentation",
+    "label": "Genmoji, translation (L. Ikemoto)"
+   },
+   {
+    "d": 1800,
+    "f": 2104,
+    "type": "presentation",
+    "label": "Handover; Music, Maps (Kathy Lin)"
+   },
+   {
+    "d": 2104,
+    "f": 2259,
+    "type": "presentation",
+    "label": "Games app (Ann Thai)"
+   },
+   {
+    "d": 2259,
+    "f": 2305,
+    "type": "hote",
+    "label": "Craig: Visual Intelligence, handover"
+   },
+   {
+    "d": 2305,
+    "f": 2440,
+    "type": "demo",
+    "label": "Visual Intelligence demo (Billy)"
+   },
+   {
+    "d": 2440,
+    "f": 2495,
+    "type": "recap",
+    "label": "iOS 26 recap, handover"
+   },
+   {
+    "d": 2495,
+    "f": 2563,
+    "type": "presentation",
+    "label": "watchOS 26 (David Clark)"
+   },
+   {
+    "d": 2563,
+    "f": 2756,
+    "type": "demo",
+    "label": "Workout Buddy (S. Postlewaite)"
+   },
+   {
+    "d": 2756,
+    "f": 2927,
+    "type": "recap",
+    "label": "watchOS 26: continued, recap"
+   },
+   {
+    "d": 2927,
+    "f": 3018,
+    "type": "presentation",
+    "label": "tvOS 26 (Justin Washington)"
+   },
+   {
+    "d": 3018,
+    "f": 3113,
+    "type": "film",
+    "label": "Apple TV+ trailer"
+   },
+   {
+    "d": 3113,
+    "f": 3208,
+    "type": "recap",
+    "label": "tvOS: continued, recap, handover"
+   },
+   {
+    "d": 3208,
+    "f": 3242,
+    "type": "film",
+    "label": "Transition: the golf cart"
+   },
+   {
+    "d": 3242,
+    "f": 3495,
+    "type": "presentation",
+    "label": "macOS Tahoe: the name, design"
+   },
+   {
+    "d": 3495,
+    "f": 3858,
+    "type": "demo",
+    "label": "Shortcuts, Spotlight (Raja Bose)"
+   },
+   {
+    "d": 3858,
+    "f": 3978,
+    "type": "recap",
+    "label": "Games on Mac, macOS recap"
+   },
+   {
+    "d": 3978,
+    "f": 4113,
+    "type": "presentation",
+    "label": "visionOS 26 (Mike Rockwell)"
+   },
+   {
+    "d": 4113,
+    "f": 4233,
+    "type": "presentation",
+    "label": "Spatial scenes (Haley Allen)"
+   },
+   {
+    "d": 4233,
+    "f": 4451,
+    "type": "recap",
+    "label": "visionOS: enterprise, recap"
+   },
+   {
+    "d": 4451,
+    "f": 4574,
+    "type": "presentation",
+    "label": "iPadOS 26 (Craig)"
+   },
+   {
+    "d": 4574,
+    "f": 4734,
+    "type": "demo",
+    "label": "iPad windowing (Cindy Barrett)"
+   },
+   {
+    "d": 4734,
+    "f": 4772,
+    "type": "hote",
+    "label": "Craig: comment, handover"
+   },
+   {
+    "d": 4772,
+    "f": 5056,
+    "type": "presentation",
+    "label": "Files, audio (Stephen Tonna)"
+   },
+   {
+    "d": 5056,
+    "f": 5117,
+    "type": "recap",
+    "label": "iPadOS 26 recap"
+   },
+   {
+    "d": 5117,
+    "f": 5298,
+    "type": "recap",
+    "label": "AI recap, developer block"
+   },
+   {
+    "d": 5298,
+    "f": 5369,
+    "type": "cloture",
+    "label": "Tim: close, availability"
+   },
+   {
+    "d": 5369,
+    "f": 5529,
+    "type": "film",
+    "label": "“Real App Store reviews” clip"
+   },
+   {
+    "d": 5529,
+    "f": 5546,
+    "type": "post",
+    "label": "“Shot on iPhone”, legal notes"
+   }
+  ]
+ },
+ {
+  "k": "v3",
+  "titre": "Apple Event (iPhone 17, Air, 17 Pro)",
+  "date": "2025-09-09",
+  "live": false,
+  "duree_contenu_s": 4296,
+  "segments": [
+   {
+    "d": 0,
+    "f": 96,
+    "type": "ouverture",
+    "label": "Quote, “sound design” film"
+   },
+   {
+    "d": 96,
+    "f": 232,
+    "type": "ceo",
+    "label": "Tim: welcome, AirPods framing"
+   },
+   {
+    "d": 232,
+    "f": 261,
+    "type": "film",
+    "label": "AirPods Pro 3 film"
+   },
+   {
+    "d": 261,
+    "f": 301,
+    "type": "ceo",
+    "label": "Tim: verdict, handover to Kate"
+   },
+   {
+    "d": 301,
+    "f": 411,
+    "type": "presentation",
+    "label": "AirPods Pro 3 (Kate Bergeron)"
+   },
+   {
+    "d": 411,
+    "f": 502,
+    "type": "demo",
+    "label": "Filmed demo: translation"
+   },
+   {
+    "d": 502,
+    "f": 575,
+    "type": "presentation",
+    "label": "AirPods Pro 3: fit"
+   },
+   {
+    "d": 575,
+    "f": 704,
+    "type": "presentation",
+    "label": "Heart sensor (Julz Arney)"
+   },
+   {
+    "d": 704,
+    "f": 772,
+    "type": "prix_dispo",
+    "label": "AirPods: recap, price, availability"
+   },
+   {
+    "d": 772,
+    "f": 821,
+    "type": "ceo",
+    "label": "Tim: Apple Watch framing"
+   },
+   {
+    "d": 821,
+    "f": 1018,
+    "type": "temoignage",
+    "label": "Testimonial film (letters)"
+   },
+   {
+    "d": 1018,
+    "f": 1052,
+    "type": "ceo",
+    "label": "Tim: verdict, handover to Stan"
+   },
+   {
+    "d": 1052,
+    "f": 1152,
+    "type": "presentation",
+    "label": "Watch Series 11 (Stan Ng)"
+   },
+   {
+    "d": 1152,
+    "f": 1296,
+    "type": "presentation",
+    "label": "Hypertension, sleep (S. Desai)"
+   },
+   {
+    "d": 1296,
+    "f": 1378,
+    "type": "recap",
+    "label": "Series 11: finishes, recap"
+   },
+   {
+    "d": 1378,
+    "f": 1520,
+    "type": "presentation",
+    "label": "Watch SE 3 (Amanda Santangelo)"
+   },
+   {
+    "d": 1520,
+    "f": 1707,
+    "type": "presentation",
+    "label": "Watch Ultra 3 (Eugene Kim)"
+   },
+   {
+    "d": 1707,
+    "f": 1753,
+    "type": "prix_dispo",
+    "label": "Watches: recap, price, availability"
+   },
+   {
+    "d": 1753,
+    "f": 1819,
+    "type": "ceo",
+    "label": "Tim: iPhone framing"
+   },
+   {
+    "d": 1819,
+    "f": 1852,
+    "type": "film",
+    "label": "iPhone 17 film"
+   },
+   {
+    "d": 1852,
+    "f": 1873,
+    "type": "ceo",
+    "label": "Tim: verdict, handover to Kaiann"
+   },
+   {
+    "d": 1873,
+    "f": 2140,
+    "type": "presentation",
+    "label": "iPhone 17 (Kaiann Drance)"
+   },
+   {
+    "d": 2140,
+    "f": 2360,
+    "type": "presentation",
+    "label": "iPhone 17 camera (Megan Nash)"
+   },
+   {
+    "d": 2360,
+    "f": 2420,
+    "type": "recap",
+    "label": "iPhone 17 recap"
+   },
+   {
+    "d": 2420,
+    "f": 2447,
+    "type": "ceo",
+    "label": "Tim: iPhone Air teaser"
+   },
+   {
+    "d": 2447,
+    "f": 2545,
+    "type": "film",
+    "label": "iPhone Air hardware film"
+   },
+   {
+    "d": 2545,
+    "f": 2585,
+    "type": "ceo",
+    "label": "Tim: verdict, handover to John"
+   },
+   {
+    "d": 2585,
+    "f": 2680,
+    "type": "presentation",
+    "label": "iPhone Air (John Ternus)"
+   },
+   {
+    "d": 2680,
+    "f": 2878,
+    "type": "presentation",
+    "label": "A19 Pro, N1 chips (Tim Millet)"
+   },
+   {
+    "d": 2878,
+    "f": 3217,
+    "type": "recap",
+    "label": "iPhone Air: continued, recap"
+   },
+   {
+    "d": 3217,
+    "f": 3266,
+    "type": "ceo",
+    "label": "Tim: iPhone 17 Pro teaser"
+   },
+   {
+    "d": 3266,
+    "f": 3379,
+    "type": "film",
+    "label": "iPhone 17 Pro hardware film"
+   },
+   {
+    "d": 3379,
+    "f": 3427,
+    "type": "ceo",
+    "label": "Tim: verdict, handover to Joz"
+   },
+   {
+    "d": 3427,
+    "f": 3690,
+    "type": "presentation",
+    "label": "iPhone 17 Pro (Joz)"
+   },
+   {
+    "d": 3690,
+    "f": 3908,
+    "type": "presentation",
+    "label": "Pro camera (P. Carroll), gallery"
+   },
+   {
+    "d": 3908,
+    "f": 4114,
+    "type": "recap",
+    "label": "Pro video, recap (Joz)"
+   },
+   {
+    "d": 4114,
+    "f": 4174,
+    "type": "film",
+    "label": "“In action” film"
+   },
+   {
+    "d": 4174,
+    "f": 4230,
+    "type": "prix_dispo",
+    "label": "iPhone price and availability"
+   },
+   {
+    "d": 4230,
+    "f": 4296,
+    "type": "cloture",
+    "label": "Tim: close, thanks"
+   },
+   {
+    "d": 4296,
+    "f": 4316,
+    "type": "post",
+    "label": "“Shot on iPhone”, legal notes"
+   }
+  ]
+ },
+ {
+  "k": "v4",
+  "titre": "Apple Event (iPhone Duo)",
+  "date": "2026-09-09",
+  "live": false,
+  "duree_contenu_s": 4620,
+  "segments": [
+   {
+    "d": 0,
+    "f": 10,
+    "type": "ouverture",
+    "label": "“Shot on iPhone” card"
+   },
+   {
+    "d": 10,
+    "f": 153,
+    "type": "ouverture",
+    "label": "Fiction: the screenwriters"
+   },
+   {
+    "d": 153,
+    "f": 405,
+    "type": "hote",
+    "label": "John: welcome, the “personal hub”"
+   },
+   {
+    "d": 405,
+    "f": 458,
+    "type": "film",
+    "label": "iPhone 18 Pro hardware film"
+   },
+   {
+    "d": 458,
+    "f": 507,
+    "type": "hote",
+    "label": "John: iPhone 18 Pro announcement"
+   },
+   {
+    "d": 507,
+    "f": 817,
+    "type": "presentation",
+    "label": "AI, Siri (Lilian Rincon)"
+   },
+   {
+    "d": 817,
+    "f": 992,
+    "type": "presentation",
+    "label": "A20 Pro chip (Sri)"
+   },
+   {
+    "d": 992,
+    "f": 1162,
+    "type": "presentation",
+    "label": "Thermals, battery life (Rich Dinh)"
+   },
+   {
+    "d": 1162,
+    "f": 1325,
+    "type": "presentation",
+    "label": "Games, camera chapter (Kaiann)"
+   },
+   {
+    "d": 1325,
+    "f": 1597,
+    "type": "demo",
+    "label": "Camera demo (Maryam Azimi)"
+   },
+   {
+    "d": 1597,
+    "f": 1798,
+    "type": "prix_dispo",
+    "label": "iPhone 18 Pro: recap, price"
+   },
+   {
+    "d": 1798,
+    "f": 1862,
+    "type": "hote",
+    "label": "John: AirPods 5 reveal"
+   },
+   {
+    "d": 1862,
+    "f": 2124,
+    "type": "presentation",
+    "label": "AirPods 5 (Dave Pakula)"
+   },
+   {
+    "d": 2124,
+    "f": 2212,
+    "type": "hote",
+    "label": "John: watch announcement"
+   },
+   {
+    "d": 2212,
+    "f": 2354,
+    "type": "presentation",
+    "label": "Sensors (Deidre Caldbeck)"
+   },
+   {
+    "d": 2354,
+    "f": 2628,
+    "type": "presentation",
+    "label": "Health (Sumbul Desai)"
+   },
+   {
+    "d": 2628,
+    "f": 2832,
+    "type": "presentation",
+    "label": "Audio intelligence (Ron Huang)"
+   },
+   {
+    "d": 2832,
+    "f": 3030,
+    "type": "prix_dispo",
+    "label": "Watch: recaps, prices (Deidre)"
+   },
+   {
+    "d": 3030,
+    "f": 3130,
+    "type": "film",
+    "label": "Apple Watch ad"
+   },
+   {
+    "d": 3130,
+    "f": 3243,
+    "type": "hote",
+    "label": "Recap, “one more thing”"
+   },
+   {
+    "d": 3243,
+    "f": 3288,
+    "type": "film",
+    "label": "iPhone Duo reveal film"
+   },
+   {
+    "d": 3288,
+    "f": 3296,
+    "type": "hote",
+    "label": "John: name, handover"
+   },
+   {
+    "d": 3296,
+    "f": 3518,
+    "type": "presentation",
+    "label": "Duo design (Molly and Steve)"
+   },
+   {
+    "d": 3518,
+    "f": 3545,
+    "type": "hote",
+    "label": "John: mini-recap, handover"
+   },
+   {
+    "d": 3545,
+    "f": 3697,
+    "type": "presentation",
+    "label": "Displays, durability (Joz)"
+   },
+   {
+    "d": 3697,
+    "f": 3919,
+    "type": "demo",
+    "label": "iOS on Duo (Craig)"
+   },
+   {
+    "d": 3919,
+    "f": 4240,
+    "type": "presentation",
+    "label": "Duo engineering (Johny Srouji)"
+   },
+   {
+    "d": 4240,
+    "f": 4516,
+    "type": "prix_dispo",
+    "label": "Duo: camera, recap, price (Joz)"
+   },
+   {
+    "d": 4516,
+    "f": 4525,
+    "type": "hote",
+    "label": "John: “another look”"
+   },
+   {
+    "d": 4525,
+    "f": 4555,
+    "type": "film",
+    "label": "iPhone Duo product film"
+   },
+   {
+    "d": 4555,
+    "f": 4620,
+    "type": "cloture",
+    "label": "John: close, thanks"
+   },
+   {
+    "d": 4620,
+    "f": 4638,
+    "type": "post",
+    "label": "Logo, legal notes"
+   }
+  ]
+ }
+]

@@ -1,0 +1,92 @@
+{
+  "_lisez_moi": "Machine version of the table in references/publics.md (§3 and §5), read by scripts/check_deck.py and scripts/build_deck.js. meta.public.type picks the row (key or synonym); a list of types = a mixed audience, and each setting takes the most cautious value (order in “prudence”). Values and synonyms are matched by the scripts: keep them as they are (the synonyms are French on purpose). If publics.md changes, update this file.",
+  "defaut": "defaut",
+  "prudence": {
+    "source_chiffre": ["facultative", "recommandee", "exigee"],
+    "affichage_source": ["aucun", "carton_final", "renvoi", "sous_le_chiffre"],
+    "graduation": ["sans", "valeurs", "graduee"],
+    "concurrent": ["nommes", "nommes_si_utile", "anonymes", "absents"],
+    "jusqua": ["avec_condition", "valeur_typique", "interdit"],
+    "superlatifs": ["avec_preuve", "moderes", "aucun"],
+    "slide_prix": ["oui", "non"]
+  },
+  "publics": {
+    "b2b-decideurs": {
+      "libelle": "B2B customers: decision makers (leadership, business lines)",
+      "synonymes": ["clients-b2b", "b2b", "clients b2b", "clients", "decideurs", "direction", "prospects", "pme", "entreprises", "clients professionnels"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "valeurs", "concurrent": "anonymes",
+      "jusqua": "valeur_typique", "superlatifs": "moderes", "slide_prix": "oui",
+      "duree_min_conseillee": [15, 25], "registre_suggere": "vous"
+    },
+    "b2b-acheteurs": {
+      "libelle": "B2B customers: buyers (procurement, tenders)",
+      "synonymes": ["acheteurs", "achats", "appel d'offres", "appel-d-offres", "ao", "procurement", "jury"],
+      "source_chiffre": "exigee", "affichage_source": "sous_le_chiffre", "graduation": "graduee", "concurrent": "anonymes",
+      "jusqua": "valeur_typique", "superlatifs": "aucun", "slide_prix": "oui",
+      "duree_min_conseillee": [20, 30], "registre_suggere": "vous"
+    },
+    "grand-public": {
+      "libelle": "End customers, general public",
+      "synonymes": ["grand public", "clients finaux", "consommateurs", "particuliers", "b2c", "utilisateurs finaux"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "sans", "concurrent": "anonymes",
+      "jusqua": "avec_condition", "superlatifs": "avec_preuve", "slide_prix": "oui",
+      "duree_min_conseillee": [2, 30], "registre_suggere": "vous in the room, tu possible on video"
+    },
+    "investisseurs": {
+      "libelle": "Investors",
+      "synonymes": ["investisseur", "levee de fonds", "banque", "banquiers", "board", "conseil d'administration", "actionnaires", "vc", "demo day"],
+      "source_chiffre": "exigee", "affichage_source": "sous_le_chiffre", "graduation": "graduee", "concurrent": "nommes",
+      "jusqua": "interdit", "superlatifs": "aucun", "slide_prix": "non",
+      "duree_min_conseillee": [3, 15], "registre_suggere": "vous"
+    },
+    "partenaires": {
+      "libelle": "Partners and resellers",
+      "synonymes": ["partenaire", "revendeurs", "revendeur", "distributeurs", "integrateurs", "reseau"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "valeurs", "concurrent": "anonymes",
+      "jusqua": "valeur_typique", "superlatifs": "moderes", "slide_prix": "oui",
+      "duree_min_conseillee": [20, 30], "registre_suggere": "vous"
+    },
+    "interne-sprint": {
+      "libelle": "Internal team: sprint review",
+      "synonymes": ["revue de sprint", "sprint review", "sprint", "demo de sprint"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "graduee", "concurrent": "nommes_si_utile",
+      "jusqua": "interdit", "superlatifs": "aucun", "slide_prix": "non",
+      "duree_min_conseillee": [10, 20], "registre_suggere": "depends on the team"
+    },
+    "interne-demo": {
+      "libelle": "Internal team: product demo",
+      "synonymes": ["demo produit", "demo interne", "product demo"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "valeurs", "concurrent": "nommes_si_utile",
+      "jusqua": "avec_condition", "superlatifs": "moderes", "slide_prix": "oui",
+      "duree_min_conseillee": [5, 15], "registre_suggere": "depends on the team"
+    },
+    "interne-all-hands": {
+      "libelle": "Internal team: all-hands",
+      "synonymes": ["all-hands", "all hands", "interne", "equipe", "equipes", "collaborateurs", "salaries", "seminaire", "pleniere"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "graduee", "concurrent": "nommes_si_utile",
+      "jusqua": "interdit", "superlatifs": "moderes", "slide_prix": "non",
+      "duree_min_conseillee": [30, 45], "registre_suggere": "depends on the culture"
+    },
+    "salon-conference": {
+      "libelle": "Trade show or conference",
+      "synonymes": ["salon", "conference", "keynote", "meetup", "evenement", "communaute", "stand"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "sans", "concurrent": "anonymes",
+      "jusqua": "avec_condition", "superlatifs": "avec_preuve", "slide_prix": "oui",
+      "duree_min_conseillee": null, "registre_suggere": "vous"
+    },
+    "recrutement": {
+      "libelle": "Recruiting",
+      "synonymes": ["candidats", "marque employeur", "forum emploi", "forum", "recrutement", "ecole", "etudiants"],
+      "source_chiffre": "exigee", "affichage_source": "renvoi", "graduation": "graduee", "concurrent": "absents",
+      "jusqua": "interdit", "superlatifs": "aucun", "slide_prix": "non",
+      "duree_min_conseillee": [5, 20], "registre_suggere": "the employer brand's"
+    },
+    "defaut": {
+      "libelle": "Unknown or mixed audience (cautious setting)",
+      "synonymes": ["inconnu", "mixte", "je ne sais pas", "autre"],
+      "source_chiffre": "exigee", "affichage_source": "sous_le_chiffre", "graduation": "valeurs", "concurrent": "anonymes",
+      "jusqua": "avec_condition", "superlatifs": "moderes", "slide_prix": "oui",
+      "duree_min_conseillee": null, "registre_suggere": "vous"
+    }
+  }
+}

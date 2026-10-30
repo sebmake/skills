@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "titre": "Clairval Direct: customer launch (fictional example)",
+    "langue": "en",
+    "public": {
+      "type": "b2b-decideurs",
+      "description": "Facilities managers and building managers who are Clairval customers"
+    },
+    "duree_min": 10,
+    "format": "keynote",
+    "ratio": "16:9",
+    "contexte": "direct",
+    "variante": "service",
+    "note": "Fictional example: Clairval is a made-up small company, and so are its figures, its date and its testimonial. The [TO VALIDATE] and [TO PROVIDE] markers and the missing image on slide 15 are there on purpose, to show how they work. Each slide carries its layout variant, and each image slide carries the brief for the visual to prepare (slide.visuel)."
+  },
+  "theme": {
+    "nom": "Clairval",
+    "couleurs": {
+      "fond_sombre": "#0F1B2A",
+      "fond_clair": "#F5F7F9",
+      "texte": "#14202E",
+      "texte_secondaire": "#5B6776",
+      "accent": "#1C9461",
+      "accent2": "#5CD69A"
+    },
+    "polices": {
+      "titre": {
+        "nom": "Inter",
+        "repli": "Arial"
+      },
+      "texte": {
+        "nom": "Inter",
+        "repli": "Arial"
+      }
+    },
+    "point_accent": true
+  },
+  "intervenants": [
+    {
+      "id": "claire",
+      "nom": "Claire Duval",
+      "role": "Chief Executive Officer"
+    },
+    {
+      "id": "hugo",
+      "nom": "Hugo Bernard",
+      "role": "Head of Product"
+    },
+    {
+      "id": "ines",
+      "nom": "Inès Moreau",
+      "role": "Field Team Lead"
+    }
+  ],
+  "slides": [
+    {
+      "id": "s01-accueil",
+      "bloc": "Opening",
+      "etape": null,
+      "archetype": "A1",
+      "variante": "aplat",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "titre": "Clairval"
+      },
+      "notes": "Good morning, and welcome to Clairval, here in Villeurbanne. Thank you for coming this morning, and some of you came a long way to be here. Today is a big day for us, and we hope it will be a big day for you too. For several months now, our teams have been working on a new service, built from what you tell us about your buildings out in the field. We have ten minutes to show it to you. Not one minute more, because your time matters as much as ours does. Let's get started.",
+      "duree_s": 40,
+      "build": [
+        "The word is already on screen when the room goes dark.",
+        "Wait for silence before speaking."
+      ]
+    },
+    {
+      "id": "s02-ancrage",
+      "bloc": "Clairval Direct",
+      "etape": 2,
+      "archetype": "A5",
+      "variante": "centre",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "chiffre": "640",
+        "libelle": "sites serviced by our teams every year"
+      },
+      "source": "Clairval customer register 2026 (fictional example)",
+      "notes": "For eighteen years, we have serviced the boilers, the heat pumps and the air conditioning of commercial buildings across the region. Offices, schools, shops, apartment buildings. That adds up to six hundred and forty sites every year, all serviced by our own teams. Many of you are here because we already work together, sometimes for a long time now. And you know this: regular maintenance, done at the right time, saves you a lot of trouble. It makes your equipment last longer, and it lowers your bills. But it does not prevent everything.",
+      "duree_s": 40,
+      "build": [
+        "The figure appears on “six hundred and forty”.",
+        "The label follows one second later."
+      ]
+    },
+    {
+      "id": "s03-tension",
+      "bloc": "Clairval Direct",
+      "etape": 3,
+      "archetype": "A4",
+      "variante": "aplat",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "titre": "[TO VALIDATE: A breakdown never warns you.]"
+      },
+      "notes": "You tell us this often, and you are right: [TO VALIDATE: a breakdown never warns you.] It happens on a Monday morning, in the middle of winter, when the building is full. You have to call, wait for a slot, wait for a technician, and sometimes wait for a part. In the meantime, your teams work in their coats, and you are the one who gets all the calls. It is nobody's fault. It is simply the way maintenance works today.",
+      "duree_s": 30,
+      "build": [
+        "The sentence appears at the moment it is said, word for word."
+      ]
+    },
+    {
+      "id": "s04-tension-chiffre",
+      "bloc": "Clairval Direct",
+      "etape": 3,
+      "archetype": "A5",
+      "variante": "bloc",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "chiffre": "2 days",
+        "libelle": "average wait before a technician arrives",
+        "surtitre": "Today"
+      },
+      "source": "Clairval survey of 120 customers, March 2026 (fictional example)",
+      "notes": "We wanted to measure this lost time. So we asked a hundred and twenty of you, in the spring. Between your call and the moment a technician arrives, two days go by on average. Two days of cold offices, of complaints and of makeshift fixes, of space heaters and of canceled meetings. Two days is too long. So we looked for a way to cut that delay. And above all, a way to step in before the breakdown even happens.",
+      "duree_s": 35,
+      "build": [
+        "The figure arrives on “two days”.",
+        "Hold the silence for one second after “change that”."
+      ]
+    },
+    {
+      "id": "s05-nom",
+      "bloc": "Clairval Direct",
+      "etape": 6,
+      "archetype": "A1",
+      "variante": "aplat",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "titre": "Clairval *Direct*",
+        "surtitre": "New"
+      },
+      "notes": "This is Clairval Direct.",
+      "duree_s": 10,
+      "build": [
+        "Dark screen, then the kicker and the name together, at the moment the name is said.",
+        "Leave two seconds of silence before the next sentence."
+      ]
+    },
+    {
+      "id": "s06-definition",
+      "bloc": "Clairval Direct",
+      "etape": 7,
+      "archetype": "A4",
+      "variante": "mot-accent",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "titre": "Always monitored.\nFixed the *same day*."
+      },
+      "notes": "Clairval Direct is the simple way to keep your heating running without thinking about it. A sensor monitors your equipment day and night. If it detects a problem, our team is alerted right away, and a technician is at your site the same day. Often before you have even noticed anything at all. You no longer have to call. You no longer have to wait. We come to you, before you need us.",
+      "duree_s": 35,
+      "build": [
+        "First line on “monitors”.",
+        "Second line on “the same day”."
+      ]
+    },
+    {
+      "id": "s07-capteur",
+      "bloc": "Clairval Direct",
+      "etape": 8,
+      "archetype": "A9",
+      "variante": "objet-liste",
+      "fond": "sombre",
+      "intervenant": "hugo",
+      "textes": {
+        "titre": "Installed in one hour",
+        "lignes": [
+          "On your current equipment",
+          "No construction work",
+          "No heating shutdown"
+        ]
+      },
+      "image": {
+        "chemin": "exemple-images/capteur.png",
+        "attendu": "The Clairval Direct unit, front view"
+      },
+      "visuel": {
+        "type": "produit",
+        "brief": "The Clairval Direct unit alone, whole, on a neutral background: soft studio light, a bright highlight on the edge, no built-in shadow or reflection, no text.",
+        "fond_transparent": true,
+        "angle": "trois-quarts",
+        "resolution_min": "2000 px tall"
+      },
+      "notes": [
+        {
+          "intervenant": "claire",
+          "type": "relais",
+          "texte": "To tell you more, I am handing over to Hugo, who designed the service with our technicians. Hugo, over to you."
+        },
+        {
+          "intervenant": "hugo",
+          "texte": "Thank you, Claire. Good morning, everyone. It all starts with this small unit. It attaches to your current equipment, whatever its brand and whatever its age. There is no construction work, and no heating shutdown: a technician installs it in one hour, during a normal maintenance visit. After that, it constantly measures what matters: the temperature, the pressure and the energy use. You have nothing to set up and nothing to install on your computers. You just have it installed."
+        }
+      ],
+      "duree_s": 45,
+      "build": [
+        "The unit appears first, on its own.",
+        "The title arrives when Hugo starts speaking.",
+        "The three lines appear one by one."
+      ]
+    },
+    {
+      "id": "s08-tableau-de-bord",
+      "bloc": "Clairval Direct",
+      "etape": 10,
+      "archetype": "A10",
+      "variante": "capture-nue",
+      "fond": "sombre",
+      "intervenant": "hugo",
+      "image": {
+        "chemin": "exemple-images/tableau-de-bord.png",
+        "attendu": "The dashboard with three sites, one of them in orange"
+      },
+      "visuel": {
+        "type": "capture",
+        "brief": "Bare screenshot of the dashboard, full screen, in 16:9: three buildings, two in green and the school campus in orange, with the pressure curve visible; demo data, a neutral time, no notifications.",
+        "fond_transparent": false,
+        "angle": "face",
+        "resolution_min": "1920 × 1080"
+      },
+      "notes": "Let me show you what you see on your side. All the sensor readings arrive on your dashboard, which you open from a computer or a phone. Here, you see three buildings. The head office and the warehouse are in green: everything is normal. The school campus is in orange. Let's look at why. On the curve, the pressure has been slowly dropping for four days. It is not a breakdown yet. It is a small leak, and it will turn into one. Nobody would have noticed it with the naked eye. We can see it. At that exact moment, an alert goes to our team, and they schedule a visit. You get a message with the day and the time of the visit. You did nothing, and the breakdown will not happen.",
+      "duree_s": 80,
+      "build": [
+        "The screen appears in full.",
+        "Point to the orange card on the word “drift”, then to the curve."
+      ]
+    },
+    {
+      "id": "s09-delai",
+      "bloc": "Clairval Direct",
+      "etape": 9,
+      "archetype": "A5",
+      "variante": "contour",
+      "fond": "sombre",
+      "intervenant": "hugo",
+      "textes": {
+        "chiffre": "4 h",
+        "libelle": "to get a technician on site",
+        "surtitre": "Our commitment"
+      },
+      "source": "Clairval Direct contract commitment, business days (fictional example)",
+      "notes": [
+        {
+          "intervenant": "hugo",
+          "texte": "When an alert becomes urgent, we commit to a response time. A technician at your site within four hours, on business days, wherever your building is in the metro area. This is not an internal target, and it is not a sales promise. It is written in black and white in the contract you sign. And if we miss it, you will see it on your dashboard, at the same time as we do."
+        },
+        {
+          "intervenant": "hugo",
+          "type": "relais",
+          "texte": "Inès runs our field teams, and she followed the pilot closely. Inès, over to you."
+        }
+      ],
+      "duree_s": 40,
+      "build": [
+        "The figure arrives on “four hours”."
+      ]
+    },
+    {
+      "id": "s10-pilote",
+      "bloc": "Clairval Direct",
+      "etape": 9,
+      "archetype": "A6",
+      "variante": "barres",
+      "fond": "sombre",
+      "intervenant": "ines",
+      "textes": {
+        "titre": "Average response time",
+        "barres": [
+          {
+            "libelle": "Standard contract",
+            "valeur": 48,
+            "etiquette": "48 h"
+          },
+          {
+            "libelle": "Clairval Direct",
+            "valeur": 3.2,
+            "etiquette": "3 h 10",
+            "mise_en_avant": true
+          }
+        ],
+        "axe": "Shorter is better",
+        "surtitre": "Pilot"
+      },
+      "source": "Pilot on 12 sites, October 2025 – March 2026 (fictional example)",
+      "notes": [
+        {
+          "intervenant": "ines",
+          "texte": "Thank you, Hugo. Before offering you this service, we wanted to be sure it would keep its promise. So we tested it for six months, on twelve sites across the region: offices, two schools and a warehouse. With a standard contract, it took forty-eight hours on average to get someone there. With Clairval Direct, it took three hours and ten minutes. My teams held that time, day after day, including during the weeks of hard frost. And over those six months, not a single site went a whole day without heating."
+        }
+      ],
+      "duree_s": 40,
+      "build": [
+        "The gray bar appears first, with “48 h”.",
+        "The green bar arrives on “three hours and ten minutes”."
+      ]
+    },
+    {
+      "id": "s11-temoignage",
+      "bloc": "Clairval Direct",
+      "etape": 11,
+      "archetype": "A17",
+      "variante": "courte",
+      "fond": "sombre",
+      "intervenant": "ines",
+      "textes": {
+        "citation": "Since the pilot, we have not had a single morning without heating.",
+        "auteur": "Facilities manager, pilot school campus (fictional testimonial)"
+      },
+      "notes": [
+        {
+          "intervenant": "ines",
+          "texte": "We also asked the pilot sites what they thought of it. Here is what the facilities manager of a school campus in Bron told us: “Since the pilot, we have not had a single morning without heating.” That is exactly what we were looking for. Not one more dashboard, not a complicated tool. Normal mornings, for the people who work in your buildings, and for you, since you no longer have to handle emergencies."
+        },
+        {
+          "intervenant": "ines",
+          "type": "relais",
+          "texte": "Back to you, Hugo."
+        }
+      ],
+      "duree_s": 35,
+      "build": [
+        "The quote appears in full; read it word for word.",
+        "The author stays on screen during the handover."
+      ]
+    },
+    {
+      "id": "s12-garanties",
+      "bloc": "Clairval Direct",
+      "etape": 13,
+      "archetype": "A8",
+      "variante": "coche-par-ligne",
+      "fond": "sombre",
+      "intervenant": "hugo",
+      "textes": {
+        "lignes": [
+          "No minimum term",
+          "Data hosted in France",
+          "Your equipment unchanged",
+          "[TO VALIDATE: Your usual technician]"
+        ]
+      },
+      "notes": "Thank you, Inès. A few guarantees, because you asked us for them during the pilot. First, there is no minimum term: you can stop whenever you want. Next, the data from your buildings is hosted in France, and it stays yours: you can export it at any time, and we never sell it to anyone. The sensor changes nothing about your equipment, or about its manufacturer warranty. [TO VALIDATE: And you keep the technician you already know, the one who knows your buildings.]",
+      "duree_s": 40,
+      "build": [
+        "The check marks land one by one, in time with the voice."
+      ]
+    },
+    {
+      "id": "s13-recap",
+      "bloc": "Clairval Direct",
+      "etape": 14,
+      "archetype": "A14",
+      "variante": "nom-au-centre",
+      "fond": "sombre",
+      "intervenant": "hugo",
+      "textes": {
+        "titre": "Clairval Direct",
+        "tuiles": [
+          {
+            "chiffre": "1 h",
+            "titre": "to install"
+          },
+          {
+            "type": "mot",
+            "titre": "All brands"
+          },
+          {
+            "chiffre": "4 h",
+            "titre": "technician on site"
+          },
+          {
+            "type": "mot",
+            "titre": "Round-the-clock monitoring"
+          },
+          {
+            "type": "mot",
+            "titre": "Alert before the breakdown"
+          },
+          {
+            "type": "capture",
+            "titre": "Shared dashboard",
+            "image": "exemple-images/tableau-de-bord.png"
+          },
+          {
+            "type": "mot",
+            "titre": "No minimum term"
+          },
+          {
+            "type": "mot",
+            "titre": "Data in France"
+          }
+        ]
+      },
+      "source": "Clairval Direct contract commitment, business days (fictional example)",
+      "notes": [
+        {
+          "intervenant": "hugo",
+          "texte": "Let's recap. A sensor installed in one hour, on all brands. Round-the-clock monitoring, with an alert before the breakdown. A dashboard that you share with us. A technician on site within four hours, written into the contract. No minimum term, and your data stays in France. All of it with the teams you already know. That is Clairval Direct."
+        },
+        {
+          "intervenant": "hugo",
+          "type": "relais",
+          "texte": "Claire, back to you."
+        }
+      ],
+      "duree_s": 30,
+      "build": [
+        "The center tile appears first.",
+        "The remaining tiles build in around it during the recap."
+      ]
+    },
+    {
+      "id": "s14-prix",
+      "bloc": "Clairval Direct",
+      "etape": 15,
+      "archetype": "A19",
+      "variante": "colonne",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "offres": [
+          {
+            "nom": "Clairval Direct",
+            "mention": "From",
+            "prix": "[TO PROVIDE: price excl. tax]",
+            "note": "per month, per site"
+          }
+        ]
+      },
+      "image": {
+        "chemin": "exemple-images/capteur.png",
+        "attendu": "The Clairval Direct unit"
+      },
+      "visuel": {
+        "type": "produit",
+        "brief": "The same unit, front view, cut out, in the same light as on the sensor slide; it will fill almost the full height, on the left.",
+        "fond_transparent": true,
+        "angle": "face",
+        "resolution_min": "2000 px tall"
+      },
+      "a_fournir": "Monthly price per site, excluding tax, sensor and installation included, approved by the sales team.",
+      "notes": "Thank you, Hugo. Let's talk about the price, since that is the question on your mind. Clairval Direct is offered from [TO PROVIDE: price] excluding tax, per month and per site. The sensor and its installation are included: you buy no hardware at all. If you already have a maintenance contract with us, the service is simply added to it, with no new contract to sign. Your usual contact can make you an offer for each one of your sites.",
+      "duree_s": 30,
+      "build": [
+        "The name first.",
+        "The price arrives when it is said."
+      ]
+    },
+    {
+      "id": "s15-disponibilite",
+      "bloc": "Clairval Direct",
+      "etape": 15,
+      "archetype": "A20",
+      "variante": "colonne",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "libelle": "Available from",
+        "titre": "February 1"
+      },
+      "image": {
+        "chemin": "exemple-images/zone-desservie.png",
+        "attendu": "Map of the Lyon metro area, service area in the accent color"
+      },
+      "visuel": {
+        "type": "schema",
+        "brief": "Line map of the Lyon metro area, in a single color: the service area as a solid fill, the rest as a thin outline; no street names, no figures, no logo.",
+        "fond_transparent": true,
+        "angle": "dessus",
+        "resolution_min": "2000 × 2000"
+      },
+      "notes": "Clairval Direct is available from the first of February, across the whole Lyon metro area. You can book the installation of your sensor starting today, with your usual contact, or at the front desk on your way out. The first installations will take place at the sites that have already contacted us, and then in the order the requests come in. If you manage several buildings, we can also start with the one that worries you most, and install the rest after that.",
+      "duree_s": 35,
+      "build": [
+        "The small label and the date appear together.",
+        "The map arrives on “the whole metro area”."
+      ]
+    },
+    {
+      "id": "s16-cloture",
+      "bloc": "Close",
+      "etape": 16,
+      "archetype": "A1",
+      "variante": "mot-final",
+      "fond": "sombre",
+      "intervenant": "claire",
+      "textes": {
+        "titre": "Thank you."
+      },
+      "notes": "We started this morning with a sentence you know well: [TO VALIDATE: a breakdown never warns you.] With Clairval Direct, we are the ones who get the warning, and we are the ones who come to you. A sensor, an alert before the breakdown, a technician within four hours. I am proud of the work of our teams, and of the twelve pilot sites that helped us build this service. Thank you to Hugo, thank you to Inès. And thank you all for coming. Have a very good day.",
+      "duree_s": 35,
+      "build": [
+        "The word appears on “thank you all”."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "famille": "ouverture_ambiance",
+  "perimetre": "opening and mood films, opening sketches and fiction, closing and tribute films, transitions between places (drone flights, corridors, walking, tracking shots)",
+  "source": "shot-by-shot analysis of the corpus (not published)",
+  "marquage": "\"N out of M\" = observed in N cases out of M; \"convention\" = a choice made by the skill, not measured or too few cases",
+  "corpus": {
+    "ouverture": ["v5-02", "v6-01", "v1-01", "v2-01", "v7-01", "v8-01", "v3-01", "v4-02"],
+    "sketch_fiction": ["v7-01", "v8-01", "v4-02", "v2-10"],
+    "seuil": ["v5-01", "v4-01"],
+    "hommage": ["v2-02"],
+    "cloture": ["v2-09", "v2-10", "v8-06"],
+    "transition_decor": ["v1-03", "v1-06", "v2-03", "v2-05", "v8-02", "v8-05"]
+  },
+
+  "durees": {
+    "unite": "seconds",
+    "base": "7 edited openings (without v1-01, a long take), body = without the first and last picture shots, blacks excluded",
+    "film": {"mediane": 99.3, "min": 65.0, "max": 143.0, "n": 8, "cible_conseil": [60, 120], "statut_cible": "convention"},
+    "debut": {
+      "seuil": {"noir_seul": [0.97, 1.0], "carton_plus_noir": [5.74, 9.81], "salle_en_public": 35.0, "compte": "6 out of 8 have a threshold; 2 go straight into the picture", "cible": [0.5, 1.5], "cible_avec_carton": [4.0, 10.0]},
+      "premier_plan_image": {"mediane": 6.77, "min": 1.07, "max": 70.94, "au_moins_5s": "5 out of 8", "cible": [5.0, 10.0]},
+      "tiers_1_plan_median": 1.60
+    },
+    "milieu": {
+      "tiers_2_plan_median": 1.30,
+      "pic": {"position_pct": [61, 79], "compte": "5 out of 7", "plan_median_glissant_5_plans": [0.40, 0.73], "cible_position_pct": [60, 80], "cible_plans": [0.4, 0.7]},
+      "plans_longs_au_milieu": {"compte": "9 shots of at least 5 s in 6 films", "ouvrent_une_scene": "6 out of 9", "part_max_au_dela_de_3_2s": 0.10}
+    },
+    "fin": {
+      "tiers_3_plan_median": 1.24,
+      "dernier_plan_image": {"mediane": 7.06, "min": 4.34, "max": 17.95, "au_moins_5s": "6 out of 8", "ratio_sur_plan_median_min": 3.5, "compte_ratio": "7 out of 7", "cible": [5.0, 11.0]},
+      "deceleration": "the last 3 to 5 shots get longer (observed by eye, examples v3-01 and v2-01)"
+    },
+    "mediane": 1.33,
+    "p10": 0.65,
+    "p25": 0.90,
+    "p75": 2.13,
+    "p90": 3.17,
+    "n_plans": 337,
+    "mediane_des_medianes_par_film": {"valeur": 1.44, "min": 1.20, "max": 3.17},
+    "changements_par_minute": {"mediane": 29.6, "min": 12.9, "max": 39.8, "cible": [25, 40], "compte_cible": "5 out of 7"},
+    "forme": {"U": "4 out of 7", "acceleration_puis_atterrissage": "1 out of 7 (narrated fiction) + the closing v2-09", "plat": "1 out of 7 (mood)", "premier_tiers_le_plus_lent_ou_egal": "6 out of 7"}
+  },
+
+  "transitions": {
+    "base": "8 openings, 367 shot changes",
+    "coupe": {"part": 0.978, "compte": "359 out of 367"},
+    "fondu": {
+      "enchaine": {"compte": "2 out of 367 (1 clear, 1 doubtful)", "place": "1 clear at 94 %: from animation to the live-action scene", "duree_s": 1.2, "cible_part_max": 0.05, "statut_cible": "convention"},
+      "depuis_ou_vers_noir": {"compte": 6, "place": "6 out of 6 in the first 10 %", "duree_s": [0.27, 1.47]}
+    },
+    "noir": {"compte": 17, "base": "6 openings in live action or animation", "a_l_entree": "15 out of 17 in the first 11 %", "duree_s": {"mediane": 0.67, "min": 0.17, "max": 4.3}, "au_milieu": "1 out of 17 (cold open)"},
+    "volet": {"compte": "1, at the very end of the closing clip (curtain over the logo)", "au_milieu": "0"},
+    "fondu_au_blanc": 0,
+    "cloture_hommage": {"changements": 111, "coupe": 101, "fondu_enchaine": 9, "volet": 1, "note": "the 9 cross dissolves are in the sung clip, 0.17 to 0.33 s"},
+    "transition_decor": {"changements": 30, "coupe": 30, "passages_masques_dans_le_sombre": "14 out of 30, in 4 transitions out of 6"}
+  },
+
+  "cartons": {
+    "base": "8 openings; durations on 7 title cards and titles from 6 films",
+    "nombre_par_film": {"aucun": "2 out of 8", "un_ou_deux": "5 out of 8", "generique_complet": "1 out of 8 (pastiche)", "cible": [0, 2]},
+    "place": {"seuil": "4 out of 8", "fin": "4 out of 8", "milieu": "0 out of 7 outside a pastiche credit roll (1 gag subtitle in a fiction)"},
+    "mots": {"mediane": 6, "min": 3, "max": 16, "au_dela_de_12": "1 out of 7 (a quote)"},
+    "duree_s": {"mediane": 4.74, "min": 1.94, "max": 9.74},
+    "secondes_par_mot": {"mediane": 0.50, "min": 0.32, "max": 2.09, "cible_min": 0.5, "statut_cible": "observed (median of 7)"},
+    "fond": {"sur_noir": "4 out of 7", "dans_une_zone_calme_de_l_image": "3 out of 7"},
+    "noir_apres_carton_de_seuil_s": [0.8, 4.3],
+    "nom_de_lieu_sur_la_premiere_image": "1 out of 8: small caps, bottom left, 6.3 s",
+    "titre_dans_le_decor_en_fin": "2 out of 8",
+    "bandeaux_de_nom": {"base": "closing v2-09, 7 people, 13 shots", "place": "bottom left, 2 lines (name, role), small", "duree_par_personne_s": {"mediane": 2.93, "min": 1.80, "max": 3.47}, "plans_par_personne": [1, 3], "position_pct": [29, 77], "jamais_a_la_premiere_apparition": "7 out of 7"},
+    "logo_final_cloture_s": {"valeurs": [1.7, 3.1, 8.3], "compte": "3 out of 4 closing or tribute films"}
+  },
+
+  "parole": {
+    "ouverture": {
+      "part_du_temps": {"aucune": "4 out of 8", "au_plus_28_pct": "3 out of 8", "fiction_narree": 0.63},
+      "cible_part_max": 0.30,
+      "fin_sans_parole_s": {"valeurs": [15.0, 17.2, 33.3], "compte": "3 out of 3 films with speech, excluding narrated fiction", "cible": [15, 30]},
+      "sketch_dialogue": "a dialogue scene in the first third (v7-01: 7 to 28 s), then action and music",
+      "tirade_s": {"v7-01": {"mediane": 3.4, "max": 13.4}, "v8-01": {"mediane": 4.0, "max": 5.3}, "v4-02": {"mediane": 3.6, "max": 11.8}},
+      "mots_par_minute": {"v6-01": 11.5, "v7-01": 24.7, "v8-01": 47.4, "v4-02": 75.5},
+      "coupes_pendant_la_parole": {"v7-01": "9 out of 42", "v8-01": "17 out of 71", "v4-02": "25 out of 62"}
+    },
+    "fiction_narree": {"chapitres": 6, "duree_chapitre_s": {"mediane": 26.4, "min": 14.1, "max": 29.3}, "regle": "each chapter opened by a voice-over sentence"},
+    "cloture_temoignages": {"film": "v2-09", "part_du_temps": 0.66, "mots_par_minute": 114.7, "tirade_s": {"mediane": 5.0, "max": 13.1}, "coupes_pendant_la_parole": "33 out of 68", "premiere_parole_s": 6.2, "cible_part": [0.5, 0.65]},
+    "hommage_voix_off": {"film": "v2-02", "part_du_temps": 0.51, "mots_par_minute": 70.1, "tirade_s": {"mediane": 2.0, "max": 4.3}},
+    "sketch_un_plan": {"film": "v2-10", "part_du_temps": 0.89, "duree_plan_s": 43.2},
+    "clip_chante": {"film": "v8-06", "part_du_temps": 0.88, "changements_au_debut_d_un_vers": "9 out of 16 within ± 0.45 s (chance 2.5)"}
+  },
+
+  "valeurs_de_plan": {
+    "premier_plan": {"serre": "4 out of 7", "large": "3 out of 7"},
+    "dernier_plan": {"large": "5 out of 7", "serre": "0 out of 7", "autre": "2 out of 7 (speaker in a medium close-up after 4 wide shots; medium shot then title card)"},
+    "par_tiers_3_films_214_plans": {"large_pct": [8, 6, 19], "serre_pct": [41, 38, 19]},
+    "scene_ouverte_large_puis_serree": "8 scenes out of 11",
+    "regle": "from tight to wide across the film; wide then tight within a scene"
+  },
+
+  "raccords": {
+    "composition_a_la_coupe": "same as chance (453 cuts: median 0.05 vs 0.06; above 0.5: 4.9 % vs 4.9 %)",
+    "sens_du_mouvement": {"statut": "convention", "mesure": "34 measurable cuts: same direction 7, opposite 12, chance ≈ 29 % same direction"},
+    "procedes_vus_a_l_oeil_35_coupes": {
+      "forme_au_centre": "7 out of 7 in a sequence of objects (v3-01)",
+      "graphique_de_couleur": "3 out of 5 (v2-03)",
+      "passage_masque_dans_le_sombre": "14 out of 30 transition cuts, 4 transitions out of 6",
+      "sur_l_action": 4,
+      "cause_et_effet": 2,
+      "dans_l_axe_sur_le_mouvement": 3,
+      "par_la_lumiere": "1 film (a face born from a flame between 5 blacks in 16 s)",
+      "saute": 1
+    },
+    "montage_alterne": {"film": "v8-01", "retour_du_second_lieu_s": {"mediane": 12.8, "min": 6.8, "max": 20.3}, "plan_du_second_lieu_s": {"mediane": 1.46, "min": 0.70, "max": 2.34}, "statut": "noted by eye"}
+  },
+
+  "mouvement": {
+    "seuil_fixe": "movement < 10 (corpus reading convention)",
+    "ouverture_plans_fixes": "30 out of 351 (9 %)",
+    "ouverture_mouvement_fort": "136 out of 351 (39 %) above 100",
+    "transition_decor_plans_fixes": "0 out of 33",
+    "photos_immobiles": "22 out of 22 photos (v2-02), no slow zoom",
+    "plan_sequence_anime": "v1-01: 70.9 s with no detected cut"
+  },
+
+  "noir_et_blanc_format": {
+    "noir_et_blanc": {"films": "3 out of 20 fully or nearly (people, portraits, night)", "chapitre": "1 fiction, 9 shots out of 58, for a genre effect", "couleur_au_sommet": "1 case: 6 color shots at 91-94 % (0.13 to 1.87 s) in a black-and-white film"},
+    "format_large": {"compte": "2 openings out of 8", "ratios": [4.0, 2.38], "un_seul_format_par_film": "2 out of 2"},
+    "photos_sur_noir": "25 out of 27 (tribute)"
+  },
+
+  "musique": {
+    "coupe_sur_attaque_forte": {"tolerance_s": 0.067, "net": "1 film out of 11 (photos: 18 out of 26, chance 2.8)", "faible": "2 out of 11 (p ≈ 0.02 to 0.05)", "absent": "8 out of 11", "ensemble_sans_photos": "89 cuts vs 73 by chance", "statut_regle": "convention: cut on the phrase and the strong attacks, not on the grid"},
+    "photos_sur_la_mesure": {"tempo_bpm": 105.0, "photos_de_4_temps": "19 out of 26", "durees_en_temps_entiers": "23 out of 26 within ± 0.25 beat", "autres_durees_en_temps": [1, 2, 5, 6, 8]},
+    "clip_changement_au_vers": "9 out of 16 (chance 2.5; p < 0.001)",
+    "son_qui_suit_la_coupe": "2 films out of 8: attack 0.35 s after the cut (median) vs 0.59 s by chance (weak signal)",
+    "sommet_sonore_position_pct": {"mediane": 68, "apres_60_pct": "7 out of 8", "cible_min_pct": 60},
+    "volume_et_vitesse_de_coupe_lies": "3 openings out of 7 (rank correlation ≥ 0.4)",
+    "depart_du_silence": "4 openings out of 8",
+    "fin": {"musique_continue_sous_l_atterrissage": 3, "creux_sur_carton_ou_logo_db": [-49, -39], "creux_compte": 5, "silence_total_sur_le_logo": 2},
+    "pre_son_avant_coupe_s": {"valeur": 1.2, "compte": "1 case (subtitles)", "cible": [0.5, 1.5], "statut": "convention"},
+    "transition_meme_phrase_musicale": "2 out of 2 at a keynote; stops 1.2 to 1.3 s before speech"
+  },
+
+  "structure": [
+    {"temps": "seuil", "contenu": "black and silence, or a title card on black then black", "duree_s": [0.5, 10.0], "observe": "6 out of 8", "regle": "black 0.5 to 1.5 s; with a title card: 0.5 s per word then 0.8 to 1.5 s of black"},
+    {"temps": "premier_plan", "contenu": "a detail or a light (tight), or a situation shot (wide)", "duree_s": [5.0, 10.0], "observe": "at least 5 s: 5 out of 8; tight 4 out of 7, wide 3 out of 7"},
+    {"temps": "corps", "contenu": "short, steady cutting; scenes open wide then go tight; gestures in extreme close-ups", "plan_median_s": 1.33, "plans_s": [0.65, 3.17], "changements_par_minute": [25, 40], "observe": "337 shots, 7 films"},
+    {"temps": "pic", "contenu": "5 fastest shots, on the strongest moment of the sound", "position_pct": [60, 80], "plans_s": [0.4, 0.7], "observe": "5 out of 7"},
+    {"temps": "atterrissage", "contenu": "3 to 5 shots that get longer, then a long wide shot of the place or of the person about to speak; otherwise a title card", "duree_dernier_plan_s": [5.0, 11.0], "observe": "at least 5 s: 6 out of 8; place or speaker: 6 out of 8; same shot as the speaker: 3 out of 8"}
+  ],
+
+  "sous_familles": {
+    "sketch_fiction": {
+      "duree_s": [85, 143],
+      "plan_median_s": [1.35, 1.70],
+      "structure_sketch": ["situation shot (with a place name, or a 2 to 3 s cold open then 1 to 1.5 s of black)", "dialogue scene in the first third", "preparation in extreme close-ups of 0.5 to 1.3 s", "action, peak", "musical finale without speech, 15 to 33 s", "name or title in the set, shot of 6 to 11 s"],
+      "structure_fiction_narree": ["carton", "noir", "chapters of 14 to 29 s opened by the voice-over", "last chapter that brings in the person"],
+      "ouverture_a_froid": "1 out of 8",
+      "sketch_apres_generique": {"compte": "1 keynote out of 8", "forme": "0.5 s of black, a static frontal shot of 43 s on a plain background, ending in silence"}
+    },
+    "cloture_hommage": {
+      "cloture_temoignages": ["black 0.9 s", "title card of 11 words, 4.7 s", "portraits, people's voices 66 % of the time", "last third faster (median shot 0.98 s)", "peak near 90 % (rolling median 0.20 s)", "signature shot 3.1 s"],
+      "plan_median_s": {"v2-09": 1.08, "v2-02": 2.30, "v8-06": 5.81},
+      "changements_par_minute": {"v2-09": 45.1, "v2-02": 26.4, "v8-06": 6.0},
+      "hommage_photo": "still photos on black, one per bar, voice-over, logo 1.7 s",
+      "clip_chante": "long shots (median 5.8 s), short cross dissolves at the start of each verse, final wipe, fade to silence over the logo"
+    },
+    "transition_decor": {
+      "duree_s": {"mediane": 23.9, "min": 11.2, "max": 31.4, "cible": [15, 30]},
+      "plans": {"mediane": 4.5, "min": 1, "max": 13},
+      "depart_apres_phrase_de_relais_s": {"mediane": 1.26, "min": 0.59, "max": 4.2, "n": 5, "cible": [1.0, 1.5]},
+      "mouvement_vers_l_avant": "6 out of 6",
+      "coupes_cachees_dans_le_sombre": "4 out of 6",
+      "plans_fixes": "0 out of 33",
+      "texte": "0 out of 6",
+      "rythme": "brisk start (0.1 to 2.4 s), slow arrival (4 to 14 s)",
+      "arrivee_plan_le_plus_long": "4 out of 5",
+      "arrivee_porte_les_premiers_mots": "6 out of 6",
+      "arrivee_tenue_avant_parole_s": {"mediane": 9.3, "min": 6.7, "max": 11.5, "n": 5, "cible": [7.0, 11.5]},
+      "arrivee_duree_totale_s": {"mediane": 14.2, "min": 4.6, "max": 33.4},
+      "musique": "one and the same musical phrase per transition at a keynote (2 out of 2), stops 1.2 to 1.3 s before speech"
+    }
+  },
+
+  "critique": [
+    {"constat": "first picture shot < 3 s with no threshold", "repere": "5 out of 8 at least 5 s; 6 out of 8 with a threshold", "message": "abrupt entry: lengthen the first shot or add a black (unless a cold open is intended)"},
+    {"constat": "median body shot > 2.1 s or < 0.9 s", "repere": "median 1.33 s; quartiles 0.90-2.13 s", "message": "too slow or too choppy for the family"},
+    {"constat": "no peak, or peak before 50 %", "repere": "peak between 61 and 79 %: 5 out of 7", "message": "no high point: 5 short shots near the two-thirds mark"},
+    {"constat": "last shot < 5 s or < 3.5 times the median shot", "repere": "6 out of 8 at least 5 s; 7 out of 7 at least 3.5 times", "message": "the landing is missing: hold the last shot"},
+    {"constat": "ending on a tight detail", "repere": "0 out of 7", "message": "end wide, on the place or the person"},
+    {"constat": "cross dissolves > 5 % of the changes (excluding the clip)", "repere": "2 out of 367", "message": "replace with hard cuts"},
+    {"constat": "black in the middle of the film", "repere": "15 blacks out of 17 at the entry", "message": "black is for coming in or for ending"},
+    {"constat": "text in the middle, or more than 2 texts", "repere": "0 out of 7 in the middle; 1 to 2 texts", "message": "move it to the threshold or the end, or remove it"},
+    {"constat": "title card held less than 0.3 s per word", "repere": "0.32 to 2.09 s per word, median 0.50", "message": "unreadable: hold it longer"},
+    {"constat": "a cut on every beat of the music (moving images)", "repere": "clear in 1 film out of 11, and those are photos", "message": "mechanical effect: cut on the phrase and the strong attacks"},
+    {"constat": "sound peak before 50 %", "repere": "after 60 % in 7 out of 8", "message": "the music should build toward the end"},
+    {"constat": "speech until the end (excluding narrated fiction)", "repere": "15 to 33 s of music alone at the end, 3 out of 3", "message": "let the ending breathe"},
+    {"constat": "slow zoom or pan on photos", "repere": "0 out of 22 photos", "message": "lay the photos down, still"},
+    {"constat": "name lower third from the first appearance", "repere": "7 out of 7 after the first third", "message": "show first, name next"},
+    {"constat": "transition between places with static shots or text", "repere": "0 out of 33 static shots; 0 out of 6 with text", "message": "one continuous forward movement, no text"},
+    {"constat": "arrival of a transition held < 6 s before speech", "repere": "6.7 to 11.5 s (median 9.3)", "message": "hold the arrival"}
+  ],
+
+  "limites": [
+    "small numbers: 8 openings, 3 sketches or fictions, 3 closings, 6 transitions",
+    "shot values noted by eye on thumbnails, 3 whole films",
+    "dissolves: lower bound",
+    "sound realigned with the stream timestamps; a clear direct check in one film only",
+    "subtitles: times within about ± 0.3 s"
+  ]
+}
